@@ -40,6 +40,13 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
+          <div class="navbar-right inherited-view-wrapper">
+            <select id='inherited-view'>
+              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
+              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
+              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
+            </select>
+          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -58,13 +65,6 @@
           <h1 class="title">
             <div class="kind">method</div> getObject
           </h1>
-        </div>
-        <div class="inherited-view-wrapper">
-          <select id='inherited-view' class='form-control'>
-            <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-            <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-            <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-          </select>
         </div>
         <ul class="subnav">
           <li><a href="dart-indexed_db/ObjectStore/getObject.html#source">Source</a></li>

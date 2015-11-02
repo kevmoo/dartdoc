@@ -285,8 +285,6 @@ document.addEventListener("DOMContentLoaded", function() {
   initInheritView();
 
   $('#inherited-view').change(function(){
-    console.log($(this));
-    console.log($(this).val());
     var selectedValue = $(this).val();
     setInheritView(selectedValue);
   });
