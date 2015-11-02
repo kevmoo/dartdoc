@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dart:svg library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+
+  <meta name="description" content="dart:svg library API docs, for the Dart programming language.">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">Dart SDK</a></li>
+            <li class="self-crumb">dart:svg</li>
+          </ol>
+          <div class="self-name">dart:svg</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">Dart SDK</a></li>
+          <li class="self-crumb">dart:svg</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <div class="kind">library</div> dart:svg
+          </h1>
+        </div>
+        <div class="radio" style='float: right;'>
+          Inherited members:
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-show" checked>
+            SHOW
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-dim">
+            DIM
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-hide">
+            HIDE
+          </label>
+        </div>
+        <ul class="subnav">
+          <li><a href="dart-svg/dart-svg-library.html#properties">Properties</a></li>
+          <li><a href="dart-svg/dart-svg-library.html#classes">Classes</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">Dart SDK</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="index.html">Libraries</a></li>
+      <li><a href="dart-async/dart-async-library.html">dart:async</a></li>
+      <li><a href="dart-collection/dart-collection-library.html">dart:collection</a></li>
+      <li><a href="dart-convert/dart-convert-library.html">dart:convert</a></li>
+      <li><a href="dart-core/dart-core-library.html">dart:core</a></li>
+      <li><a href="dart-developer/dart-developer-library.html">dart:developer</a></li>
+      <li><a href="dart-html/dart-html-library.html">dart:html</a></li>
+      <li><a href="dart-indexed_db/dart-indexed_db-library.html">dart:indexed_db</a></li>
+      <li><a href="dart-io/dart-io-library.html">dart:io</a></li>
+      <li><a href="dart-isolate/dart-isolate-library.html">dart:isolate</a></li>
+      <li><a href="dart-js/dart-js-library.html">dart:js</a></li>
+      <li><a href="dart-math/dart-math-library.html">dart:math</a></li>
+      <li><a href="dart-mirrors/dart-mirrors-library.html">dart:mirrors</a></li>
+      <li><a href="dart-svg/dart-svg-library.html">dart:svg</a></li>
+      <li><a href="dart-typed_data/dart-typed_data-library.html">dart:typed_data</a></li>
+      <li><a href="dart-web_audio/dart-web_audio-library.html">dart:web_audio</a></li>
+      <li><a href="dart-web_gl/dart-web_gl-library.html">dart:web_gl</a></li>
+      <li><a href="dart-web_sql/dart-web_sql-library.html">dart:web_sql</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+        <p>Scalable Vector Graphics:
+Two-dimensional vector graphics with support for events and animation.</p>
+<p>For details about the features and syntax of SVG, a W3C standard,
+refer to the
+<a href="http://www.w3.org/TR/SVG/">Scalable Vector Graphics Specification</a>.</p>
+    
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="svgBlinkFunctionMap" class="property">
+          <span class="name"><a class="deprecated" href="dart-svg/svgBlinkFunctionMap.html">svgBlinkFunctionMap</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read-only
+  </div>
+</dd>
+        <dt id="svgBlinkMap" class="property">
+          <span class="name"><a class="deprecated" href="dart-svg/svgBlinkMap.html">svgBlinkMap</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read-only
+  </div>
+</dd>
+      </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="AElement">
+          <span class="name "><a class="" href="dart-svg/AElement-class.html">AElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AltGlyphElement">
+          <span class="name "><a class="" href="dart-svg/AltGlyphElement-class.html">AltGlyphElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Angle">
+          <span class="name "><a class="" href="dart-svg/Angle-class.html">Angle</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedAngle">
+          <span class="name "><a class="" href="dart-svg/AnimatedAngle-class.html">AnimatedAngle</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedBoolean">
+          <span class="name "><a class="" href="dart-svg/AnimatedBoolean-class.html">AnimatedBoolean</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedEnumeration">
+          <span class="name "><a class="" href="dart-svg/AnimatedEnumeration-class.html">AnimatedEnumeration</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedInteger">
+          <span class="name "><a class="" href="dart-svg/AnimatedInteger-class.html">AnimatedInteger</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedLength">
+          <span class="name "><a class="" href="dart-svg/AnimatedLength-class.html">AnimatedLength</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedLengthList">
+          <span class="name "><a class="" href="dart-svg/AnimatedLengthList-class.html">AnimatedLengthList</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedNumber">
+          <span class="name "><a class="" href="dart-svg/AnimatedNumber-class.html">AnimatedNumber</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedNumberList">
+          <span class="name "><a class="" href="dart-svg/AnimatedNumberList-class.html">AnimatedNumberList</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedPreserveAspectRatio">
+          <span class="name "><a class="" href="dart-svg/AnimatedPreserveAspectRatio-class.html">AnimatedPreserveAspectRatio</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedRect">
+          <span class="name "><a class="" href="dart-svg/AnimatedRect-class.html">AnimatedRect</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedString">
+          <span class="name "><a class="" href="dart-svg/AnimatedString-class.html">AnimatedString</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimatedTransformList">
+          <span class="name "><a class="" href="dart-svg/AnimatedTransformList-class.html">AnimatedTransformList</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimateElement">
+          <span class="name "><a class="" href="dart-svg/AnimateElement-class.html">AnimateElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimateMotionElement">
+          <span class="name "><a class="" href="dart-svg/AnimateMotionElement-class.html">AnimateMotionElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimateTransformElement">
+          <span class="name "><a class="" href="dart-svg/AnimateTransformElement-class.html">AnimateTransformElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="AnimationElement">
+          <span class="name "><a class="" href="dart-svg/AnimationElement-class.html">AnimationElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="CircleElement">
+          <span class="name "><a class="" href="dart-svg/CircleElement-class.html">CircleElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="ClipPathElement">
+          <span class="name "><a class="" href="dart-svg/ClipPathElement-class.html">ClipPathElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="DefsElement">
+          <span class="name "><a class="" href="dart-svg/DefsElement-class.html">DefsElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="DescElement">
+          <span class="name "><a class="" href="dart-svg/DescElement-class.html">DescElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="DiscardElement">
+          <span class="name "><a class="" href="dart-svg/DiscardElement-class.html">DiscardElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="EllipseElement">
+          <span class="name "><a class="" href="dart-svg/EllipseElement-class.html">EllipseElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEBlendElement">
+          <span class="name "><a class="" href="dart-svg/FEBlendElement-class.html">FEBlendElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEColorMatrixElement">
+          <span class="name "><a class="" href="dart-svg/FEColorMatrixElement-class.html">FEColorMatrixElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEComponentTransferElement">
+          <span class="name "><a class="" href="dart-svg/FEComponentTransferElement-class.html">FEComponentTransferElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FECompositeElement">
+          <span class="name "><a class="" href="dart-svg/FECompositeElement-class.html">FECompositeElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEConvolveMatrixElement">
+          <span class="name "><a class="" href="dart-svg/FEConvolveMatrixElement-class.html">FEConvolveMatrixElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEDiffuseLightingElement">
+          <span class="name "><a class="" href="dart-svg/FEDiffuseLightingElement-class.html">FEDiffuseLightingElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEDisplacementMapElement">
+          <span class="name "><a class="" href="dart-svg/FEDisplacementMapElement-class.html">FEDisplacementMapElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEDistantLightElement">
+          <span class="name "><a class="" href="dart-svg/FEDistantLightElement-class.html">FEDistantLightElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEFloodElement">
+          <span class="name "><a class="" href="dart-svg/FEFloodElement-class.html">FEFloodElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEFuncAElement">
+          <span class="name "><a class="" href="dart-svg/FEFuncAElement-class.html">FEFuncAElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEFuncBElement">
+          <span class="name "><a class="" href="dart-svg/FEFuncBElement-class.html">FEFuncBElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEFuncGElement">
+          <span class="name "><a class="" href="dart-svg/FEFuncGElement-class.html">FEFuncGElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEFuncRElement">
+          <span class="name "><a class="" href="dart-svg/FEFuncRElement-class.html">FEFuncRElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEGaussianBlurElement">
+          <span class="name "><a class="" href="dart-svg/FEGaussianBlurElement-class.html">FEGaussianBlurElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEImageElement">
+          <span class="name "><a class="" href="dart-svg/FEImageElement-class.html">FEImageElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEMergeElement">
+          <span class="name "><a class="" href="dart-svg/FEMergeElement-class.html">FEMergeElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEMergeNodeElement">
+          <span class="name "><a class="" href="dart-svg/FEMergeNodeElement-class.html">FEMergeNodeElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEMorphologyElement">
+          <span class="name "><a class="" href="dart-svg/FEMorphologyElement-class.html">FEMorphologyElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEOffsetElement">
+          <span class="name "><a class="" href="dart-svg/FEOffsetElement-class.html">FEOffsetElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FEPointLightElement">
+          <span class="name "><a class="" href="dart-svg/FEPointLightElement-class.html">FEPointLightElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FESpecularLightingElement">
+          <span class="name "><a class="" href="dart-svg/FESpecularLightingElement-class.html">FESpecularLightingElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FESpotLightElement">
+          <span class="name "><a class="" href="dart-svg/FESpotLightElement-class.html">FESpotLightElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FETileElement">
+          <span class="name "><a class="" href="dart-svg/FETileElement-class.html">FETileElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FETurbulenceElement">
+          <span class="name "><a class="" href="dart-svg/FETurbulenceElement-class.html">FETurbulenceElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FilterElement">
+          <span class="name "><a class="" href="dart-svg/FilterElement-class.html">FilterElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FilterPrimitiveStandardAttributes">
+          <span class="name "><a class="" href="dart-svg/FilterPrimitiveStandardAttributes-class.html">FilterPrimitiveStandardAttributes</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="FitToViewBox">
+          <span class="name "><a class="" href="dart-svg/FitToViewBox-class.html">FitToViewBox</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="ForeignObjectElement">
+          <span class="name "><a class="" href="dart-svg/ForeignObjectElement-class.html">ForeignObjectElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="GElement">
+          <span class="name "><a class="" href="dart-svg/GElement-class.html">GElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="GeometryElement">
+          <span class="name "><a class="" href="dart-svg/GeometryElement-class.html">GeometryElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="GraphicsElement">
+          <span class="name "><a class="" href="dart-svg/GraphicsElement-class.html">GraphicsElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="ImageElement">
+          <span class="name "><a class="" href="dart-svg/ImageElement-class.html">ImageElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Length">
+          <span class="name "><a class="" href="dart-svg/Length-class.html">Length</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="LengthList">
+          <span class="name "><a class="" href="dart-svg/LengthList-class.html">LengthList</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="LinearGradientElement">
+          <span class="name "><a class="" href="dart-svg/LinearGradientElement-class.html">LinearGradientElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="LineElement">
+          <span class="name "><a class="" href="dart-svg/LineElement-class.html">LineElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="MarkerElement">
+          <span class="name "><a class="" href="dart-svg/MarkerElement-class.html">MarkerElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="MaskElement">
+          <span class="name "><a class="" href="dart-svg/MaskElement-class.html">MaskElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Matrix">
+          <span class="name "><a class="" href="dart-svg/Matrix-class.html">Matrix</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="MetadataElement">
+          <span class="name "><a class="" href="dart-svg/MetadataElement-class.html">MetadataElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Number">
+          <span class="name "><a class="" href="dart-svg/Number-class.html">Number</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="NumberList">
+          <span class="name "><a class="" href="dart-svg/NumberList-class.html">NumberList</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathElement">
+          <span class="name "><a class="" href="dart-svg/PathElement-class.html">PathElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSeg">
+          <span class="name "><a class="" href="dart-svg/PathSeg-class.html">PathSeg</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegArcAbs">
+          <span class="name "><a class="" href="dart-svg/PathSegArcAbs-class.html">PathSegArcAbs</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegArcRel">
+          <span class="name "><a class="" href="dart-svg/PathSegArcRel-class.html">PathSegArcRel</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegClosePath">
+          <span class="name "><a class="" href="dart-svg/PathSegClosePath-class.html">PathSegClosePath</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegCurvetoCubicAbs">
+          <span class="name "><a class="" href="dart-svg/PathSegCurvetoCubicAbs-class.html">PathSegCurvetoCubicAbs</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegCurvetoCubicRel">
+          <span class="name "><a class="" href="dart-svg/PathSegCurvetoCubicRel-class.html">PathSegCurvetoCubicRel</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegCurvetoCubicSmoothAbs">
+          <span class="name "><a class="" href="dart-svg/PathSegCurvetoCubicSmoothAbs-class.html">PathSegCurvetoCubicSmoothAbs</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegCurvetoCubicSmoothRel">
+          <span class="name "><a class="" href="dart-svg/PathSegCurvetoCubicSmoothRel-class.html">PathSegCurvetoCubicSmoothRel</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegCurvetoQuadraticAbs">
+          <span class="name "><a class="" href="dart-svg/PathSegCurvetoQuadraticAbs-class.html">PathSegCurvetoQuadraticAbs</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegCurvetoQuadraticRel">
+          <span class="name "><a class="" href="dart-svg/PathSegCurvetoQuadraticRel-class.html">PathSegCurvetoQuadraticRel</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegCurvetoQuadraticSmoothAbs">
+          <span class="name "><a class="" href="dart-svg/PathSegCurvetoQuadraticSmoothAbs-class.html">PathSegCurvetoQuadraticSmoothAbs</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegCurvetoQuadraticSmoothRel">
+          <span class="name "><a class="" href="dart-svg/PathSegCurvetoQuadraticSmoothRel-class.html">PathSegCurvetoQuadraticSmoothRel</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegLinetoAbs">
+          <span class="name "><a class="" href="dart-svg/PathSegLinetoAbs-class.html">PathSegLinetoAbs</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegLinetoHorizontalAbs">
+          <span class="name "><a class="" href="dart-svg/PathSegLinetoHorizontalAbs-class.html">PathSegLinetoHorizontalAbs</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegLinetoHorizontalRel">
+          <span class="name "><a class="" href="dart-svg/PathSegLinetoHorizontalRel-class.html">PathSegLinetoHorizontalRel</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegLinetoRel">
+          <span class="name "><a class="" href="dart-svg/PathSegLinetoRel-class.html">PathSegLinetoRel</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegLinetoVerticalAbs">
+          <span class="name "><a class="" href="dart-svg/PathSegLinetoVerticalAbs-class.html">PathSegLinetoVerticalAbs</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegLinetoVerticalRel">
+          <span class="name "><a class="" href="dart-svg/PathSegLinetoVerticalRel-class.html">PathSegLinetoVerticalRel</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegList">
+          <span class="name "><a class="" href="dart-svg/PathSegList-class.html">PathSegList</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegMovetoAbs">
+          <span class="name "><a class="" href="dart-svg/PathSegMovetoAbs-class.html">PathSegMovetoAbs</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PathSegMovetoRel">
+          <span class="name "><a class="" href="dart-svg/PathSegMovetoRel-class.html">PathSegMovetoRel</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PatternElement">
+          <span class="name "><a class="" href="dart-svg/PatternElement-class.html">PatternElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Point">
+          <span class="name "><a class="" href="dart-svg/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PointList">
+          <span class="name "><a class="" href="dart-svg/PointList-class.html">PointList</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PolygonElement">
+          <span class="name "><a class="" href="dart-svg/PolygonElement-class.html">PolygonElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PolylineElement">
+          <span class="name "><a class="" href="dart-svg/PolylineElement-class.html">PolylineElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="PreserveAspectRatio">
+          <span class="name "><a class="" href="dart-svg/PreserveAspectRatio-class.html">PreserveAspectRatio</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="RadialGradientElement">
+          <span class="name "><a class="" href="dart-svg/RadialGradientElement-class.html">RadialGradientElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Rect">
+          <span class="name "><a class="" href="dart-svg/Rect-class.html">Rect</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="RectElement">
+          <span class="name "><a class="" href="dart-svg/RectElement-class.html">RectElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="RenderingIntent">
+          <span class="name "><a class="" href="dart-svg/RenderingIntent-class.html">RenderingIntent</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="ScriptElement">
+          <span class="name "><a class="" href="dart-svg/ScriptElement-class.html">ScriptElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="SetElement">
+          <span class="name "><a class="" href="dart-svg/SetElement-class.html">SetElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="StopElement">
+          <span class="name "><a class="" href="dart-svg/StopElement-class.html">StopElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="StringList">
+          <span class="name "><a class="" href="dart-svg/StringList-class.html">StringList</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="StyleElement">
+          <span class="name "><a class="" href="dart-svg/StyleElement-class.html">StyleElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="SvgElement">
+          <span class="name "><a class="" href="dart-svg/SvgElement-class.html">SvgElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="SvgSvgElement">
+          <span class="name "><a class="" href="dart-svg/SvgSvgElement-class.html">SvgSvgElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="SwitchElement">
+          <span class="name "><a class="" href="dart-svg/SwitchElement-class.html">SwitchElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="SymbolElement">
+          <span class="name "><a class="" href="dart-svg/SymbolElement-class.html">SymbolElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Tests">
+          <span class="name "><a class="" href="dart-svg/Tests-class.html">Tests</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="TextContentElement">
+          <span class="name "><a class="" href="dart-svg/TextContentElement-class.html">TextContentElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="TextElement">
+          <span class="name "><a class="" href="dart-svg/TextElement-class.html">TextElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="TextPathElement">
+          <span class="name "><a class="" href="dart-svg/TextPathElement-class.html">TextPathElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="TextPositioningElement">
+          <span class="name "><a class="" href="dart-svg/TextPositioningElement-class.html">TextPositioningElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="TitleElement">
+          <span class="name "><a class="" href="dart-svg/TitleElement-class.html">TitleElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Transform">
+          <span class="name "><a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="TransformList">
+          <span class="name "><a class="" href="dart-svg/TransformList-class.html">TransformList</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="TSpanElement">
+          <span class="name "><a class="" href="dart-svg/TSpanElement-class.html">TSpanElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="UnitTypes">
+          <span class="name "><a class="" href="dart-svg/UnitTypes-class.html">UnitTypes</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="UriReference">
+          <span class="name "><a class="" href="dart-svg/UriReference-class.html">UriReference</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="UseElement">
+          <span class="name "><a class="" href="dart-svg/UseElement-class.html">UseElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="ViewElement">
+          <span class="name "><a class="" href="dart-svg/ViewElement-class.html">ViewElement</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="ViewSpec">
+          <span class="name "><a class="" href="dart-svg/ViewSpec-class.html">ViewSpec</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="ZoomAndPan">
+          <span class="name "><a class="" href="dart-svg/ZoomAndPan-class.html">ZoomAndPan</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="ZoomEvent">
+          <span class="name "><a class="" href="dart-svg/ZoomEvent-class.html">ZoomEvent</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>dart:svg</h5>
+    <ol>
+    
+    
+      <li class="section-title"><a href="dart-svg/dart-svg-library.html#properties">Properties</a></li>
+      <li><a class="deprecated" href="dart-svg/svgBlinkFunctionMap.html">svgBlinkFunctionMap</a></li>
+      <li><a class="deprecated" href="dart-svg/svgBlinkMap.html">svgBlinkMap</a></li>
+    
+    
+    
+      <li class="section-title"><a href="dart-svg/dart-svg-library.html#classes">Classes</a></li>
+      <li><a class="" href="dart-svg/AElement-class.html">AElement</a></li>
+      <li><a class="" href="dart-svg/AltGlyphElement-class.html">AltGlyphElement</a></li>
+      <li><a class="" href="dart-svg/Angle-class.html">Angle</a></li>
+      <li><a class="" href="dart-svg/AnimatedAngle-class.html">AnimatedAngle</a></li>
+      <li><a class="" href="dart-svg/AnimatedBoolean-class.html">AnimatedBoolean</a></li>
+      <li><a class="" href="dart-svg/AnimatedEnumeration-class.html">AnimatedEnumeration</a></li>
+      <li><a class="" href="dart-svg/AnimatedInteger-class.html">AnimatedInteger</a></li>
+      <li><a class="" href="dart-svg/AnimatedLength-class.html">AnimatedLength</a></li>
+      <li><a class="" href="dart-svg/AnimatedLengthList-class.html">AnimatedLengthList</a></li>
+      <li><a class="" href="dart-svg/AnimatedNumber-class.html">AnimatedNumber</a></li>
+      <li><a class="" href="dart-svg/AnimatedNumberList-class.html">AnimatedNumberList</a></li>
+      <li><a class="" href="dart-svg/AnimatedPreserveAspectRatio-class.html">AnimatedPreserveAspectRatio</a></li>
+      <li><a class="" href="dart-svg/AnimatedRect-class.html">AnimatedRect</a></li>
+      <li><a class="" href="dart-svg/AnimatedString-class.html">AnimatedString</a></li>
+      <li><a class="" href="dart-svg/AnimatedTransformList-class.html">AnimatedTransformList</a></li>
+      <li><a class="" href="dart-svg/AnimateElement-class.html">AnimateElement</a></li>
+      <li><a class="" href="dart-svg/AnimateMotionElement-class.html">AnimateMotionElement</a></li>
+      <li><a class="" href="dart-svg/AnimateTransformElement-class.html">AnimateTransformElement</a></li>
+      <li><a class="" href="dart-svg/AnimationElement-class.html">AnimationElement</a></li>
+      <li><a class="" href="dart-svg/CircleElement-class.html">CircleElement</a></li>
+      <li><a class="" href="dart-svg/ClipPathElement-class.html">ClipPathElement</a></li>
+      <li><a class="" href="dart-svg/DefsElement-class.html">DefsElement</a></li>
+      <li><a class="" href="dart-svg/DescElement-class.html">DescElement</a></li>
+      <li><a class="" href="dart-svg/DiscardElement-class.html">DiscardElement</a></li>
+      <li><a class="" href="dart-svg/EllipseElement-class.html">EllipseElement</a></li>
+      <li><a class="" href="dart-svg/FEBlendElement-class.html">FEBlendElement</a></li>
+      <li><a class="" href="dart-svg/FEColorMatrixElement-class.html">FEColorMatrixElement</a></li>
+      <li><a class="" href="dart-svg/FEComponentTransferElement-class.html">FEComponentTransferElement</a></li>
+      <li><a class="" href="dart-svg/FECompositeElement-class.html">FECompositeElement</a></li>
+      <li><a class="" href="dart-svg/FEConvolveMatrixElement-class.html">FEConvolveMatrixElement</a></li>
+      <li><a class="" href="dart-svg/FEDiffuseLightingElement-class.html">FEDiffuseLightingElement</a></li>
+      <li><a class="" href="dart-svg/FEDisplacementMapElement-class.html">FEDisplacementMapElement</a></li>
+      <li><a class="" href="dart-svg/FEDistantLightElement-class.html">FEDistantLightElement</a></li>
+      <li><a class="" href="dart-svg/FEFloodElement-class.html">FEFloodElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncAElement-class.html">FEFuncAElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncBElement-class.html">FEFuncBElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncGElement-class.html">FEFuncGElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncRElement-class.html">FEFuncRElement</a></li>
+      <li><a class="" href="dart-svg/FEGaussianBlurElement-class.html">FEGaussianBlurElement</a></li>
+      <li><a class="" href="dart-svg/FEImageElement-class.html">FEImageElement</a></li>
+      <li><a class="" href="dart-svg/FEMergeElement-class.html">FEMergeElement</a></li>
+      <li><a class="" href="dart-svg/FEMergeNodeElement-class.html">FEMergeNodeElement</a></li>
+      <li><a class="" href="dart-svg/FEMorphologyElement-class.html">FEMorphologyElement</a></li>
+      <li><a class="" href="dart-svg/FEOffsetElement-class.html">FEOffsetElement</a></li>
+      <li><a class="" href="dart-svg/FEPointLightElement-class.html">FEPointLightElement</a></li>
+      <li><a class="" href="dart-svg/FESpecularLightingElement-class.html">FESpecularLightingElement</a></li>
+      <li><a class="" href="dart-svg/FESpotLightElement-class.html">FESpotLightElement</a></li>
+      <li><a class="" href="dart-svg/FETileElement-class.html">FETileElement</a></li>
+      <li><a class="" href="dart-svg/FETurbulenceElement-class.html">FETurbulenceElement</a></li>
+      <li><a class="" href="dart-svg/FilterElement-class.html">FilterElement</a></li>
+      <li><a class="" href="dart-svg/FilterPrimitiveStandardAttributes-class.html">FilterPrimitiveStandardAttributes</a></li>
+      <li><a class="" href="dart-svg/FitToViewBox-class.html">FitToViewBox</a></li>
+      <li><a class="" href="dart-svg/ForeignObjectElement-class.html">ForeignObjectElement</a></li>
+      <li><a class="" href="dart-svg/GElement-class.html">GElement</a></li>
+      <li><a class="" href="dart-svg/GeometryElement-class.html">GeometryElement</a></li>
+      <li><a class="" href="dart-svg/GraphicsElement-class.html">GraphicsElement</a></li>
+      <li><a class="" href="dart-svg/ImageElement-class.html">ImageElement</a></li>
+      <li><a class="" href="dart-svg/Length-class.html">Length</a></li>
+      <li><a class="" href="dart-svg/LengthList-class.html">LengthList</a></li>
+      <li><a class="" href="dart-svg/LinearGradientElement-class.html">LinearGradientElement</a></li>
+      <li><a class="" href="dart-svg/LineElement-class.html">LineElement</a></li>
+      <li><a class="" href="dart-svg/MarkerElement-class.html">MarkerElement</a></li>
+      <li><a class="" href="dart-svg/MaskElement-class.html">MaskElement</a></li>
+      <li><a class="" href="dart-svg/Matrix-class.html">Matrix</a></li>
+      <li><a class="" href="dart-svg/MetadataElement-class.html">MetadataElement</a></li>
+      <li><a class="" href="dart-svg/Number-class.html">Number</a></li>
+      <li><a class="" href="dart-svg/NumberList-class.html">NumberList</a></li>
+      <li><a class="" href="dart-svg/PathElement-class.html">PathElement</a></li>
+      <li><a class="" href="dart-svg/PathSeg-class.html">PathSeg</a></li>
+      <li><a class="" href="dart-svg/PathSegArcAbs-class.html">PathSegArcAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegArcRel-class.html">PathSegArcRel</a></li>
+      <li><a class="" href="dart-svg/PathSegClosePath-class.html">PathSegClosePath</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicAbs-class.html">PathSegCurvetoCubicAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicRel-class.html">PathSegCurvetoCubicRel</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicSmoothAbs-class.html">PathSegCurvetoCubicSmoothAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicSmoothRel-class.html">PathSegCurvetoCubicSmoothRel</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticAbs-class.html">PathSegCurvetoQuadraticAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticRel-class.html">PathSegCurvetoQuadraticRel</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticSmoothAbs-class.html">PathSegCurvetoQuadraticSmoothAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticSmoothRel-class.html">PathSegCurvetoQuadraticSmoothRel</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoAbs-class.html">PathSegLinetoAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoHorizontalAbs-class.html">PathSegLinetoHorizontalAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoHorizontalRel-class.html">PathSegLinetoHorizontalRel</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoRel-class.html">PathSegLinetoRel</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoVerticalAbs-class.html">PathSegLinetoVerticalAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoVerticalRel-class.html">PathSegLinetoVerticalRel</a></li>
+      <li><a class="" href="dart-svg/PathSegList-class.html">PathSegList</a></li>
+      <li><a class="" href="dart-svg/PathSegMovetoAbs-class.html">PathSegMovetoAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegMovetoRel-class.html">PathSegMovetoRel</a></li>
+      <li><a class="" href="dart-svg/PatternElement-class.html">PatternElement</a></li>
+      <li><a class="" href="dart-svg/Point-class.html">Point</a></li>
+      <li><a class="" href="dart-svg/PointList-class.html">PointList</a></li>
+      <li><a class="" href="dart-svg/PolygonElement-class.html">PolygonElement</a></li>
+      <li><a class="" href="dart-svg/PolylineElement-class.html">PolylineElement</a></li>
+      <li><a class="" href="dart-svg/PreserveAspectRatio-class.html">PreserveAspectRatio</a></li>
+      <li><a class="" href="dart-svg/RadialGradientElement-class.html">RadialGradientElement</a></li>
+      <li><a class="" href="dart-svg/Rect-class.html">Rect</a></li>
+      <li><a class="" href="dart-svg/RectElement-class.html">RectElement</a></li>
+      <li><a class="" href="dart-svg/RenderingIntent-class.html">RenderingIntent</a></li>
+      <li><a class="" href="dart-svg/ScriptElement-class.html">ScriptElement</a></li>
+      <li><a class="" href="dart-svg/SetElement-class.html">SetElement</a></li>
+      <li><a class="" href="dart-svg/StopElement-class.html">StopElement</a></li>
+      <li><a class="" href="dart-svg/StringList-class.html">StringList</a></li>
+      <li><a class="" href="dart-svg/StyleElement-class.html">StyleElement</a></li>
+      <li><a class="" href="dart-svg/SvgElement-class.html">SvgElement</a></li>
+      <li><a class="" href="dart-svg/SvgSvgElement-class.html">SvgSvgElement</a></li>
+      <li><a class="" href="dart-svg/SwitchElement-class.html">SwitchElement</a></li>
+      <li><a class="" href="dart-svg/SymbolElement-class.html">SymbolElement</a></li>
+      <li><a class="" href="dart-svg/Tests-class.html">Tests</a></li>
+      <li><a class="" href="dart-svg/TextContentElement-class.html">TextContentElement</a></li>
+      <li><a class="" href="dart-svg/TextElement-class.html">TextElement</a></li>
+      <li><a class="" href="dart-svg/TextPathElement-class.html">TextPathElement</a></li>
+      <li><a class="" href="dart-svg/TextPositioningElement-class.html">TextPositioningElement</a></li>
+      <li><a class="" href="dart-svg/TitleElement-class.html">TitleElement</a></li>
+      <li><a class="" href="dart-svg/Transform-class.html">Transform</a></li>
+      <li><a class="" href="dart-svg/TransformList-class.html">TransformList</a></li>
+      <li><a class="" href="dart-svg/TSpanElement-class.html">TSpanElement</a></li>
+      <li><a class="" href="dart-svg/UnitTypes-class.html">UnitTypes</a></li>
+      <li><a class="" href="dart-svg/UriReference-class.html">UriReference</a></li>
+      <li><a class="" href="dart-svg/UseElement-class.html">UseElement</a></li>
+      <li><a class="" href="dart-svg/ViewElement-class.html">ViewElement</a></li>
+      <li><a class="" href="dart-svg/ViewSpec-class.html">ViewSpec</a></li>
+      <li><a class="" href="dart-svg/ZoomAndPan-class.html">ZoomAndPan</a></li>
+      <li><a class="" href="dart-svg/ZoomEvent-class.html">ZoomEvent</a></li>
+    
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          Dart SDK 1.13.0-dev.7.5
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.5-dev -->
+</body>
+
+</html>

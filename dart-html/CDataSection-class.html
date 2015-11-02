@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CDataSection class - dart:html library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+
+  <meta name="description" content="API docs for the CDataSection class from the dart:html library, for the Dart programming language.">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">Dart SDK</a></li>
+            <li><a href="dart-html/dart-html-library.html">dart:html</a></li>
+            <li class="self-crumb">CDataSection</li>
+          </ol>
+          <div class="self-name">CDataSection</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">Dart SDK</a></li>
+          <li><a href="dart-html/dart-html-library.html">dart:html</a></li>
+          <li class="self-crumb">CDataSection</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <div class="kind">class</div> <span class="deprecated">CDataSection</span>
+          </h1>
+        </div>
+        <div class="radio" style='float: right;'>
+          Inherited members:
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-show" checked>
+            SHOW
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-dim">
+            DIM
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-hide">
+            HIDE
+          </label>
+        </div>
+        <ul class="subnav">
+          <li><a href="dart-html/CDataSection-class.html#static-methods">Static Methods</a></li>
+          <li><a href="dart-html/CDataSection-class.html#constructors">Constructors</a></li>
+          <li><a href="dart-html/CDataSection-class.html#operators">Operators</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">Dart SDK</a></h5>
+    <h5><a href="dart-html/dart-html-library.html">dart:html</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="dart-html/dart-html-library.html#typedefs">Typedefs</a></li>
+      <li><a class="" href="dart-html/DatabaseCallback.html">DatabaseCallback</a></li>
+      <li><a class="" href="dart-html/EventListener.html">EventListener</a></li>
+      <li><a class="" href="dart-html/FontFaceSetForEachCallback.html">FontFaceSetForEachCallback</a></li>
+      <li><a class="" href="dart-html/HeadersForEachCallback.html">HeadersForEachCallback</a></li>
+      <li><a class="" href="dart-html/MediaDeviceInfoCallback.html">MediaDeviceInfoCallback</a></li>
+      <li><a class="" href="dart-html/MediaStreamTrackSourcesCallback.html">MediaStreamTrackSourcesCallback</a></li>
+      <li><a class="" href="dart-html/MetadataCallback.html">MetadataCallback</a></li>
+      <li><a class="" href="dart-html/MidiErrorCallback.html">MidiErrorCallback</a></li>
+      <li><a class="" href="dart-html/MidiSuccessCallback.html">MidiSuccessCallback</a></li>
+      <li><a class="" href="dart-html/MutationCallback.html">MutationCallback</a></li>
+      <li><a class="" href="dart-html/RequestAnimationFrameCallback.html">RequestAnimationFrameCallback</a></li>
+      <li><a class="" href="dart-html/RtcStatsCallback.html">RtcStatsCallback</a></li>
+      <li><a class="" href="dart-html/StorageErrorCallback.html">StorageErrorCallback</a></li>
+      <li><a class="" href="dart-html/StorageQuotaCallback.html">StorageQuotaCallback</a></li>
+      <li><a class="" href="dart-html/StorageUsageCallback.html">StorageUsageCallback</a></li>
+      <li><a class="" href="dart-html/TimeoutHandler.html">TimeoutHandler</a></li>
+      <li><a class="" href="dart-html/VoidCallback.html">VoidCallback</a></li>
+    
+      <li class="section-title"><a href="dart-html/dart-html-library.html#properties">Properties</a></li>
+      <li><a class="" href="dart-html/document.html">document</a></li>
+      <li><a class="" href="dart-html/htmlBlinkFunctionMap.html">htmlBlinkFunctionMap</a></li>
+      <li><a class="deprecated" href="dart-html/htmlBlinkMap.html">htmlBlinkMap</a></li>
+      <li><a class="" href="dart-html/window.html">window</a></li>
+    
+      <li class="section-title"><a href="dart-html/dart-html-library.html#functions">Functions</a></li>
+      <li><a class="deprecated" href="dart-html/convertNativeObjectToDartMap.html">convertNativeObjectToDartMap</a></li>
+      <li><a class="deprecated" href="dart-html/debug_or_assert.html">debug_or_assert</a></li>
+      <li><a class="deprecated" href="dart-html/getHtmlCreateFunction.html">getHtmlCreateFunction</a></li>
+      <li><a class="deprecated" href="dart-html/query.html">query</a></li>
+      <li><a class="deprecated" href="dart-html/queryAll.html">queryAll</a></li>
+      <li><a class="" href="dart-html/querySelector.html">querySelector</a></li>
+      <li><a class="" href="dart-html/querySelectorAll.html">querySelectorAll</a></li>
+      <li><a class="" href="dart-html/spawnDomUri.html">spawnDomUri</a></li>
+      <li><a class="deprecated" href="dart-html/wrap_event_listener.html">wrap_event_listener</a></li>
+    
+    
+      <li class="section-title"><a href="dart-html/dart-html-library.html#classes">Classes</a></li>
+      <li><a class="" href="dart-html/AbstractWorker-class.html">AbstractWorker</a></li>
+      <li><a class="" href="dart-html/AnchorElement-class.html">AnchorElement</a></li>
+      <li><a class="" href="dart-html/Animation-class.html">Animation</a></li>
+      <li><a class="" href="dart-html/AnimationEffect-class.html">AnimationEffect</a></li>
+      <li><a class="" href="dart-html/AnimationEvent-class.html">AnimationEvent</a></li>
+      <li><a class="" href="dart-html/AnimationNode-class.html">AnimationNode</a></li>
+      <li><a class="" href="dart-html/AnimationPlayer-class.html">AnimationPlayer</a></li>
+      <li><a class="" href="dart-html/AnimationPlayerEvent-class.html">AnimationPlayerEvent</a></li>
+      <li><a class="" href="dart-html/AnimationTimeline-class.html">AnimationTimeline</a></li>
+      <li><a class="" href="dart-html/ApplicationCache-class.html">ApplicationCache</a></li>
+      <li><a class="" href="dart-html/ApplicationCacheErrorEvent-class.html">ApplicationCacheErrorEvent</a></li>
+      <li><a class="" href="dart-html/AreaElement-class.html">AreaElement</a></li>
+      <li><a class="" href="dart-html/AudioElement-class.html">AudioElement</a></li>
+      <li><a class="" href="dart-html/AudioTrack-class.html">AudioTrack</a></li>
+      <li><a class="" href="dart-html/AudioTrackList-class.html">AudioTrackList</a></li>
+      <li><a class="" href="dart-html/AutocompleteErrorEvent-class.html">AutocompleteErrorEvent</a></li>
+      <li><a class="deprecated" href="dart-html/BarProp-class.html">BarProp</a></li>
+      <li><a class="" href="dart-html/BaseElement-class.html">BaseElement</a></li>
+      <li><a class="" href="dart-html/BatteryManager-class.html">BatteryManager</a></li>
+      <li><a class="" href="dart-html/BeforeUnloadEvent-class.html">BeforeUnloadEvent</a></li>
+      <li><a class="" href="dart-html/Blob-class.html">Blob</a></li>
+      <li><a class="" href="dart-html/Body-class.html">Body</a></li>
+      <li><a class="" href="dart-html/BodyElement-class.html">BodyElement</a></li>
+      <li><a class="" href="dart-html/BRElement-class.html">BRElement</a></li>
+      <li><a class="" href="dart-html/ButtonElement-class.html">ButtonElement</a></li>
+      <li><a class="" href="dart-html/ButtonInputElement-class.html">ButtonInputElement</a></li>
+      <li><a class="" href="dart-html/CacheStorage-class.html">CacheStorage</a></li>
+      <li><a class="" href="dart-html/Canvas2DContextAttributes-class.html">Canvas2DContextAttributes</a></li>
+      <li><a class="" href="dart-html/CanvasElement-class.html">CanvasElement</a></li>
+      <li><a class="" href="dart-html/CanvasGradient-class.html">CanvasGradient</a></li>
+      <li><a class="" href="dart-html/CanvasImageSource-class.html">CanvasImageSource</a></li>
+      <li><a class="" href="dart-html/CanvasPattern-class.html">CanvasPattern</a></li>
+      <li><a class="" href="dart-html/CanvasRenderingContext-class.html">CanvasRenderingContext</a></li>
+      <li><a class="" href="dart-html/CanvasRenderingContext2D-class.html">CanvasRenderingContext2D</a></li>
+      <li><a class="deprecated" href="dart-html/CDataSection-class.html">CDataSection</a></li>
+      <li><a class="" href="dart-html/CharacterData-class.html">CharacterData</a></li>
+      <li><a class="" href="dart-html/CheckboxInputElement-class.html">CheckboxInputElement</a></li>
+      <li><a class="" href="dart-html/ChildNode-class.html">ChildNode</a></li>
+      <li><a class="" href="dart-html/CircularGeofencingRegion-class.html">CircularGeofencingRegion</a></li>
+      <li><a class="" href="dart-html/CloseEvent-class.html">CloseEvent</a></li>
+      <li><a class="" href="dart-html/Comment-class.html">Comment</a></li>
+      <li><a class="" href="dart-html/CompositionEvent-class.html">CompositionEvent</a></li>
+      <li><a class="" href="dart-html/Console-class.html">Console</a></li>
+      <li><a class="" href="dart-html/ConsoleBase-class.html">ConsoleBase</a></li>
+      <li><a class="" href="dart-html/ContentElement-class.html">ContentElement</a></li>
+      <li><a class="" href="dart-html/Coordinates-class.html">Coordinates</a></li>
+      <li><a class="" href="dart-html/Credential-class.html">Credential</a></li>
+      <li><a class="" href="dart-html/CredentialsContainer-class.html">CredentialsContainer</a></li>
+      <li><a class="" href="dart-html/Crypto-class.html">Crypto</a></li>
+      <li><a class="" href="dart-html/CryptoKey-class.html">CryptoKey</a></li>
+      <li><a class="" href="dart-html/Css-class.html">Css</a></li>
+      <li><a class="" href="dart-html/CssCharsetRule-class.html">CssCharsetRule</a></li>
+      <li><a class="" href="dart-html/CssClassSet-class.html">CssClassSet</a></li>
+      <li><a class="" href="dart-html/CssFilterRule-class.html">CssFilterRule</a></li>
+      <li><a class="" href="dart-html/CssFontFaceRule-class.html">CssFontFaceRule</a></li>
+      <li><a class="" href="dart-html/CssImportRule-class.html">CssImportRule</a></li>
+      <li><a class="" href="dart-html/CssKeyframeRule-class.html">CssKeyframeRule</a></li>
+      <li><a class="" href="dart-html/CssKeyframesRule-class.html">CssKeyframesRule</a></li>
+      <li><a class="" href="dart-html/CssMediaRule-class.html">CssMediaRule</a></li>
+      <li><a class="" href="dart-html/CssPageRule-class.html">CssPageRule</a></li>
+      <li><a class="" href="dart-html/CssRect-class.html">CssRect</a></li>
+      <li><a class="" href="dart-html/CssRule-class.html">CssRule</a></li>
+      <li><a class="" href="dart-html/CssStyleDeclaration-class.html">CssStyleDeclaration</a></li>
+      <li><a class="" href="dart-html/CssStyleDeclarationBase-class.html">CssStyleDeclarationBase</a></li>
+      <li><a class="" href="dart-html/CssStyleRule-class.html">CssStyleRule</a></li>
+      <li><a class="" href="dart-html/CssStyleSheet-class.html">CssStyleSheet</a></li>
+      <li><a class="" href="dart-html/CssSupportsRule-class.html">CssSupportsRule</a></li>
+      <li><a class="" href="dart-html/CssViewportRule-class.html">CssViewportRule</a></li>
+      <li><a class="" href="dart-html/CustomEvent-class.html">CustomEvent</a></li>
+      <li><a class="" href="dart-html/CustomStream-class.html">CustomStream</a></li>
+      <li><a class="deprecated" href="dart-html/DartHtmlDomObject-class.html">DartHtmlDomObject</a></li>
+      <li><a class="" href="dart-html/DataListElement-class.html">DataListElement</a></li>
+      <li><a class="" href="dart-html/DataTransfer-class.html">DataTransfer</a></li>
+      <li><a class="" href="dart-html/DataTransferItem-class.html">DataTransferItem</a></li>
+      <li><a class="" href="dart-html/DataTransferItemList-class.html">DataTransferItemList</a></li>
+      <li><a class="" href="dart-html/DateInputElement-class.html">DateInputElement</a></li>
+      <li><a class="" href="dart-html/DedicatedWorkerGlobalScope-class.html">DedicatedWorkerGlobalScope</a></li>
+      <li><a class="" href="dart-html/DeprecatedStorageInfo-class.html">DeprecatedStorageInfo</a></li>
+      <li><a class="" href="dart-html/DeprecatedStorageQuota-class.html">DeprecatedStorageQuota</a></li>
+      <li><a class="" href="dart-html/DetailsElement-class.html">DetailsElement</a></li>
+      <li><a class="" href="dart-html/DeviceAcceleration-class.html">DeviceAcceleration</a></li>
+      <li><a class="" href="dart-html/DeviceLightEvent-class.html">DeviceLightEvent</a></li>
+      <li><a class="" href="dart-html/DeviceMotionEvent-class.html">DeviceMotionEvent</a></li>
+      <li><a class="" href="dart-html/DeviceOrientationEvent-class.html">DeviceOrientationEvent</a></li>
+      <li><a class="" href="dart-html/DeviceRotationRate-class.html">DeviceRotationRate</a></li>
+      <li><a class="" href="dart-html/DialogElement-class.html">DialogElement</a></li>
+      <li><a class="" href="dart-html/Dimension-class.html">Dimension</a></li>
+      <li><a class="" href="dart-html/DirectoryEntry-class.html">DirectoryEntry</a></li>
+      <li><a class="" href="dart-html/DirectoryReader-class.html">DirectoryReader</a></li>
+      <li><a class="" href="dart-html/DivElement-class.html">DivElement</a></li>
+      <li><a class="" href="dart-html/DListElement-class.html">DListElement</a></li>
+      <li><a class="" href="dart-html/Document-class.html">Document</a></li>
+      <li><a class="" href="dart-html/DocumentFragment-class.html">DocumentFragment</a></li>
+      <li><a class="" href="dart-html/DomError-class.html">DomError</a></li>
+      <li><a class="" href="dart-html/DomException-class.html">DomException</a></li>
+      <li><a class="" href="dart-html/DomImplementation-class.html">DomImplementation</a></li>
+      <li><a class="" href="dart-html/DomIterator-class.html">DomIterator</a></li>
+      <li><a class="" href="dart-html/DomMatrix-class.html">DomMatrix</a></li>
+      <li><a class="" href="dart-html/DomMatrixReadOnly-class.html">DomMatrixReadOnly</a></li>
+      <li><a class="" href="dart-html/DomParser-class.html">DomParser</a></li>
+      <li><a class="" href="dart-html/DomPoint-class.html">DomPoint</a></li>
+      <li><a class="" href="dart-html/DomPointReadOnly-class.html">DomPointReadOnly</a></li>
+      <li><a class="" href="dart-html/DomRectReadOnly-class.html">DomRectReadOnly</a></li>
+      <li><a class="" href="dart-html/DomSettableTokenList-class.html">DomSettableTokenList</a></li>
+      <li><a class="" href="dart-html/DomStringList-class.html">DomStringList</a></li>
+      <li><a class="" href="dart-html/DomStringMap-class.html">DomStringMap</a></li>
+      <li><a class="" href="dart-html/DomTokenList-class.html">DomTokenList</a></li>
+      <li><a class="" href="dart-html/Element-class.html">Element</a></li>
+      <li><a class="" href="dart-html/ElementEvents-class.html">ElementEvents</a></li>
+      <li><a class="" href="dart-html/ElementList-class.html">ElementList</a></li>
+      <li><a class="" href="dart-html/ElementStream-class.html">ElementStream</a></li>
+      <li><a class="" href="dart-html/ElementUpgrader-class.html">ElementUpgrader</a></li>
+      <li><a class="" href="dart-html/EmailInputElement-class.html">EmailInputElement</a></li>
+      <li><a class="" href="dart-html/EmbedElement-class.html">EmbedElement</a></li>
+      <li><a class="" href="dart-html/Entry-class.html">Entry</a></li>
+      <li><a class="" href="dart-html/ErrorEvent-class.html">ErrorEvent</a></li>
+      <li><a class="" href="dart-html/Event-class.html">Event</a></li>
+      <li><a class="" href="dart-html/Events-class.html">Events</a></li>
+      <li><a class="" href="dart-html/EventSource-class.html">EventSource</a></li>
+      <li><a class="" href="dart-html/EventStreamProvider-class.html">EventStreamProvider</a></li>
+      <li><a class="" href="dart-html/EventTarget-class.html">EventTarget</a></li>
+      <li><a class="" href="dart-html/ExtendableEvent-class.html">ExtendableEvent</a></li>
+      <li><a class="" href="dart-html/FederatedCredential-class.html">FederatedCredential</a></li>
+      <li><a class="" href="dart-html/FetchEvent-class.html">FetchEvent</a></li>
+      <li><a class="" href="dart-html/FieldSetElement-class.html">FieldSetElement</a></li>
+      <li><a class="" href="dart-html/File-class.html">File</a></li>
+      <li><a class="" href="dart-html/FileEntry-class.html">FileEntry</a></li>
+      <li><a class="" href="dart-html/FileError-class.html">FileError</a></li>
+      <li><a class="" href="dart-html/FileList-class.html">FileList</a></li>
+      <li><a class="" href="dart-html/FileReader-class.html">FileReader</a></li>
+      <li><a class="" href="dart-html/FileStream-class.html">FileStream</a></li>
+      <li><a class="" href="dart-html/FileSystem-class.html">FileSystem</a></li>
+      <li><a class="" href="dart-html/FileUploadInputElement-class.html">FileUploadInputElement</a></li>
+      <li><a class="" href="dart-html/FileWriter-class.html">FileWriter</a></li>
+      <li><a class="" href="dart-html/FixedSizeListIterator-class.html">FixedSizeListIterator</a></li>
+      <li><a class="" href="dart-html/FocusEvent-class.html">FocusEvent</a></li>
+      <li><a class="" href="dart-html/FontFace-class.html">FontFace</a></li>
+      <li><a class="" href="dart-html/FontFaceSet-class.html">FontFaceSet</a></li>
+      <li><a class="" href="dart-html/FontFaceSetLoadEvent-class.html">FontFaceSetLoadEvent</a></li>
+      <li><a class="" href="dart-html/FormData-class.html">FormData</a></li>
+      <li><a class="" href="dart-html/FormElement-class.html">FormElement</a></li>
+      <li><a class="" href="dart-html/Gamepad-class.html">Gamepad</a></li>
+      <li><a class="" href="dart-html/GamepadButton-class.html">GamepadButton</a></li>
+      <li><a class="" href="dart-html/GamepadEvent-class.html">GamepadEvent</a></li>
+      <li><a class="" href="dart-html/Geofencing-class.html">Geofencing</a></li>
+      <li><a class="" href="dart-html/GeofencingRegion-class.html">GeofencingRegion</a></li>
+      <li><a class="" href="dart-html/Geolocation-class.html">Geolocation</a></li>
+      <li><a class="" href="dart-html/Geoposition-class.html">Geoposition</a></li>
+      <li><a class="" href="dart-html/GlobalEventHandlers-class.html">GlobalEventHandlers</a></li>
+      <li><a class="" href="dart-html/HashChangeEvent-class.html">HashChangeEvent</a></li>
+      <li><a class="" href="dart-html/HeadElement-class.html">HeadElement</a></li>
+      <li><a class="" href="dart-html/Headers-class.html">Headers</a></li>
+      <li><a class="" href="dart-html/HeadingElement-class.html">HeadingElement</a></li>
+      <li><a class="" href="dart-html/HiddenInputElement-class.html">HiddenInputElement</a></li>
+      <li><a class="" href="dart-html/History-class.html">History</a></li>
+      <li><a class="" href="dart-html/HistoryBase-class.html">HistoryBase</a></li>
+      <li><a class="" href="dart-html/HRElement-class.html">HRElement</a></li>
+      <li><a class="" href="dart-html/HtmlCollection-class.html">HtmlCollection</a></li>
+      <li><a class="" href="dart-html/HtmlDocument-class.html">HtmlDocument</a></li>
+      <li><a class="" href="dart-html/HtmlElement-class.html">HtmlElement</a></li>
+      <li><a class="" href="dart-html/HtmlFormControlsCollection-class.html">HtmlFormControlsCollection</a></li>
+      <li><a class="" href="dart-html/HtmlHtmlElement-class.html">HtmlHtmlElement</a></li>
+      <li><a class="" href="dart-html/HtmlOptionsCollection-class.html">HtmlOptionsCollection</a></li>
+      <li><a class="" href="dart-html/HttpRequest-class.html">HttpRequest</a></li>
+      <li><a class="" href="dart-html/HttpRequestEventTarget-class.html">HttpRequestEventTarget</a></li>
+      <li><a class="" href="dart-html/HttpRequestUpload-class.html">HttpRequestUpload</a></li>
+      <li><a class="" href="dart-html/IFrameElement-class.html">IFrameElement</a></li>
+      <li><a class="" href="dart-html/ImageBitmap-class.html">ImageBitmap</a></li>
+      <li><a class="" href="dart-html/ImageButtonInputElement-class.html">ImageButtonInputElement</a></li>
+      <li><a class="" href="dart-html/ImageData-class.html">ImageData</a></li>
+      <li><a class="" href="dart-html/ImageElement-class.html">ImageElement</a></li>
+      <li><a class="" href="dart-html/ImmutableListMixin-class.html">ImmutableListMixin</a></li>
+      <li><a class="" href="dart-html/InjectedScriptHost-class.html">InjectedScriptHost</a></li>
+      <li><a class="" href="dart-html/InputElement-class.html">InputElement</a></li>
+      <li><a class="" href="dart-html/InputElementBase-class.html">InputElementBase</a></li>
+      <li><a class="" href="dart-html/InputMethodContext-class.html">InputMethodContext</a></li>
+      <li><a class="" href="dart-html/InstallEvent-class.html">InstallEvent</a></li>
+      <li><a class="" href="dart-html/KeyboardEvent-class.html">KeyboardEvent</a></li>
+      <li><a class="" href="dart-html/KeyboardEventStream-class.html">KeyboardEventStream</a></li>
+      <li><a class="" href="dart-html/KeyCode-class.html">KeyCode</a></li>
+      <li><a class="" href="dart-html/KeyEvent-class.html">KeyEvent</a></li>
+      <li><a class="" href="dart-html/KeygenElement-class.html">KeygenElement</a></li>
+      <li><a class="" href="dart-html/KeyLocation-class.html">KeyLocation</a></li>
+      <li><a class="" href="dart-html/LabelElement-class.html">LabelElement</a></li>
+      <li><a class="" href="dart-html/LegendElement-class.html">LegendElement</a></li>
+      <li><a class="" href="dart-html/LIElement-class.html">LIElement</a></li>
+      <li><a class="" href="dart-html/LinkElement-class.html">LinkElement</a></li>
+      <li><a class="" href="dart-html/LocalCredential-class.html">LocalCredential</a></li>
+      <li><a class="" href="dart-html/LocalDateTimeInputElement-class.html">LocalDateTimeInputElement</a></li>
+      <li><a class="" href="dart-html/Location-class.html">Location</a></li>
+      <li><a class="" href="dart-html/LocationBase-class.html">LocationBase</a></li>
+      <li><a class="" href="dart-html/MapElement-class.html">MapElement</a></li>
+      <li><a class="" href="dart-html/MediaController-class.html">MediaController</a></li>
+      <li><a class="" href="dart-html/MediaDeviceInfo-class.html">MediaDeviceInfo</a></li>
+      <li><a class="" href="dart-html/MediaElement-class.html">MediaElement</a></li>
+      <li><a class="" href="dart-html/MediaError-class.html">MediaError</a></li>
+      <li><a class="" href="dart-html/MediaKeyError-class.html">MediaKeyError</a></li>
+      <li><a class="" href="dart-html/MediaKeyEvent-class.html">MediaKeyEvent</a></li>
+      <li><a class="" href="dart-html/MediaKeyMessageEvent-class.html">MediaKeyMessageEvent</a></li>
+      <li><a class="" href="dart-html/MediaKeyNeededEvent-class.html">MediaKeyNeededEvent</a></li>
+      <li><a class="" href="dart-html/MediaKeys-class.html">MediaKeys</a></li>
+      <li><a class="" href="dart-html/MediaKeySession-class.html">MediaKeySession</a></li>
+      <li><a class="" href="dart-html/MediaList-class.html">MediaList</a></li>
+      <li><a class="" href="dart-html/MediaQueryList-class.html">MediaQueryList</a></li>
+      <li><a class="" href="dart-html/MediaQueryListEvent-class.html">MediaQueryListEvent</a></li>
+      <li><a class="" href="dart-html/MediaSource-class.html">MediaSource</a></li>
+      <li><a class="" href="dart-html/MediaStream-class.html">MediaStream</a></li>
+      <li><a class="" href="dart-html/MediaStreamEvent-class.html">MediaStreamEvent</a></li>
+      <li><a class="" href="dart-html/MediaStreamTrack-class.html">MediaStreamTrack</a></li>
+      <li><a class="" href="dart-html/MediaStreamTrackEvent-class.html">MediaStreamTrackEvent</a></li>
+      <li><a class="" href="dart-html/MemoryInfo-class.html">MemoryInfo</a></li>
+      <li><a class="" href="dart-html/MenuElement-class.html">MenuElement</a></li>
+      <li><a class="" href="dart-html/MenuItemElement-class.html">MenuItemElement</a></li>
+      <li><a class="" href="dart-html/MessageChannel-class.html">MessageChannel</a></li>
+      <li><a class="" href="dart-html/MessageEvent-class.html">MessageEvent</a></li>
+      <li><a class="" href="dart-html/MessagePort-class.html">MessagePort</a></li>
+      <li><a class="" href="dart-html/Metadata-class.html">Metadata</a></li>
+      <li><a class="" href="dart-html/MetaElement-class.html">MetaElement</a></li>
+      <li><a class="" href="dart-html/MeterElement-class.html">MeterElement</a></li>
+      <li><a class="" href="dart-html/MidiAccess-class.html">MidiAccess</a></li>
+      <li><a class="" href="dart-html/MidiConnectionEvent-class.html">MidiConnectionEvent</a></li>
+      <li><a class="" href="dart-html/MidiInput-class.html">MidiInput</a></li>
+      <li><a class="" href="dart-html/MidiInputMap-class.html">MidiInputMap</a></li>
+      <li><a class="" href="dart-html/MidiMessageEvent-class.html">MidiMessageEvent</a></li>
+      <li><a class="" href="dart-html/MidiOutput-class.html">MidiOutput</a></li>
+      <li><a class="" href="dart-html/MidiOutputMap-class.html">MidiOutputMap</a></li>
+      <li><a class="" href="dart-html/MidiPort-class.html">MidiPort</a></li>
+      <li><a class="" href="dart-html/MimeType-class.html">MimeType</a></li>
+      <li><a class="" href="dart-html/MimeTypeArray-class.html">MimeTypeArray</a></li>
+      <li><a class="" href="dart-html/ModElement-class.html">ModElement</a></li>
+      <li><a class="" href="dart-html/MonthInputElement-class.html">MonthInputElement</a></li>
+      <li><a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a></li>
+      <li><a class="" href="dart-html/MutationObserver-class.html">MutationObserver</a></li>
+      <li><a class="" href="dart-html/MutationRecord-class.html">MutationRecord</a></li>
+      <li><a class="" href="dart-html/Navigator-class.html">Navigator</a></li>
+      <li><a class="" href="dart-html/NavigatorCpu-class.html">NavigatorCpu</a></li>
+      <li><a class="" href="dart-html/NavigatorID-class.html">NavigatorID</a></li>
+      <li><a class="" href="dart-html/NavigatorLanguage-class.html">NavigatorLanguage</a></li>
+      <li><a class="" href="dart-html/NavigatorOnLine-class.html">NavigatorOnLine</a></li>
+      <li><a class="" href="dart-html/NavigatorUserMediaError-class.html">NavigatorUserMediaError</a></li>
+      <li><a class="" href="dart-html/NetworkInformation-class.html">NetworkInformation</a></li>
+      <li><a class="" href="dart-html/Node-class.html">Node</a></li>
+      <li><a class="" href="dart-html/NodeFilter-class.html">NodeFilter</a></li>
+      <li><a class="" href="dart-html/NodeIterator-class.html">NodeIterator</a></li>
+      <li><a class="" href="dart-html/NodeList-class.html">NodeList</a></li>
+      <li><a class="" href="dart-html/NodeTreeSanitizer-class.html">NodeTreeSanitizer</a></li>
+      <li><a class="" href="dart-html/NodeValidator-class.html">NodeValidator</a></li>
+      <li><a class="" href="dart-html/NodeValidatorBuilder-class.html">NodeValidatorBuilder</a></li>
+      <li><a class="" href="dart-html/Notification-class.html">Notification</a></li>
+      <li><a class="" href="dart-html/NumberInputElement-class.html">NumberInputElement</a></li>
+      <li><a class="" href="dart-html/ObjectElement-class.html">ObjectElement</a></li>
+      <li><a class="" href="dart-html/OListElement-class.html">OListElement</a></li>
+      <li><a class="" href="dart-html/OptGroupElement-class.html">OptGroupElement</a></li>
+      <li><a class="" href="dart-html/OptionElement-class.html">OptionElement</a></li>
+      <li><a class="" href="dart-html/OutputElement-class.html">OutputElement</a></li>
+      <li><a class="" href="dart-html/OverflowEvent-class.html">OverflowEvent</a></li>
+      <li><a class="" href="dart-html/PageTransitionEvent-class.html">PageTransitionEvent</a></li>
+      <li><a class="" href="dart-html/ParagraphElement-class.html">ParagraphElement</a></li>
+      <li><a class="" href="dart-html/ParamElement-class.html">ParamElement</a></li>
+      <li><a class="" href="dart-html/ParentNode-class.html">ParentNode</a></li>
+      <li><a class="" href="dart-html/PasswordInputElement-class.html">PasswordInputElement</a></li>
+      <li><a class="" href="dart-html/Path2D-class.html">Path2D</a></li>
+      <li><a class="" href="dart-html/Performance-class.html">Performance</a></li>
+      <li><a class="" href="dart-html/PerformanceEntry-class.html">PerformanceEntry</a></li>
+      <li><a class="" href="dart-html/PerformanceMark-class.html">PerformanceMark</a></li>
+      <li><a class="" href="dart-html/PerformanceMeasure-class.html">PerformanceMeasure</a></li>
+      <li><a class="" href="dart-html/PerformanceNavigation-class.html">PerformanceNavigation</a></li>
+      <li><a class="" href="dart-html/PerformanceResourceTiming-class.html">PerformanceResourceTiming</a></li>
+      <li><a class="" href="dart-html/PerformanceTiming-class.html">PerformanceTiming</a></li>
+      <li><a class="" href="dart-html/PictureElement-class.html">PictureElement</a></li>
+      <li><a class="" href="dart-html/Platform-class.html">Platform</a></li>
+      <li><a class="" href="dart-html/Plugin-class.html">Plugin</a></li>
+      <li><a class="" href="dart-html/PluginArray-class.html">PluginArray</a></li>
+      <li><a class="" href="dart-html/PluginPlaceholderElement-class.html">PluginPlaceholderElement</a></li>
+      <li><a class="" href="dart-html/Point-class.html">Point</a></li>
+      <li><a class="" href="dart-html/PopStateEvent-class.html">PopStateEvent</a></li>
+      <li><a class="" href="dart-html/PositionError-class.html">PositionError</a></li>
+      <li><a class="" href="dart-html/PreElement-class.html">PreElement</a></li>
+      <li><a class="" href="dart-html/Presentation-class.html">Presentation</a></li>
+      <li><a class="" href="dart-html/ProcessingInstruction-class.html">ProcessingInstruction</a></li>
+      <li><a class="" href="dart-html/ProgressElement-class.html">ProgressElement</a></li>
+      <li><a class="" href="dart-html/ProgressEvent-class.html">ProgressEvent</a></li>
+      <li><a class="" href="dart-html/PushEvent-class.html">PushEvent</a></li>
+      <li><a class="" href="dart-html/PushManager-class.html">PushManager</a></li>
+      <li><a class="" href="dart-html/PushRegistration-class.html">PushRegistration</a></li>
+      <li><a class="" href="dart-html/QuoteElement-class.html">QuoteElement</a></li>
+      <li><a class="" href="dart-html/RadioButtonInputElement-class.html">RadioButtonInputElement</a></li>
+      <li><a class="" href="dart-html/Range-class.html">Range</a></li>
+      <li><a class="" href="dart-html/RangeInputElement-class.html">RangeInputElement</a></li>
+      <li><a class="" href="dart-html/RangeInputElementBase-class.html">RangeInputElementBase</a></li>
+      <li><a class="" href="dart-html/ReadableStream-class.html">ReadableStream</a></li>
+      <li><a class="" href="dart-html/ReadyState-class.html">ReadyState</a></li>
+      <li><a class="" href="dart-html/Rectangle-class.html">Rectangle</a></li>
+      <li><a class="" href="dart-html/RelatedEvent-class.html">RelatedEvent</a></li>
+      <li><a class="" href="dart-html/ResetButtonInputElement-class.html">ResetButtonInputElement</a></li>
+      <li><a class="deprecated" href="dart-html/ResourceProgressEvent-class.html">ResourceProgressEvent</a></li>
+      <li><a class="" href="dart-html/RtcDataChannel-class.html">RtcDataChannel</a></li>
+      <li><a class="" href="dart-html/RtcDataChannelEvent-class.html">RtcDataChannelEvent</a></li>
+      <li><a class="" href="dart-html/RtcDtmfSender-class.html">RtcDtmfSender</a></li>
+      <li><a class="" href="dart-html/RtcDtmfToneChangeEvent-class.html">RtcDtmfToneChangeEvent</a></li>
+      <li><a class="" href="dart-html/RtcIceCandidate-class.html">RtcIceCandidate</a></li>
+      <li><a class="" href="dart-html/RtcIceCandidateEvent-class.html">RtcIceCandidateEvent</a></li>
+      <li><a class="" href="dart-html/RtcPeerConnection-class.html">RtcPeerConnection</a></li>
+      <li><a class="" href="dart-html/RtcSessionDescription-class.html">RtcSessionDescription</a></li>
+      <li><a class="" href="dart-html/RtcStatsReport-class.html">RtcStatsReport</a></li>
+      <li><a class="" href="dart-html/RtcStatsResponse-class.html">RtcStatsResponse</a></li>
+      <li><a class="" href="dart-html/Screen-class.html">Screen</a></li>
+      <li><a class="" href="dart-html/ScreenOrientation-class.html">ScreenOrientation</a></li>
+      <li><a class="" href="dart-html/ScriptElement-class.html">ScriptElement</a></li>
+      <li><a class="" href="dart-html/ScrollAlignment-class.html">ScrollAlignment</a></li>
+      <li><a class="" href="dart-html/SearchInputElement-class.html">SearchInputElement</a></li>
+      <li><a class="" href="dart-html/SecurityPolicyViolationEvent-class.html">SecurityPolicyViolationEvent</a></li>
+      <li><a class="" href="dart-html/SelectElement-class.html">SelectElement</a></li>
+      <li><a class="" href="dart-html/Selection-class.html">Selection</a></li>
+      <li><a class="" href="dart-html/ServiceWorkerClient-class.html">ServiceWorkerClient</a></li>
+      <li><a class="" href="dart-html/ServiceWorkerClients-class.html">ServiceWorkerClients</a></li>
+      <li><a class="" href="dart-html/ServiceWorkerContainer-class.html">ServiceWorkerContainer</a></li>
+      <li><a class="" href="dart-html/ServiceWorkerGlobalScope-class.html">ServiceWorkerGlobalScope</a></li>
+      <li><a class="" href="dart-html/ServiceWorkerRegistration-class.html">ServiceWorkerRegistration</a></li>
+      <li><a class="" href="dart-html/ShadowElement-class.html">ShadowElement</a></li>
+      <li><a class="" href="dart-html/ShadowRoot-class.html">ShadowRoot</a></li>
+      <li><a class="" href="dart-html/SharedWorker-class.html">SharedWorker</a></li>
+      <li><a class="" href="dart-html/SharedWorkerGlobalScope-class.html">SharedWorkerGlobalScope</a></li>
+      <li><a class="" href="dart-html/SourceBuffer-class.html">SourceBuffer</a></li>
+      <li><a class="" href="dart-html/SourceBufferList-class.html">SourceBufferList</a></li>
+      <li><a class="" href="dart-html/SourceElement-class.html">SourceElement</a></li>
+      <li><a class="" href="dart-html/SourceInfo-class.html">SourceInfo</a></li>
+      <li><a class="" href="dart-html/SpanElement-class.html">SpanElement</a></li>
+      <li><a class="" href="dart-html/SpeechGrammar-class.html">SpeechGrammar</a></li>
+      <li><a class="" href="dart-html/SpeechGrammarList-class.html">SpeechGrammarList</a></li>
+      <li><a class="" href="dart-html/SpeechRecognition-class.html">SpeechRecognition</a></li>
+      <li><a class="" href="dart-html/SpeechRecognitionAlternative-class.html">SpeechRecognitionAlternative</a></li>
+      <li><a class="" href="dart-html/SpeechRecognitionError-class.html">SpeechRecognitionError</a></li>
+      <li><a class="" href="dart-html/SpeechRecognitionEvent-class.html">SpeechRecognitionEvent</a></li>
+      <li><a class="" href="dart-html/SpeechRecognitionResult-class.html">SpeechRecognitionResult</a></li>
+      <li><a class="" href="dart-html/SpeechSynthesis-class.html">SpeechSynthesis</a></li>
+      <li><a class="" href="dart-html/SpeechSynthesisEvent-class.html">SpeechSynthesisEvent</a></li>
+      <li><a class="" href="dart-html/SpeechSynthesisUtterance-class.html">SpeechSynthesisUtterance</a></li>
+      <li><a class="" href="dart-html/SpeechSynthesisVoice-class.html">SpeechSynthesisVoice</a></li>
+      <li><a class="" href="dart-html/Storage-class.html">Storage</a></li>
+      <li><a class="" href="dart-html/StorageEvent-class.html">StorageEvent</a></li>
+      <li><a class="" href="dart-html/StorageInfo-class.html">StorageInfo</a></li>
+      <li><a class="" href="dart-html/StorageQuota-class.html">StorageQuota</a></li>
+      <li><a class="" href="dart-html/StyleElement-class.html">StyleElement</a></li>
+      <li><a class="" href="dart-html/StyleMedia-class.html">StyleMedia</a></li>
+      <li><a class="" href="dart-html/StyleSheet-class.html">StyleSheet</a></li>
+      <li><a class="" href="dart-html/SubmitButtonInputElement-class.html">SubmitButtonInputElement</a></li>
+      <li><a class="" href="dart-html/TableCaptionElement-class.html">TableCaptionElement</a></li>
+      <li><a class="" href="dart-html/TableCellElement-class.html">TableCellElement</a></li>
+      <li><a class="" href="dart-html/TableColElement-class.html">TableColElement</a></li>
+      <li><a class="" href="dart-html/TableElement-class.html">TableElement</a></li>
+      <li><a class="" href="dart-html/TableRowElement-class.html">TableRowElement</a></li>
+      <li><a class="" href="dart-html/TableSectionElement-class.html">TableSectionElement</a></li>
+      <li><a class="" href="dart-html/TelephoneInputElement-class.html">TelephoneInputElement</a></li>
+      <li><a class="" href="dart-html/TemplateElement-class.html">TemplateElement</a></li>
+      <li><a class="" href="dart-html/Text-class.html">Text</a></li>
+      <li><a class="" href="dart-html/TextAreaElement-class.html">TextAreaElement</a></li>
+      <li><a class="" href="dart-html/TextEvent-class.html">TextEvent</a></li>
+      <li><a class="" href="dart-html/TextInputElement-class.html">TextInputElement</a></li>
+      <li><a class="" href="dart-html/TextInputElementBase-class.html">TextInputElementBase</a></li>
+      <li><a class="" href="dart-html/TextMetrics-class.html">TextMetrics</a></li>
+      <li><a class="" href="dart-html/TextTrack-class.html">TextTrack</a></li>
+      <li><a class="" href="dart-html/TextTrackCue-class.html">TextTrackCue</a></li>
+      <li><a class="" href="dart-html/TextTrackCueList-class.html">TextTrackCueList</a></li>
+      <li><a class="" href="dart-html/TextTrackList-class.html">TextTrackList</a></li>
+      <li><a class="" href="dart-html/TimeInputElement-class.html">TimeInputElement</a></li>
+      <li><a class="" href="dart-html/TimeRanges-class.html">TimeRanges</a></li>
+      <li><a class="" href="dart-html/Timing-class.html">Timing</a></li>
+      <li><a class="" href="dart-html/TitleElement-class.html">TitleElement</a></li>
+      <li><a class="" href="dart-html/Touch-class.html">Touch</a></li>
+      <li><a class="" href="dart-html/TouchEvent-class.html">TouchEvent</a></li>
+      <li><a class="" href="dart-html/TouchList-class.html">TouchList</a></li>
+      <li><a class="" href="dart-html/TrackElement-class.html">TrackElement</a></li>
+      <li><a class="" href="dart-html/TrackEvent-class.html">TrackEvent</a></li>
+      <li><a class="" href="dart-html/TransitionEvent-class.html">TransitionEvent</a></li>
+      <li><a class="" href="dart-html/TreeWalker-class.html">TreeWalker</a></li>
+      <li><a class="" href="dart-html/UIEvent-class.html">UIEvent</a></li>
+      <li><a class="" href="dart-html/UListElement-class.html">UListElement</a></li>
+      <li><a class="" href="dart-html/UnknownElement-class.html">UnknownElement</a></li>
+      <li><a class="" href="dart-html/UriPolicy-class.html">UriPolicy</a></li>
+      <li><a class="" href="dart-html/Url-class.html">Url</a></li>
+      <li><a class="" href="dart-html/UrlInputElement-class.html">UrlInputElement</a></li>
+      <li><a class="" href="dart-html/UrlUtils-class.html">UrlUtils</a></li>
+      <li><a class="" href="dart-html/UrlUtilsReadOnly-class.html">UrlUtilsReadOnly</a></li>
+      <li><a class="" href="dart-html/ValidityState-class.html">ValidityState</a></li>
+      <li><a class="" href="dart-html/VideoElement-class.html">VideoElement</a></li>
+      <li><a class="" href="dart-html/VideoPlaybackQuality-class.html">VideoPlaybackQuality</a></li>
+      <li><a class="" href="dart-html/VideoTrack-class.html">VideoTrack</a></li>
+      <li><a class="" href="dart-html/VideoTrackList-class.html">VideoTrackList</a></li>
+      <li><a class="" href="dart-html/VttCue-class.html">VttCue</a></li>
+      <li><a class="" href="dart-html/VttRegion-class.html">VttRegion</a></li>
+      <li><a class="" href="dart-html/VttRegionList-class.html">VttRegionList</a></li>
+      <li><a class="" href="dart-html/WebSocket-class.html">WebSocket</a></li>
+      <li><a class="" href="dart-html/WeekInputElement-class.html">WeekInputElement</a></li>
+      <li><a class="" href="dart-html/WheelEvent-class.html">WheelEvent</a></li>
+      <li><a class="" href="dart-html/Window-class.html">Window</a></li>
+      <li><a class="" href="dart-html/WindowBase-class.html">WindowBase</a></li>
+      <li><a class="" href="dart-html/WindowBase64-class.html">WindowBase64</a></li>
+      <li><a class="" href="dart-html/WindowEventHandlers-class.html">WindowEventHandlers</a></li>
+      <li><a class="" href="dart-html/Worker-class.html">Worker</a></li>
+      <li><a class="" href="dart-html/WorkerConsole-class.html">WorkerConsole</a></li>
+      <li><a class="" href="dart-html/WorkerGlobalScope-class.html">WorkerGlobalScope</a></li>
+      <li><a class="" href="dart-html/WorkerPerformance-class.html">WorkerPerformance</a></li>
+      <li><a class="" href="dart-html/XmlDocument-class.html">XmlDocument</a></li>
+      <li><a class="deprecated" href="dart-html/XmlSerializer-class.html">XmlSerializer</a></li>
+      <li><a class="deprecated" href="dart-html/XPathEvaluator-class.html">XPathEvaluator</a></li>
+      <li><a class="deprecated" href="dart-html/XPathExpression-class.html">XPathExpression</a></li>
+      <li><a class="deprecated" href="dart-html/XPathNSResolver-class.html">XPathNSResolver</a></li>
+      <li><a class="deprecated" href="dart-html/XPathResult-class.html">XPathResult</a></li>
+      <li><a class="deprecated" href="dart-html/XsltProcessor-class.html">XsltProcessor</a></li>
+    
+      <li class="section-title"><a href="dart-html/dart-html-library.html#exceptions">Exceptions</a></li>
+      <li><a class="deprecated" href="dart-html/DebugAssertException-class.html">DebugAssertException</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+        <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li><a class="" href="dart-core/Object-class.html">Object</a></li>
+          <li><a class="deprecated" href="dart-html/DartHtmlDomObject-class.html">DartHtmlDomObject</a></li>
+          <li><a class="" href="dart-html/EventTarget-class.html">EventTarget</a></li>
+          <li><a class="" href="dart-html/Node-class.html">Node</a></li>
+          <li><a class="" href="dart-html/CharacterData-class.html">CharacterData</a></li>
+          <li><a class="" href="dart-html/Text-class.html">Text</a></li>
+          <li>CDataSection</li>
+        </ul></dd>
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>DocsEditable()</li>
+          <li>DomName('CDATASection')</li>
+          <li>deprecated</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="static-methods">
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="internalCreateCDataSection" class="callable">
+          <span class="name deprecated"><a class="deprecated" href="dart-html/CDataSection/internalCreateCDataSection.html">internalCreateCDataSection</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="deprecated" href="dart-html/CDataSection-class.html">CDataSection</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="CDataSection.internal_" class="callable">
+          <span class="name"><a class="" href="dart-html/CDataSection/CDataSection.internal_.html">CDataSection.internal_</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="baseUri" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/baseUri.html">baseUri</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="blink_jsObject" class="property inherited">
+          <span class="name"><a class="deprecated" href="dart-html/DartHtmlDomObject/blink_jsObject.html">blink_jsObject</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-js/JsObject-class.html">JsObject</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The underlying JS DOM object.</p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="childNodes" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/childNodes.html">childNodes</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-html/Node-class.html">Node</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>A list of this node's children.<a href="dart-html/Node/childNodes.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="data" class="property inherited">
+          <span class="name"><a class="" href="dart-html/CharacterData/data.html">data</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="firstChild" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/firstChild.html">firstChild</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The first child of this node.<a href="dart-html/Node/firstChild.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a class="" href="dart-html/EventTarget/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="lastChild" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/lastChild.html">lastChild</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The last child of this node.<a href="dart-html/Node/lastChild.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="length" class="property inherited">
+          <span class="name"><a class="" href="dart-html/CharacterData/length.html">length</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="nextElementSibling" class="property inherited">
+          <span class="name"><a class="" href="dart-html/CharacterData/nextElementSibling.html">nextElementSibling</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Element-class.html">Element</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="nextNode" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/nextNode.html">nextNode</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The next sibling node.<a href="dart-html/Node/nextNode.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="nodeName" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/nodeName.html">nodeName</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The name of this node.<a href="dart-html/Node/nodeName.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="nodes" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/nodes.html">nodes</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-html/Node-class.html">Node</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>A modifiable list of this node's children.</p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="nodeType" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/nodeType.html">nodeType</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The type of node.<a href="dart-html/Node/nodeType.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="nodeValue" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/nodeValue.html">nodeValue</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The value of this node.<a href="dart-html/Node/nodeValue.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="on" class="property inherited">
+          <span class="name"><a class="" href="dart-html/EventTarget/on.html">on</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Events-class.html">Events</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>This is an ease-of-use accessor for event streams which should only be
+used when an explicit accessor is not available.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="ownerDocument" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/ownerDocument.html">ownerDocument</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Document-class.html">Document</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The document this node belongs to.<a href="dart-html/Node/ownerDocument.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="parent" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/parent.html">parent</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Element-class.html">Element</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The parent element of this node.<a href="dart-html/Node/parent.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="parentNode" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/parentNode.html">parentNode</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The parent node of this node.<a href="dart-html/Node/parentNode.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="previousElementSibling" class="property inherited">
+          <span class="name"><a class="" href="dart-html/CharacterData/previousElementSibling.html">previousElementSibling</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Element-class.html">Element</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="previousNode" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/previousNode.html">previousNode</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The previous sibling node.<a href="dart-html/Node/previousNode.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a class="" href="dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/Type-class.html">Type</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="text" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/text.html">text</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>All text within this node and its decendents.<a href="dart-html/Node/text.html">&hellip;</a>
+</p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="wholeText" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Text/wholeText.html">wholeText</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/EventTarget/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The equality operator.<a href="dart-html/EventTarget/operator_equals.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="addEventListener" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/EventTarget/addEventListener.html">addEventListener</a></span><span class="signature">(<wbr><span class="parameter" id="addEventListener-param-type"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">type</span></span>, <span class="parameter" id="addEventListener-param-listener"><span class="type-annotation">dynamic</span> <span class="parameter-name">listener</span>(<span class="parameter" id="EventListener-param-event"><span class="type-annotation"><a class="" href="dart-html/Event-class.html">Event</a></span> <span class="parameter-name">event</span></span>)</span>, [<span class="parameter" id="addEventListener-param-useCapture"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">useCapture</span></span>])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="append" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/append.html">append</a></span><span class="signature">(<wbr><span class="parameter" id="append-param-newChild"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">newChild</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Adds a node to the end of the child <a class="" href="dart-html/Node/nodes.html">nodes</a> list of this node.<a href="dart-html/Node/append.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="appendData" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/CharacterData/appendData.html">appendData</a></span><span class="signature">(<wbr><span class="parameter" id="appendData-param-data"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">data</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="clone" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/clone.html">clone</a></span><span class="signature">(<wbr><span class="parameter" id="clone-param-deep"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">deep</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a copy of this node.<a href="dart-html/Node/clone.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="contains" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/contains.html">contains</a></span><span class="signature">(<wbr><span class="parameter" id="contains-param-other"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns true if this node contains the specified node.<a href="dart-html/Node/contains.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="deleteData" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/CharacterData/deleteData.html">deleteData</a></span><span class="signature">(<wbr><span class="parameter" id="deleteData-param-offset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span></span>, <span class="parameter" id="deleteData-param-length"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="dispatchEvent" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/EventTarget/dispatchEvent.html">dispatchEvent</a></span><span class="signature">(<wbr><span class="parameter" id="dispatchEvent-param-event"><span class="type-annotation"><a class="" href="dart-html/Event-class.html">Event</a></span> <span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getDestinationInsertionPoints" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Text/getDestinationInsertionPoints.html">getDestinationInsertionPoints</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-html/Node-class.html">Node</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="hasChildNodes" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/hasChildNodes.html">hasChildNodes</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns true if this node has any children.<a href="dart-html/Node/hasChildNodes.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="insertAllBefore" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/insertAllBefore.html">insertAllBefore</a></span><span class="signature">(<wbr><span class="parameter" id="insertAllBefore-param-newNodes"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-html/Node-class.html">Node</a>&gt;</span> <span class="parameter-name">newNodes</span></span>, <span class="parameter" id="insertAllBefore-param-refChild"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">refChild</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Inserts all of the nodes into this node directly before refChild.<a href="dart-html/Node/insertAllBefore.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="insertBefore" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/insertBefore.html">insertBefore</a></span><span class="signature">(<wbr><span class="parameter" id="insertBefore-param-newChild"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">newChild</span></span>, <span class="parameter" id="insertBefore-param-refChild"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">refChild</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Inserts all of the nodes into this node directly before refChild.<a href="dart-html/Node/insertBefore.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="insertData" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/CharacterData/insertData.html">insertData</a></span><span class="signature">(<wbr><span class="parameter" id="insertData-param-offset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span></span>, <span class="parameter" id="insertData-param-data"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">data</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name "><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a class="" href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> is invoked when users invoke a non-existent method
+on an object. The name of the method and the arguments of the
+invocation are passed to <a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> in an <a class="" href="dart-core/Invocation-class.html">Invocation</a>.
+If <a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> returns a value, that value becomes the result of
+the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="remove" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/remove.html">remove</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Removes this node from the DOM.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeEventListener" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/EventTarget/removeEventListener.html">removeEventListener</a></span><span class="signature">(<wbr><span class="parameter" id="removeEventListener-param-type"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">type</span></span>, <span class="parameter" id="removeEventListener-param-listener"><span class="type-annotation">dynamic</span> <span class="parameter-name">listener</span>(<span class="parameter" id="EventListener-param-event"><span class="type-annotation"><a class="" href="dart-html/Event-class.html">Event</a></span> <span class="parameter-name">event</span></span>)</span>, [<span class="parameter" id="removeEventListener-param-useCapture"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">useCapture</span></span>])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="replaceData" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/CharacterData/replaceData.html">replaceData</a></span><span class="signature">(<wbr><span class="parameter" id="replaceData-param-offset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span></span>, <span class="parameter" id="replaceData-param-length"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>, <span class="parameter" id="replaceData-param-data"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">data</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="replaceWith" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/replaceWith.html">replaceWith</a></span><span class="signature">(<wbr><span class="parameter" id="replaceWith-param-otherNode"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">otherNode</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Replaces this node with another node.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="splitText" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Text/splitText.html">splitText</a></span><span class="signature">(<wbr><span class="parameter" id="splitText-param-offset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Text-class.html">Text</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="substringData" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/CharacterData/substringData.html">substringData</a></span><span class="signature">(<wbr><span class="parameter" id="substringData-param-offset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span></span>, <span class="parameter" id="substringData-param-length"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Print out a String representation of this Node.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>CDataSection</h5>
+    <ol>
+    
+    
+      <li class="section-title"><a href="dart-html/CDataSection-class.html#static-methods">Static methods</a></li>
+      <li><a class="deprecated" href="dart-html/CDataSection/internalCreateCDataSection.html">internalCreateCDataSection</a></li>
+    
+      <li class="section-title"><a href="dart-html/CDataSection-class.html#constructors">Constructors</a></li>
+      <li><a href="dart-html/CDataSection/CDataSection.internal_.html">internal_</a></li>
+    
+      <li class="section-title inherited">
+        <a href="dart-html/CDataSection-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a class="" href="dart-html/Node/baseUri.html">baseUri</a></li>
+      <li class="inherited"><a class="deprecated" href="dart-html/DartHtmlDomObject/blink_jsObject.html">blink_jsObject</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/childNodes.html">childNodes</a></li>
+      <li class="inherited"><a class="" href="dart-html/CharacterData/data.html">data</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/firstChild.html">firstChild</a></li>
+      <li class="inherited"><a class="" href="dart-html/EventTarget/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/lastChild.html">lastChild</a></li>
+      <li class="inherited"><a class="" href="dart-html/CharacterData/length.html">length</a></li>
+      <li class="inherited"><a class="" href="dart-html/CharacterData/nextElementSibling.html">nextElementSibling</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nextNode.html">nextNode</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodeName.html">nodeName</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodes.html">nodes</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodeType.html">nodeType</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodeValue.html">nodeValue</a></li>
+      <li class="inherited"><a class="" href="dart-html/EventTarget/on.html">on</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/ownerDocument.html">ownerDocument</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/parent.html">parent</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/parentNode.html">parentNode</a></li>
+      <li class="inherited"><a class="" href="dart-html/CharacterData/previousElementSibling.html">previousElementSibling</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/previousNode.html">previousNode</a></li>
+      <li class="inherited"><a class="" href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/text.html">text</a></li>
+      <li class="inherited"><a class="" href="dart-html/Text/wholeText.html">wholeText</a></li>
+    
+      <li class="section-title inherited"><a href="dart-html/CDataSection-class.html#operators">Operators</a></li>
+      <li class="inherited"><a class="" href="dart-html/EventTarget/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title inherited"><a href="dart-html/CDataSection-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"q><a class="" href="dart-html/EventTarget/addEventListener.html">addEventListener</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/append.html">append</a></li>
+      <li class="inherited"q><a class="" href="dart-html/CharacterData/appendData.html">appendData</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/clone.html">clone</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/contains.html">contains</a></li>
+      <li class="inherited"q><a class="" href="dart-html/CharacterData/deleteData.html">deleteData</a></li>
+      <li class="inherited"q><a class="" href="dart-html/EventTarget/dispatchEvent.html">dispatchEvent</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Text/getDestinationInsertionPoints.html">getDestinationInsertionPoints</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/hasChildNodes.html">hasChildNodes</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/insertAllBefore.html">insertAllBefore</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/insertBefore.html">insertBefore</a></li>
+      <li class="inherited"q><a class="" href="dart-html/CharacterData/insertData.html">insertData</a></li>
+      <li class="inherited"q><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/remove.html">remove</a></li>
+      <li class="inherited"q><a class="" href="dart-html/EventTarget/removeEventListener.html">removeEventListener</a></li>
+      <li class="inherited"q><a class="" href="dart-html/CharacterData/replaceData.html">replaceData</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/replaceWith.html">replaceWith</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Text/splitText.html">splitText</a></li>
+      <li class="inherited"q><a class="" href="dart-html/CharacterData/substringData.html">substringData</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/toString.html">toString</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          Dart SDK 1.13.0-dev.7.5
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.5-dev -->
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>newInstance method - ClassMirror class - dart:mirrors library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+
+  <meta name="description" content="API docs for the newInstance method from the ClassMirror class, for the Dart programming language.">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">Dart SDK</a></li>
+            <li><a href="dart-mirrors/dart-mirrors-library.html">dart:mirrors</a></li>
+            <li><a href="dart-mirrors/ClassMirror-class.html">ClassMirror</a></li>
+            <li class="self-crumb">newInstance</li>
+          </ol>
+          <div class="self-name">newInstance</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">Dart SDK</a></li>
+          <li><a href="dart-mirrors/dart-mirrors-library.html">dart:mirrors</a></li>
+          <li><a href="dart-mirrors/ClassMirror-class.html">ClassMirror</a></li>
+          <li class="self-crumb">newInstance</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <div class="kind">method</div> newInstance
+          </h1>
+        </div>
+        <div class="radio" style='float: right;'>
+          Inherited members:
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-show" checked>
+            SHOW
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-dim">
+            DIM
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-hide">
+            HIDE
+          </label>
+        </div>
+        <ul class="subnav">
+          <li><a href="dart-mirrors/ClassMirror/newInstance.html#source">Source</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">Dart SDK</a></h5>
+    <h5><a href="dart-mirrors/dart-mirrors-library.html">dart:mirrors</a></h5>
+    <h5><a href="dart-mirrors/ClassMirror-class.html">ClassMirror</a></h5>
+
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="dart-mirrors/ClassMirror-class.html#constructors">Constructors</a></li>
+      <li><a href="dart-mirrors/ClassMirror/ClassMirror.html">ClassMirror</a></li>
+    
+      <li class="section-title">
+        <a href="dart-mirrors/ClassMirror-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a class="" href="dart-mirrors/ClassMirror/declarations.html">declarations</a></li>
+      <li class="inherited"><a class="" href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/TypeMirror/hasReflectedType.html">hasReflectedType</a></li>
+      <li><a class="" href="dart-mirrors/ClassMirror/instanceMembers.html">instanceMembers</a></li>
+      <li><a class="" href="dart-mirrors/ClassMirror/isAbstract.html">isAbstract</a></li>
+      <li><a class="" href="dart-mirrors/ClassMirror/isEnum.html">isEnum</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/TypeMirror/isOriginalDeclaration.html">isOriginalDeclaration</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/DeclarationMirror/isPrivate.html">isPrivate</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/DeclarationMirror/isTopLevel.html">isTopLevel</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/DeclarationMirror/location.html">location</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/DeclarationMirror/metadata.html">metadata</a></li>
+      <li><a class="" href="dart-mirrors/ClassMirror/mixin.html">mixin</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/TypeMirror/originalDeclaration.html">originalDeclaration</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/DeclarationMirror/owner.html">owner</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/DeclarationMirror/qualifiedName.html">qualifiedName</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/TypeMirror/reflectedType.html">reflectedType</a></li>
+      <li class="inherited"><a class="" href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/DeclarationMirror/simpleName.html">simpleName</a></li>
+      <li><a class="" href="dart-mirrors/ClassMirror/staticMembers.html">staticMembers</a></li>
+      <li><a class="" href="dart-mirrors/ClassMirror/superclass.html">superclass</a></li>
+      <li><a class="" href="dart-mirrors/ClassMirror/superinterfaces.html">superinterfaces</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/TypeMirror/typeArguments.html">typeArguments</a></li>
+      <li class="inherited"><a class="" href="dart-mirrors/TypeMirror/typeVariables.html">typeVariables</a></li>
+    
+      <li class="section-title"><a href="dart-mirrors/ClassMirror-class.html#operators">Operators</a></li>
+      <li><a class="" href="dart-mirrors/ClassMirror/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="dart-mirrors/ClassMirror-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"q><a class="" href="dart-mirrors/ObjectMirror/delegate.html">delegate</a></li>
+      <li class="inherited"q><a class="" href="dart-mirrors/ObjectMirror/getField.html">getField</a></li>
+      <li class="inherited"q><a class="" href="dart-mirrors/ObjectMirror/invoke.html">invoke</a></li>
+      <li class="inherited"q><a class="" href="dart-mirrors/TypeMirror/isAssignableTo.html">isAssignableTo</a></li>
+      <liq><a class="" href="dart-mirrors/ClassMirror/isSubclassOf.html">isSubclassOf</a></li>
+      <li class="inherited"q><a class="" href="dart-mirrors/TypeMirror/isSubtypeOf.html">isSubtypeOf</a></li>
+      <liq><a class="" href="dart-mirrors/ClassMirror/newInstance.html">newInstance</a></li>
+      <li class="inherited"q><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"q><a class="" href="dart-mirrors/ObjectMirror/setField.html">setField</a></li>
+      <li class="inherited"q><a class="" href="dart-core/Object/toString.html">toString</a></li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+        <span class="returntype"><a class="" href="dart-mirrors/InstanceMirror-class.html">InstanceMirror</a></span>
+        <span class="name ">newInstance</span>(<wbr><span class="parameter" id="newInstance-param-constructorName"><span class="type-annotation"><a class="" href="dart-core/Symbol-class.html">Symbol</a></span> <span class="parameter-name">constructorName</span></span>, <span class="parameter" id="newInstance-param-positionalArguments"><span class="parameter-name">positionalArguments</span></span>, [<span class="parameter" id="newInstance-param-namedArguments"><span class="type-annotation"><a class="" href="dart-core/Map-class.html">Map</a>&lt;<a class="" href="dart-core/Symbol-class.html">Symbol</a>, dynamic&gt;</span> <span class="parameter-name">namedArguments</span></span>])
+    </section>
+
+    <section class="desc markdown">
+    
+        <p>Invokes the named constructor and returns a mirror on the result.</p>
+<p>Let <em>c</em> be the class reflected by this mirror,
+let <em>a1, ..., an</em> be the elements of <code>positionalArguments</code>,
+let <em>k1, ..., km</em> be the identifiers denoted by the elements of
+<code>namedArguments.keys</code>,
+and let <em>v1, ..., vm</em> be the elements of <code>namedArguments.values</code>.</p>
+<p>If <code>constructorName</code> was created from the empty string, then this method
+will execute the instance creation expression
+<em>new c(a1, ..., an, k1: v1, ..., km: vm)</em> in a scope that has access to
+the private members of <em>c</em>.</p>
+<p>Otherwise, let <em>f</em> be the simple name of the constructor denoted by
+<code>constructorName</code>. Then this method will execute the instance creation
+expression <em>new c.f(a1, ..., an, k1: v1, ..., km: vm)</em> in a scope that has
+access to the private members of <em>c</em>.</p>
+<p>In either case:</p><ul><li>
+<p>If the expression evaluates to a result <em>r</em>, this method returns the
+  result of calling <a class="" href="dart-mirrors/reflect.html">reflect</a>\(<em>r</em>\).</p></li><li>
+<p>If evaluating the expression causes a compilation error, the effect is
+  the same as if a non-reflective compilation error had been encountered.</p></li><li>
+<p>If evaluating the expression throws an exception <em>e</em> (that it does not
+  catch), this method throws <em>e</em>.</p></li></ul>
+    
+    </section>
+
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">InstanceMirror newInstance(Symbol constructorName,
+                           List positionalArguments,
+                           [Map&lt;Symbol,dynamic&gt; namedArguments]);</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          Dart SDK 1.13.0-dev.7.5
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.5-dev -->
+</body>
+
+</html>

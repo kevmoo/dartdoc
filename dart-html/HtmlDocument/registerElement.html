@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>registerElement method - HtmlDocument class - dart:html library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+
+  <meta name="description" content="API docs for the registerElement method from the HtmlDocument class, for the Dart programming language.">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">Dart SDK</a></li>
+            <li><a href="dart-html/dart-html-library.html">dart:html</a></li>
+            <li><a href="dart-html/HtmlDocument-class.html">HtmlDocument</a></li>
+            <li class="self-crumb">registerElement</li>
+          </ol>
+          <div class="self-name">registerElement</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">Dart SDK</a></li>
+          <li><a href="dart-html/dart-html-library.html">dart:html</a></li>
+          <li><a href="dart-html/HtmlDocument-class.html">HtmlDocument</a></li>
+          <li class="self-crumb">registerElement</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <div class="kind">method</div> registerElement
+          </h1>
+        </div>
+        <div class="radio" style='float: right;'>
+          Inherited members:
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-show" checked>
+            SHOW
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-dim">
+            DIM
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-hide">
+            HIDE
+          </label>
+        </div>
+        <ul class="subnav">
+          <li><a href="dart-html/HtmlDocument/registerElement.html#source">Source</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">Dart SDK</a></h5>
+    <h5><a href="dart-html/dart-html-library.html">dart:html</a></h5>
+    <h5><a href="dart-html/HtmlDocument-class.html">HtmlDocument</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="dart-html/HtmlDocument-class.html#constants">Constants</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/visibilityChangeEvent.html">visibilityChangeEvent</a></li>
+    
+      <li class="section-title"><a href="dart-html/HtmlDocument-class.html#static-properties">Static properties</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/supportsCssCanvasContext.html">supportsCssCanvasContext</a></li>
+    
+      <li class="section-title"><a href="dart-html/HtmlDocument-class.html#static-methods">Static methods</a></li>
+      <li><a class="deprecated" href="dart-html/HtmlDocument/internalCreateHtmlDocument.html">internalCreateHtmlDocument</a></li>
+    
+      <li class="section-title"><a href="dart-html/HtmlDocument-class.html#constructors">Constructors</a></li>
+      <li><a href="dart-html/HtmlDocument/HtmlDocument.internal_.html">internal_</a></li>
+    
+      <li class="section-title">
+        <a href="dart-html/HtmlDocument-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a class="" href="dart-html/Document/activeElement.html">activeElement</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/baseUri.html">baseUri</a></li>
+      <li class="inherited"><a class="deprecated" href="dart-html/DartHtmlDomObject/blink_jsObject.html">blink_jsObject</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/body.html">body</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/childNodes.html">childNodes</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/contentType.html">contentType</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/cookie.html">cookie</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/currentScript.html">currentScript</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/documentElement.html">documentElement</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/domain.html">domain</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/firstChild.html">firstChild</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/fonts.html">fonts</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/fullscreenElement.html">fullscreenElement</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/fullscreenEnabled.html">fullscreenEnabled</a></li>
+      <li class="inherited"><a class="" href="dart-html/EventTarget/hashCode.html">hashCode</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/head.html">head</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/hidden.html">hidden</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/implementation.html">implementation</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/lastChild.html">lastChild</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/lastModified.html">lastModified</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nextNode.html">nextNode</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodeName.html">nodeName</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodes.html">nodes</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodeType.html">nodeType</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodeValue.html">nodeValue</a></li>
+      <li class="inherited"><a class="" href="dart-html/EventTarget/on.html">on</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onAbort.html">onAbort</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onBeforeCopy.html">onBeforeCopy</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onBeforeCut.html">onBeforeCut</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onBeforePaste.html">onBeforePaste</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onBlur.html">onBlur</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onCanPlay.html">onCanPlay</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onCanPlayThrough.html">onCanPlayThrough</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onChange.html">onChange</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onClick.html">onClick</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onContextMenu.html">onContextMenu</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onCopy.html">onCopy</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onCut.html">onCut</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onDoubleClick.html">onDoubleClick</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onDrag.html">onDrag</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onDragEnd.html">onDragEnd</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onDragEnter.html">onDragEnter</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onDragLeave.html">onDragLeave</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onDragOver.html">onDragOver</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onDragStart.html">onDragStart</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onDrop.html">onDrop</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onDurationChange.html">onDurationChange</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onEmptied.html">onEmptied</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onEnded.html">onEnded</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onError.html">onError</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onFocus.html">onFocus</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onFullscreenChange.html">onFullscreenChange</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onFullscreenError.html">onFullscreenError</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onInput.html">onInput</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onInvalid.html">onInvalid</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onKeyDown.html">onKeyDown</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onKeyPress.html">onKeyPress</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onKeyUp.html">onKeyUp</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onLoad.html">onLoad</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onLoadedData.html">onLoadedData</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onLoadedMetadata.html">onLoadedMetadata</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onMouseDown.html">onMouseDown</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onMouseEnter.html">onMouseEnter</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onMouseLeave.html">onMouseLeave</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onMouseMove.html">onMouseMove</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onMouseOut.html">onMouseOut</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onMouseOver.html">onMouseOver</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onMouseUp.html">onMouseUp</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onMouseWheel.html">onMouseWheel</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onPaste.html">onPaste</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onPause.html">onPause</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onPlay.html">onPlay</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onPlaying.html">onPlaying</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onPointerLockChange.html">onPointerLockChange</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onPointerLockError.html">onPointerLockError</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onRateChange.html">onRateChange</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onReadyStateChange.html">onReadyStateChange</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onReset.html">onReset</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onResize.html">onResize</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onScroll.html">onScroll</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onSearch.html">onSearch</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onSecurityPolicyViolation.html">onSecurityPolicyViolation</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onSeeked.html">onSeeked</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onSeeking.html">onSeeking</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onSelect.html">onSelect</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onSelectionChange.html">onSelectionChange</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onSelectStart.html">onSelectStart</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onStalled.html">onStalled</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onSubmit.html">onSubmit</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onSuspend.html">onSuspend</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onTimeUpdate.html">onTimeUpdate</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onTouchCancel.html">onTouchCancel</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onTouchEnd.html">onTouchEnd</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onTouchMove.html">onTouchMove</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onTouchStart.html">onTouchStart</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/onVisibilityChange.html">onVisibilityChange</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onVolumeChange.html">onVolumeChange</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/onWaiting.html">onWaiting</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/ownerDocument.html">ownerDocument</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/parent.html">parent</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/parentNode.html">parentNode</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/pointerLockElement.html">pointerLockElement</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/preferredStylesheetSet.html">preferredStylesheetSet</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/previousNode.html">previousNode</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/readyState.html">readyState</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/referrer.html">referrer</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/rootElement.html">rootElement</a></li>
+      <li class="inherited"><a class="" href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/selectedStylesheetSet.html">selectedStylesheetSet</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/styleSheets.html">styleSheets</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/supportsRegister.html">supportsRegister</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/supportsRegisterElement.html">supportsRegisterElement</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/text.html">text</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/timeline.html">timeline</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/title.html">title</a></li>
+      <li><a class="" href="dart-html/HtmlDocument/visibilityState.html">visibilityState</a></li>
+      <li class="inherited"><a class="" href="dart-html/Document/window.html">window</a></li>
+    
+      <li class="section-title inherited"><a href="dart-html/HtmlDocument-class.html#operators">Operators</a></li>
+      <li class="inherited"><a class="" href="dart-html/EventTarget/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="dart-html/HtmlDocument-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"q><a class="" href="dart-html/EventTarget/addEventListener.html">addEventListener</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/adoptNode.html">adoptNode</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/append.html">append</a></li>
+      <liq><a class="" href="dart-html/HtmlDocument/caretRangeFromPoint.html">caretRangeFromPoint</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/clone.html">clone</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/contains.html">contains</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/createDocumentFragment.html">createDocumentFragment</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/createElement.html">createElement</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/createElementNS.html">createElementNS</a></li>
+      <liq><a class="" href="dart-html/HtmlDocument/createElementUpgrader.html">createElementUpgrader</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/createRange.html">createRange</a></li>
+      <li class="inherited"q><a class="" href="dart-html/EventTarget/dispatchEvent.html">dispatchEvent</a></li>
+      <liq><a class="" href="dart-html/HtmlDocument/elementFromPoint.html">elementFromPoint</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/execCommand.html">execCommand</a></li>
+      <liq><a class="" href="dart-html/HtmlDocument/exitFullscreen.html">exitFullscreen</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/exitPointerLock.html">exitPointerLock</a></li>
+      <liq><a class="" href="dart-html/HtmlDocument/getCssCanvasContext.html">getCssCanvasContext</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/getElementById.html">getElementById</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/getElementsByClassName.html">getElementsByClassName</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/getElementsByName.html">getElementsByName</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/getElementsByTagName.html">getElementsByTagName</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/hasChildNodes.html">hasChildNodes</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/importNode.html">importNode</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/insertAllBefore.html">insertAllBefore</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/insertBefore.html">insertBefore</a></li>
+      <li class="inherited"q><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"q><a class="deprecated" href="dart-html/Document/query.html">query</a></li>
+      <li class="inherited"q><a class="deprecated" href="dart-html/Document/queryAll.html">queryAll</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/queryCommandEnabled.html">queryCommandEnabled</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/queryCommandIndeterm.html">queryCommandIndeterm</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/queryCommandState.html">queryCommandState</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/queryCommandSupported.html">queryCommandSupported</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/queryCommandValue.html">queryCommandValue</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/querySelector.html">querySelector</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/querySelectorAll.html">querySelectorAll</a></li>
+      <liq><a class="deprecated" href="dart-html/HtmlDocument/register.html">register</a></li>
+      <liq><a class="" href="dart-html/HtmlDocument/registerElement.html">registerElement</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/remove.html">remove</a></li>
+      <li class="inherited"q><a class="" href="dart-html/EventTarget/removeEventListener.html">removeEventListener</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/replaceWith.html">replaceWith</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/toString.html">toString</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Document/transformDocumentToTreeView.html">transformDocumentToTreeView</a></li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+        <div>
+          <ol class="annotation-list">
+            <li>Experimental()</li>
+          </ol>
+        </div>
+        <span class="returntype">void</span>
+        <span class="name ">registerElement</span>(<wbr><span class="parameter" id="registerElement-param-tag"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">tag</span></span>, <span class="parameter" id="registerElement-param-customElementClass"><span class="type-annotation"><a class="" href="dart-core/Type-class.html">Type</a></span> <span class="parameter-name">customElementClass</span></span>, {<span class="parameter" id="registerElement-param-extendsTag"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">extendsTag</span></span>})
+    </section>
+
+    <section class="desc markdown">
+    
+        <p>Register a custom subclass of Element to be instantiatable by the DOM.</p>
+<p>This is necessary to allow the construction of any custom elements.</p>
+<p>The class being registered must either subclass HtmlElement or SvgElement.
+If they subclass these directly then they can be used as:</p>
+<pre class="prettyprint lang-dart"><code>class FooElement extends HtmlElement{
+   void created() {
+     print('FooElement created!');
+   }
+}
+
+main() {
+  document.registerElement('x-foo', FooElement);
+  var myFoo = new Element.tag('x-foo');
+  // prints 'FooElement created!' to the console.
+}
+</code></pre>
+<p>The custom element can also be instantiated via HTML using the syntax
+<code>&lt;x-foo&gt;&lt;/x-foo&gt;</code></p>
+<p>Other elements can be subclassed as well:</p>
+<pre class="prettyprint lang-dart"><code>class BarElement extends InputElement{
+   void created() {
+     print('BarElement created!');
+   }
+}
+
+main() {
+  document.registerElement('x-bar', BarElement);
+  var myBar = new Element.tag('input', 'x-bar');
+  // prints 'BarElement created!' to the console.
+}
+</code></pre>
+<p>This custom element can also be instantiated via HTML using the syntax
+<code>&lt;input is="x-bar"&gt;&lt;/input&gt;</code></p>
+    
+    </section>
+
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">@Experimental()
+/**
+ * Register a custom subclass of Element to be instantiatable by the DOM.
+ *
+ * This is necessary to allow the construction of any custom elements.
+ *
+ * The class being registered must either subclass HtmlElement or SvgElement.
+ * If they subclass these directly then they can be used as:
+ *
+ *     class FooElement extends HtmlElement{
+ *        void created() {
+ *          print(&apos;FooElement created!&apos;);
+ *        }
+ *     }
+ *
+ *     main() {
+ *       document.registerElement(&apos;x-foo&apos;, FooElement);
+ *       var myFoo = new Element.tag(&apos;x-foo&apos;);
+ *       // prints &apos;FooElement created!&apos; to the console.
+ *     }
+ *
+ * The custom element can also be instantiated via HTML using the syntax
+ * `&lt;x-foo&gt;&lt;/x-foo&gt;`
+ *
+ * Other elements can be subclassed as well:
+ *
+ *     class BarElement extends InputElement{
+ *        void created() {
+ *          print(&apos;BarElement created!&apos;);
+ *        }
+ *     }
+ *
+ *     main() {
+ *       document.registerElement(&apos;x-bar&apos;, BarElement);
+ *       var myBar = new Element.tag(&apos;input&apos;, &apos;x-bar&apos;);
+ *       // prints &apos;BarElement created!&apos; to the console.
+ *     }
+ *
+ * This custom element can also be instantiated via HTML using the syntax
+ * `&lt;input is=&quot;x-bar&quot;&gt;&lt;/input&gt;`
+ *
+ */
+void registerElement(String tag, Type customElementClass,
+    {String extendsTag}) {
+  // Figure out which DOM class is being extended from the user&apos;s Dart class.
+  var classMirror = reflectClass(customElementClass);
+
+  var locationUri = classMirror.location.sourceUri.toString();
+  if (locationUri == &apos;dart:html&apos; || locationUri == &apos;dart:svg&apos;) {
+    throw new DomException.jsInterop(&quot;HierarchyRequestError: Cannot register an existing dart:html or dart:svg type.&quot;);
+  }
+
+  if (classMirror.isAbstract) {
+    throw new DomException.jsInterop(&quot;HierarchyRequestError: Cannot register an abstract class.&quot;);
+  }
+
+  var jsClassName = _getJSClassName(classMirror);
+  if (jsClassName == null) {
+    // Only components derived from HTML* can be extended.
+    throw new DomException.jsInterop(&quot;HierarchyRequestError: Only HTML elements can be customized.&quot;);
+  }
+
+  var customClassType = _getDartHtmlClassName(classMirror);
+
+  if (extendsTag != null) {
+    var nativeElement = document.createElement(extendsTag);
+
+    // Trying to extend a native element is it the Dart class consistent with the
+    // extendsTag?
+    if (nativeElement.runtimeType != customClassType.reflectedType) {
+      var nativeElementClassMirror = reflectClass(nativeElement.runtimeType);
+      var customClassNativeElement = MirrorSystem.getName(customClassType.simpleName);
+      var extendsNativeElement = MirrorSystem.getName(nativeElementClassMirror.simpleName);
+      throw new DomException.jsInterop(&quot;HierarchyRequestError: Custom class type ($customClassNativeElement) and extendsTag class ($extendsNativeElement) don&apos;t match .&quot;);
+    }
+  } else if (customClassType.reflectedType != HtmlElement &amp;&amp; customClassType.reflectedType != svg.SvgElement) {
+    var customClassName = MirrorSystem.getName(classMirror.simpleName);
+    var customClassElement = MirrorSystem.getName(customClassType.simpleName);
+    throw new DomException.jsInterop(&quot;HierarchyRequestError: Custom element $customClassName is a native $customClassElement should be derived from HtmlElement or SvgElement.&quot;);
+  }
+
+  if (_hasCreatedConstructor(classMirror)) {
+    // Start the hookup the JS way create an &lt;x-foo&gt; element that extends the
+    // &lt;x-base&gt; custom element. Inherit its prototype and signal what tag is
+    // inherited:
+    //
+    //     var myProto = Object.create(HTMLElement.prototype);
+    //     var myElement = document.registerElement(&apos;x-foo&apos;, {prototype: myProto});
+    var baseElement = js.JsNative.getProperty(js.context, jsClassName);
+    if (baseElement == null) {
+      // Couldn&apos;t find the HTML element so use a generic one.
+      baseElement = js.JsNative.getProperty(js.context, &apos;HTMLElement&apos;);
+    }
+    var elemProto = js.JsNative.callMethod(js.JsNative.getProperty(js.context, &apos;Object&apos;), &quot;create&quot;, [js.JsNative.getProperty(baseElement, &apos;prototype&apos;)]);
+
+    // Remember for any upgrading done in wrap_jso.
+    addCustomElementType(tag, customElementClass, extendsTag);
+
+    // TODO(terry): Hack to stop recursion re-creating custom element when the
+    //              created() constructor of the custom element does e.g.,
+    //
+    //                  MyElement.created() : super.created() {
+    //                    this.innerHtml = &quot;&lt;b&gt;I&apos;m an x-foo-with-markup!&lt;/b&gt;&quot;;
+    //                  }
+    //
+    //              sanitizing causes custom element to created recursively
+    //              until stack overflow.
+    //
+    //              See https://github.com/dart-lang/sdk/issues/23666
+    int creating = 0;
+
+    // If any JS code is hooked we want to call it too.
+    var oldCreatedCallback = elemProto[&apos;createdCallback&apos;];
+    var oldAttributeChangedCallback = elemProto[&apos;attributeChangedCallback&apos;];
+    var oldAttachedCallback = elemProto[&apos;attachedCallback&apos;];
+    var oldDetachedCallback = elemProto[&apos;detachedCallback&apos;];
+
+    // TODO(jacobr): warning:
+    elemProto[&apos;createdCallback&apos;] = js.JsNative.withThis(($this) {
+      if (_getJSClassName(reflectClass(customElementClass).superclass) != null &amp;&amp; creating &lt; 2) {
+        creating++;
+
+        var dartClass;
+        try {
+          if (extendsTag != null) {
+            // If we&apos;re extending a native element then create that element.
+            // Then upgrade that element to the customElementClass through
+            // normal flow.
+            dartClass = document.createElement(extendsTag);
+            js.setDartHtmlWrapperFor($this, dartClass);
+            dartClass.blink_jsObject = $this;
+          }
+
+          // Upgrade to the CustomElement Dart class.
+          dartClass = _blink.Blink_Utils.constructElement(customElementClass, $this);
+        } catch (e) {
+          // Got a problem make it an HtmlElement and rethrow the error.
+          dartClass = HtmlElement.internalCreateHtmlElement();
+          // We need to remember the JS object (because constructElement failed
+          // it normally sets up the blink_jsObject.
+          dartClass.blink_jsObject = $this;
+
+          // Mark to only try this once don&apos;t try upgrading from HtmlElement
+          // to the user&apos;s Dart class - we had a problem.
+          dartClass._badUpgrade();
+          throw e;
+        } finally {
+          // Need to remember the Dart class that was created for this custom so
+          // return it and setup the blink_jsObject to the $this that we&apos;ll be working
+          // with as we talk to blink.
+          js.setDartHtmlWrapperFor($this, dartClass);
+
+          creating--;
+        }
+      }
+
+      if (oldCreatedCallback != null)
+        oldCreatedCallback.apply([], thisArg: unwrap_jso($this));
+    });
+    elemProto[&apos;attributeChangedCallback&apos;] = new js.JsFunction.withThis(($this, attrName, oldVal, newVal) {
+      $this.attributeChanged(attrName, oldVal, newVal);
+
+      if (oldAttributeChangedCallback != null)
+        oldAttributeChangedCallback.apply([], thisArg: unwrap_jso($this));
+    });
+    elemProto[&apos;attachedCallback&apos;] = new js.JsFunction.withThis(($this) {
+      $this.attached();
+
+      if (oldAttachedCallback != null)
+        oldAttachedCallback.apply([], thisArg: unwrap_jso($this));
+    });
+    elemProto[&apos;detachedCallback&apos;] = new js.JsFunction.withThis(($this) {
+      $this.detached();
+
+      if (oldDetachedCallback != null)
+        oldDetachedCallback.apply([], thisArg: unwrap_jso($this));
+    });
+    // document.registerElement(&apos;x-foo&apos;, {prototype: elemProto, extends: extendsTag});
+    var jsMap = new js.JsObject.jsify({&apos;prototype&apos;: elemProto, &apos;extends&apos;: extendsTag});
+    js.JsNative.callMethod(js.JsNative.getProperty(js.context, &apos;document&apos;), &apos;registerElement&apos;, [tag, jsMap]);
+  }
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          Dart SDK 1.13.0-dev.7.5
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.5-dev -->
+</body>
+
+</html>

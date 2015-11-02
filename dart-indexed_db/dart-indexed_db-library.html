@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dart:indexed_db library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+
+  <meta name="description" content="dart:indexed_db library API docs, for the Dart programming language.">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">Dart SDK</a></li>
+            <li class="self-crumb">dart:indexed_db</li>
+          </ol>
+          <div class="self-name">dart:indexed_db</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">Dart SDK</a></li>
+          <li class="self-crumb">dart:indexed_db</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <div class="kind">library</div> dart:indexed_db
+          </h1>
+        </div>
+        <div class="radio" style='float: right;'>
+          Inherited members:
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-show" checked>
+            SHOW
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-dim">
+            DIM
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-hide">
+            HIDE
+          </label>
+        </div>
+        <ul class="subnav">
+          <li><a href="dart-indexed_db/dart-indexed_db-library.html#properties">Properties</a></li>
+          <li><a href="dart-indexed_db/dart-indexed_db-library.html#classes">Classes</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">Dart SDK</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="index.html">Libraries</a></li>
+      <li><a href="dart-async/dart-async-library.html">dart:async</a></li>
+      <li><a href="dart-collection/dart-collection-library.html">dart:collection</a></li>
+      <li><a href="dart-convert/dart-convert-library.html">dart:convert</a></li>
+      <li><a href="dart-core/dart-core-library.html">dart:core</a></li>
+      <li><a href="dart-developer/dart-developer-library.html">dart:developer</a></li>
+      <li><a href="dart-html/dart-html-library.html">dart:html</a></li>
+      <li><a href="dart-indexed_db/dart-indexed_db-library.html">dart:indexed_db</a></li>
+      <li><a href="dart-io/dart-io-library.html">dart:io</a></li>
+      <li><a href="dart-isolate/dart-isolate-library.html">dart:isolate</a></li>
+      <li><a href="dart-js/dart-js-library.html">dart:js</a></li>
+      <li><a href="dart-math/dart-math-library.html">dart:math</a></li>
+      <li><a href="dart-mirrors/dart-mirrors-library.html">dart:mirrors</a></li>
+      <li><a href="dart-svg/dart-svg-library.html">dart:svg</a></li>
+      <li><a href="dart-typed_data/dart-typed_data-library.html">dart:typed_data</a></li>
+      <li><a href="dart-web_audio/dart-web_audio-library.html">dart:web_audio</a></li>
+      <li><a href="dart-web_gl/dart-web_gl-library.html">dart:web_gl</a></li>
+      <li><a href="dart-web_sql/dart-web_sql-library.html">dart:web_sql</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+        <p>A client-side key-value store with support for indexes.</p>
+<p>Many browsers support IndexedDB—a web standard for
+an indexed database.
+By storing data on the client in an IndexedDB,
+a web app gets some advantages, such as faster performance and persistence.
+To find out which browsers support IndexedDB,
+refer to <a href="http://caniuse.com/#feat=indexeddb">Can I Use?</a></p>
+<p>In IndexedDB, each record is identified by a unique index or key,
+making data retrieval speedy.
+You can store structured data,
+such as images, arrays, and maps using IndexedDB.
+The standard does not specify size limits for individual data items
+or for the database itself, but browsers may impose storage limits.</p>
+<h2>Using indexed_db</h2>
+<p>The classes in this library provide an interface
+to the browser's IndexedDB, if it has one.
+To use this library in your code:</p>
+<pre class="prettyprint lang-dart"><code>import 'dart:indexed_db';
+</code></pre>
+<p>A web app can determine if the browser supports
+IndexedDB with <code>IdbFactory.supported</code>:</p>
+<pre class="prettyprint lang-dart"><code>if (IdbFactory.supported)
+  // Use indexeddb.
+else
+  // Find an alternative.
+</code></pre>
+<p>Access to the browser's IndexedDB is provided by the app's top-level
+<a class="" href="dart-html/Window-class.html">Window</a> object, which your code can refer to with <code>window.indexedDB</code>.
+So, for example,
+here's how to use window.indexedDB to open a database:</p>
+<pre class="prettyprint lang-dart"><code>Future open() {
+  return window.indexedDB.open('myIndexedDB',
+      version: 1,
+      onUpgradeNeeded: _initializeDatabase)
+    .then(_loadFromDB);
+}
+void _initializeDatabase(VersionChangeEvent e) {
+  ...
+}
+Future _loadFromDB(Database db) {
+  ...
+}
+</code></pre>
+<p>All data in an IndexedDB is stored within an <a class="" href="dart-indexed_db/ObjectStore-class.html">ObjectStore</a>.
+To manipulate the database use <a class="" href="dart-indexed_db/Transaction-class.html">Transaction</a>s.</p>
+<h2>Other resources</h2>
+<p>Other options for client-side data storage include:</p><ul><li>
+<p><a class="" href="dart-html/Window/localStorage.html">Window.localStorage</a>—a
+basic mechanism that stores data as a <a class="" href="dart-core/Map-class.html">Map</a>,
+and where both the keys and the values are strings.</p></li><li>
+<p><code>dart:web_sql</code>—a database that can be queried with SQL.</p></li></ul>
+<p>For a tutorial about using the indexed_db library with Dart,
+check out
+<a href="http://www.dartlang.org/docs/tutorials/indexeddb/">Use IndexedDB</a>.</p>
+<p><a href="http://docs.webplatform.org/wiki/apis/indexeddb">IndexedDB reference</a>
+provides wiki-style docs about indexedDB</p>
+    
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="indexed_dbBlinkFunctionMap" class="property">
+          <span class="name"><a class="deprecated" href="dart-indexed_db/indexed_dbBlinkFunctionMap.html">indexed_dbBlinkFunctionMap</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read-only
+  </div>
+</dd>
+        <dt id="indexed_dbBlinkMap" class="property">
+          <span class="name"><a class="deprecated" href="dart-indexed_db/indexed_dbBlinkMap.html">indexed_dbBlinkMap</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read-only
+  </div>
+</dd>
+      </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="Cursor">
+          <span class="name "><a class="" href="dart-indexed_db/Cursor-class.html">Cursor</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="CursorWithValue">
+          <span class="name "><a class="" href="dart-indexed_db/CursorWithValue-class.html">CursorWithValue</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Database">
+          <span class="name "><a class="" href="dart-indexed_db/Database-class.html">Database</a></span>
+        </dt>
+        <dd>
+          <p>An indexed database object for storing client-side data
+in web apps.</p>
+        </dd>
+        <dt id="IdbFactory">
+          <span class="name "><a class="" href="dart-indexed_db/IdbFactory-class.html">IdbFactory</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Index">
+          <span class="name "><a class="" href="dart-indexed_db/Index-class.html">Index</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="KeyRange">
+          <span class="name "><a class="" href="dart-indexed_db/KeyRange-class.html">KeyRange</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="ObjectStore">
+          <span class="name "><a class="" href="dart-indexed_db/ObjectStore-class.html">ObjectStore</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="OpenDBRequest">
+          <span class="name "><a class="" href="dart-indexed_db/OpenDBRequest-class.html">OpenDBRequest</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Request">
+          <span class="name "><a class="" href="dart-indexed_db/Request-class.html">Request</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="Transaction">
+          <span class="name "><a class="" href="dart-indexed_db/Transaction-class.html">Transaction</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="VersionChangeEvent">
+          <span class="name "><a class="" href="dart-indexed_db/VersionChangeEvent-class.html">VersionChangeEvent</a></span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>dart:indexed_db</h5>
+    <ol>
+    
+    
+      <li class="section-title"><a href="dart-indexed_db/dart-indexed_db-library.html#properties">Properties</a></li>
+      <li><a class="deprecated" href="dart-indexed_db/indexed_dbBlinkFunctionMap.html">indexed_dbBlinkFunctionMap</a></li>
+      <li><a class="deprecated" href="dart-indexed_db/indexed_dbBlinkMap.html">indexed_dbBlinkMap</a></li>
+    
+    
+    
+      <li class="section-title"><a href="dart-indexed_db/dart-indexed_db-library.html#classes">Classes</a></li>
+      <li><a class="" href="dart-indexed_db/Cursor-class.html">Cursor</a></li>
+      <li><a class="" href="dart-indexed_db/CursorWithValue-class.html">CursorWithValue</a></li>
+      <li><a class="" href="dart-indexed_db/Database-class.html">Database</a></li>
+      <li><a class="" href="dart-indexed_db/IdbFactory-class.html">IdbFactory</a></li>
+      <li><a class="" href="dart-indexed_db/Index-class.html">Index</a></li>
+      <li><a class="" href="dart-indexed_db/KeyRange-class.html">KeyRange</a></li>
+      <li><a class="" href="dart-indexed_db/ObjectStore-class.html">ObjectStore</a></li>
+      <li><a class="" href="dart-indexed_db/OpenDBRequest-class.html">OpenDBRequest</a></li>
+      <li><a class="" href="dart-indexed_db/Request-class.html">Request</a></li>
+      <li><a class="" href="dart-indexed_db/Transaction-class.html">Transaction</a></li>
+      <li><a class="" href="dart-indexed_db/VersionChangeEvent-class.html">VersionChangeEvent</a></li>
+    
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          Dart SDK 1.13.0-dev.7.5
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.5-dev -->
+</body>
+
+</html>

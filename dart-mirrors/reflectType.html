@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>reflectType function - dart:mirrors library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+
+  <meta name="description" content="API docs for the reflectType function from the dart:mirrors library, for the Dart programming language.">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">Dart SDK</a></li>
+            <li><a href="dart-mirrors/dart-mirrors-library.html">dart:mirrors</a></li>
+            <li class="self-crumb">reflectType</li>
+          </ol>
+          <div class="self-name">reflectType</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">Dart SDK</a></li>
+          <li><a href="dart-mirrors/dart-mirrors-library.html">dart:mirrors</a></li>
+          <li class="self-crumb">reflectType</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <div class="kind">function</div> reflectType
+          </h1>
+        </div>
+        <div class="radio" style='float: right;'>
+          Inherited members:
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-show" checked>
+            SHOW
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-dim">
+            DIM
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-hide">
+            HIDE
+          </label>
+        </div>
+        <ul class="subnav">
+          <li><a href="dart-mirrors/reflectType.html#source">Source</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">Dart SDK</a></h5>
+    <h5><a href="dart-mirrors/dart-mirrors-library.html">dart:mirrors</a></h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="dart-mirrors/dart-mirrors-library.html#functions">Functions</a></li>
+      <li><a class="" href="dart-mirrors/currentMirrorSystem.html">currentMirrorSystem</a></li>
+      <li><a class="" href="dart-mirrors/reflect.html">reflect</a></li>
+      <li><a class="" href="dart-mirrors/reflectClass.html">reflectClass</a></li>
+      <li><a class="" href="dart-mirrors/reflectType.html">reflectType</a></li>
+    
+    
+      <li class="section-title"><a href="dart-mirrors/dart-mirrors-library.html#classes">Classes</a></li>
+      <li><a class="" href="dart-mirrors/ClassMirror-class.html">ClassMirror</a></li>
+      <li><a class="" href="dart-mirrors/ClosureMirror-class.html">ClosureMirror</a></li>
+      <li><a class="" href="dart-mirrors/CombinatorMirror-class.html">CombinatorMirror</a></li>
+      <li><a class="" href="dart-mirrors/Comment-class.html">Comment</a></li>
+      <li><a class="" href="dart-mirrors/DeclarationMirror-class.html">DeclarationMirror</a></li>
+      <li><a class="" href="dart-mirrors/FunctionTypeMirror-class.html">FunctionTypeMirror</a></li>
+      <li><a class="" href="dart-mirrors/InstanceMirror-class.html">InstanceMirror</a></li>
+      <li><a class="" href="dart-mirrors/IsolateMirror-class.html">IsolateMirror</a></li>
+      <li><a class="" href="dart-mirrors/LibraryDependencyMirror-class.html">LibraryDependencyMirror</a></li>
+      <li><a class="" href="dart-mirrors/LibraryMirror-class.html">LibraryMirror</a></li>
+      <li><a class="" href="dart-mirrors/MethodMirror-class.html">MethodMirror</a></li>
+      <li><a class="" href="dart-mirrors/Mirror-class.html">Mirror</a></li>
+      <li><a class="" href="dart-mirrors/MirrorsUsed-class.html">MirrorsUsed</a></li>
+      <li><a class="" href="dart-mirrors/MirrorSystem-class.html">MirrorSystem</a></li>
+      <li><a class="" href="dart-mirrors/ObjectMirror-class.html">ObjectMirror</a></li>
+      <li><a class="" href="dart-mirrors/ParameterMirror-class.html">ParameterMirror</a></li>
+      <li><a class="" href="dart-mirrors/SourceLocation-class.html">SourceLocation</a></li>
+      <li><a class="" href="dart-mirrors/TypedefMirror-class.html">TypedefMirror</a></li>
+      <li><a class="" href="dart-mirrors/TypeMirror-class.html">TypeMirror</a></li>
+      <li><a class="" href="dart-mirrors/TypeVariableMirror-class.html">TypeVariableMirror</a></li>
+      <li><a class="" href="dart-mirrors/VariableMirror-class.html">VariableMirror</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+        <span class="returntype"><a class="" href="dart-mirrors/TypeMirror-class.html">TypeMirror</a></span>
+        <span class="name ">reflectType</span>(<wbr><span class="parameter" id="reflectType-param-key"><span class="type-annotation"><a class="" href="dart-core/Type-class.html">Type</a></span> <span class="parameter-name">key</span></span>)
+    </section>
+
+    <section class="desc markdown">
+    
+        <p>Reflects the type represented by <code>key</code>.</p>
+<p>If <code>key</code> is not an instance of <a class="" href="dart-core/Type-class.html">Type</a>, then this function throws an
+<a class="" href="dart-core/ArgumentError-class.html">ArgumentError</a>.</p>
+<p>Note that since one cannot obtain a <a class="" href="dart-core/Type-class.html">Type</a> object from another isolate, this
+function can only be used to obtain type mirrors on types of the current
+isolate.</p>
+    
+    </section>
+
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">external TypeMirror reflectType(Type key);</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          Dart SDK 1.13.0-dev.7.5
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.5-dev -->
+</body>
+
+</html>

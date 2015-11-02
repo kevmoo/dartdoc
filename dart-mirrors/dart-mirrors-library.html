@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dart:mirrors library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+
+  <meta name="description" content="dart:mirrors library API docs, for the Dart programming language.">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">Dart SDK</a></li>
+            <li class="self-crumb">dart:mirrors</li>
+          </ol>
+          <div class="self-name">dart:mirrors</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">Dart SDK</a></li>
+          <li class="self-crumb">dart:mirrors</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <div class="kind">library</div> dart:mirrors
+          </h1>
+        </div>
+        <div class="radio" style='float: right;'>
+          Inherited members:
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-show" checked>
+            SHOW
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-dim">
+            DIM
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-hide">
+            HIDE
+          </label>
+        </div>
+        <ul class="subnav">
+          <li><a href="dart-mirrors/dart-mirrors-library.html#functions">Functions</a></li>
+          <li><a href="dart-mirrors/dart-mirrors-library.html#classes">Classes</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">Dart SDK</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="index.html">Libraries</a></li>
+      <li><a href="dart-async/dart-async-library.html">dart:async</a></li>
+      <li><a href="dart-collection/dart-collection-library.html">dart:collection</a></li>
+      <li><a href="dart-convert/dart-convert-library.html">dart:convert</a></li>
+      <li><a href="dart-core/dart-core-library.html">dart:core</a></li>
+      <li><a href="dart-developer/dart-developer-library.html">dart:developer</a></li>
+      <li><a href="dart-html/dart-html-library.html">dart:html</a></li>
+      <li><a href="dart-indexed_db/dart-indexed_db-library.html">dart:indexed_db</a></li>
+      <li><a href="dart-io/dart-io-library.html">dart:io</a></li>
+      <li><a href="dart-isolate/dart-isolate-library.html">dart:isolate</a></li>
+      <li><a href="dart-js/dart-js-library.html">dart:js</a></li>
+      <li><a href="dart-math/dart-math-library.html">dart:math</a></li>
+      <li><a href="dart-mirrors/dart-mirrors-library.html">dart:mirrors</a></li>
+      <li><a href="dart-svg/dart-svg-library.html">dart:svg</a></li>
+      <li><a href="dart-typed_data/dart-typed_data-library.html">dart:typed_data</a></li>
+      <li><a href="dart-web_audio/dart-web_audio-library.html">dart:web_audio</a></li>
+      <li><a href="dart-web_gl/dart-web_gl-library.html">dart:web_gl</a></li>
+      <li><a href="dart-web_sql/dart-web_sql-library.html">dart:web_sql</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+        <p>Basic reflection in Dart,
+with support for introspection and dynamic invocation.</p>
+<p><em>Introspection</em> is that subset of reflection by which a running
+program can examine its own structure. For example, a function
+that prints out the names of all the members of an arbitrary object.</p>
+<p><em>Dynamic invocation</em> refers the ability to evaluate code that
+has not been literally specified at compile time, such as calling a method
+whose name is provided as an argument (because it is looked up
+in a database, or provided interactively by the user).</p>
+<h2>How to interpret this library's documentation</h2>
+<p>As a rule, the names of Dart declarations are represented using
+instances of class <a class="" href="dart-core/Symbol-class.html">Symbol</a>. Whenever the doc speaks of an object <em>s</em>
+of class <a class="" href="dart-core/Symbol-class.html">Symbol</a> denoting a name, it means the string that
+was used to construct <em>s</em>.</p>
+<p>The documentation frequently abuses notation with
+Dart pseudo-code such as <code>o.x(a)</code>, where
+o and a are defined to be objects; what is actually meant in these
+cases is <code>o'.x(a')</code> where <em>o'</em> and <em>a'</em> are Dart variables
+bound to <em>o</em> and <em>a</em> respectively. Furthermore, <em>o'</em> and <em>a'</em>
+are assumed to be fresh variables (meaning that they are
+distinct from any other variables in the program).</p>
+<p>Sometimes the documentation refers to <em>serializable</em> objects.
+An object is serializable across isolates if and only if it is an instance of
+num, bool, String, a list of objects that are serializable
+across isolates, or a map with keys and values that are all serializable across
+isolates.</p>
+<h2>Status: Unstable</h2>
+<p>The dart:mirrors library is unstable and its API might change slightly as a
+result of user feedback. This library is platform dependent and therefore it
+has implementations for both dart2js and the Dart VM. Both are under
+development and may not support all operations yet.</p>
+    
+    </section>
+
+
+
+
+    <section class="summary offset-anchor" id="functions">
+      <h2>Functions</h2>
+
+      <dl class="callables">
+        <dt id="currentMirrorSystem" class="callable">
+          <span class="name "><a class="" href="dart-mirrors/currentMirrorSystem.html">currentMirrorSystem</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-mirrors/MirrorSystem-class.html">MirrorSystem</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p>Returns a <a class="" href="dart-mirrors/MirrorSystem-class.html">MirrorSystem</a> for the current isolate.</p>
+        </dd>
+        <dt id="reflect" class="callable">
+          <span class="name "><a class="" href="dart-mirrors/reflect.html">reflect</a></span><span class="signature">(<wbr><span class="parameter" id="reflect-param-reflectee"><span class="type-annotation"><a class="" href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">reflectee</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-mirrors/InstanceMirror-class.html">InstanceMirror</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p>Reflects an instance.<a href="dart-mirrors/reflect.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="reflectClass" class="callable">
+          <span class="name "><a class="" href="dart-mirrors/reflectClass.html">reflectClass</a></span><span class="signature">(<wbr><span class="parameter" id="reflectClass-param-key"><span class="type-annotation"><a class="" href="dart-core/Type-class.html">Type</a></span> <span class="parameter-name">key</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-mirrors/ClassMirror-class.html">ClassMirror</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p>Reflects a class declaration.<a href="dart-mirrors/reflectClass.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="reflectType" class="callable">
+          <span class="name "><a class="" href="dart-mirrors/reflectType.html">reflectType</a></span><span class="signature">(<wbr><span class="parameter" id="reflectType-param-key"><span class="type-annotation"><a class="" href="dart-core/Type-class.html">Type</a></span> <span class="parameter-name">key</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-mirrors/TypeMirror-class.html">TypeMirror</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p>Reflects the type represented by <code>key</code>.<a href="dart-mirrors/reflectType.html">&hellip;</a>
+</p>
+        </dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="ClassMirror">
+          <span class="name "><a class="" href="dart-mirrors/ClassMirror-class.html">ClassMirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/ClassMirror-class.html">ClassMirror</a> reflects a Dart language class.</p>
+        </dd>
+        <dt id="ClosureMirror">
+          <span class="name "><a class="" href="dart-mirrors/ClosureMirror-class.html">ClosureMirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/ClosureMirror-class.html">ClosureMirror</a> reflects a closure.<a href="dart-mirrors/ClosureMirror-class.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="CombinatorMirror">
+          <span class="name "><a class="" href="dart-mirrors/CombinatorMirror-class.html">CombinatorMirror</a></span>
+        </dt>
+        <dd>
+          <p>A mirror on a show/hide combinator declared on a library dependency.</p>
+        </dd>
+        <dt id="Comment">
+          <span class="name "><a class="" href="dart-mirrors/Comment-class.html">Comment</a></span>
+        </dt>
+        <dd>
+          <p>Class used for encoding comments as metadata annotations.</p>
+        </dd>
+        <dt id="DeclarationMirror">
+          <span class="name "><a class="" href="dart-mirrors/DeclarationMirror-class.html">DeclarationMirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/DeclarationMirror-class.html">DeclarationMirror</a> reflects some entity declared in a Dart program.</p>
+        </dd>
+        <dt id="FunctionTypeMirror">
+          <span class="name "><a class="" href="dart-mirrors/FunctionTypeMirror-class.html">FunctionTypeMirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/FunctionTypeMirror-class.html">FunctionTypeMirror</a> represents the type of a function in the
+Dart language.</p>
+        </dd>
+        <dt id="InstanceMirror">
+          <span class="name "><a class="" href="dart-mirrors/InstanceMirror-class.html">InstanceMirror</a></span>
+        </dt>
+        <dd>
+          <p>An <a class="" href="dart-mirrors/InstanceMirror-class.html">InstanceMirror</a> reflects an instance of a Dart language object.</p>
+        </dd>
+        <dt id="IsolateMirror">
+          <span class="name "><a class="" href="dart-mirrors/IsolateMirror-class.html">IsolateMirror</a></span>
+        </dt>
+        <dd>
+          <p>An <a class="" href="dart-mirrors/IsolateMirror-class.html">IsolateMirror</a> reflects an isolate.</p>
+        </dd>
+        <dt id="LibraryDependencyMirror">
+          <span class="name "><a class="" href="dart-mirrors/LibraryDependencyMirror-class.html">LibraryDependencyMirror</a></span>
+        </dt>
+        <dd>
+          <p>A mirror on an import or export declaration.</p>
+        </dd>
+        <dt id="LibraryMirror">
+          <span class="name "><a class="" href="dart-mirrors/LibraryMirror-class.html">LibraryMirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/LibraryMirror-class.html">LibraryMirror</a> reflects a Dart language library, providing
+access to the variables, functions, and classes of the
+library.</p>
+        </dd>
+        <dt id="MethodMirror">
+          <span class="name "><a class="" href="dart-mirrors/MethodMirror-class.html">MethodMirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/MethodMirror-class.html">MethodMirror</a> reflects a Dart language function, method,
+constructor, getter, or setter.</p>
+        </dd>
+        <dt id="Mirror">
+          <span class="name "><a class="" href="dart-mirrors/Mirror-class.html">Mirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/Mirror-class.html">Mirror</a> reflects some Dart language entity.<a href="dart-mirrors/Mirror-class.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="MirrorsUsed">
+          <span class="name "><a class="" href="dart-mirrors/MirrorsUsed-class.html">MirrorsUsed</a></span>
+        </dt>
+        <dd>
+          <p>Annotation describing how "dart:mirrors" is used (EXPERIMENTAL).<a href="dart-mirrors/MirrorsUsed-class.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="MirrorSystem">
+          <span class="name "><a class="" href="dart-mirrors/MirrorSystem-class.html">MirrorSystem</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/MirrorSystem-class.html">MirrorSystem</a> is the main interface used to reflect on a set of
+associated libraries.<a href="dart-mirrors/MirrorSystem-class.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="ObjectMirror">
+          <span class="name "><a class="" href="dart-mirrors/ObjectMirror-class.html">ObjectMirror</a></span>
+        </dt>
+        <dd>
+          <p>An <a class="" href="dart-mirrors/ObjectMirror-class.html">ObjectMirror</a> is a common superinterface of <a class="" href="dart-mirrors/InstanceMirror-class.html">InstanceMirror</a>,
+<a class="" href="dart-mirrors/ClassMirror-class.html">ClassMirror</a>, and <a class="" href="dart-mirrors/LibraryMirror-class.html">LibraryMirror</a> that represents their shared
+functionality.<a href="dart-mirrors/ObjectMirror-class.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="ParameterMirror">
+          <span class="name "><a class="" href="dart-mirrors/ParameterMirror-class.html">ParameterMirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/ParameterMirror-class.html">ParameterMirror</a> reflects a Dart formal parameter declaration.</p>
+        </dd>
+        <dt id="SourceLocation">
+          <span class="name "><a class="" href="dart-mirrors/SourceLocation-class.html">SourceLocation</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/SourceLocation-class.html">SourceLocation</a> describes the span of an entity in Dart source code.</p>
+        </dd>
+        <dt id="TypedefMirror">
+          <span class="name "><a class="" href="dart-mirrors/TypedefMirror-class.html">TypedefMirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/TypedefMirror-class.html">TypedefMirror</a> represents a typedef in a Dart language program.</p>
+        </dd>
+        <dt id="TypeMirror">
+          <span class="name "><a class="" href="dart-mirrors/TypeMirror-class.html">TypeMirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/TypeMirror-class.html">TypeMirror</a> reflects a Dart language class, typedef,
+function type or type variable.</p>
+        </dd>
+        <dt id="TypeVariableMirror">
+          <span class="name "><a class="" href="dart-mirrors/TypeVariableMirror-class.html">TypeVariableMirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/TypeVariableMirror-class.html">TypeVariableMirror</a> represents a type parameter of a generic type.</p>
+        </dd>
+        <dt id="VariableMirror">
+          <span class="name "><a class="" href="dart-mirrors/VariableMirror-class.html">VariableMirror</a></span>
+        </dt>
+        <dd>
+          <p>A <a class="" href="dart-mirrors/VariableMirror-class.html">VariableMirror</a> reflects a Dart language variable declaration.</p>
+        </dd>
+      </dl>
+    </section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>dart:mirrors</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="dart-mirrors/dart-mirrors-library.html#functions">Functions</a></li>
+      <li><a class="" href="dart-mirrors/currentMirrorSystem.html">currentMirrorSystem</a></li>
+      <li><a class="" href="dart-mirrors/reflect.html">reflect</a></li>
+      <li><a class="" href="dart-mirrors/reflectClass.html">reflectClass</a></li>
+      <li><a class="" href="dart-mirrors/reflectType.html">reflectType</a></li>
+    
+    
+      <li class="section-title"><a href="dart-mirrors/dart-mirrors-library.html#classes">Classes</a></li>
+      <li><a class="" href="dart-mirrors/ClassMirror-class.html">ClassMirror</a></li>
+      <li><a class="" href="dart-mirrors/ClosureMirror-class.html">ClosureMirror</a></li>
+      <li><a class="" href="dart-mirrors/CombinatorMirror-class.html">CombinatorMirror</a></li>
+      <li><a class="" href="dart-mirrors/Comment-class.html">Comment</a></li>
+      <li><a class="" href="dart-mirrors/DeclarationMirror-class.html">DeclarationMirror</a></li>
+      <li><a class="" href="dart-mirrors/FunctionTypeMirror-class.html">FunctionTypeMirror</a></li>
+      <li><a class="" href="dart-mirrors/InstanceMirror-class.html">InstanceMirror</a></li>
+      <li><a class="" href="dart-mirrors/IsolateMirror-class.html">IsolateMirror</a></li>
+      <li><a class="" href="dart-mirrors/LibraryDependencyMirror-class.html">LibraryDependencyMirror</a></li>
+      <li><a class="" href="dart-mirrors/LibraryMirror-class.html">LibraryMirror</a></li>
+      <li><a class="" href="dart-mirrors/MethodMirror-class.html">MethodMirror</a></li>
+      <li><a class="" href="dart-mirrors/Mirror-class.html">Mirror</a></li>
+      <li><a class="" href="dart-mirrors/MirrorsUsed-class.html">MirrorsUsed</a></li>
+      <li><a class="" href="dart-mirrors/MirrorSystem-class.html">MirrorSystem</a></li>
+      <li><a class="" href="dart-mirrors/ObjectMirror-class.html">ObjectMirror</a></li>
+      <li><a class="" href="dart-mirrors/ParameterMirror-class.html">ParameterMirror</a></li>
+      <li><a class="" href="dart-mirrors/SourceLocation-class.html">SourceLocation</a></li>
+      <li><a class="" href="dart-mirrors/TypedefMirror-class.html">TypedefMirror</a></li>
+      <li><a class="" href="dart-mirrors/TypeMirror-class.html">TypeMirror</a></li>
+      <li><a class="" href="dart-mirrors/TypeVariableMirror-class.html">TypeVariableMirror</a></li>
+      <li><a class="" href="dart-mirrors/VariableMirror-class.html">VariableMirror</a></li>
+    
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          Dart SDK 1.13.0-dev.7.5
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.5-dev -->
+</body>
+
+</html>

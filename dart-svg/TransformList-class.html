@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TransformList class - dart:svg library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+
+  <meta name="description" content="API docs for the TransformList class from the dart:svg library, for the Dart programming language.">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">Dart SDK</a></li>
+            <li><a href="dart-svg/dart-svg-library.html">dart:svg</a></li>
+            <li class="self-crumb">TransformList</li>
+          </ol>
+          <div class="self-name">TransformList</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">Dart SDK</a></li>
+          <li><a href="dart-svg/dart-svg-library.html">dart:svg</a></li>
+          <li class="self-crumb">TransformList</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <div class="kind">class</div> TransformList
+          </h1>
+        </div>
+        <div class="radio" style='float: right;'>
+          Inherited members:
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-show" checked>
+            SHOW
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-dim">
+            DIM
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-hide">
+            HIDE
+          </label>
+        </div>
+        <ul class="subnav">
+          <li><a href="dart-svg/TransformList-class.html#static-methods">Static Methods</a></li>
+          <li><a href="dart-svg/TransformList-class.html#instance-properties">Properties</a></li>
+          <li><a href="dart-svg/TransformList-class.html#constructors">Constructors</a></li>
+          <li><a href="dart-svg/TransformList-class.html#operators">Operators</a></li>
+          <li><a href="dart-svg/TransformList-class.html#instance-methods">Methods</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">Dart SDK</a></h5>
+    <h5><a href="dart-svg/dart-svg-library.html">dart:svg</a></h5>
+
+    <ol>
+    
+    
+      <li class="section-title"><a href="dart-svg/dart-svg-library.html#properties">Properties</a></li>
+      <li><a class="deprecated" href="dart-svg/svgBlinkFunctionMap.html">svgBlinkFunctionMap</a></li>
+      <li><a class="deprecated" href="dart-svg/svgBlinkMap.html">svgBlinkMap</a></li>
+    
+    
+    
+      <li class="section-title"><a href="dart-svg/dart-svg-library.html#classes">Classes</a></li>
+      <li><a class="" href="dart-svg/AElement-class.html">AElement</a></li>
+      <li><a class="" href="dart-svg/AltGlyphElement-class.html">AltGlyphElement</a></li>
+      <li><a class="" href="dart-svg/Angle-class.html">Angle</a></li>
+      <li><a class="" href="dart-svg/AnimatedAngle-class.html">AnimatedAngle</a></li>
+      <li><a class="" href="dart-svg/AnimatedBoolean-class.html">AnimatedBoolean</a></li>
+      <li><a class="" href="dart-svg/AnimatedEnumeration-class.html">AnimatedEnumeration</a></li>
+      <li><a class="" href="dart-svg/AnimatedInteger-class.html">AnimatedInteger</a></li>
+      <li><a class="" href="dart-svg/AnimatedLength-class.html">AnimatedLength</a></li>
+      <li><a class="" href="dart-svg/AnimatedLengthList-class.html">AnimatedLengthList</a></li>
+      <li><a class="" href="dart-svg/AnimatedNumber-class.html">AnimatedNumber</a></li>
+      <li><a class="" href="dart-svg/AnimatedNumberList-class.html">AnimatedNumberList</a></li>
+      <li><a class="" href="dart-svg/AnimatedPreserveAspectRatio-class.html">AnimatedPreserveAspectRatio</a></li>
+      <li><a class="" href="dart-svg/AnimatedRect-class.html">AnimatedRect</a></li>
+      <li><a class="" href="dart-svg/AnimatedString-class.html">AnimatedString</a></li>
+      <li><a class="" href="dart-svg/AnimatedTransformList-class.html">AnimatedTransformList</a></li>
+      <li><a class="" href="dart-svg/AnimateElement-class.html">AnimateElement</a></li>
+      <li><a class="" href="dart-svg/AnimateMotionElement-class.html">AnimateMotionElement</a></li>
+      <li><a class="" href="dart-svg/AnimateTransformElement-class.html">AnimateTransformElement</a></li>
+      <li><a class="" href="dart-svg/AnimationElement-class.html">AnimationElement</a></li>
+      <li><a class="" href="dart-svg/CircleElement-class.html">CircleElement</a></li>
+      <li><a class="" href="dart-svg/ClipPathElement-class.html">ClipPathElement</a></li>
+      <li><a class="" href="dart-svg/DefsElement-class.html">DefsElement</a></li>
+      <li><a class="" href="dart-svg/DescElement-class.html">DescElement</a></li>
+      <li><a class="" href="dart-svg/DiscardElement-class.html">DiscardElement</a></li>
+      <li><a class="" href="dart-svg/EllipseElement-class.html">EllipseElement</a></li>
+      <li><a class="" href="dart-svg/FEBlendElement-class.html">FEBlendElement</a></li>
+      <li><a class="" href="dart-svg/FEColorMatrixElement-class.html">FEColorMatrixElement</a></li>
+      <li><a class="" href="dart-svg/FEComponentTransferElement-class.html">FEComponentTransferElement</a></li>
+      <li><a class="" href="dart-svg/FECompositeElement-class.html">FECompositeElement</a></li>
+      <li><a class="" href="dart-svg/FEConvolveMatrixElement-class.html">FEConvolveMatrixElement</a></li>
+      <li><a class="" href="dart-svg/FEDiffuseLightingElement-class.html">FEDiffuseLightingElement</a></li>
+      <li><a class="" href="dart-svg/FEDisplacementMapElement-class.html">FEDisplacementMapElement</a></li>
+      <li><a class="" href="dart-svg/FEDistantLightElement-class.html">FEDistantLightElement</a></li>
+      <li><a class="" href="dart-svg/FEFloodElement-class.html">FEFloodElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncAElement-class.html">FEFuncAElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncBElement-class.html">FEFuncBElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncGElement-class.html">FEFuncGElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncRElement-class.html">FEFuncRElement</a></li>
+      <li><a class="" href="dart-svg/FEGaussianBlurElement-class.html">FEGaussianBlurElement</a></li>
+      <li><a class="" href="dart-svg/FEImageElement-class.html">FEImageElement</a></li>
+      <li><a class="" href="dart-svg/FEMergeElement-class.html">FEMergeElement</a></li>
+      <li><a class="" href="dart-svg/FEMergeNodeElement-class.html">FEMergeNodeElement</a></li>
+      <li><a class="" href="dart-svg/FEMorphologyElement-class.html">FEMorphologyElement</a></li>
+      <li><a class="" href="dart-svg/FEOffsetElement-class.html">FEOffsetElement</a></li>
+      <li><a class="" href="dart-svg/FEPointLightElement-class.html">FEPointLightElement</a></li>
+      <li><a class="" href="dart-svg/FESpecularLightingElement-class.html">FESpecularLightingElement</a></li>
+      <li><a class="" href="dart-svg/FESpotLightElement-class.html">FESpotLightElement</a></li>
+      <li><a class="" href="dart-svg/FETileElement-class.html">FETileElement</a></li>
+      <li><a class="" href="dart-svg/FETurbulenceElement-class.html">FETurbulenceElement</a></li>
+      <li><a class="" href="dart-svg/FilterElement-class.html">FilterElement</a></li>
+      <li><a class="" href="dart-svg/FilterPrimitiveStandardAttributes-class.html">FilterPrimitiveStandardAttributes</a></li>
+      <li><a class="" href="dart-svg/FitToViewBox-class.html">FitToViewBox</a></li>
+      <li><a class="" href="dart-svg/ForeignObjectElement-class.html">ForeignObjectElement</a></li>
+      <li><a class="" href="dart-svg/GElement-class.html">GElement</a></li>
+      <li><a class="" href="dart-svg/GeometryElement-class.html">GeometryElement</a></li>
+      <li><a class="" href="dart-svg/GraphicsElement-class.html">GraphicsElement</a></li>
+      <li><a class="" href="dart-svg/ImageElement-class.html">ImageElement</a></li>
+      <li><a class="" href="dart-svg/Length-class.html">Length</a></li>
+      <li><a class="" href="dart-svg/LengthList-class.html">LengthList</a></li>
+      <li><a class="" href="dart-svg/LinearGradientElement-class.html">LinearGradientElement</a></li>
+      <li><a class="" href="dart-svg/LineElement-class.html">LineElement</a></li>
+      <li><a class="" href="dart-svg/MarkerElement-class.html">MarkerElement</a></li>
+      <li><a class="" href="dart-svg/MaskElement-class.html">MaskElement</a></li>
+      <li><a class="" href="dart-svg/Matrix-class.html">Matrix</a></li>
+      <li><a class="" href="dart-svg/MetadataElement-class.html">MetadataElement</a></li>
+      <li><a class="" href="dart-svg/Number-class.html">Number</a></li>
+      <li><a class="" href="dart-svg/NumberList-class.html">NumberList</a></li>
+      <li><a class="" href="dart-svg/PathElement-class.html">PathElement</a></li>
+      <li><a class="" href="dart-svg/PathSeg-class.html">PathSeg</a></li>
+      <li><a class="" href="dart-svg/PathSegArcAbs-class.html">PathSegArcAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegArcRel-class.html">PathSegArcRel</a></li>
+      <li><a class="" href="dart-svg/PathSegClosePath-class.html">PathSegClosePath</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicAbs-class.html">PathSegCurvetoCubicAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicRel-class.html">PathSegCurvetoCubicRel</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicSmoothAbs-class.html">PathSegCurvetoCubicSmoothAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicSmoothRel-class.html">PathSegCurvetoCubicSmoothRel</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticAbs-class.html">PathSegCurvetoQuadraticAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticRel-class.html">PathSegCurvetoQuadraticRel</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticSmoothAbs-class.html">PathSegCurvetoQuadraticSmoothAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticSmoothRel-class.html">PathSegCurvetoQuadraticSmoothRel</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoAbs-class.html">PathSegLinetoAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoHorizontalAbs-class.html">PathSegLinetoHorizontalAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoHorizontalRel-class.html">PathSegLinetoHorizontalRel</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoRel-class.html">PathSegLinetoRel</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoVerticalAbs-class.html">PathSegLinetoVerticalAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoVerticalRel-class.html">PathSegLinetoVerticalRel</a></li>
+      <li><a class="" href="dart-svg/PathSegList-class.html">PathSegList</a></li>
+      <li><a class="" href="dart-svg/PathSegMovetoAbs-class.html">PathSegMovetoAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegMovetoRel-class.html">PathSegMovetoRel</a></li>
+      <li><a class="" href="dart-svg/PatternElement-class.html">PatternElement</a></li>
+      <li><a class="" href="dart-svg/Point-class.html">Point</a></li>
+      <li><a class="" href="dart-svg/PointList-class.html">PointList</a></li>
+      <li><a class="" href="dart-svg/PolygonElement-class.html">PolygonElement</a></li>
+      <li><a class="" href="dart-svg/PolylineElement-class.html">PolylineElement</a></li>
+      <li><a class="" href="dart-svg/PreserveAspectRatio-class.html">PreserveAspectRatio</a></li>
+      <li><a class="" href="dart-svg/RadialGradientElement-class.html">RadialGradientElement</a></li>
+      <li><a class="" href="dart-svg/Rect-class.html">Rect</a></li>
+      <li><a class="" href="dart-svg/RectElement-class.html">RectElement</a></li>
+      <li><a class="" href="dart-svg/RenderingIntent-class.html">RenderingIntent</a></li>
+      <li><a class="" href="dart-svg/ScriptElement-class.html">ScriptElement</a></li>
+      <li><a class="" href="dart-svg/SetElement-class.html">SetElement</a></li>
+      <li><a class="" href="dart-svg/StopElement-class.html">StopElement</a></li>
+      <li><a class="" href="dart-svg/StringList-class.html">StringList</a></li>
+      <li><a class="" href="dart-svg/StyleElement-class.html">StyleElement</a></li>
+      <li><a class="" href="dart-svg/SvgElement-class.html">SvgElement</a></li>
+      <li><a class="" href="dart-svg/SvgSvgElement-class.html">SvgSvgElement</a></li>
+      <li><a class="" href="dart-svg/SwitchElement-class.html">SwitchElement</a></li>
+      <li><a class="" href="dart-svg/SymbolElement-class.html">SymbolElement</a></li>
+      <li><a class="" href="dart-svg/Tests-class.html">Tests</a></li>
+      <li><a class="" href="dart-svg/TextContentElement-class.html">TextContentElement</a></li>
+      <li><a class="" href="dart-svg/TextElement-class.html">TextElement</a></li>
+      <li><a class="" href="dart-svg/TextPathElement-class.html">TextPathElement</a></li>
+      <li><a class="" href="dart-svg/TextPositioningElement-class.html">TextPositioningElement</a></li>
+      <li><a class="" href="dart-svg/TitleElement-class.html">TitleElement</a></li>
+      <li><a class="" href="dart-svg/Transform-class.html">Transform</a></li>
+      <li><a class="" href="dart-svg/TransformList-class.html">TransformList</a></li>
+      <li><a class="" href="dart-svg/TSpanElement-class.html">TSpanElement</a></li>
+      <li><a class="" href="dart-svg/UnitTypes-class.html">UnitTypes</a></li>
+      <li><a class="" href="dart-svg/UriReference-class.html">UriReference</a></li>
+      <li><a class="" href="dart-svg/UseElement-class.html">UseElement</a></li>
+      <li><a class="" href="dart-svg/ViewElement-class.html">ViewElement</a></li>
+      <li><a class="" href="dart-svg/ViewSpec-class.html">ViewSpec</a></li>
+      <li><a class="" href="dart-svg/ZoomAndPan-class.html">ZoomAndPan</a></li>
+      <li><a class="" href="dart-svg/ZoomEvent-class.html">ZoomEvent</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+        <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li><a class="" href="dart-core/Object-class.html">Object</a></li>
+          <li><a class="deprecated" href="dart-html/DartHtmlDomObject-class.html">DartHtmlDomObject</a></li>
+          <li>TransformList</li>
+        </ul></dd>
+
+        <dt>Implements</dt>
+        <dd>
+          <ul class="comma-separated clazz-relationships">
+            <li><a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</li>
+          </ul>
+        </dd>
+
+        <dt>Mixes-in</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a class="" href="dart-collection/ListMixin-class.html">ListMixin</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</li>
+          <li><a class="" href="dart-html/ImmutableListMixin-class.html">ImmutableListMixin</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</li>
+        </ul></dd>
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>DocsEditable()</li>
+          <li>DomName('SVGTransformList')</li>
+          <li>Unstable()</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="static-methods">
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="internalCreateTransformList" class="callable">
+          <span class="name deprecated"><a class="deprecated" href="dart-svg/TransformList/internalCreateTransformList.html">internalCreateTransformList</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/TransformList-class.html">TransformList</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="TransformList.internal_" class="callable">
+          <span class="name"><a class="" href="dart-svg/TransformList/TransformList.internal_.html">TransformList.internal_</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="blink_jsObject" class="property inherited">
+          <span class="name"><a class="deprecated" href="dart-html/DartHtmlDomObject/blink_jsObject.html">blink_jsObject</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-js/JsObject-class.html">JsObject</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The underlying JS DOM object.</p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="first" class="property">
+          <span class="name"><a class="" href="dart-svg/TransformList/first.html">first</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read-only
+  </div>
+</dd>
+        <dt id="hashCode" class="property">
+          <span class="name"><a class="" href="dart-svg/TransformList/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read-only
+  </div>
+</dd>
+        <dt id="isEmpty" class="property inherited">
+          <span class="name"><a class="" href="dart-collection/ListMixin/isEmpty.html">isEmpty</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="isNotEmpty" class="property inherited">
+          <span class="name"><a class="" href="dart-collection/ListMixin/isNotEmpty.html">isNotEmpty</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="iterator" class="property inherited">
+          <span class="name"><a class="" href="dart-html/ImmutableListMixin/iterator.html">iterator</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/Iterator-class.html">Iterator</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="last" class="property">
+          <span class="name"><a class="" href="dart-svg/TransformList/last.html">last</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read-only
+  </div>
+</dd>
+        <dt id="length" class="property">
+          <span class="name"><a class="" href="dart-svg/TransformList/length.html">length</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="numberOfItems" class="property">
+          <span class="name"><a class="" href="dart-svg/TransformList/numberOfItems.html">numberOfItems</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read-only
+  </div>
+</dd>
+        <dt id="reversed" class="property inherited">
+          <span class="name"><a class="" href="dart-collection/ListMixin/reversed.html">reversed</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a class="" href="dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/Type-class.html">Type</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="single" class="property">
+          <span class="name"><a class="" href="dart-svg/TransformList/single.html">single</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read-only
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p>The equality operator.<a href="dart-svg/TransformList/operator_equals.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="operator []" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/operator_get.html">operator []</a></span><span class="signature">(<wbr><span class="parameter" id="[]-param-index"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p>Returns the object at the given <code>index</code> in the list
+or throws a <code>RangeError</code> if <code>index</code> is out of bounds.</p>
+        </dd>
+        <dt id="operator []=" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/operator_put.html">operator []=</a></span><span class="signature">(<wbr><span class="parameter" id="[]=-param-index"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>, <span class="parameter" id="[]=-param-value"><span class="type-annotation"><a class="" href="dart-svg/Transform-class.html">Transform</a></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p>Sets the value at the given <code>index</code> in the list to <code>value</code>
+or throws a <code>RangeError</code> if <code>index</code> is out of bounds.</p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="add" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/add.html">add</a></span><span class="signature">(<wbr><span class="parameter" id="add-param-value"><span class="type-annotation"><a class="" href="dart-svg/Transform-class.html">Transform</a></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Adds <code>value</code> to the end of this list,
+extending the length by one.<a href="dart-html/ImmutableListMixin/add.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="addAll" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/addAll.html">addAll</a></span><span class="signature">(<wbr><span class="parameter" id="addAll-param-iterable"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span> <span class="parameter-name">iterable</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Appends all objects of <code>iterable</code> to the end of this list.<a href="dart-html/ImmutableListMixin/addAll.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="any" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/any.html">any</a></span><span class="signature">(<wbr><span class="parameter" id="any-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Checks whether any element of this iterable satisfies <code>test</code>.<a href="dart-collection/ListMixin/any.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="appendItem" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/appendItem.html">appendItem</a></span><span class="signature">(<wbr><span class="parameter" id="appendItem-param-item"><span class="type-annotation"><a class="" href="dart-svg/Transform-class.html">Transform</a></span> <span class="parameter-name">item</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="asMap" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/asMap.html">asMap</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Map-class.html">Map</a>&lt;<a class="" href="dart-core/int-class.html">int</a>, <a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns an unmodifiable <code>Map</code> view of <code>this</code>.<a href="dart-collection/ListMixin/asMap.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="clear" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/clear.html">clear</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p>Removes all objects from this list;
+the length of the list becomes zero.<a href="dart-svg/TransformList/clear.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="consolidate" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/consolidate.html">consolidate</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="contains" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/contains.html">contains</a></span><span class="signature">(<wbr><span class="parameter" id="contains-param-element"><span class="type-annotation"><a class="" href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">element</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns true if the collection contains an element equal to <code>element</code>.<a href="dart-collection/ListMixin/contains.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="createSvgTransformFromMatrix" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/createSvgTransformFromMatrix.html">createSvgTransformFromMatrix</a></span><span class="signature">(<wbr><span class="parameter" id="createSvgTransformFromMatrix-param-matrix"><span class="type-annotation"><a class="" href="dart-svg/Matrix-class.html">Matrix</a></span> <span class="parameter-name">matrix</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="elementAt" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/elementAt.html">elementAt</a></span><span class="signature">(<wbr><span class="parameter" id="elementAt-param-index"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p>Returns the <code>index</code>th element.<a href="dart-svg/TransformList/elementAt.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="every" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/every.html">every</a></span><span class="signature">(<wbr><span class="parameter" id="every-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Checks whether every element of this iterable satisfies <code>test</code>.<a href="dart-collection/ListMixin/every.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="expand" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/expand.html">expand</a></span><span class="signature">(<wbr><span class="parameter" id="expand-param-f"><span class="type-annotation">Iterable</span> <span class="parameter-name">f</span>(<span class="parameter" id="f-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; </span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Expands each element of this <code>Iterable</code>into zero or more elements.<a href="dart-collection/ListMixin/expand.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="fillRange" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/fillRange.html">fillRange</a></span><span class="signature">(<wbr><span class="parameter" id="fillRange-param-start"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">start</span></span>, <span class="parameter" id="fillRange-param-end"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">end</span></span>, [<span class="parameter" id="fillRange-param-fillValue"><span class="type-annotation"><a class="" href="dart-svg/Transform-class.html">Transform</a></span> <span class="parameter-name">fillValue</span></span>])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Sets the objects in the range <code>start</code> inclusive to <code>end</code> exclusive
+to the given <code>fillValue</code>.<a href="dart-html/ImmutableListMixin/fillRange.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="firstWhere" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/firstWhere.html">firstWhere</a></span><span class="signature">(<wbr><span class="parameter" id="firstWhere-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>, {<span class="parameter" id="firstWhere-param-orElse"><span class="type-annotation">E</span> <span class="parameter-name">orElse</span>()</span>})
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns the first element that satisfies the given predicate <code>test</code>.<a href="dart-collection/ListMixin/firstWhere.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="fold" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/fold.html">fold</a></span><span class="signature">(<wbr><span class="parameter" id="fold-param-initialValue"><span class="parameter-name">initialValue</span></span>, <span class="parameter" id="fold-param-combine"><span class="type-annotation">dynamic</span> <span class="parameter-name">combine</span>(<span class="parameter" id="combine-param-previousValue"><span class="parameter-name">previousValue</span></span>, <span class="parameter" id="combine-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Reduces a collection to a single value by iteratively combining each
+element of the collection with an existing value<a href="dart-collection/ListMixin/fold.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="forEach" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/forEach.html">forEach</a></span><span class="signature">(<wbr><span class="parameter" id="forEach-param-action"><span class="type-annotation">void</span> <span class="parameter-name">action</span>(<span class="parameter" id="action-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Applies the function <code>f</code> to each element of this collection in iteration
+order.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getItem" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/getItem.html">getItem</a></span><span class="signature">(<wbr><span class="parameter" id="getItem-param-index"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="getRange" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/getRange.html">getRange</a></span><span class="signature">(<wbr><span class="parameter" id="getRange-param-start"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">start</span></span>, <span class="parameter" id="getRange-param-end"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">end</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns an <code>Iterable</code> that iterates over the objects in the range
+<code>start</code> inclusive to <code>end</code> exclusive.<a href="dart-collection/ListMixin/getRange.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="indexOf" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/indexOf.html">indexOf</a></span><span class="signature">(<wbr><span class="parameter" id="indexOf-param-element"><span class="type-annotation"><a class="" href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">element</span></span>, [<span class="parameter" id="indexOf-param-startIndex"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">startIndex</span> = <span class="default-value">0</span></span>])
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns the first index of <code>element</code> in this list.<a href="dart-collection/ListMixin/indexOf.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="initialize" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/initialize.html">initialize</a></span><span class="signature">(<wbr><span class="parameter" id="initialize-param-item"><span class="type-annotation"><a class="" href="dart-svg/Transform-class.html">Transform</a></span> <span class="parameter-name">item</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="insert" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/insert.html">insert</a></span><span class="signature">(<wbr><span class="parameter" id="insert-param-index"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>, <span class="parameter" id="insert-param-element"><span class="type-annotation"><a class="" href="dart-svg/Transform-class.html">Transform</a></span> <span class="parameter-name">element</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Inserts the object at position <code>index</code> in this list.<a href="dart-html/ImmutableListMixin/insert.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="insertAll" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/insertAll.html">insertAll</a></span><span class="signature">(<wbr><span class="parameter" id="insertAll-param-index"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>, <span class="parameter" id="insertAll-param-iterable"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span> <span class="parameter-name">iterable</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Inserts all objects of <code>iterable</code> at position <code>index</code> in this list.<a href="dart-html/ImmutableListMixin/insertAll.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="insertItemBefore" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/insertItemBefore.html">insertItemBefore</a></span><span class="signature">(<wbr><span class="parameter" id="insertItemBefore-param-item"><span class="type-annotation"><a class="" href="dart-svg/Transform-class.html">Transform</a></span> <span class="parameter-name">item</span></span>, <span class="parameter" id="insertItemBefore-param-index"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="join" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/join.html">join</a></span><span class="signature">(<wbr>[<span class="parameter" id="join-param-separator"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">separator</span> = <span class="default-value">""</span></span>])
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Converts each element to a <code>String</code> and concatenates the strings.<a href="dart-collection/ListMixin/join.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="lastIndexOf" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/lastIndexOf.html">lastIndexOf</a></span><span class="signature">(<wbr><span class="parameter" id="lastIndexOf-param-element"><span class="type-annotation"><a class="" href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">element</span></span>, [<span class="parameter" id="lastIndexOf-param-startIndex"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">startIndex</span></span>])
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns the last index in the list <code>a</code> of the given <code>element</code>, starting
+the search at index <code>startIndex</code> to 0.
+Returns -1 if <code>element</code> is not found.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="lastWhere" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/lastWhere.html">lastWhere</a></span><span class="signature">(<wbr><span class="parameter" id="lastWhere-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>, {<span class="parameter" id="lastWhere-param-orElse"><span class="type-annotation">E</span> <span class="parameter-name">orElse</span>()</span>})
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns the last element that satisfies the given predicate <code>test</code>.<a href="dart-collection/ListMixin/lastWhere.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="map" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/map.html">map</a></span><span class="signature">(<wbr><span class="parameter" id="map-param-f"><span class="type-annotation">dynamic</span> <span class="parameter-name">f</span>(<span class="parameter" id="f-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; </span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a new lazy <code>Iterable</code> with elements that are created by
+calling <code>f</code> on each element of this <code>Iterable</code> in iteration order.<a href="dart-collection/ListMixin/map.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name "><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a class="" href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> is invoked when users invoke a non-existent method
+on an object. The name of the method and the arguments of the
+invocation are passed to <a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> in an <a class="" href="dart-core/Invocation-class.html">Invocation</a>.
+If <a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> returns a value, that value becomes the result of
+the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="reduce" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/reduce.html">reduce</a></span><span class="signature">(<wbr><span class="parameter" id="reduce-param-combine"><span class="type-annotation">E</span> <span class="parameter-name">combine</span>(<span class="parameter" id="combine-param-previousValue"><span class="type-annotation">E</span> <span class="parameter-name">previousValue</span></span>, <span class="parameter" id="combine-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Reduces a collection to a single value by iteratively combining elements
+of the collection using the provided function.<a href="dart-collection/ListMixin/reduce.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="remove" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/remove.html">remove</a></span><span class="signature">(<wbr><span class="parameter" id="remove-param-object"><span class="type-annotation"><a class="" href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">object</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Removes the first occurence of <code>value</code> from this list.<a href="dart-html/ImmutableListMixin/remove.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeAt" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/removeAt.html">removeAt</a></span><span class="signature">(<wbr><span class="parameter" id="removeAt-param-pos"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">pos</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Removes the object at position <code>index</code> from this list.<a href="dart-html/ImmutableListMixin/removeAt.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeItem" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/removeItem.html">removeItem</a></span><span class="signature">(<wbr><span class="parameter" id="removeItem-param-index"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="removeLast" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/removeLast.html">removeLast</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Pops and returns the last object in this list.<a href="dart-html/ImmutableListMixin/removeLast.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeRange" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/removeRange.html">removeRange</a></span><span class="signature">(<wbr><span class="parameter" id="removeRange-param-start"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">start</span></span>, <span class="parameter" id="removeRange-param-end"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">end</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Removes the objects in the range <code>start</code> inclusive to <code>end</code> exclusive.<a href="dart-html/ImmutableListMixin/removeRange.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeWhere" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/removeWhere.html">removeWhere</a></span><span class="signature">(<wbr><span class="parameter" id="removeWhere-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Removes all objects from this list that satisfy <code>test</code>.<a href="dart-html/ImmutableListMixin/removeWhere.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="replaceItem" class="callable">
+          <span class="name "><a class="" href="dart-svg/TransformList/replaceItem.html">replaceItem</a></span><span class="signature">(<wbr><span class="parameter" id="replaceItem-param-item"><span class="type-annotation"><a class="" href="dart-svg/Transform-class.html">Transform</a></span> <span class="parameter-name">item</span></span>, <span class="parameter" id="replaceItem-param-index"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="replaceRange" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/replaceRange.html">replaceRange</a></span><span class="signature">(<wbr><span class="parameter" id="replaceRange-param-start"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">start</span></span>, <span class="parameter" id="replaceRange-param-end"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">end</span></span>, <span class="parameter" id="replaceRange-param-iterable"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span> <span class="parameter-name">iterable</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Removes the objects in the range <code>start</code> inclusive to <code>end</code> exclusive
+and inserts the contents of <code>replacement</code> in its place.<a href="dart-html/ImmutableListMixin/replaceRange.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="retainWhere" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/retainWhere.html">retainWhere</a></span><span class="signature">(<wbr><span class="parameter" id="retainWhere-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Removes all objects from this list that fail to satisfy <code>test</code>.<a href="dart-html/ImmutableListMixin/retainWhere.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setAll" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/setAll.html">setAll</a></span><span class="signature">(<wbr><span class="parameter" id="setAll-param-index"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>, <span class="parameter" id="setAll-param-iterable"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span> <span class="parameter-name">iterable</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Overwrites objects of <code>this</code> with the objects of <code>iterable</code>, starting
+at position <code>index</code> in this list.<a href="dart-html/ImmutableListMixin/setAll.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setRange" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/setRange.html">setRange</a></span><span class="signature">(<wbr><span class="parameter" id="setRange-param-start"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">start</span></span>, <span class="parameter" id="setRange-param-end"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">end</span></span>, <span class="parameter" id="setRange-param-iterable"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span> <span class="parameter-name">iterable</span></span>, [<span class="parameter" id="setRange-param-skipCount"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">skipCount</span> = <span class="default-value">0</span></span>])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Copies the objects of <code>iterable</code>, skipping <code>skipCount</code> objects first,
+into the range <code>start</code>, inclusive, to <code>end</code>, exclusive, of the list.<a href="dart-html/ImmutableListMixin/setRange.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="shuffle" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/shuffle.html">shuffle</a></span><span class="signature">(<wbr>[<span class="parameter" id="shuffle-param-random"><span class="type-annotation"><a class="" href="dart-math/Random-class.html">Random</a></span> <span class="parameter-name">random</span></span>])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Shuffles the elements of this list randomly.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="singleWhere" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/singleWhere.html">singleWhere</a></span><span class="signature">(<wbr><span class="parameter" id="singleWhere-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Transform-class.html">Transform</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns the single element that satisfies <code>test</code>.<a href="dart-collection/ListMixin/singleWhere.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="skip" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/skip.html">skip</a></span><span class="signature">(<wbr><span class="parameter" id="skip-param-count"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">count</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns an Iterable that provides all but the first <code>count</code> elements.<a href="dart-collection/ListMixin/skip.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="skipWhile" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/skipWhile.html">skipWhile</a></span><span class="signature">(<wbr><span class="parameter" id="skipWhile-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns an Iterable that skips leading elements while <code>test</code> is satisfied.<a href="dart-collection/ListMixin/skipWhile.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="sort" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/ImmutableListMixin/sort.html">sort</a></span><span class="signature">(<wbr>[<span class="parameter" id="sort-param-compare"><span class="type-annotation">int</span> <span class="parameter-name">compare</span>(<span class="parameter" id="compare-param-a"><span class="type-annotation">E</span> <span class="parameter-name">a</span></span>, <span class="parameter" id="compare-param-b"><span class="type-annotation">E</span> <span class="parameter-name">b</span></span>)</span>])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Sorts this list according to the order specified by the <code>compare</code> function.<a href="dart-html/ImmutableListMixin/sort.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="sublist" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/sublist.html">sublist</a></span><span class="signature">(<wbr><span class="parameter" id="sublist-param-start"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">start</span></span>, [<span class="parameter" id="sublist-param-end"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">end</span></span>])
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a new list containing the objects from <code>start</code> inclusive to <code>end</code>
+exclusive.<a href="dart-collection/ListMixin/sublist.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="take" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/take.html">take</a></span><span class="signature">(<wbr><span class="parameter" id="take-param-count"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">count</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a lazy iterable of the <code>count</code> first elements of this iterable.<a href="dart-collection/ListMixin/take.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="takeWhile" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/takeWhile.html">takeWhile</a></span><span class="signature">(<wbr><span class="parameter" id="takeWhile-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a lazy iterable of the leading elements satisfying <code>test</code>.<a href="dart-collection/ListMixin/takeWhile.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toList" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/toList.html">toList</a></span><span class="signature">(<wbr>{<span class="parameter" id="toList-param-growable"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">growable</span>: <span class="default-value">true</span></span>})
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Creates a <code>List</code> containing the elements of this <code>Iterable</code>.<a href="dart-collection/ListMixin/toList.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toSet" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/toSet.html">toSet</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Set-class.html">Set</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Creates a <code>Set</code> containing the same elements as this iterable.<a href="dart-collection/ListMixin/toSet.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a string representation of this object.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="where" class="callable inherited">
+          <span class="name "><a class="" href="dart-collection/ListMixin/where.html">where</a></span><span class="signature">(<wbr><span class="parameter" id="where-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-svg/Transform-class.html">Transform</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a new lazy <code>Iterable</code> with all elements that satisfy the
+predicate <code>test</code>.<a href="dart-collection/ListMixin/where.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>TransformList</h5>
+    <ol>
+    
+    
+      <li class="section-title"><a href="dart-svg/TransformList-class.html#static-methods">Static methods</a></li>
+      <li><a class="deprecated" href="dart-svg/TransformList/internalCreateTransformList.html">internalCreateTransformList</a></li>
+    
+      <li class="section-title"><a href="dart-svg/TransformList-class.html#constructors">Constructors</a></li>
+      <li><a href="dart-svg/TransformList/TransformList.internal_.html">internal_</a></li>
+    
+      <li class="section-title">
+        <a href="dart-svg/TransformList-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a class="deprecated" href="dart-html/DartHtmlDomObject/blink_jsObject.html">blink_jsObject</a></li>
+      <li><a class="" href="dart-svg/TransformList/first.html">first</a></li>
+      <li><a class="" href="dart-svg/TransformList/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a class="" href="dart-collection/ListMixin/isEmpty.html">isEmpty</a></li>
+      <li class="inherited"><a class="" href="dart-collection/ListMixin/isNotEmpty.html">isNotEmpty</a></li>
+      <li class="inherited"><a class="" href="dart-html/ImmutableListMixin/iterator.html">iterator</a></li>
+      <li><a class="" href="dart-svg/TransformList/last.html">last</a></li>
+      <li><a class="" href="dart-svg/TransformList/length.html">length</a></li>
+      <li><a class="" href="dart-svg/TransformList/numberOfItems.html">numberOfItems</a></li>
+      <li class="inherited"><a class="" href="dart-collection/ListMixin/reversed.html">reversed</a></li>
+      <li class="inherited"><a class="" href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li><a class="" href="dart-svg/TransformList/single.html">single</a></li>
+    
+      <li class="section-title"><a href="dart-svg/TransformList-class.html#operators">Operators</a></li>
+      <li><a class="" href="dart-svg/TransformList/operator_equals.html">operator ==</a></li>
+      <li><a class="" href="dart-svg/TransformList/operator_get.html">operator []</a></li>
+      <li><a class="" href="dart-svg/TransformList/operator_put.html">operator []=</a></li>
+    
+      <li class="section-title"><a href="dart-svg/TransformList-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/add.html">add</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/addAll.html">addAll</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/any.html">any</a></li>
+      <liq><a class="" href="dart-svg/TransformList/appendItem.html">appendItem</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/asMap.html">asMap</a></li>
+      <liq><a class="" href="dart-svg/TransformList/clear.html">clear</a></li>
+      <liq><a class="" href="dart-svg/TransformList/consolidate.html">consolidate</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/contains.html">contains</a></li>
+      <liq><a class="" href="dart-svg/TransformList/createSvgTransformFromMatrix.html">createSvgTransformFromMatrix</a></li>
+      <liq><a class="" href="dart-svg/TransformList/elementAt.html">elementAt</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/every.html">every</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/expand.html">expand</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/fillRange.html">fillRange</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/firstWhere.html">firstWhere</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/fold.html">fold</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/forEach.html">forEach</a></li>
+      <liq><a class="" href="dart-svg/TransformList/getItem.html">getItem</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/getRange.html">getRange</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/indexOf.html">indexOf</a></li>
+      <liq><a class="" href="dart-svg/TransformList/initialize.html">initialize</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/insert.html">insert</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/insertAll.html">insertAll</a></li>
+      <liq><a class="" href="dart-svg/TransformList/insertItemBefore.html">insertItemBefore</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/join.html">join</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/lastIndexOf.html">lastIndexOf</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/lastWhere.html">lastWhere</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/map.html">map</a></li>
+      <li class="inherited"q><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/reduce.html">reduce</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/remove.html">remove</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/removeAt.html">removeAt</a></li>
+      <liq><a class="" href="dart-svg/TransformList/removeItem.html">removeItem</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/removeLast.html">removeLast</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/removeRange.html">removeRange</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/removeWhere.html">removeWhere</a></li>
+      <liq><a class="" href="dart-svg/TransformList/replaceItem.html">replaceItem</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/replaceRange.html">replaceRange</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/retainWhere.html">retainWhere</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/setAll.html">setAll</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/setRange.html">setRange</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/shuffle.html">shuffle</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/singleWhere.html">singleWhere</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/skip.html">skip</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/skipWhile.html">skipWhile</a></li>
+      <li class="inherited"q><a class="" href="dart-html/ImmutableListMixin/sort.html">sort</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/sublist.html">sublist</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/take.html">take</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/takeWhile.html">takeWhile</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/toList.html">toList</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/toSet.html">toSet</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/toString.html">toString</a></li>
+      <li class="inherited"q><a class="" href="dart-collection/ListMixin/where.html">where</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          Dart SDK 1.13.0-dev.7.5
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.5-dev -->
+</body>
+
+</html>

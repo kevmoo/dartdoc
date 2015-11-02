@@ -1,0 +1,2682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AElement class - dart:svg library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+
+  <meta name="description" content="API docs for the AElement class from the dart:svg library, for the Dart programming language.">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">Dart SDK</a></li>
+            <li><a href="dart-svg/dart-svg-library.html">dart:svg</a></li>
+            <li class="self-crumb">AElement</li>
+          </ol>
+          <div class="self-name">AElement</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">Dart SDK</a></li>
+          <li><a href="dart-svg/dart-svg-library.html">dart:svg</a></li>
+          <li class="self-crumb">AElement</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <div class="kind">class</div> AElement
+          </h1>
+        </div>
+        <div class="radio" style='float: right;'>
+          Inherited members:
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-show" checked>
+            SHOW
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-dim">
+            DIM
+          </label>
+          <label class='radio-inline'>
+            <input type="radio" name="inherited-view" value="inherited-hide">
+            HIDE
+          </label>
+        </div>
+        <ul class="subnav">
+          <li><a href="dart-svg/AElement-class.html#static-methods">Static Methods</a></li>
+          <li><a href="dart-svg/AElement-class.html#instance-properties">Properties</a></li>
+          <li><a href="dart-svg/AElement-class.html#constructors">Constructors</a></li>
+          <li><a href="dart-svg/AElement-class.html#operators">Operators</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">Dart SDK</a></h5>
+    <h5><a href="dart-svg/dart-svg-library.html">dart:svg</a></h5>
+
+    <ol>
+    
+    
+      <li class="section-title"><a href="dart-svg/dart-svg-library.html#properties">Properties</a></li>
+      <li><a class="deprecated" href="dart-svg/svgBlinkFunctionMap.html">svgBlinkFunctionMap</a></li>
+      <li><a class="deprecated" href="dart-svg/svgBlinkMap.html">svgBlinkMap</a></li>
+    
+    
+    
+      <li class="section-title"><a href="dart-svg/dart-svg-library.html#classes">Classes</a></li>
+      <li><a class="" href="dart-svg/AElement-class.html">AElement</a></li>
+      <li><a class="" href="dart-svg/AltGlyphElement-class.html">AltGlyphElement</a></li>
+      <li><a class="" href="dart-svg/Angle-class.html">Angle</a></li>
+      <li><a class="" href="dart-svg/AnimatedAngle-class.html">AnimatedAngle</a></li>
+      <li><a class="" href="dart-svg/AnimatedBoolean-class.html">AnimatedBoolean</a></li>
+      <li><a class="" href="dart-svg/AnimatedEnumeration-class.html">AnimatedEnumeration</a></li>
+      <li><a class="" href="dart-svg/AnimatedInteger-class.html">AnimatedInteger</a></li>
+      <li><a class="" href="dart-svg/AnimatedLength-class.html">AnimatedLength</a></li>
+      <li><a class="" href="dart-svg/AnimatedLengthList-class.html">AnimatedLengthList</a></li>
+      <li><a class="" href="dart-svg/AnimatedNumber-class.html">AnimatedNumber</a></li>
+      <li><a class="" href="dart-svg/AnimatedNumberList-class.html">AnimatedNumberList</a></li>
+      <li><a class="" href="dart-svg/AnimatedPreserveAspectRatio-class.html">AnimatedPreserveAspectRatio</a></li>
+      <li><a class="" href="dart-svg/AnimatedRect-class.html">AnimatedRect</a></li>
+      <li><a class="" href="dart-svg/AnimatedString-class.html">AnimatedString</a></li>
+      <li><a class="" href="dart-svg/AnimatedTransformList-class.html">AnimatedTransformList</a></li>
+      <li><a class="" href="dart-svg/AnimateElement-class.html">AnimateElement</a></li>
+      <li><a class="" href="dart-svg/AnimateMotionElement-class.html">AnimateMotionElement</a></li>
+      <li><a class="" href="dart-svg/AnimateTransformElement-class.html">AnimateTransformElement</a></li>
+      <li><a class="" href="dart-svg/AnimationElement-class.html">AnimationElement</a></li>
+      <li><a class="" href="dart-svg/CircleElement-class.html">CircleElement</a></li>
+      <li><a class="" href="dart-svg/ClipPathElement-class.html">ClipPathElement</a></li>
+      <li><a class="" href="dart-svg/DefsElement-class.html">DefsElement</a></li>
+      <li><a class="" href="dart-svg/DescElement-class.html">DescElement</a></li>
+      <li><a class="" href="dart-svg/DiscardElement-class.html">DiscardElement</a></li>
+      <li><a class="" href="dart-svg/EllipseElement-class.html">EllipseElement</a></li>
+      <li><a class="" href="dart-svg/FEBlendElement-class.html">FEBlendElement</a></li>
+      <li><a class="" href="dart-svg/FEColorMatrixElement-class.html">FEColorMatrixElement</a></li>
+      <li><a class="" href="dart-svg/FEComponentTransferElement-class.html">FEComponentTransferElement</a></li>
+      <li><a class="" href="dart-svg/FECompositeElement-class.html">FECompositeElement</a></li>
+      <li><a class="" href="dart-svg/FEConvolveMatrixElement-class.html">FEConvolveMatrixElement</a></li>
+      <li><a class="" href="dart-svg/FEDiffuseLightingElement-class.html">FEDiffuseLightingElement</a></li>
+      <li><a class="" href="dart-svg/FEDisplacementMapElement-class.html">FEDisplacementMapElement</a></li>
+      <li><a class="" href="dart-svg/FEDistantLightElement-class.html">FEDistantLightElement</a></li>
+      <li><a class="" href="dart-svg/FEFloodElement-class.html">FEFloodElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncAElement-class.html">FEFuncAElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncBElement-class.html">FEFuncBElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncGElement-class.html">FEFuncGElement</a></li>
+      <li><a class="" href="dart-svg/FEFuncRElement-class.html">FEFuncRElement</a></li>
+      <li><a class="" href="dart-svg/FEGaussianBlurElement-class.html">FEGaussianBlurElement</a></li>
+      <li><a class="" href="dart-svg/FEImageElement-class.html">FEImageElement</a></li>
+      <li><a class="" href="dart-svg/FEMergeElement-class.html">FEMergeElement</a></li>
+      <li><a class="" href="dart-svg/FEMergeNodeElement-class.html">FEMergeNodeElement</a></li>
+      <li><a class="" href="dart-svg/FEMorphologyElement-class.html">FEMorphologyElement</a></li>
+      <li><a class="" href="dart-svg/FEOffsetElement-class.html">FEOffsetElement</a></li>
+      <li><a class="" href="dart-svg/FEPointLightElement-class.html">FEPointLightElement</a></li>
+      <li><a class="" href="dart-svg/FESpecularLightingElement-class.html">FESpecularLightingElement</a></li>
+      <li><a class="" href="dart-svg/FESpotLightElement-class.html">FESpotLightElement</a></li>
+      <li><a class="" href="dart-svg/FETileElement-class.html">FETileElement</a></li>
+      <li><a class="" href="dart-svg/FETurbulenceElement-class.html">FETurbulenceElement</a></li>
+      <li><a class="" href="dart-svg/FilterElement-class.html">FilterElement</a></li>
+      <li><a class="" href="dart-svg/FilterPrimitiveStandardAttributes-class.html">FilterPrimitiveStandardAttributes</a></li>
+      <li><a class="" href="dart-svg/FitToViewBox-class.html">FitToViewBox</a></li>
+      <li><a class="" href="dart-svg/ForeignObjectElement-class.html">ForeignObjectElement</a></li>
+      <li><a class="" href="dart-svg/GElement-class.html">GElement</a></li>
+      <li><a class="" href="dart-svg/GeometryElement-class.html">GeometryElement</a></li>
+      <li><a class="" href="dart-svg/GraphicsElement-class.html">GraphicsElement</a></li>
+      <li><a class="" href="dart-svg/ImageElement-class.html">ImageElement</a></li>
+      <li><a class="" href="dart-svg/Length-class.html">Length</a></li>
+      <li><a class="" href="dart-svg/LengthList-class.html">LengthList</a></li>
+      <li><a class="" href="dart-svg/LinearGradientElement-class.html">LinearGradientElement</a></li>
+      <li><a class="" href="dart-svg/LineElement-class.html">LineElement</a></li>
+      <li><a class="" href="dart-svg/MarkerElement-class.html">MarkerElement</a></li>
+      <li><a class="" href="dart-svg/MaskElement-class.html">MaskElement</a></li>
+      <li><a class="" href="dart-svg/Matrix-class.html">Matrix</a></li>
+      <li><a class="" href="dart-svg/MetadataElement-class.html">MetadataElement</a></li>
+      <li><a class="" href="dart-svg/Number-class.html">Number</a></li>
+      <li><a class="" href="dart-svg/NumberList-class.html">NumberList</a></li>
+      <li><a class="" href="dart-svg/PathElement-class.html">PathElement</a></li>
+      <li><a class="" href="dart-svg/PathSeg-class.html">PathSeg</a></li>
+      <li><a class="" href="dart-svg/PathSegArcAbs-class.html">PathSegArcAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegArcRel-class.html">PathSegArcRel</a></li>
+      <li><a class="" href="dart-svg/PathSegClosePath-class.html">PathSegClosePath</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicAbs-class.html">PathSegCurvetoCubicAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicRel-class.html">PathSegCurvetoCubicRel</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicSmoothAbs-class.html">PathSegCurvetoCubicSmoothAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoCubicSmoothRel-class.html">PathSegCurvetoCubicSmoothRel</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticAbs-class.html">PathSegCurvetoQuadraticAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticRel-class.html">PathSegCurvetoQuadraticRel</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticSmoothAbs-class.html">PathSegCurvetoQuadraticSmoothAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegCurvetoQuadraticSmoothRel-class.html">PathSegCurvetoQuadraticSmoothRel</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoAbs-class.html">PathSegLinetoAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoHorizontalAbs-class.html">PathSegLinetoHorizontalAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoHorizontalRel-class.html">PathSegLinetoHorizontalRel</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoRel-class.html">PathSegLinetoRel</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoVerticalAbs-class.html">PathSegLinetoVerticalAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegLinetoVerticalRel-class.html">PathSegLinetoVerticalRel</a></li>
+      <li><a class="" href="dart-svg/PathSegList-class.html">PathSegList</a></li>
+      <li><a class="" href="dart-svg/PathSegMovetoAbs-class.html">PathSegMovetoAbs</a></li>
+      <li><a class="" href="dart-svg/PathSegMovetoRel-class.html">PathSegMovetoRel</a></li>
+      <li><a class="" href="dart-svg/PatternElement-class.html">PatternElement</a></li>
+      <li><a class="" href="dart-svg/Point-class.html">Point</a></li>
+      <li><a class="" href="dart-svg/PointList-class.html">PointList</a></li>
+      <li><a class="" href="dart-svg/PolygonElement-class.html">PolygonElement</a></li>
+      <li><a class="" href="dart-svg/PolylineElement-class.html">PolylineElement</a></li>
+      <li><a class="" href="dart-svg/PreserveAspectRatio-class.html">PreserveAspectRatio</a></li>
+      <li><a class="" href="dart-svg/RadialGradientElement-class.html">RadialGradientElement</a></li>
+      <li><a class="" href="dart-svg/Rect-class.html">Rect</a></li>
+      <li><a class="" href="dart-svg/RectElement-class.html">RectElement</a></li>
+      <li><a class="" href="dart-svg/RenderingIntent-class.html">RenderingIntent</a></li>
+      <li><a class="" href="dart-svg/ScriptElement-class.html">ScriptElement</a></li>
+      <li><a class="" href="dart-svg/SetElement-class.html">SetElement</a></li>
+      <li><a class="" href="dart-svg/StopElement-class.html">StopElement</a></li>
+      <li><a class="" href="dart-svg/StringList-class.html">StringList</a></li>
+      <li><a class="" href="dart-svg/StyleElement-class.html">StyleElement</a></li>
+      <li><a class="" href="dart-svg/SvgElement-class.html">SvgElement</a></li>
+      <li><a class="" href="dart-svg/SvgSvgElement-class.html">SvgSvgElement</a></li>
+      <li><a class="" href="dart-svg/SwitchElement-class.html">SwitchElement</a></li>
+      <li><a class="" href="dart-svg/SymbolElement-class.html">SymbolElement</a></li>
+      <li><a class="" href="dart-svg/Tests-class.html">Tests</a></li>
+      <li><a class="" href="dart-svg/TextContentElement-class.html">TextContentElement</a></li>
+      <li><a class="" href="dart-svg/TextElement-class.html">TextElement</a></li>
+      <li><a class="" href="dart-svg/TextPathElement-class.html">TextPathElement</a></li>
+      <li><a class="" href="dart-svg/TextPositioningElement-class.html">TextPositioningElement</a></li>
+      <li><a class="" href="dart-svg/TitleElement-class.html">TitleElement</a></li>
+      <li><a class="" href="dart-svg/Transform-class.html">Transform</a></li>
+      <li><a class="" href="dart-svg/TransformList-class.html">TransformList</a></li>
+      <li><a class="" href="dart-svg/TSpanElement-class.html">TSpanElement</a></li>
+      <li><a class="" href="dart-svg/UnitTypes-class.html">UnitTypes</a></li>
+      <li><a class="" href="dart-svg/UriReference-class.html">UriReference</a></li>
+      <li><a class="" href="dart-svg/UseElement-class.html">UseElement</a></li>
+      <li><a class="" href="dart-svg/ViewElement-class.html">ViewElement</a></li>
+      <li><a class="" href="dart-svg/ViewSpec-class.html">ViewSpec</a></li>
+      <li><a class="" href="dart-svg/ZoomAndPan-class.html">ZoomAndPan</a></li>
+      <li><a class="" href="dart-svg/ZoomEvent-class.html">ZoomEvent</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+        <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li><a class="" href="dart-core/Object-class.html">Object</a></li>
+          <li><a class="deprecated" href="dart-html/DartHtmlDomObject-class.html">DartHtmlDomObject</a></li>
+          <li><a class="" href="dart-html/EventTarget-class.html">EventTarget</a></li>
+          <li><a class="" href="dart-html/Node-class.html">Node</a></li>
+          <li><a class="" href="dart-html/Element-class.html">Element</a></li>
+          <li><a class="" href="dart-svg/SvgElement-class.html">SvgElement</a></li>
+          <li><a class="" href="dart-svg/GraphicsElement-class.html">GraphicsElement</a></li>
+          <li>AElement</li>
+        </ul></dd>
+
+        <dt>Implements</dt>
+        <dd>
+          <ul class="comma-separated clazz-relationships">
+            <li><a class="" href="dart-svg/UriReference-class.html">UriReference</a></li>
+          </ul>
+        </dd>
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>DocsEditable()</li>
+          <li>DomName('SVGAElement')</li>
+          <li>Unstable()</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="static-methods">
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="internalCreateAElement" class="callable">
+          <span class="name deprecated"><a class="deprecated" href="dart-svg/AElement/internalCreateAElement.html">internalCreateAElement</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/AElement-class.html">AElement</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="AElement" class="callable">
+          <span class="name"><a class="" href="dart-svg/AElement/AElement.html">AElement</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="AElement.created" class="callable">
+          <span class="name"><a class="" href="dart-svg/AElement/AElement.created.html">AElement.created</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p>Constructor instantiated by the DOM when a custom element has been created.<a href="dart-svg/AElement/AElement.created.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="AElement.internal_" class="callable">
+          <span class="name"><a class="" href="dart-svg/AElement/AElement.internal_.html">AElement.internal_</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="attributes" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/attributes.html">attributes</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/Map-class.html">Map</a>&lt;<a class="" href="dart-core/String-class.html">String</a>, <a class="" href="dart-core/String-class.html">String</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>All attributes on this element.<a href="dart-html/Element/attributes.html">&hellip;</a>
+</p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="baseUri" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/baseUri.html">baseUri</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="blink_jsObject" class="property inherited">
+          <span class="name"><a class="deprecated" href="dart-html/DartHtmlDomObject/blink_jsObject.html">blink_jsObject</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-js/JsObject-class.html">JsObject</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The underlying JS DOM object.</p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="borderEdge" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/borderEdge.html">borderEdge</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/CssRect-class.html">CssRect</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>Access the dimensions and position of this element's content + padding +
+border box.<a href="dart-html/Element/borderEdge.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="childNodes" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/childNodes.html">childNodes</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-html/Node-class.html">Node</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>A list of this node's children.<a href="dart-html/Node/childNodes.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="children" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/children.html">children</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-html/Element-class.html">Element</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="classes" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/classes.html">classes</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/CssClassSet-class.html">CssClassSet</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The set of CSS classes applied to this element.<a href="dart-html/Element/classes.html">&hellip;</a>
+</p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="classes" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/classes.html">classes</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/CssClassSet-class.html">CssClassSet</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="className" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/className.html">className</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="client" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/client.html">client</a></span>
+          <span class="signature">&#8594; </span>
+        </dt>
+        <dd class="inherited">
+          <p>Gets the position of this element relative to the client area of the page.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="clientHeight" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/clientHeight.html">clientHeight</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="clientLeft" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/clientLeft.html">clientLeft</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="clientTop" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/clientTop.html">clientTop</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="clientWidth" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/clientWidth.html">clientWidth</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="contentEdge" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/contentEdge.html">contentEdge</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/CssRect-class.html">CssRect</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>Access this element's content position.<a href="dart-html/Element/contentEdge.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="contentEditable" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/contentEditable.html">contentEditable</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="contextMenu" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/contextMenu.html">contextMenu</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/MenuElement-class.html">MenuElement</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="dataset" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/dataset.html">dataset</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/Map-class.html">Map</a>&lt;<a class="" href="dart-core/String-class.html">String</a>, <a class="" href="dart-core/String-class.html">String</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Allows access to all custom data attributes (data-*) set on this element.<a href="dart-html/Element/dataset.html">&hellip;</a>
+</p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="dir" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/dir.html">dir</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="documentOffset" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/documentOffset.html">documentOffset</a></span>
+          <span class="signature">&#8594; </span>
+        </dt>
+        <dd class="inherited">
+          <p>Provides the coordinates of the element relative to the top of the
+document.<a href="dart-html/Element/documentOffset.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="draggable" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/draggable.html">draggable</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="dropzone" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/dropzone.html">dropzone</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="farthestViewportElement" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/GraphicsElement/farthestViewportElement.html">farthestViewportElement</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/SvgElement-class.html">SvgElement</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="firstChild" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/firstChild.html">firstChild</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The first child of this node.<a href="dart-html/Node/firstChild.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a class="" href="dart-html/EventTarget/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="hidden" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/hidden.html">hidden</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="href" class="property">
+          <span class="name"><a class="" href="dart-svg/AElement/href.html">href</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/AnimatedString-class.html">AnimatedString</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read-only
+  </div>
+</dd>
+        <dt id="id" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/id.html">id</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="innerHtml" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/innerHtml.html">innerHtml</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="isContentEditable" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/isContentEditable.html">isContentEditable</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="lang" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/lang.html">lang</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="lastChild" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/lastChild.html">lastChild</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The last child of this node.<a href="dart-html/Node/lastChild.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="localName" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/localName.html">localName</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="marginEdge" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/marginEdge.html">marginEdge</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/CssRect-class.html">CssRect</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>Access the dimensions and position of this element's content + padding +
+border + margin box.<a href="dart-html/Element/marginEdge.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="namespaceUri" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/namespaceUri.html">namespaceUri</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>A URI that identifies the XML namespace of this element.<a href="dart-html/Element/namespaceUri.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="nearestViewportElement" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/GraphicsElement/nearestViewportElement.html">nearestViewportElement</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/SvgElement-class.html">SvgElement</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="nextElementSibling" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/nextElementSibling.html">nextElementSibling</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Element-class.html">Element</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="nextNode" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/nextNode.html">nextNode</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The next sibling node.<a href="dart-html/Node/nextNode.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="nodeName" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/nodeName.html">nodeName</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The name of this node.<a href="dart-html/Node/nodeName.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="nodes" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/nodes.html">nodes</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-html/Node-class.html">Node</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>A modifiable list of this node's children.</p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="nodeType" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/nodeType.html">nodeType</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The type of node.<a href="dart-html/Node/nodeType.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="nodeValue" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/nodeValue.html">nodeValue</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The value of this node.<a href="dart-html/Node/nodeValue.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="offset" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/offset.html">offset</a></span>
+          <span class="signature">&#8594; </span>
+        </dt>
+        <dd class="inherited">
+          <p>Gets the offset of this element relative to its offsetParent.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="offsetHeight" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/offsetHeight.html">offsetHeight</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="offsetLeft" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/offsetLeft.html">offsetLeft</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="offsetParent" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/offsetParent.html">offsetParent</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Element-class.html">Element</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="offsetTop" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/offsetTop.html">offsetTop</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="offsetWidth" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/offsetWidth.html">offsetWidth</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="on" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/on.html">on</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementEvents-class.html">ElementEvents</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>This is an ease-of-use accessor for event streams which should only be
+used when an explicit accessor is not available.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onAbort" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onAbort.html">onAbort</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onBeforeCopy" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onBeforeCopy.html">onBeforeCopy</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>beforecopy</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onBeforeCut" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onBeforeCut.html">onBeforeCut</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>beforecut</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onBeforePaste" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onBeforePaste.html">onBeforePaste</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>beforepaste</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onBlur" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onBlur.html">onBlur</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onCanPlay" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onCanPlay.html">onCanPlay</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onCanPlayThrough" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onCanPlayThrough.html">onCanPlayThrough</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onChange" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onChange.html">onChange</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onClick" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onClick.html">onClick</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onContextMenu" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onContextMenu.html">onContextMenu</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onCopy" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onCopy.html">onCopy</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>copy</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onCut" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onCut.html">onCut</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>cut</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onDoubleClick" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onDoubleClick.html">onDoubleClick</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onDrag" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onDrag.html">onDrag</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onDragEnd" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onDragEnd.html">onDragEnd</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onDragEnter" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onDragEnter.html">onDragEnter</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onDragLeave" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onDragLeave.html">onDragLeave</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onDragOver" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onDragOver.html">onDragOver</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onDragStart" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onDragStart.html">onDragStart</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onDrop" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onDrop.html">onDrop</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onDurationChange" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onDurationChange.html">onDurationChange</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onEmptied" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onEmptied.html">onEmptied</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onEnded" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onEnded.html">onEnded</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onError" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onError.html">onError</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onFocus" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onFocus.html">onFocus</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onFullscreenChange" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onFullscreenChange.html">onFullscreenChange</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>fullscreenchange</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onFullscreenError" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onFullscreenError.html">onFullscreenError</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>fullscreenerror</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onInput" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onInput.html">onInput</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onInvalid" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onInvalid.html">onInvalid</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onKeyDown" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onKeyDown.html">onKeyDown</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/KeyboardEvent-class.html">KeyboardEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onKeyPress" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onKeyPress.html">onKeyPress</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/KeyboardEvent-class.html">KeyboardEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onKeyUp" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onKeyUp.html">onKeyUp</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/KeyboardEvent-class.html">KeyboardEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onLoad" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onLoad.html">onLoad</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onLoadedData" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onLoadedData.html">onLoadedData</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onLoadedMetadata" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onLoadedMetadata.html">onLoadedMetadata</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onMouseDown" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onMouseDown.html">onMouseDown</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onMouseEnter" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onMouseEnter.html">onMouseEnter</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onMouseLeave" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onMouseLeave.html">onMouseLeave</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onMouseMove" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onMouseMove.html">onMouseMove</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onMouseOut" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onMouseOut.html">onMouseOut</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onMouseOver" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onMouseOver.html">onMouseOver</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onMouseUp" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onMouseUp.html">onMouseUp</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/MouseEvent-class.html">MouseEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onMouseWheel" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onMouseWheel.html">onMouseWheel</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/WheelEvent-class.html">WheelEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onPaste" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onPaste.html">onPaste</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>paste</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onPause" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onPause.html">onPause</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onPlay" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onPlay.html">onPlay</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onPlaying" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onPlaying.html">onPlaying</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onRateChange" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onRateChange.html">onRateChange</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onReset" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onReset.html">onReset</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onResize" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onResize.html">onResize</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onScroll" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onScroll.html">onScroll</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onSearch" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onSearch.html">onSearch</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>search</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onSeeked" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onSeeked.html">onSeeked</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onSeeking" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onSeeking.html">onSeeking</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onSelect" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onSelect.html">onSelect</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onSelectStart" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onSelectStart.html">onSelectStart</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>selectstart</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onStalled" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onStalled.html">onStalled</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onSubmit" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onSubmit.html">onSubmit</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onSuspend" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onSuspend.html">onSuspend</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onTimeUpdate" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onTimeUpdate.html">onTimeUpdate</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onTouchCancel" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onTouchCancel.html">onTouchCancel</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/TouchEvent-class.html">TouchEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>touchcancel</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onTouchEnd" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onTouchEnd.html">onTouchEnd</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/TouchEvent-class.html">TouchEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>touchend</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onTouchEnter" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onTouchEnter.html">onTouchEnter</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/TouchEvent-class.html">TouchEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>touchenter</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onTouchLeave" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onTouchLeave.html">onTouchLeave</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/TouchEvent-class.html">TouchEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>touchleave</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onTouchMove" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onTouchMove.html">onTouchMove</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/TouchEvent-class.html">TouchEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>touchmove</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onTouchStart" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onTouchStart.html">onTouchStart</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/TouchEvent-class.html">TouchEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>touchstart</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onTransitionEnd" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/onTransitionEnd.html">onTransitionEnd</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/TransitionEvent-class.html">TransitionEvent</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p>Stream of <code>transitionend</code> events handled by this <code>Element</code>.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onVolumeChange" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onVolumeChange.html">onVolumeChange</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onWaiting" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/onWaiting.html">onWaiting</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ElementStream-class.html">ElementStream</a>&lt;<a class="" href="dart-html/Event-class.html">Event</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="outerHtml" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/outerHtml.html">outerHtml</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="ownerDocument" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/ownerDocument.html">ownerDocument</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Document-class.html">Document</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The document this node belongs to.<a href="dart-html/Node/ownerDocument.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="ownerSvgElement" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/ownerSvgElement.html">ownerSvgElement</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/SvgSvgElement-class.html">SvgSvgElement</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="paddingEdge" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/paddingEdge.html">paddingEdge</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/CssRect-class.html">CssRect</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>Access the dimensions and position of this element's content + padding box.<a href="dart-html/Element/paddingEdge.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="parent" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/parent.html">parent</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Element-class.html">Element</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The parent element of this node.<a href="dart-html/Node/parent.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="parentNode" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/parentNode.html">parentNode</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The parent node of this node.<a href="dart-html/Node/parentNode.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="previousElementSibling" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/previousElementSibling.html">previousElementSibling</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Element-class.html">Element</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="previousNode" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/previousNode.html">previousNode</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>The previous sibling node.<a href="dart-html/Node/previousNode.html">&hellip;</a>
+</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="requiredExtensions" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/GraphicsElement/requiredExtensions.html">requiredExtensions</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/StringList-class.html">StringList</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="requiredFeatures" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/GraphicsElement/requiredFeatures.html">requiredFeatures</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/StringList-class.html">StringList</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a class="" href="dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/Type-class.html">Type</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="scrollHeight" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/scrollHeight.html">scrollHeight</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="scrollLeft" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/scrollLeft.html">scrollLeft</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="scrollTop" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/scrollTop.html">scrollTop</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="scrollWidth" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/scrollWidth.html">scrollWidth</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="shadowRoot" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/shadowRoot.html">shadowRoot</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/ShadowRoot-class.html">ShadowRoot</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="spellcheck" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/spellcheck.html">spellcheck</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="style" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/style.html">style</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-html/CssStyleDeclaration-class.html">CssStyleDeclaration</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="systemLanguage" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/GraphicsElement/systemLanguage.html">systemLanguage</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/StringList-class.html">StringList</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="tabIndex" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/tabIndex.html">tabIndex</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="tagName" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/tagName.html">tagName</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="target" class="property">
+          <span class="name"><a class="" href="dart-svg/AElement/target.html">target</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/AnimatedString-class.html">AnimatedString</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read-only
+  </div>
+</dd>
+        <dt id="text" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Node/text.html">text</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p>All text within this node and its decendents.<a href="dart-html/Node/text.html">&hellip;</a>
+</p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="title" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/title.html">title</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="transform" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/GraphicsElement/transform.html">transform</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/AnimatedTransformList-class.html">AnimatedTransformList</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="translate" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/translate.html">translate</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="viewportElement" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/viewportElement.html">viewportElement</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-svg/SvgElement-class.html">SvgElement</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="xmlbase" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/xmlbase.html">xmlbase</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="xmllang" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/xmllang.html">xmllang</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="xmlspace" class="property inherited">
+          <span class="name"><a class="" href="dart-svg/SvgElement/xmlspace.html">xmlspace</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="xtag" class="property inherited">
+          <span class="name"><a class="" href="dart-html/Element/xtag.html">xtag</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd class="inherited">
+          <p>Experimental support for <a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/explainer/index.html">web components</a>. This field stores a
+reference to the component implementation. It was inspired by Mozilla's
+<a href="http://x-tags.org/">x-tags</a> project. Please note: in the future it may be possible to
+<code>extend Element</code> from your class, in which case this field will be
+deprecated.<a href="dart-html/Element/xtag.html">&hellip;</a>
+</p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/EventTarget/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The equality operator.<a href="dart-html/EventTarget/operator_equals.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="addEventListener" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/EventTarget/addEventListener.html">addEventListener</a></span><span class="signature">(<wbr><span class="parameter" id="addEventListener-param-type"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">type</span></span>, <span class="parameter" id="addEventListener-param-listener"><span class="type-annotation">dynamic</span> <span class="parameter-name">listener</span>(<span class="parameter" id="EventListener-param-event"><span class="type-annotation"><a class="" href="dart-html/Event-class.html">Event</a></span> <span class="parameter-name">event</span></span>)</span>, [<span class="parameter" id="addEventListener-param-useCapture"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">useCapture</span></span>])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="animate" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/animate.html">animate</a></span><span class="signature">(<wbr><span class="parameter" id="animate-param-frames"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-core/Map-class.html">Map</a>&lt;<a class="" href="dart-core/String-class.html">String</a>, dynamic&gt;&gt;</span> <span class="parameter-name">frames</span></span>, [<span class="parameter" id="animate-param-timing"><span class="parameter-name">timing</span></span>])
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/AnimationPlayer-class.html">AnimationPlayer</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Creates a new AnimationEffect object whose target element is the object
+on which the method is called, and calls the play() method of the
+AnimationTimeline object of the document timeline of the node document
+of the element, passing the newly created AnimationEffect as the argument
+to the method. Returns an AnimationPlayer for the effect.<a href="dart-html/Element/animate.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="append" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/append.html">append</a></span><span class="signature">(<wbr><span class="parameter" id="append-param-newChild"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">newChild</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Adds a node to the end of the child <a class="" href="dart-html/Node/nodes.html">nodes</a> list of this node.<a href="dart-html/Node/append.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="appendHtml" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/appendHtml.html">appendHtml</a></span><span class="signature">(<wbr><span class="parameter" id="appendHtml-param-text"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">text</span></span>, {<span class="parameter" id="appendHtml-param-validator"><span class="type-annotation"><a class="" href="dart-html/NodeValidator-class.html">NodeValidator</a></span> <span class="parameter-name">validator</span></span>, <span class="parameter" id="appendHtml-param-treeSanitizer"><span class="type-annotation"><a class="" href="dart-html/NodeTreeSanitizer-class.html">NodeTreeSanitizer</a></span> <span class="parameter-name">treeSanitizer</span></span>})
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Parses the specified text as HTML and adds the resulting node after the
+last child of this element.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="appendText" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/appendText.html">appendText</a></span><span class="signature">(<wbr><span class="parameter" id="appendText-param-text"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">text</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Adds the specified text after the last child of this element.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="attached" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/attached.html">attached</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Called by the DOM when this element has been inserted into the live
+document.<a href="dart-html/Element/attached.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="attributeChanged" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/attributeChanged.html">attributeChanged</a></span><span class="signature">(<wbr><span class="parameter" id="attributeChanged-param-name"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span></span>, <span class="parameter" id="attributeChanged-param-oldValue"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">oldValue</span></span>, <span class="parameter" id="attributeChanged-param-newValue"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">newValue</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Called by the DOM whenever an attribute on this has been changed.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="blur" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/blur.html">blur</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="click" class="callable inherited">
+          <span class="name "><a class="" href="dart-svg/SvgElement/click.html">click</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="clone" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/clone.html">clone</a></span><span class="signature">(<wbr><span class="parameter" id="clone-param-deep"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">deep</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a copy of this node.<a href="dart-html/Node/clone.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="contains" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/contains.html">contains</a></span><span class="signature">(<wbr><span class="parameter" id="contains-param-other"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns true if this node contains the specified node.<a href="dart-html/Node/contains.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="createFragment" class="callable inherited">
+          <span class="name "><a class="" href="dart-svg/SvgElement/createFragment.html">createFragment</a></span><span class="signature">(<wbr><span class="parameter" id="createFragment-param-svg"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">svg</span></span>, {<span class="parameter" id="createFragment-param-validator"><span class="type-annotation"><a class="" href="dart-html/NodeValidator-class.html">NodeValidator</a></span> <span class="parameter-name">validator</span></span>, <span class="parameter" id="createFragment-param-treeSanitizer"><span class="type-annotation"><a class="" href="dart-html/NodeTreeSanitizer-class.html">NodeTreeSanitizer</a></span> <span class="parameter-name">treeSanitizer</span></span>})
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/DocumentFragment-class.html">DocumentFragment</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Create a DocumentFragment from the HTML fragment and ensure that it follows
+the sanitization rules specified by the validator or treeSanitizer.<a href="dart-svg/SvgElement/createFragment.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="createShadowRoot" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/createShadowRoot.html">createShadowRoot</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/ShadowRoot-class.html">ShadowRoot</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="detached" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/detached.html">detached</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Called by the DOM when this element has been removed from the live
+document.<a href="dart-html/Element/detached.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="dispatchEvent" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/EventTarget/dispatchEvent.html">dispatchEvent</a></span><span class="signature">(<wbr><span class="parameter" id="dispatchEvent-param-event"><span class="type-annotation"><a class="" href="dart-html/Event-class.html">Event</a></span> <span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="enteredView" class="callable inherited">
+          <span class="name deprecated"><a class="deprecated" href="dart-html/Element/enteredView.html">enteredView</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Deprecated*: override <a class="" href="dart-html/Element/attached.html">attached</a> instead.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="focus" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/focus.html">focus</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getAnimationPlayers" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/getAnimationPlayers.html">getAnimationPlayers</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-html/AnimationPlayer-class.html">AnimationPlayer</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getAttribute" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/getAttribute.html">getAttribute</a></span><span class="signature">(<wbr><span class="parameter" id="getAttribute-param-name"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getAttributeNS" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/getAttributeNS.html">getAttributeNS</a></span><span class="signature">(<wbr><span class="parameter" id="getAttributeNS-param-namespaceURI"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">namespaceURI</span></span>, <span class="parameter" id="getAttributeNS-param-localName"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">localName</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getBBox" class="callable inherited">
+          <span class="name "><a class="" href="dart-svg/GraphicsElement/getBBox.html">getBBox</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Rect-class.html">Rect</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getBoundingClientRect" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/getBoundingClientRect.html">getBoundingClientRect</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; </span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns the smallest bounding rectangle that encompasses this element's
+padding, scrollbar, and border.<a href="dart-html/Element/getBoundingClientRect.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getClientRects" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/getClientRects.html">getClientRects</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a list of bounding rectangles for each box associated with this
+element.<a href="dart-html/Element/getClientRects.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getComputedStyle" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/getComputedStyle.html">getComputedStyle</a></span><span class="signature">(<wbr>[<span class="parameter" id="getComputedStyle-param-pseudoElement"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">pseudoElement</span></span>])
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/CssStyleDeclaration-class.html">CssStyleDeclaration</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The set of all CSS values applied to this element, including inherited
+and default values.<a href="dart-html/Element/getComputedStyle.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getCtm" class="callable inherited">
+          <span class="name "><a class="" href="dart-svg/GraphicsElement/getCtm.html">getCtm</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Matrix-class.html">Matrix</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getDestinationInsertionPoints" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/getDestinationInsertionPoints.html">getDestinationInsertionPoints</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-html/Node-class.html">Node</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a list of shadow DOM insertion points to which this element is
+distributed.<a href="dart-html/Element/getDestinationInsertionPoints.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getElementsByClassName" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/getElementsByClassName.html">getElementsByClassName</a></span><span class="signature">(<wbr><span class="parameter" id="getElementsByClassName-param-classNames"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">classNames</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-html/Node-class.html">Node</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a list of nodes with the given class name inside this element.<a href="dart-html/Element/getElementsByClassName.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getNamespacedAttributes" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/getNamespacedAttributes.html">getNamespacedAttributes</a></span><span class="signature">(<wbr><span class="parameter" id="getNamespacedAttributes-param-namespace"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">namespace</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Map-class.html">Map</a>&lt;<a class="" href="dart-core/String-class.html">String</a>, <a class="" href="dart-core/String-class.html">String</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Gets a map for manipulating the attributes of a particular namespace.<a href="dart-html/Element/getNamespacedAttributes.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getScreenCtm" class="callable inherited">
+          <span class="name "><a class="" href="dart-svg/GraphicsElement/getScreenCtm.html">getScreenCtm</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Matrix-class.html">Matrix</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getTransformToElement" class="callable inherited">
+          <span class="name "><a class="" href="dart-svg/GraphicsElement/getTransformToElement.html">getTransformToElement</a></span><span class="signature">(<wbr><span class="parameter" id="getTransformToElement-param-element"><span class="type-annotation"><a class="" href="dart-svg/SvgElement-class.html">SvgElement</a></span> <span class="parameter-name">element</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-svg/Matrix-class.html">Matrix</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="hasChildNodes" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/hasChildNodes.html">hasChildNodes</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns true if this node has any children.<a href="dart-html/Node/hasChildNodes.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="hasExtension" class="callable inherited">
+          <span class="name "><a class="" href="dart-svg/GraphicsElement/hasExtension.html">hasExtension</a></span><span class="signature">(<wbr><span class="parameter" id="hasExtension-param-extension"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">extension</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="insertAdjacentElement" class="callable inherited">
+          <span class="name "><a class="" href="dart-svg/SvgElement/insertAdjacentElement.html">insertAdjacentElement</a></span><span class="signature">(<wbr><span class="parameter" id="insertAdjacentElement-param-where"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">where</span></span>, <span class="parameter" id="insertAdjacentElement-param-element"><span class="type-annotation"><a class="" href="dart-html/Element-class.html">Element</a></span> <span class="parameter-name">element</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Element-class.html">Element</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="insertAdjacentHtml" class="callable inherited">
+          <span class="name "><a class="" href="dart-svg/SvgElement/insertAdjacentHtml.html">insertAdjacentHtml</a></span><span class="signature">(<wbr><span class="parameter" id="insertAdjacentHtml-param-where"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">where</span></span>, <span class="parameter" id="insertAdjacentHtml-param-text"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">text</span></span>, {<span class="parameter" id="insertAdjacentHtml-param-validator"><span class="type-annotation"><a class="" href="dart-html/NodeValidator-class.html">NodeValidator</a></span> <span class="parameter-name">validator</span></span>, <span class="parameter" id="insertAdjacentHtml-param-treeSanitizer"><span class="type-annotation"><a class="" href="dart-html/NodeTreeSanitizer-class.html">NodeTreeSanitizer</a></span> <span class="parameter-name">treeSanitizer</span></span>})
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Parses text as an HTML fragment and inserts it into the DOM at the
+specified location.<a href="dart-svg/SvgElement/insertAdjacentHtml.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="insertAdjacentText" class="callable inherited">
+          <span class="name "><a class="" href="dart-svg/SvgElement/insertAdjacentText.html">insertAdjacentText</a></span><span class="signature">(<wbr><span class="parameter" id="insertAdjacentText-param-where"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">where</span></span>, <span class="parameter" id="insertAdjacentText-param-text"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">text</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="insertAllBefore" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/insertAllBefore.html">insertAllBefore</a></span><span class="signature">(<wbr><span class="parameter" id="insertAllBefore-param-newNodes"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-html/Node-class.html">Node</a>&gt;</span> <span class="parameter-name">newNodes</span></span>, <span class="parameter" id="insertAllBefore-param-refChild"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">refChild</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Inserts all of the nodes into this node directly before refChild.<a href="dart-html/Node/insertAllBefore.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="insertBefore" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/insertBefore.html">insertBefore</a></span><span class="signature">(<wbr><span class="parameter" id="insertBefore-param-newChild"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">newChild</span></span>, <span class="parameter" id="insertBefore-param-refChild"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">refChild</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Inserts all of the nodes into this node directly before refChild.<a href="dart-html/Node/insertBefore.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="leftView" class="callable inherited">
+          <span class="name deprecated"><a class="deprecated" href="dart-html/Element/leftView.html">leftView</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Deprecated*: override <a class="" href="dart-html/Element/detached.html">detached</a> instead.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="matches" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/matches.html">matches</a></span><span class="signature">(<wbr><span class="parameter" id="matches-param-selectors"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">selectors</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="matchesWithAncestors" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/matchesWithAncestors.html">matchesWithAncestors</a></span><span class="signature">(<wbr><span class="parameter" id="matchesWithAncestors-param-selectors"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">selectors</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Checks if this element or any of its parents match the CSS selectors.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name "><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a class="" href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> is invoked when users invoke a non-existent method
+on an object. The name of the method and the arguments of the
+invocation are passed to <a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> in an <a class="" href="dart-core/Invocation-class.html">Invocation</a>.
+If <a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> returns a value, that value becomes the result of
+the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="offsetTo" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/offsetTo.html">offsetTo</a></span><span class="signature">(<wbr><span class="parameter" id="offsetTo-param-parent"><span class="type-annotation"><a class="" href="dart-html/Element-class.html">Element</a></span> <span class="parameter-name">parent</span></span>)
+            <span class="returntype parameter">&#8594; </span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Provides the offset of this element's <a class="" href="dart-html/Element/borderEdge.html">borderEdge</a> relative to the
+specified <code>parent</code>.<a href="dart-html/Element/offsetTo.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="query" class="callable inherited">
+          <span class="name deprecated"><a class="deprecated" href="dart-html/Element/query.html">query</a></span><span class="signature">(<wbr><span class="parameter" id="query-param-relativeSelectors"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">relativeSelectors</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Element-class.html">Element</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Alias for <a class="" href="dart-html/Element/querySelector.html">querySelector</a>. Note this function is deprecated because its
+semantics will be changing in the future.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="queryAll" class="callable inherited">
+          <span class="name deprecated"><a class="deprecated" href="dart-html/Element/queryAll.html">queryAll</a></span><span class="signature">(<wbr><span class="parameter" id="queryAll-param-relativeSelectors"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">relativeSelectors</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/ElementList-class.html">ElementList</a>&lt;<a class="" href="dart-html/Element-class.html">Element</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Alias for <a class="" href="dart-html/Element/querySelectorAll.html">querySelectorAll</a>. Note this function is deprecated because its
+semantics will be changing in the future.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="querySelector" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/querySelector.html">querySelector</a></span><span class="signature">(<wbr><span class="parameter" id="querySelector-param-selectors"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">selectors</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Element-class.html">Element</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Finds the first descendant element of this element that matches the
+specified group of selectors.<a href="dart-html/Element/querySelector.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="querySelectorAll" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/querySelectorAll.html">querySelectorAll</a></span><span class="signature">(<wbr><span class="parameter" id="querySelectorAll-param-selectors"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">selectors</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/ElementList-class.html">ElementList</a>&lt;<a class="" href="dart-html/Element-class.html">Element</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Finds all descendent elements of this element that match the specified
+group of selectors.<a href="dart-html/Element/querySelectorAll.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="remove" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/remove.html">remove</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Removes this node from the DOM.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeEventListener" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/EventTarget/removeEventListener.html">removeEventListener</a></span><span class="signature">(<wbr><span class="parameter" id="removeEventListener-param-type"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">type</span></span>, <span class="parameter" id="removeEventListener-param-listener"><span class="type-annotation">dynamic</span> <span class="parameter-name">listener</span>(<span class="parameter" id="EventListener-param-event"><span class="type-annotation"><a class="" href="dart-html/Event-class.html">Event</a></span> <span class="parameter-name">event</span></span>)</span>, [<span class="parameter" id="removeEventListener-param-useCapture"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">useCapture</span></span>])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="replaceWith" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Node/replaceWith.html">replaceWith</a></span><span class="signature">(<wbr><span class="parameter" id="replaceWith-param-otherNode"><span class="type-annotation"><a class="" href="dart-html/Node-class.html">Node</a></span> <span class="parameter-name">otherNode</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-html/Node-class.html">Node</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Replaces this node with another node.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="requestFullscreen" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/requestFullscreen.html">requestFullscreen</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="requestPointerLock" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/requestPointerLock.html">requestPointerLock</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="scrollIntoView" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/scrollIntoView.html">scrollIntoView</a></span><span class="signature">(<wbr>[<span class="parameter" id="scrollIntoView-param-alignment"><span class="type-annotation"><a class="" href="dart-html/ScrollAlignment-class.html">ScrollAlignment</a></span> <span class="parameter-name">alignment</span></span>])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Scrolls this element into view.<a href="dart-html/Element/scrollIntoView.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setAttribute" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/setAttribute.html">setAttribute</a></span><span class="signature">(<wbr><span class="parameter" id="setAttribute-param-name"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span></span>, <span class="parameter" id="setAttribute-param-value"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setAttributeNS" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/setAttributeNS.html">setAttributeNS</a></span><span class="signature">(<wbr><span class="parameter" id="setAttributeNS-param-namespaceURI"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">namespaceURI</span></span>, <span class="parameter" id="setAttributeNS-param-qualifiedName"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">qualifiedName</span></span>, <span class="parameter" id="setAttributeNS-param-value"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setInnerHtml" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/setInnerHtml.html">setInnerHtml</a></span><span class="signature">(<wbr><span class="parameter" id="setInnerHtml-param-html"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">html</span></span>, {<span class="parameter" id="setInnerHtml-param-validator"><span class="type-annotation"><a class="" href="dart-html/NodeValidator-class.html">NodeValidator</a></span> <span class="parameter-name">validator</span></span>, <span class="parameter" id="setInnerHtml-param-treeSanitizer"><span class="type-annotation"><a class="" href="dart-html/NodeTreeSanitizer-class.html">NodeTreeSanitizer</a></span> <span class="parameter-name">treeSanitizer</span></span>})
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Parses the HTML fragment and sets it as the contents of this element.
+This ensures that the generated content follows the sanitization rules
+specified by the validator or treeSanitizer.<a href="dart-html/Element/setInnerHtml.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name "><a class="" href="dart-html/Element/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The string representation of this element.<a href="dart-html/Element/toString.html">&hellip;</a>
+</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>AElement</h5>
+    <ol>
+    
+    
+      <li class="section-title"><a href="dart-svg/AElement-class.html#static-methods">Static methods</a></li>
+      <li><a class="deprecated" href="dart-svg/AElement/internalCreateAElement.html">internalCreateAElement</a></li>
+    
+      <li class="section-title"><a href="dart-svg/AElement-class.html#constructors">Constructors</a></li>
+      <li><a href="dart-svg/AElement/AElement.html">AElement</a></li>
+      <li><a href="dart-svg/AElement/AElement.created.html">created</a></li>
+      <li><a href="dart-svg/AElement/AElement.internal_.html">internal_</a></li>
+    
+      <li class="section-title">
+        <a href="dart-svg/AElement-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a class="" href="dart-html/Element/attributes.html">attributes</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/baseUri.html">baseUri</a></li>
+      <li class="inherited"><a class="deprecated" href="dart-html/DartHtmlDomObject/blink_jsObject.html">blink_jsObject</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/borderEdge.html">borderEdge</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/childNodes.html">childNodes</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/children.html">children</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/classes.html">classes</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/classes.html">classes</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/className.html">className</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/client.html">client</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/clientHeight.html">clientHeight</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/clientLeft.html">clientLeft</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/clientTop.html">clientTop</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/clientWidth.html">clientWidth</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/contentEdge.html">contentEdge</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/contentEditable.html">contentEditable</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/contextMenu.html">contextMenu</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/dataset.html">dataset</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/dir.html">dir</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/documentOffset.html">documentOffset</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/draggable.html">draggable</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/dropzone.html">dropzone</a></li>
+      <li class="inherited"><a class="" href="dart-svg/GraphicsElement/farthestViewportElement.html">farthestViewportElement</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/firstChild.html">firstChild</a></li>
+      <li class="inherited"><a class="" href="dart-html/EventTarget/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/hidden.html">hidden</a></li>
+      <li><a class="" href="dart-svg/AElement/href.html">href</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/id.html">id</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/innerHtml.html">innerHtml</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/isContentEditable.html">isContentEditable</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/lang.html">lang</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/lastChild.html">lastChild</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/localName.html">localName</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/marginEdge.html">marginEdge</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/namespaceUri.html">namespaceUri</a></li>
+      <li class="inherited"><a class="" href="dart-svg/GraphicsElement/nearestViewportElement.html">nearestViewportElement</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/nextElementSibling.html">nextElementSibling</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nextNode.html">nextNode</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodeName.html">nodeName</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodes.html">nodes</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodeType.html">nodeType</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/nodeValue.html">nodeValue</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/offset.html">offset</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/offsetHeight.html">offsetHeight</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/offsetLeft.html">offsetLeft</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/offsetParent.html">offsetParent</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/offsetTop.html">offsetTop</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/offsetWidth.html">offsetWidth</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/on.html">on</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onAbort.html">onAbort</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onBeforeCopy.html">onBeforeCopy</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onBeforeCut.html">onBeforeCut</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onBeforePaste.html">onBeforePaste</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onBlur.html">onBlur</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onCanPlay.html">onCanPlay</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onCanPlayThrough.html">onCanPlayThrough</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onChange.html">onChange</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onClick.html">onClick</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onContextMenu.html">onContextMenu</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onCopy.html">onCopy</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onCut.html">onCut</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onDoubleClick.html">onDoubleClick</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onDrag.html">onDrag</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onDragEnd.html">onDragEnd</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onDragEnter.html">onDragEnter</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onDragLeave.html">onDragLeave</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onDragOver.html">onDragOver</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onDragStart.html">onDragStart</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onDrop.html">onDrop</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onDurationChange.html">onDurationChange</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onEmptied.html">onEmptied</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onEnded.html">onEnded</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onError.html">onError</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onFocus.html">onFocus</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onFullscreenChange.html">onFullscreenChange</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onFullscreenError.html">onFullscreenError</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onInput.html">onInput</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onInvalid.html">onInvalid</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onKeyDown.html">onKeyDown</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onKeyPress.html">onKeyPress</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onKeyUp.html">onKeyUp</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onLoad.html">onLoad</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onLoadedData.html">onLoadedData</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onLoadedMetadata.html">onLoadedMetadata</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onMouseDown.html">onMouseDown</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onMouseEnter.html">onMouseEnter</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onMouseLeave.html">onMouseLeave</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onMouseMove.html">onMouseMove</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onMouseOut.html">onMouseOut</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onMouseOver.html">onMouseOver</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onMouseUp.html">onMouseUp</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onMouseWheel.html">onMouseWheel</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onPaste.html">onPaste</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onPause.html">onPause</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onPlay.html">onPlay</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onPlaying.html">onPlaying</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onRateChange.html">onRateChange</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onReset.html">onReset</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onResize.html">onResize</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onScroll.html">onScroll</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onSearch.html">onSearch</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onSeeked.html">onSeeked</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onSeeking.html">onSeeking</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onSelect.html">onSelect</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onSelectStart.html">onSelectStart</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onStalled.html">onStalled</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onSubmit.html">onSubmit</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onSuspend.html">onSuspend</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onTimeUpdate.html">onTimeUpdate</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onTouchCancel.html">onTouchCancel</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onTouchEnd.html">onTouchEnd</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onTouchEnter.html">onTouchEnter</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onTouchLeave.html">onTouchLeave</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onTouchMove.html">onTouchMove</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onTouchStart.html">onTouchStart</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/onTransitionEnd.html">onTransitionEnd</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onVolumeChange.html">onVolumeChange</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/onWaiting.html">onWaiting</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/outerHtml.html">outerHtml</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/ownerDocument.html">ownerDocument</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/ownerSvgElement.html">ownerSvgElement</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/paddingEdge.html">paddingEdge</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/parent.html">parent</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/parentNode.html">parentNode</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/previousElementSibling.html">previousElementSibling</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/previousNode.html">previousNode</a></li>
+      <li class="inherited"><a class="" href="dart-svg/GraphicsElement/requiredExtensions.html">requiredExtensions</a></li>
+      <li class="inherited"><a class="" href="dart-svg/GraphicsElement/requiredFeatures.html">requiredFeatures</a></li>
+      <li class="inherited"><a class="" href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/scrollHeight.html">scrollHeight</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/scrollLeft.html">scrollLeft</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/scrollTop.html">scrollTop</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/scrollWidth.html">scrollWidth</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/shadowRoot.html">shadowRoot</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/spellcheck.html">spellcheck</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/style.html">style</a></li>
+      <li class="inherited"><a class="" href="dart-svg/GraphicsElement/systemLanguage.html">systemLanguage</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/tabIndex.html">tabIndex</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/tagName.html">tagName</a></li>
+      <li><a class="" href="dart-svg/AElement/target.html">target</a></li>
+      <li class="inherited"><a class="" href="dart-html/Node/text.html">text</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/title.html">title</a></li>
+      <li class="inherited"><a class="" href="dart-svg/GraphicsElement/transform.html">transform</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/translate.html">translate</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/viewportElement.html">viewportElement</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/xmlbase.html">xmlbase</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/xmllang.html">xmllang</a></li>
+      <li class="inherited"><a class="" href="dart-svg/SvgElement/xmlspace.html">xmlspace</a></li>
+      <li class="inherited"><a class="" href="dart-html/Element/xtag.html">xtag</a></li>
+    
+      <li class="section-title inherited"><a href="dart-svg/AElement-class.html#operators">Operators</a></li>
+      <li class="inherited"><a class="" href="dart-html/EventTarget/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title inherited"><a href="dart-svg/AElement-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"q><a class="" href="dart-html/EventTarget/addEventListener.html">addEventListener</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/animate.html">animate</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/append.html">append</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/appendHtml.html">appendHtml</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/appendText.html">appendText</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/attached.html">attached</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/attributeChanged.html">attributeChanged</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/blur.html">blur</a></li>
+      <li class="inherited"q><a class="" href="dart-svg/SvgElement/click.html">click</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/clone.html">clone</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/contains.html">contains</a></li>
+      <li class="inherited"q><a class="" href="dart-svg/SvgElement/createFragment.html">createFragment</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/createShadowRoot.html">createShadowRoot</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/detached.html">detached</a></li>
+      <li class="inherited"q><a class="" href="dart-html/EventTarget/dispatchEvent.html">dispatchEvent</a></li>
+      <li class="inherited"q><a class="deprecated" href="dart-html/Element/enteredView.html">enteredView</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/focus.html">focus</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/getAnimationPlayers.html">getAnimationPlayers</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/getAttribute.html">getAttribute</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/getAttributeNS.html">getAttributeNS</a></li>
+      <li class="inherited"q><a class="" href="dart-svg/GraphicsElement/getBBox.html">getBBox</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/getBoundingClientRect.html">getBoundingClientRect</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/getClientRects.html">getClientRects</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/getComputedStyle.html">getComputedStyle</a></li>
+      <li class="inherited"q><a class="" href="dart-svg/GraphicsElement/getCtm.html">getCtm</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/getDestinationInsertionPoints.html">getDestinationInsertionPoints</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/getElementsByClassName.html">getElementsByClassName</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/getNamespacedAttributes.html">getNamespacedAttributes</a></li>
+      <li class="inherited"q><a class="" href="dart-svg/GraphicsElement/getScreenCtm.html">getScreenCtm</a></li>
+      <li class="inherited"q><a class="" href="dart-svg/GraphicsElement/getTransformToElement.html">getTransformToElement</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/hasChildNodes.html">hasChildNodes</a></li>
+      <li class="inherited"q><a class="" href="dart-svg/GraphicsElement/hasExtension.html">hasExtension</a></li>
+      <li class="inherited"q><a class="" href="dart-svg/SvgElement/insertAdjacentElement.html">insertAdjacentElement</a></li>
+      <li class="inherited"q><a class="" href="dart-svg/SvgElement/insertAdjacentHtml.html">insertAdjacentHtml</a></li>
+      <li class="inherited"q><a class="" href="dart-svg/SvgElement/insertAdjacentText.html">insertAdjacentText</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/insertAllBefore.html">insertAllBefore</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/insertBefore.html">insertBefore</a></li>
+      <li class="inherited"q><a class="deprecated" href="dart-html/Element/leftView.html">leftView</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/matches.html">matches</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/matchesWithAncestors.html">matchesWithAncestors</a></li>
+      <li class="inherited"q><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/offsetTo.html">offsetTo</a></li>
+      <li class="inherited"q><a class="deprecated" href="dart-html/Element/query.html">query</a></li>
+      <li class="inherited"q><a class="deprecated" href="dart-html/Element/queryAll.html">queryAll</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/querySelector.html">querySelector</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/querySelectorAll.html">querySelectorAll</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/remove.html">remove</a></li>
+      <li class="inherited"q><a class="" href="dart-html/EventTarget/removeEventListener.html">removeEventListener</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Node/replaceWith.html">replaceWith</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/requestFullscreen.html">requestFullscreen</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/requestPointerLock.html">requestPointerLock</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/scrollIntoView.html">scrollIntoView</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/setAttribute.html">setAttribute</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/setAttributeNS.html">setAttributeNS</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/setInnerHtml.html">setInnerHtml</a></li>
+      <li class="inherited"q><a class="" href="dart-html/Element/toString.html">toString</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          Dart SDK 1.13.0-dev.7.5
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.5-dev -->
+</body>
+
+</html>
