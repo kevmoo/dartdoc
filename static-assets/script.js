@@ -271,8 +271,7 @@ function initInheritView() {
       break;
   }
 
-  var selector = 'input[name=inherited-view][value=' + value + ']';
-  $(selector).attr('checked', true);
+  $('#inherited-view').val(value);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -285,7 +284,9 @@ document.addEventListener("DOMContentLoaded", function() {
   $('.inherited .inherited').removeClass("inherited");
   initInheritView();
 
-  $('input:radio[name="inherited-view"]').change(function(){
+  $('#inherited-view').change(function(){
+    console.log($(this));
+    console.log($(this).val());
     var selectedValue = $(this).val();
     setInheritView(selectedValue);
   });

@@ -59,20 +59,12 @@
             <div class="kind">method</div> operator []=
           </h1>
         </div>
-        <div class="radio" style='float: right;'>
-          Inherited members:
-          <label class='radio-inline'>
-            <input type="radio" name="inherited-view" value="inherited-show" checked>
-            SHOW
-          </label>
-          <label class='radio-inline'>
-            <input type="radio" name="inherited-view" value="inherited-dim">
-            DIM
-          </label>
-          <label class='radio-inline'>
-            <input type="radio" name="inherited-view" value="inherited-hide">
-            HIDE
-          </label>
+        <div class="inherited-view-wrapper">
+          <select id='inherited-view' class='form-control'>
+            <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
+            <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
+            <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
+          </select>
         </div>
         <ul class="subnav">
           <li><a href="dart-html/FileList/operator_put.html#source">Source</a></li>
@@ -201,7 +193,7 @@ or throws a <code>RangeError</code> if <code>index</code> is out of bounds.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.5
+          Dart SDK 1.13.0-dev.7.6
         </span>
         &bull;
         <span class="no-break">

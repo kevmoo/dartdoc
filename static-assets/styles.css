@@ -741,6 +741,12 @@ section#setter {
   padding-top: 36px;
 }
 
+.inherited-view-wrapper {
+  float: right;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
 .inherited {
   transition: opacity .5s;
 }
