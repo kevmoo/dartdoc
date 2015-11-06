@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>HttpServer class - dart:io library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -39,13 +40,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -61,7 +55,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">abstract class</div> HttpServer
+            <span class="kind">abstract class</span> HttpServer
           </h1>
         </div>
         <ul class="subnav">
@@ -203,8 +197,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="desc markdown">
-    
-        <p>A server that delivers content, such as web pages, using the HTTP protocol.</p>
+      <p>A server that delivers content, such as web pages, using the HTTP protocol.</p>
 <p>The HttpServer is a <a class="" href="dart-async/Stream-class.html">Stream</a> that provides <a class="" href="dart-io/HttpRequest-class.html">HttpRequest</a> objects. Each
 HttpRequest has an associated <a class="" href="dart-io/HttpResponse-class.html">HttpResponse</a> object.
 The server responds to a request by writing to that HttpResponse object.
@@ -237,7 +230,7 @@ when the server writes to the HttpResponse or closes it.</p>
 <h2>Bind with a secure HTTPS connection</h2>
 <p>Use <a class="" href="dart-io/HttpServer/bindSecure.html">bindSecure</a> to create an HTTPS server.</p>
 <p>The server presents a certificate to the client. The certificate
-chain and the private key are set in the SecurityContext
+chain and the private key are set in the <a class="" href="dart-io/SecurityContext-class.html">SecurityContext</a>
 object that is passed to <a class="" href="dart-io/HttpServer/bindSecure.html">bindSecure</a>.</p>
 <pre class="prettyprint lang-dart"><code>import 'dart:io';
 import "dart:isolate";
@@ -265,8 +258,8 @@ main() {
       });
 }
 </code></pre>
-<p> The certificates and keys are pem files, which can be created and
- managed with the tools in OpenSSL and BoringSSL.</p>
+<p> The certificates and keys are PEM files, which can be created and
+ managed with the tools in OpenSSL.</p>
 <h2>Connect to a server socket</h2>
 <p>You can use the <code>listenOn</code> constructor to attach an HTTP server to
 a <a class="" href="dart-io/ServerSocket-class.html">ServerSocket</a>.</p>
@@ -290,9 +283,8 @@ Pausing the subscription of the stream, pauses at the OS level.</p></li><li>
 package on pub.dartlang.org contains a set of high-level classes that,
 together with this class, makes it easy to provide content through HTTP
 servers.</p></li></ul>
-    
     </section>
-
+    
     <section>
       <dl class="dl-horizontal">
 
@@ -324,7 +316,7 @@ servers.</p></li></ul>
 </p>
         </dd>
         <dt id="bindSecure" class="callable">
-          <span class="name "><a class="" href="dart-io/HttpServer/bindSecure.html">bindSecure</a></span><span class="signature">(<wbr><span class="parameter" id="bindSecure-param-address"><span class="parameter-name">address</span></span>, <span class="parameter" id="bindSecure-param-port"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">port</span></span>, <span class="parameter" id="bindSecure-param-context"><span class="type-annotation"><a class="" href="dart-io/SecurityContext-class.html">SecurityContext</a></span> <span class="parameter-name">context</span></span>, {<span class="parameter" id="bindSecure-param-backlog"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">backlog</span>: <span class="default-value">0</span></span>, <span class="parameter" id="bindSecure-param-v6Only"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">v6Only</span>: <span class="default-value">false</span></span>, <span class="parameter" id="bindSecure-param-certificateName"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">certificateName</span></span>, <span class="parameter" id="bindSecure-param-requestClientCertificate"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">requestClientCertificate</span>: <span class="default-value">false</span></span>, <span class="parameter" id="bindSecure-param-shared"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">shared</span>: <span class="default-value">false</span></span>})
+          <span class="name "><a class="" href="dart-io/HttpServer/bindSecure.html">bindSecure</a></span><span class="signature">(<wbr><span class="parameter" id="bindSecure-param-address"><span class="parameter-name">address</span></span>, <span class="parameter" id="bindSecure-param-port"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">port</span></span>, <span class="parameter" id="bindSecure-param-context"><span class="type-annotation"><a class="" href="dart-io/SecurityContext-class.html">SecurityContext</a></span> <span class="parameter-name">context</span></span>, {<span class="parameter" id="bindSecure-param-backlog"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">backlog</span>: <span class="default-value">0</span></span>, <span class="parameter" id="bindSecure-param-v6Only"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">v6Only</span>: <span class="default-value">false</span></span>, <span class="parameter" id="bindSecure-param-requestClientCertificate"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">requestClientCertificate</span>: <span class="default-value">false</span></span>, <span class="parameter" id="bindSecure-param-shared"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">shared</span>: <span class="default-value">false</span></span>})
             <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a>&lt;<a class="" href="dart-io/HttpServer-class.html">HttpServer</a>&gt;</span>
           </span>
         </dt>
@@ -575,7 +567,7 @@ The default timeout is 20 minutes.</p>
         </dd>
         <dt id="asyncExpand" class="callable inherited">
           <span class="name "><a class="" href="dart-async/Stream/asyncExpand.html">asyncExpand</a></span><span class="signature">(<wbr><span class="parameter" id="asyncExpand-param-convert"><span class="type-annotation">Stream</span> <span class="parameter-name">convert</span>(<span class="parameter" id="convert-param-event"><span class="type-annotation">T</span> <span class="parameter-name">event</span></span>)</span>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Stream-class.html">Stream</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -585,7 +577,7 @@ The default timeout is 20 minutes.</p>
         </dd>
         <dt id="asyncMap" class="callable inherited">
           <span class="name "><a class="" href="dart-async/Stream/asyncMap.html">asyncMap</a></span><span class="signature">(<wbr><span class="parameter" id="asyncMap-param-convert"><span class="type-annotation">dynamic</span> <span class="parameter-name">convert</span>(<span class="parameter" id="convert-param-event"><span class="type-annotation">T</span> <span class="parameter-name">event</span></span>)</span>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Stream-class.html">Stream</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -596,7 +588,7 @@ mapped to a new event.<a href="dart-async/Stream/asyncMap.html">&hellip;</a>
         </dd>
         <dt id="close" class="callable">
           <span class="name "><a class="" href="dart-io/HttpServer/close.html">close</a></span><span class="signature">(<wbr>{<span class="parameter" id="close-param-force"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">force</span>: <span class="default-value">false</span></span>})
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd>
@@ -638,7 +630,7 @@ current connections handled by the server.</p>
         </dd>
         <dt id="drain" class="callable inherited">
           <span class="name "><a class="" href="dart-async/Stream/drain.html">drain</a></span><span class="signature">(<wbr>[<span class="parameter" id="drain-param-futureValue"><span class="parameter-name">futureValue</span></span>])
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -669,7 +661,7 @@ occured.<a href="dart-async/Stream/drain.html">&hellip;</a>
         </dd>
         <dt id="expand" class="callable inherited">
           <span class="name "><a class="" href="dart-async/Stream/expand.html">expand</a></span><span class="signature">(<wbr><span class="parameter" id="expand-param-convert"><span class="type-annotation">Iterable</span> <span class="parameter-name">convert</span>(<span class="parameter" id="convert-param-value"><span class="type-annotation">T</span> <span class="parameter-name">value</span></span>)</span>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Stream-class.html">Stream</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -680,7 +672,7 @@ into zero or more events.<a href="dart-async/Stream/expand.html">&hellip;</a>
         </dd>
         <dt id="firstWhere" class="callable inherited">
           <span class="name "><a class="" href="dart-async/Stream/firstWhere.html">firstWhere</a></span><span class="signature">(<wbr><span class="parameter" id="firstWhere-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">T</span> <span class="parameter-name">element</span></span>)</span>, {<span class="parameter" id="firstWhere-param-defaultValue"><span class="type-annotation">Object</span> <span class="parameter-name">defaultValue</span>()</span>})
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -690,7 +682,7 @@ into zero or more events.<a href="dart-async/Stream/expand.html">&hellip;</a>
         </dd>
         <dt id="fold" class="callable inherited">
           <span class="name "><a class="" href="dart-async/Stream/fold.html">fold</a></span><span class="signature">(<wbr><span class="parameter" id="fold-param-initialValue"><span class="parameter-name">initialValue</span></span>, <span class="parameter" id="fold-param-combine"><span class="type-annotation">dynamic</span> <span class="parameter-name">combine</span>(<span class="parameter" id="combine-param-previous"><span class="parameter-name">previous</span></span>, <span class="parameter" id="combine-param-element"><span class="type-annotation">T</span> <span class="parameter-name">element</span></span>)</span>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -699,7 +691,7 @@ into zero or more events.<a href="dart-async/Stream/expand.html">&hellip;</a>
         </dd>
         <dt id="forEach" class="callable inherited">
           <span class="name "><a class="" href="dart-async/Stream/forEach.html">forEach</a></span><span class="signature">(<wbr><span class="parameter" id="forEach-param-action"><span class="type-annotation">void</span> <span class="parameter-name">action</span>(<span class="parameter" id="action-param-element"><span class="type-annotation">T</span> <span class="parameter-name">element</span></span>)</span>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -729,7 +721,7 @@ into zero or more events.<a href="dart-async/Stream/expand.html">&hellip;</a>
         </dd>
         <dt id="lastWhere" class="callable inherited">
           <span class="name "><a class="" href="dart-async/Stream/lastWhere.html">lastWhere</a></span><span class="signature">(<wbr><span class="parameter" id="lastWhere-param-test"><span class="type-annotation">bool</span> <span class="parameter-name">test</span>(<span class="parameter" id="test-param-element"><span class="type-annotation">T</span> <span class="parameter-name">element</span></span>)</span>, {<span class="parameter" id="lastWhere-param-defaultValue"><span class="type-annotation">Object</span> <span class="parameter-name">defaultValue</span>()</span>})
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -749,7 +741,7 @@ into zero or more events.<a href="dart-async/Stream/expand.html">&hellip;</a>
         </dd>
         <dt id="map" class="callable inherited">
           <span class="name "><a class="" href="dart-async/Stream/map.html">map</a></span><span class="signature">(<wbr><span class="parameter" id="map-param-convert"><span class="type-annotation">dynamic</span> <span class="parameter-name">convert</span>(<span class="parameter" id="convert-param-event"><span class="type-annotation">T</span> <span class="parameter-name">event</span></span>)</span>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Stream-class.html">Stream</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -774,7 +766,7 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
         </dd>
         <dt id="pipe" class="callable inherited">
           <span class="name "><a class="" href="dart-async/Stream/pipe.html">pipe</a></span><span class="signature">(<wbr><span class="parameter" id="pipe-param-streamConsumer"><span class="type-annotation"><a class="" href="dart-async/StreamConsumer-class.html">StreamConsumer</a>&lt;<a class="" href="dart-io/HttpRequest-class.html">HttpRequest</a>&gt;</span> <span class="parameter-name">streamConsumer</span></span>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -842,8 +834,8 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
           <div class="features">inherited</div>
         </dd>
         <dt id="timeout" class="callable inherited">
-          <span class="name "><a class="" href="dart-async/Stream/timeout.html">timeout</a></span><span class="signature">(<wbr><span class="parameter" id="timeout-param-timeLimit"><span class="type-annotation"><a class="" href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">timeLimit</span></span>, {<span class="parameter" id="timeout-param-onTimeout"><span class="type-annotation">void</span> <span class="parameter-name">onTimeout</span>(<span class="parameter" id="onTimeout-param-sink"><span class="parameter-name">sink</span></span>)</span>})
-            <span class="returntype parameter">&#8594; </span>
+          <span class="name "><a class="" href="dart-async/Stream/timeout.html">timeout</a></span><span class="signature">(<wbr><span class="parameter" id="timeout-param-timeLimit"><span class="type-annotation"><a class="" href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">timeLimit</span></span>, {<span class="parameter" id="timeout-param-onTimeout"><span class="type-annotation">void</span> <span class="parameter-name">onTimeout</span>(<span class="parameter" id="onTimeout-param-sink"><span class="type-annotation"><a class="" href="dart-async/EventSink-class.html">EventSink</a></span> <span class="parameter-name">sink</span></span>)</span>})
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Stream-class.html">Stream</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -881,7 +873,7 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
         </dd>
         <dt id="transform" class="callable inherited">
           <span class="name "><a class="" href="dart-async/Stream/transform.html">transform</a></span><span class="signature">(<wbr><span class="parameter" id="transform-param-streamTransformer"><span class="type-annotation"><a class="" href="dart-async/StreamTransformer-class.html">StreamTransformer</a>&lt;<a class="" href="dart-io/HttpRequest-class.html">HttpRequest</a>, dynamic&gt;</span> <span class="parameter-name">streamTransformer</span></span>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Stream-class.html">Stream</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -984,7 +976,7 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -1008,7 +1000,6 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

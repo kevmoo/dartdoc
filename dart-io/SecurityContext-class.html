@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>SecurityContext class - dart:io library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -39,13 +40,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -61,7 +55,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">abstract class</div> SecurityContext
+            <span class="kind">abstract class</span> SecurityContext
           </h1>
         </div>
         <ul class="subnav">
@@ -202,8 +196,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="desc markdown">
-    
-        <p>The object containing the certificates to trust when making
+      <p>The object containing the certificates to trust when making
 a secure client connection, and the certificate chain and
 private key to serve from a secure server.</p>
 <p>The <a class="" href="dart-io/SecureSocket-class.html">SecureSocket</a>  and <code>SecureServer</code> classes take a SecurityContext
@@ -214,9 +207,8 @@ ASN1 objects, surrounded with delimiter strings like
 "-----BEGIN CERTIFICATE -----" and "-----END CERTIFICATE-----".
 Distinguished encoding rules (DER) is a canonical binary serialization
 of ASN1 objects into an octet string.</p>
-    
     </section>
-
+    
 
 
     <section class="summary offset-anchor" id="static-properties">
@@ -228,7 +220,13 @@ of ASN1 objects into an octet string.</p>
           <span class="signature">&#8594; <a class="" href="dart-io/SecurityContext-class.html">SecurityContext</a></span>
         </dt>
         <dd>
-          <p></p>
+          <p>Secure networking classes with an optional <code>context</code> parameter
+use the <code>defaultContext</code> object if the parameter is omitted.
+This object can also be accessed, and modified, directly.
+Each isolate has a different <code>defaultContext</code> object.
+The <code>defaultContext</code> object uses a list of well-known trusted
+certificate authorities as its trusted roots.  This list is
+taken from Mozilla, who maintains it as part of Firefox.</p>
           <div class="features">
     read-only
   </div>
@@ -425,7 +423,7 @@ used, but this is not usual.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -449,7 +447,6 @@ used, but this is not usual.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

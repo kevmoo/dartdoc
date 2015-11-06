@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>Timeline class - dart:developer library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -39,13 +40,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -61,7 +55,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">class</div> Timeline
+            <span class="kind">class</span> Timeline
           </h1>
         </div>
         <ul class="subnav">
@@ -98,14 +92,12 @@
     
     
       <li class="section-title"><a href="dart-developer/dart-developer-library.html#classes">Classes</a></li>
-      <li><a class="" href="dart-developer/AsyncBlock-class.html">AsyncBlock</a></li>
       <li><a class="" href="dart-developer/Counter-class.html">Counter</a></li>
       <li><a class="" href="dart-developer/Gauge-class.html">Gauge</a></li>
       <li><a class="" href="dart-developer/Metric-class.html">Metric</a></li>
       <li><a class="" href="dart-developer/Metrics-class.html">Metrics</a></li>
       <li><a class="" href="dart-developer/ServiceExtensionResponse-class.html">ServiceExtensionResponse</a></li>
       <li><a class="" href="dart-developer/Timeline-class.html">Timeline</a></li>
-      <li><a class="" href="dart-developer/TimelineTask-class.html">TimelineTask</a></li>
       <li><a class="" href="dart-developer/UserTag-class.html">UserTag</a></li>
     
     </ol>
@@ -114,11 +106,9 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="desc markdown">
-    
-        <p>Add to the timeline.</p>
-    
+      <p>Add to the timeline.</p>
     </section>
-
+    
 
 
 
@@ -134,7 +124,7 @@
           <p>Finish the last synchronous operation that was started.</p>
         </dd>
         <dt id="startSync" class="callable">
-          <span class="name "><a class="" href="dart-developer/Timeline/startSync.html">startSync</a></span><span class="signature">(<wbr><span class="parameter" id="startSync-param-name"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span></span>, {<span class="parameter" id="startSync-param-arguments"><span class="parameter-name">arguments</span></span>})
+          <span class="name "><a class="" href="dart-developer/Timeline/startSync.html">startSync</a></span><span class="signature">(<wbr><span class="parameter" id="startSync-param-name"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span></span>, {<span class="parameter" id="startSync-param-arguments"><span class="type-annotation"><a class="" href="dart-core/Map-class.html">Map</a></span> <span class="parameter-name">arguments</span></span>})
             <span class="returntype parameter">&#8594; void</span>
           </span>
         </dt>
@@ -144,7 +134,7 @@ a <a class="" href="dart-core/Map-class.html">Map</a> of <code>arguments</code>.
 returning to the event queue.</p>
         </dd>
         <dt id="timeSync" class="callable">
-          <span class="name "><a class="" href="dart-developer/Timeline/timeSync.html">timeSync</a></span><span class="signature">(<wbr><span class="parameter" id="timeSync-param-name"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span></span>, <span class="parameter" id="timeSync-param-function"><span class="type-annotation">dynamic</span> <span class="parameter-name">function</span>()</span>, {<span class="parameter" id="timeSync-param-arguments"><span class="parameter-name">arguments</span></span>})
+          <span class="name "><a class="" href="dart-developer/Timeline/timeSync.html">timeSync</a></span><span class="signature">(<wbr><span class="parameter" id="timeSync-param-name"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span></span>, <span class="parameter" id="timeSync-param-function"><span class="type-annotation">dynamic</span> <span class="parameter-name">function</span>()</span>, {<span class="parameter" id="timeSync-param-arguments"><span class="type-annotation"><a class="" href="dart-core/Map-class.html">Map</a></span> <span class="parameter-name">arguments</span></span>})
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
         </dt>
@@ -279,7 +269,7 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -303,7 +293,6 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

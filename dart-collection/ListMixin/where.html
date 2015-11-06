@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>where method - ListMixin class - dart:collection library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> where
+            <span class="kind">method</span> where
           </h1>
         </div>
         <ul class="subnav">
@@ -166,8 +160,7 @@
     </section>
 
     <section class="desc markdown">
-    
-        <p>Returns a new lazy <code>Iterable</code> with all elements that satisfy the
+      <p>Returns a new lazy <code>Iterable</code> with all elements that satisfy the
 predicate <code>test</code>.</p>
 <p>The matching elements have the same order in the returned iterable
 as they have in <code>iterator</code>.</p>
@@ -176,9 +169,8 @@ returned <code>Iterable</code> is not iterated over, the supplied function <code
 not be invoked. Iterating will not cache results, and thus iterating
 multiple times over the returned <code>Iterable</code> will invoke the supplied
 function <code>test</code> multiple times on the same element.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">Iterable&lt;E&gt; where(bool test(E element)) =&gt; new WhereIterable&lt;E&gt;(this, test);</code></pre>
@@ -194,7 +186,7 @@ function <code>test</code> multiple times on the same element.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -218,7 +210,6 @@ function <code>test</code> multiple times on the same element.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

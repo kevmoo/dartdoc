@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>setRange method - List class - dart:core library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> setRange
+            <span class="kind">method</span> setRange
           </h1>
         </div>
         <ul class="subnav">
@@ -170,8 +164,7 @@
     </section>
 
     <section class="desc markdown">
-    
-        <p>Copies the objects of <code>iterable</code>, skipping <code>skipCount</code> objects first,
+      <p>Copies the objects of <code>iterable</code>, skipping <code>skipCount</code> objects first,
 into the range <code>start</code>, inclusive, to <code>end</code>, exclusive, of the list.</p>
 <pre class="prettyprint lang-dart"><code>List&lt;int&gt; list1 = [1, 2, 3, 4];
 List&lt;int&gt; list2 = [5, 6, 7, 8, 9];
@@ -189,9 +182,8 @@ in the range from <code>skipCount</code> to <code>skipCount + (end - start)</cod
 range <code>start</code> to <code>end</code>, even if the two ranges overlap.</p>
 <p>If <code>iterable</code> depends on this list in some other way, no guarantees are
 made.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">void setRange(int start, int end, Iterable&lt;E&gt; iterable, [int skipCount = 0]);</code></pre>
@@ -207,7 +199,7 @@ made.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -231,7 +223,6 @@ made.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

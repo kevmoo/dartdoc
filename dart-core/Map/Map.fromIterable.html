@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>Map.fromIterable constructor - Map class - dart:core library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">factory constructor</div> Map.fromIterable
+            <span class="kind">factory constructor</span> Map.fromIterable
           </h1>
         </div>
         <ul class="subnav">
@@ -130,12 +124,11 @@
 
       <section class="multi-line-signature">
         
-                <span class="name ">Map.fromIterable</span>(<wbr><span class="parameter" id="fromIterable-param-iterable"><span class="parameter-name">iterable</span></span>, {<span class="parameter" id="fromIterable-param-key"><span class="type-annotation">K</span> <span class="parameter-name">key</span>(<span class="parameter" id="key-param-element"><span class="parameter-name">element</span></span>)</span>, <span class="parameter" id="fromIterable-param-value"><span class="type-annotation">V</span> <span class="parameter-name">value</span>(<span class="parameter" id="value-param-element"><span class="parameter-name">element</span></span>)</span>})
+                <span class="name ">Map.fromIterable</span>(<wbr><span class="parameter" id="fromIterable-param-iterable"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a></span> <span class="parameter-name">iterable</span></span>, {<span class="parameter" id="fromIterable-param-key"><span class="type-annotation">K</span> <span class="parameter-name">key</span>(<span class="parameter" id="key-param-element"><span class="parameter-name">element</span></span>)</span>, <span class="parameter" id="fromIterable-param-value"><span class="type-annotation">V</span> <span class="parameter-name">value</span>(<span class="parameter" id="value-param-element"><span class="parameter-name">element</span></span>)</span>})
       </section>
 
     <section class="desc markdown">
-    
-        <p>Creates a Map instance in which the keys and values are computed from the
+      <p>Creates a Map instance in which the keys and values are computed from the
 <code>iterable</code>.</p>
 <p>The created map is a <a class="" href="dart-collection/LinkedHashMap-class.html">LinkedHashMap</a>.
 A <code>LinkedHashMap</code> requires the keys to implement compatible
@@ -164,9 +157,8 @@ map[3] - map[2]; // 3 - 2
 </code></pre>
 <p>The keys computed by the source <code>iterable</code> do not need to be unique. The
 last occurrence of a key will simply overwrite any previous value.</p>
-    
     </section>
-
+    
       <section class="summary source-code" id="source">
         <h2><span>Source</span> </h2>
         <pre><code class="prettyprint lang-dart">factory Map.fromIterable(Iterable iterable,
@@ -183,7 +175,7 @@ last occurrence of a key will simply overwrite any previous value.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -207,7 +199,6 @@ last occurrence of a key will simply overwrite any previous value.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

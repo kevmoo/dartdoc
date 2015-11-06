@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>SplayTreeMap class - dart:collection library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -39,13 +40,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -61,7 +55,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">class</div> SplayTreeMap&lt;K, V&gt;
+            <span class="kind">class</span> SplayTreeMap&lt;K, V&gt;
           </h1>
         </div>
         <ul class="subnav">
@@ -123,8 +117,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="desc markdown">
-    
-        <p>A <a class="" href="dart-core/Map-class.html">Map</a> of objects that can be ordered relative to each other.</p>
+      <p>A <a class="" href="dart-core/Map-class.html">Map</a> of objects that can be ordered relative to each other.</p>
 <p>The map is based on a self-balancing binary tree. It allows most operations
 in amortized logarithmic time.</p>
 <p>Keys of the map are compared using the <code>compare</code> function passed in
@@ -142,9 +135,8 @@ predicate function can be supplied. This function is tested before
 using the <code>compare</code> function on an argument value that may not be a <code>K</code>
 value. If omitted, the <code>isValidKey</code> function defaults to testing if the
 value is a <code>K</code>.</p>
-    
     </section>
-
+    
     <section>
       <dl class="dl-horizontal">
 
@@ -174,14 +166,14 @@ value is a <code>K</code>.</p>
           <p></p>
         </dd>
         <dt id="SplayTreeMap.from" class="callable">
-          <span class="name"><a class="" href="dart-collection/SplayTreeMap/SplayTreeMap.from.html">SplayTreeMap.from</a></span><span class="signature">(<span class="parameter" id="from-param-other"><span class="parameter-name">other</span></span>, [<span class="parameter" id="from-param-compare"><span class="type-annotation">int</span> <span class="parameter-name">compare</span>(<span class="parameter" id="compare-param-key1"><span class="type-annotation">K</span> <span class="parameter-name">key1</span></span>, <span class="parameter" id="compare-param-key2"><span class="type-annotation">K</span> <span class="parameter-name">key2</span></span>)</span>, <span class="parameter" id="from-param-isValidKey"><span class="type-annotation">bool</span> <span class="parameter-name">isValidKey</span>(<span class="parameter" id="isValidKey-param-potentialKey"><span class="parameter-name">potentialKey</span></span>)</span>])</span>
+          <span class="name"><a class="" href="dart-collection/SplayTreeMap/SplayTreeMap.from.html">SplayTreeMap.from</a></span><span class="signature">(<span class="parameter" id="from-param-other"><span class="type-annotation"><a class="" href="dart-core/Map-class.html">Map</a></span> <span class="parameter-name">other</span></span>, [<span class="parameter" id="from-param-compare"><span class="type-annotation">int</span> <span class="parameter-name">compare</span>(<span class="parameter" id="compare-param-key1"><span class="type-annotation">K</span> <span class="parameter-name">key1</span></span>, <span class="parameter" id="compare-param-key2"><span class="type-annotation">K</span> <span class="parameter-name">key2</span></span>)</span>, <span class="parameter" id="from-param-isValidKey"><span class="type-annotation">bool</span> <span class="parameter-name">isValidKey</span>(<span class="parameter" id="isValidKey-param-potentialKey"><span class="parameter-name">potentialKey</span></span>)</span>])</span>
         </dt>
         <dd>
           <p>Creates a <a class="" href="dart-collection/SplayTreeMap-class.html">SplayTreeMap</a> that contains all key/value pairs of <code>other</code>.</p>
           <div class="constructor-modifier features">factory</div>
         </dd>
         <dt id="SplayTreeMap.fromIterable" class="callable">
-          <span class="name"><a class="" href="dart-collection/SplayTreeMap/SplayTreeMap.fromIterable.html">SplayTreeMap.fromIterable</a></span><span class="signature">(<span class="parameter" id="fromIterable-param-iterable"><span class="parameter-name">iterable</span></span>, {<span class="parameter" id="fromIterable-param-key"><span class="type-annotation">K</span> <span class="parameter-name">key</span>(<span class="parameter" id="key-param-element"><span class="parameter-name">element</span></span>)</span>, <span class="parameter" id="fromIterable-param-value"><span class="type-annotation">V</span> <span class="parameter-name">value</span>(<span class="parameter" id="value-param-element"><span class="parameter-name">element</span></span>)</span>, <span class="parameter" id="fromIterable-param-compare"><span class="type-annotation">int</span> <span class="parameter-name">compare</span>(<span class="parameter" id="compare-param-key1"><span class="type-annotation">K</span> <span class="parameter-name">key1</span></span>, <span class="parameter" id="compare-param-key2"><span class="type-annotation">K</span> <span class="parameter-name">key2</span></span>)</span>, <span class="parameter" id="fromIterable-param-isValidKey"><span class="type-annotation">bool</span> <span class="parameter-name">isValidKey</span>(<span class="parameter" id="isValidKey-param-potentialKey"><span class="parameter-name">potentialKey</span></span>)</span>})</span>
+          <span class="name"><a class="" href="dart-collection/SplayTreeMap/SplayTreeMap.fromIterable.html">SplayTreeMap.fromIterable</a></span><span class="signature">(<span class="parameter" id="fromIterable-param-iterable"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a></span> <span class="parameter-name">iterable</span></span>, {<span class="parameter" id="fromIterable-param-key"><span class="type-annotation">K</span> <span class="parameter-name">key</span>(<span class="parameter" id="key-param-element"><span class="parameter-name">element</span></span>)</span>, <span class="parameter" id="fromIterable-param-value"><span class="type-annotation">V</span> <span class="parameter-name">value</span>(<span class="parameter" id="value-param-element"><span class="parameter-name">element</span></span>)</span>, <span class="parameter" id="fromIterable-param-compare"><span class="type-annotation">int</span> <span class="parameter-name">compare</span>(<span class="parameter" id="compare-param-key1"><span class="type-annotation">K</span> <span class="parameter-name">key1</span></span>, <span class="parameter" id="compare-param-key2"><span class="type-annotation">K</span> <span class="parameter-name">key2</span></span>)</span>, <span class="parameter" id="fromIterable-param-isValidKey"><span class="type-annotation">bool</span> <span class="parameter-name">isValidKey</span>(<span class="parameter" id="isValidKey-param-potentialKey"><span class="parameter-name">potentialKey</span></span>)</span>})</span>
         </dt>
         <dd>
           <p>Creates a <a class="" href="dart-collection/SplayTreeMap-class.html">SplayTreeMap</a> where the keys and values are computed from the
@@ -492,7 +484,7 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -516,7 +508,6 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

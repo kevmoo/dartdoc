@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>redirect method - HttpResponse class - dart:io library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> redirect
+            <span class="kind">method</span> redirect
           </h1>
         </div>
         <ul class="subnav">
@@ -131,13 +125,12 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="multi-line-signature">
-        <span class="returntype"></span>
+        <span class="returntype"><a class="" href="dart-async/Future-class.html">Future</a></span>
         <span class="name ">redirect</span>(<wbr><span class="parameter" id="redirect-param-location"><span class="type-annotation"><a class="" href="dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">location</span></span>, {<span class="parameter" id="redirect-param-status"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">status</span>: <span class="default-value">HttpStatus.MOVED_TEMPORARILY</span></span>})
     </section>
 
     <section class="desc markdown">
-    
-        <p>Respond with a redirect to <code>location</code>.</p>
+      <p>Respond with a redirect to <code>location</code>.</p>
 <p>The URI in <code>location</code> should be absolute, but there are no checks
 to enforce that.</p>
 <p>By default the HTTP status code <code>HttpStatus.MOVED_TEMPORARILY</code>
@@ -145,9 +138,8 @@ to enforce that.</p>
 specified using the <code>status</code> argument.</p>
 <p>This method will also call <code>close</code>, and the returned future is
 the furure returned by <code>close</code>.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">Future redirect(Uri location, {int status: HttpStatus.MOVED_TEMPORARILY});</code></pre>
@@ -163,7 +155,7 @@ the furure returned by <code>close</code>.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -187,7 +179,6 @@ the furure returned by <code>close</code>.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

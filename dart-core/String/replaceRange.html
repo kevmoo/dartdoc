@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>replaceRange method - String class - dart:core library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> replaceRange
+            <span class="kind">method</span> replaceRange
           </h1>
         </div>
         <ul class="subnav">
@@ -148,17 +142,15 @@
     </section>
 
     <section class="desc markdown">
-    
-        <p>Replaces the substring from <code>start</code> to <code>end</code> with <code>replacement</code>.</p>
+      <p>Replaces the substring from <code>start</code> to <code>end</code> with <code>replacement</code>.</p>
 <p>Returns a new string equivalent to:</p>
 <pre class="prettyprint lang-dart"><code>this.substring(0, start) + replacement + this.substring(end)
 </code></pre>
 <p>The <code>start</code> and <code>end</code> indices must specify a valid range of this string.
 That is <code>0 &lt;= start &lt;= end &lt;= this.length</code>.
 If <code>end</code> is <code>null</code>, it defaults to <a class="" href="dart-core/String/length.html">length</a>.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">String replaceRange(int start, int end, String replacement);</code></pre>
@@ -174,7 +166,7 @@ If <code>end</code> is <code>null</code>, it defaults to <a class="" href="dart-
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -198,7 +190,6 @@ If <code>end</code> is <code>null</code>, it defaults to <a class="" href="dart-
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

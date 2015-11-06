@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>SynchronousStreamController class - dart:async library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -39,13 +40,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -61,7 +55,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">abstract class</div> SynchronousStreamController&lt;T&gt;
+            <span class="kind">abstract class</span> SynchronousStreamController&lt;T&gt;
           </h1>
         </div>
         <ul class="subnav">
@@ -139,8 +133,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="desc markdown">
-    
-        <p>A stream controller that delivers its events synchronously.</p>
+      <p>A stream controller that delivers its events synchronously.</p>
 <p>A synchronous stream controller is intended for cases where
 an already asynchronous event triggers an event on a stream.</p>
 <p>Instead of adding the event to the stream in a later microtask,
@@ -198,9 +191,8 @@ delivered yet, callbacks will be called synchronously when an event is added.</p
 another event is in progress may cause the second event to be delayed
 and not be delivered synchronously, and until that event is delivered,
 the controller will not act synchronously.</p>
-    
     </section>
-
+    
     <section>
       <dl class="dl-horizontal">
 
@@ -238,7 +230,7 @@ the controller will not act synchronously.</p>
       <dl class="properties">
         <dt id="done" class="property inherited">
           <span class="name"><a class="" href="dart-async/StreamSink/done.html">done</a></span>
-          <span class="signature">&#8594; </span>
+          <span class="signature">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
         </dt>
         <dd class="inherited">
           <p>Return a future which is completed when the <code>StreamSink</code> is finished.<a href="dart-async/StreamSink/done.html">&hellip;</a>
@@ -406,7 +398,7 @@ the controller will not act synchronously.</p>
         </dd>
         <dt id="addStream" class="callable inherited">
           <span class="name "><a class="" href="dart-async/StreamController/addStream.html">addStream</a></span><span class="signature">(<wbr><span class="parameter" id="addStream-param-source"><span class="type-annotation"><a class="" href="dart-async/Stream-class.html">Stream</a>&lt;T&gt;</span> <span class="parameter-name">source</span></span>, {<span class="parameter" id="addStream-param-cancelOnError"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">cancelOnError</span>: <span class="default-value">true</span></span>})
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -416,7 +408,7 @@ the controller will not act synchronously.</p>
         </dd>
         <dt id="close" class="callable">
           <span class="name "><a class="" href="dart-async/SynchronousStreamController/close.html">close</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd>
@@ -497,7 +489,7 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -521,7 +513,6 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

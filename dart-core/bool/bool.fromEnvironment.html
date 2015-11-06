@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>bool.fromEnvironment constructor - bool class - dart:core library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">const constructor</div> bool.fromEnvironment
+            <span class="kind">const constructor</span> bool.fromEnvironment
           </h1>
         </div>
         <ul class="subnav">
@@ -115,8 +109,7 @@
       </section>
 
     <section class="desc markdown">
-    
-        <p>Returns the boolean value of the environment declaration <code>name</code>.</p>
+      <p>Returns the boolean value of the environment declaration <code>name</code>.</p>
 <p>The boolean value of the declaration is <code>true</code> if the declared value is
 the string <code>"true"</code>, and <code>false</code> if the value is <code>"false"</code>.</p>
 <p>In all other cases, including when there is no declaration for <code>name</code>,
@@ -135,9 +128,8 @@ the result is the <code>defaultValue</code>.</p>
 <code>String.fromEnvironment</code> constructor directly:</p>
 <pre class="prettyprint lang-dart"><code>const isLoggingOn = (const String.fromEnvironment("logging") == "on");
 </code></pre>
-    
     </section>
-
+    
       <section class="summary source-code" id="source">
         <h2><span>Source</span> </h2>
         <pre><code class="prettyprint lang-dart">external const factory bool.fromEnvironment(String name,
@@ -154,7 +146,7 @@ the result is the <code>defaultValue</code>.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -178,7 +170,6 @@ the result is the <code>defaultValue</code>.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

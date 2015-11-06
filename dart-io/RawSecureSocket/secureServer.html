@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>secureServer method - RawSecureSocket class - dart:io library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> secureServer
+            <span class="kind">method</span> secureServer
           </h1>
         </div>
         <ul class="subnav">
@@ -165,12 +159,11 @@
 
     <section class="multi-line-signature">
         <span class="returntype"><a class="" href="dart-async/Future-class.html">Future</a>&lt;<a class="" href="dart-io/RawSecureSocket-class.html">RawSecureSocket</a>&gt;</span>
-        <span class="name ">secureServer</span>(<wbr><span class="parameter" id="secureServer-param-socket"><span class="type-annotation"><a class="" href="dart-io/RawSocket-class.html">RawSocket</a></span> <span class="parameter-name">socket</span></span>, <span class="parameter" id="secureServer-param-context"><span class="type-annotation"><a class="" href="dart-io/SecurityContext-class.html">SecurityContext</a></span> <span class="parameter-name">context</span></span>, {<span class="parameter" id="secureServer-param-subscription"><span class="parameter-name">subscription</span></span>, <span class="parameter" id="secureServer-param-bufferedData"><span class="type-annotation"><a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-core/int-class.html">int</a>&gt;</span> <span class="parameter-name">bufferedData</span></span>, <span class="parameter" id="secureServer-param-requestClientCertificate"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">requestClientCertificate</span>: <span class="default-value">false</span></span>, <span class="parameter" id="secureServer-param-requireClientCertificate"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">requireClientCertificate</span>: <span class="default-value">false</span></span>, <span class="parameter" id="secureServer-param-supportedProtocols"><span class="type-annotation"><a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-core/String-class.html">String</a>&gt;</span> <span class="parameter-name">supportedProtocols</span></span>})
+        <span class="name ">secureServer</span>(<wbr><span class="parameter" id="secureServer-param-socket"><span class="type-annotation"><a class="" href="dart-io/RawSocket-class.html">RawSocket</a></span> <span class="parameter-name">socket</span></span>, <span class="parameter" id="secureServer-param-context"><span class="type-annotation"><a class="" href="dart-io/SecurityContext-class.html">SecurityContext</a></span> <span class="parameter-name">context</span></span>, {<span class="parameter" id="secureServer-param-subscription"><span class="type-annotation"><a class="" href="dart-async/StreamSubscription-class.html">StreamSubscription</a></span> <span class="parameter-name">subscription</span></span>, <span class="parameter" id="secureServer-param-bufferedData"><span class="type-annotation"><a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-core/int-class.html">int</a>&gt;</span> <span class="parameter-name">bufferedData</span></span>, <span class="parameter" id="secureServer-param-requestClientCertificate"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">requestClientCertificate</span>: <span class="default-value">false</span></span>, <span class="parameter" id="secureServer-param-requireClientCertificate"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">requireClientCertificate</span>: <span class="default-value">false</span></span>, <span class="parameter" id="secureServer-param-supportedProtocols"><span class="type-annotation"><a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-core/String-class.html">String</a>&gt;</span> <span class="parameter-name">supportedProtocols</span></span>})
     </section>
 
     <section class="desc markdown">
-    
-        <p>Takes an already connected <code>socket</code> and starts server side TLS
+      <p>Takes an already connected <code>socket</code> and starts server side TLS
 handshake to make the communication secure. When the returned
 future completes the <a class="" href="dart-io/RawSecureSocket-class.html">RawSecureSocket</a> has completed the TLS
 handshake. Using this function requires that the other end of the
@@ -187,9 +180,8 @@ parameter. This data will be processed before any other data
 available on the socket.</p>
 <p>See <a class="" href="dart-io/RawSecureServerSocket/bind.html">RawSecureServerSocket.bind</a> for more information on the
 arguments.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">static Future&lt;RawSecureSocket&gt; secureServer(
@@ -226,7 +218,7 @@ arguments.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -250,7 +242,6 @@ arguments.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

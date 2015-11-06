@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>StreamController.broadcast constructor - StreamController class - dart:async library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">factory constructor</div> StreamController.broadcast
+            <span class="kind">factory constructor</span> StreamController.broadcast
           </h1>
         </div>
         <ul class="subnav">
@@ -130,8 +124,7 @@
       </section>
 
     <section class="desc markdown">
-    
-        <p>A controller where <a class="" href="dart-async/StreamController/stream.html">stream</a> can be listened to more than once.</p>
+      <p>A controller where <a class="" href="dart-async/StreamController/stream.html">stream</a> can be listened to more than once.</p>
 <p>The <a class="" href="dart-async/Stream-class.html">Stream</a> returned by <a class="" href="dart-async/StreamController/stream.html">stream</a> is a broadcast stream.
 It can be listened to more than once.</p>
 <p>The controller distributes any events to all currently subscribed
@@ -165,9 +158,8 @@ in order to receive the event.</p>
 and the <code>onCancel</code> is called when there are no longer any active listeners.
 If a listener is added again later, after the <code>onCancel</code> was called,
 the <code>onListen</code> will be called again.</p>
-    
     </section>
-
+    
       <section class="summary source-code" id="source">
         <h2><span>Source</span> </h2>
         <pre><code class="prettyprint lang-dart">factory StreamController.broadcast({void onListen(),
@@ -189,7 +181,7 @@ the <code>onListen</code> will be called again.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -213,7 +205,6 @@ the <code>onListen</code> will be called again.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

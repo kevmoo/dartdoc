@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>apply method - ClosureMirror class - dart:mirrors library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> apply
+            <span class="kind">method</span> apply
           </h1>
         </div>
         <ul class="subnav">
@@ -119,12 +113,11 @@
 
     <section class="multi-line-signature">
         <span class="returntype"><a class="" href="dart-mirrors/InstanceMirror-class.html">InstanceMirror</a></span>
-        <span class="name ">apply</span>(<wbr><span class="parameter" id="apply-param-positionalArguments"><span class="parameter-name">positionalArguments</span></span>, [<span class="parameter" id="apply-param-namedArguments"><span class="type-annotation"><a class="" href="dart-core/Map-class.html">Map</a>&lt;<a class="" href="dart-core/Symbol-class.html">Symbol</a>, dynamic&gt;</span> <span class="parameter-name">namedArguments</span></span>])
+        <span class="name ">apply</span>(<wbr><span class="parameter" id="apply-param-positionalArguments"><span class="type-annotation"><a class="" href="dart-core/List-class.html">List</a></span> <span class="parameter-name">positionalArguments</span></span>, [<span class="parameter" id="apply-param-namedArguments"><span class="type-annotation"><a class="" href="dart-core/Map-class.html">Map</a>&lt;<a class="" href="dart-core/Symbol-class.html">Symbol</a>, dynamic&gt;</span> <span class="parameter-name">namedArguments</span></span>])
     </section>
 
     <section class="desc markdown">
-    
-        <p>Executes the closure and returns a mirror on the result.</p>
+      <p>Executes the closure and returns a mirror on the result.</p>
 <p>Let <em>f</em> be the closure reflected by this mirror,
 let <em>a1, ..., an</em> be the elements of <code>positionalArguments</code>,
 let <em>k1, ..., km</em> be the identifiers denoted by the elements of
@@ -138,9 +131,8 @@ calling <a class="" href="dart-mirrors/reflect.html">reflect</a>\(<em>r</em>\).<
 a non-reflective compilation error had been encountered.</p>
 <p>If the invocation throws an exception <em>e</em> (that it does not catch), this
 method throws <em>e</em>.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">InstanceMirror apply(List positionalArguments,
@@ -157,7 +149,7 @@ method throws <em>e</em>.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -181,7 +173,6 @@ method throws <em>e</em>.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

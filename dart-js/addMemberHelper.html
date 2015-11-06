@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>addMemberHelper function - dart:js library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -39,13 +40,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -61,7 +55,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">function</div> <span class="deprecated">addMemberHelper</span>
+            <span class="kind">function</span> <span class="deprecated">addMemberHelper</span>
           </h1>
         </div>
         <ul class="subnav">
@@ -83,7 +77,7 @@
     
     
       <li class="section-title"><a href="dart-js/dart-js-library.html#properties">Properties</a></li>
-      <li><a class="" href="dart-js/CHECK_JS_INVOCATIONS.html">CHECK_JS_INVOCATIONS</a></li>
+      <li><a class="deprecated" href="dart-js/CHECK_JS_INVOCATIONS.html">CHECK_JS_INVOCATIONS</a></li>
       <li><a class="" href="dart-js/context.html">context</a></li>
       <li><a class="" href="dart-js/jsInterfaceTypes.html">jsInterfaceTypes</a></li>
     
@@ -91,9 +85,9 @@
       <li><a class="deprecated" href="dart-js/addMemberHelper.html">addMemberHelper</a></li>
       <li><a class="" href="dart-js/allowInterop.html">allowInterop</a></li>
       <li><a class="" href="dart-js/allowInteropCaptureThis.html">allowInteropCaptureThis</a></li>
-      <li><a class="" href="dart-js/finalizeJsInterfaces.html">finalizeJsInterfaces</a></li>
+      <li><a class="deprecated" href="dart-js/finalizeJsInterfaces.html">finalizeJsInterfaces</a></li>
       <li><a class="deprecated" href="dart-js/getDartHtmlWrapperFor.html">getDartHtmlWrapperFor</a></li>
-      <li><a class="" href="dart-js/registerJsInterfaces.html">registerJsInterfaces</a></li>
+      <li><a class="deprecated" href="dart-js/registerJsInterfaces.html">registerJsInterfaces</a></li>
       <li><a class="deprecated" href="dart-js/setDartHtmlWrapperFor.html">setDartHtmlWrapperFor</a></li>
       <li><a class="deprecated" href="dart-js/unwrap_jso.html">unwrap_jso</a></li>
     
@@ -119,18 +113,17 @@
         <span class="name deprecated">addMemberHelper</span>(<wbr><span class="parameter" id="addMemberHelper-param-declaration"><span class="type-annotation"><a class="" href="dart-mirrors/MethodMirror-class.html">MethodMirror</a></span> <span class="parameter-name">declaration</span></span>, <span class="parameter" id="addMemberHelper-param-path"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span></span>, <span class="parameter" id="addMemberHelper-param-sb"><span class="type-annotation"><a class="" href="dart-core/StringBuffer-class.html">StringBuffer</a></span> <span class="parameter-name">sb</span></span>, {<span class="parameter" id="addMemberHelper-param-isStatic"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isStatic</span>: <span class="default-value">false</span></span>, <span class="parameter" id="addMemberHelper-param-memberName"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">memberName</span></span>})
     </section>
 
-    <section class="desc markdown">
     
-        <p class="no-docs">Not documented.</p>
-    
-    </section>
-
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">@Deprecated(&quot;Internal Use Only&quot;)
-void addMemberHelper(mirrors.MethodMirror declaration, String path, StringBuffer sb, {bool isStatic: false, String memberName}) {
-  var jsName = _getJsMemberName(declaration);
-  path = (path != null &amp;&amp; path.isNotEmpty) ? &quot;${path}.${jsName}&quot; : jsName;
+void addMemberHelper(
+    mirrors.MethodMirror declaration, String path, StringBuffer sb,
+    {bool isStatic: false, String memberName}) {
+  if (!declaration.isConstructor) {
+    var jsName = _getJsMemberName(declaration);
+    path = (path != null &amp;&amp; path.isNotEmpty) ? &quot;${path}.${jsName}&quot; : jsName;
+  }
   var name = memberName != null ? memberName : _getDeclarationName(declaration);
   if (declaration.isConstructor) {
     sb.write(&quot;factory&quot;);
@@ -173,7 +166,7 @@ void addMemberHelper(mirrors.MethodMirror declaration, String path, StringBuffer
     // TODO(jacobr):
     sb.write(&quot;) =&gt; &quot;);
     if (declaration.isConstructor) {
-        sb.write(&quot;new ${_JS_LIBRARY_PREFIX}.JsObject(&quot;);
+      sb.write(&quot;new ${_JS_LIBRARY_PREFIX}.JsObject(&quot;);
     }
     sb
       ..write(_accessJsPath(path))
@@ -199,7 +192,7 @@ void addMemberHelper(mirrors.MethodMirror declaration, String path, StringBuffer
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -223,7 +216,6 @@ void addMemberHelper(mirrors.MethodMirror declaration, String path, StringBuffer
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

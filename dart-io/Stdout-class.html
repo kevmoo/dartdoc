@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>Stdout class - dart:io library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -39,13 +40,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -61,7 +55,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">class</div> Stdout
+            <span class="kind">class</span> Stdout
           </h1>
         </div>
         <ul class="subnav">
@@ -200,8 +194,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="desc markdown">
-    
-        <p><a class="" href="dart-io/Stdout-class.html">Stdout</a> represents the <a class="" href="dart-io/IOSink-class.html">IOSink</a> for either <code>stdout</code> or <code>stderr</code>.</p>
+      <p><a class="" href="dart-io/Stdout-class.html">Stdout</a> represents the <a class="" href="dart-io/IOSink-class.html">IOSink</a> for either <code>stdout</code> or <code>stderr</code>.</p>
 <p>It provides a <em>blocking</em> <code>IOSink</code>, so using this to write will block until
 the output is written.</p>
 <p>In some situations this blocking behavior is undesirable as it does not
@@ -210,9 +203,8 @@ Use the property <a class="" href="dart-io/Stdout/nonBlocking.html">nonBlocking<
 behavior.</p>
 <p>This class can also be used to check whether <code>stdout</code> or <code>stderr</code> is
 connected to a terminal and query some terminal properties.</p>
-    
     </section>
-
+    
     <section>
       <dl class="dl-horizontal">
 
@@ -238,7 +230,7 @@ connected to a terminal and query some terminal properties.</p>
       <dl class="properties">
         <dt id="done" class="property inherited">
           <span class="name"><a class="" href="dart-io/Stdout/done.html">done</a></span>
-          <span class="signature">&#8594; </span>
+          <span class="signature">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
         </dt>
         <dd class="inherited">
           <p></p>
@@ -363,7 +355,7 @@ connected to a terminal and query some terminal properties.</p>
         </dd>
         <dt id="addStream" class="callable inherited">
           <span class="name "><a class="" href="dart-io/Stdout/addStream.html">addStream</a></span><span class="signature">(<wbr><span class="parameter" id="addStream-param-stream"><span class="type-annotation"><a class="" href="dart-async/Stream-class.html">Stream</a>&lt;<a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-core/int-class.html">int</a>&gt;&gt;</span> <span class="parameter-name">stream</span></span>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -373,7 +365,7 @@ connected to a terminal and query some terminal properties.</p>
         </dd>
         <dt id="close" class="callable inherited">
           <span class="name "><a class="" href="dart-io/Stdout/close.html">close</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -382,7 +374,7 @@ connected to a terminal and query some terminal properties.</p>
         </dd>
         <dt id="flush" class="callable inherited">
           <span class="name "><a class="" href="dart-io/Stdout/flush.html">flush</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-async/Future-class.html">Future</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -506,7 +498,7 @@ writes the result to <code>this</code>, followed by a newline.<a href="dart-io/S
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -530,7 +522,6 @@ writes the result to <code>this</code>, followed by a newline.<a href="dart-io/S
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

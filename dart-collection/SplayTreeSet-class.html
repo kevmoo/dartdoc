@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>SplayTreeSet class - dart:collection library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -39,13 +40,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -61,7 +55,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">class</div> SplayTreeSet&lt;E&gt;
+            <span class="kind">class</span> SplayTreeSet&lt;E&gt;
           </h1>
         </div>
         <ul class="subnav">
@@ -123,8 +117,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="desc markdown">
-    
-        <p>A <a class="" href="dart-core/Set-class.html">Set</a> of objects that can be ordered relative to each other.</p>
+      <p>A <a class="" href="dart-core/Set-class.html">Set</a> of objects that can be ordered relative to each other.</p>
 <p>The set is based on a self-balancing binary tree. It allows most operations
 in amortized logarithmic time.</p>
 <p>Elements of the set are compared using the <code>compare</code> function passed in
@@ -136,9 +129,8 @@ If the compare function is omitted, the objects are assumed to be
 <a class="" href="dart-core/Comparable-class.html">Comparable</a>, and are compared using their <a class="" href="dart-core/Comparable/compareTo.html">Comparable.compareTo</a> method.
 Non-comparable objects (including <code>null</code>) will not work as an element
 in that case.</p>
-    
     </section>
-
+    
     <section>
       <dl class="dl-horizontal">
 
@@ -168,7 +160,7 @@ in that case.</p>
 </p>
         </dd>
         <dt id="SplayTreeSet.from" class="callable">
-          <span class="name"><a class="" href="dart-collection/SplayTreeSet/SplayTreeSet.from.html">SplayTreeSet.from</a></span><span class="signature">(<span class="parameter" id="from-param-elements"><span class="parameter-name">elements</span></span>, [<span class="parameter" id="from-param-compare"><span class="type-annotation">int</span> <span class="parameter-name">compare</span>(<span class="parameter" id="compare-param-key1"><span class="type-annotation">E</span> <span class="parameter-name">key1</span></span>, <span class="parameter" id="compare-param-key2"><span class="type-annotation">E</span> <span class="parameter-name">key2</span></span>)</span>, <span class="parameter" id="from-param-isValidKey"><span class="type-annotation">bool</span> <span class="parameter-name">isValidKey</span>(<span class="parameter" id="isValidKey-param-potentialKey"><span class="parameter-name">potentialKey</span></span>)</span>])</span>
+          <span class="name"><a class="" href="dart-collection/SplayTreeSet/SplayTreeSet.from.html">SplayTreeSet.from</a></span><span class="signature">(<span class="parameter" id="from-param-elements"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a></span> <span class="parameter-name">elements</span></span>, [<span class="parameter" id="from-param-compare"><span class="type-annotation">int</span> <span class="parameter-name">compare</span>(<span class="parameter" id="compare-param-key1"><span class="type-annotation">E</span> <span class="parameter-name">key1</span></span>, <span class="parameter" id="compare-param-key2"><span class="type-annotation">E</span> <span class="parameter-name">key2</span></span>)</span>, <span class="parameter" id="from-param-isValidKey"><span class="type-annotation">bool</span> <span class="parameter-name">isValidKey</span>(<span class="parameter" id="isValidKey-param-potentialKey"><span class="parameter-name">potentialKey</span></span>)</span>])</span>
         </dt>
         <dd>
           <p>Creates a <a class="" href="dart-collection/SplayTreeSet-class.html">SplayTreeSet</a> that contains all <code>elements</code>.<a href="dart-collection/SplayTreeSet/SplayTreeSet.from.html">&hellip;</a>
@@ -380,7 +372,7 @@ in that case.</p>
         </dd>
         <dt id="expand" class="callable inherited">
           <span class="name "><a class="" href="dart-collection/SetMixin/expand.html">expand</a></span><span class="signature">(<wbr><span class="parameter" id="expand-param-f"><span class="type-annotation">Iterable</span> <span class="parameter-name">f</span>(<span class="parameter" id="f-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Iterable-class.html">Iterable</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -459,7 +451,7 @@ order.</p>
         </dd>
         <dt id="map" class="callable inherited">
           <span class="name "><a class="" href="dart-collection/SetMixin/map.html">map</a></span><span class="signature">(<wbr><span class="parameter" id="map-param-f"><span class="type-annotation">dynamic</span> <span class="parameter-name">f</span>(<span class="parameter" id="f-param-element"><span class="type-annotation">E</span> <span class="parameter-name">element</span></span>)</span>)
-            <span class="returntype parameter">&#8594; </span>
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Iterable-class.html">Iterable</a></span>
           </span>
         </dt>
         <dd class="inherited">
@@ -713,7 +705,7 @@ predicate <code>test</code>.<a href="dart-collection/SetMixin/where.html">&helli
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -737,7 +729,6 @@ predicate <code>test</code>.<a href="dart-collection/SetMixin/where.html">&helli
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

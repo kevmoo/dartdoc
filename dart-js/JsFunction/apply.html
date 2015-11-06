@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>apply method - JsFunction class - dart:js library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> apply
+            <span class="kind">method</span> apply
           </h1>
         </div>
         <ul class="subnav">
@@ -104,6 +98,7 @@
     
       <li class="section-title"><a href="dart-js/JsFunction-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="dart-js/JsFunction/apply.html">apply</a></li>
+      <li><a class="" href="dart-js/JsFunction/call.html">call</a></li>
       <li class="inherited"><a class="" href="dart-js/JsObject/callMethod.html">callMethod</a></li>
       <li class="inherited"><a class="" href="dart-js/JsObject/deleteProperty.html">deleteProperty</a></li>
       <li class="inherited"><a class="" href="dart-js/JsObject/hasProperty.html">hasProperty</a></li>
@@ -118,20 +113,18 @@
 
     <section class="multi-line-signature">
         <span class="returntype">dynamic</span>
-        <span class="name ">apply</span>(<wbr><span class="parameter" id="apply-param-args"><span class="parameter-name">args</span></span>, {<span class="parameter" id="apply-param-thisArg"><span class="parameter-name">thisArg</span></span>})
+        <span class="name ">apply</span>(<wbr><span class="parameter" id="apply-param-args"><span class="type-annotation"><a class="" href="dart-core/List-class.html">List</a></span> <span class="parameter-name">args</span></span>, {<span class="parameter" id="apply-param-thisArg"><span class="parameter-name">thisArg</span></span>})
     </section>
 
     <section class="desc markdown">
-    
-        <p>Invokes the JavaScript function with arguments <code>args</code>. If <code>thisArg</code> is
+      <p>Invokes the JavaScript function with arguments <code>args</code>. If <code>thisArg</code> is
 supplied it is the value of <code>this</code> for the invocation.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">dynamic apply(List args, {thisArg}) =&gt;
-  _maybeWrap(_apply(args, thisArg: thisArg));</code></pre>
+    _maybeWrap(_apply(args, thisArg: thisArg));</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -144,7 +137,7 @@ supplied it is the value of <code>this</code> for the invocation.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -168,7 +161,6 @@ supplied it is the value of <code>this</code> for the invocation.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

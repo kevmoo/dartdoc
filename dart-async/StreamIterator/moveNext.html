@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>moveNext method - StreamIterator class - dart:async library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> moveNext
+            <span class="kind">method</span> moveNext
           </h1>
         </div>
         <ul class="subnav">
@@ -117,8 +111,7 @@
     </section>
 
     <section class="desc markdown">
-    
-        <p>Wait for the next stream value to be available.</p>
+      <p>Wait for the next stream value to be available.</p>
 <p>Returns a future which will complete with either <code>true</code> or <code>false</code>.
 Completing with <code>true</code> means that another event has been received and
 can be read as <a class="" href="dart-async/StreamIterator/current.html">current</a>.
@@ -128,9 +121,8 @@ The future may complete with an error, if the stream produces an error,
 which also ends iteration.</p>
 <p>The function must not be called again until the future returned by a
 previous call is completed.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">Future&lt;bool&gt; moveNext();</code></pre>
@@ -146,7 +138,7 @@ previous call is completed.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -170,7 +162,6 @@ previous call is completed.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

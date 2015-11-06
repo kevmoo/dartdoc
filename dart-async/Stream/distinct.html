@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>distinct method - Stream class - dart:async library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> distinct
+            <span class="kind">method</span> distinct
           </h1>
         </div>
         <ul class="subnav">
@@ -155,8 +149,7 @@
     </section>
 
     <section class="desc markdown">
-    
-        <p>Skips data events if they are equal to the previous data event.</p>
+      <p>Skips data events if they are equal to the previous data event.</p>
 <p>The returned stream provides the same events as this stream, except
 that it never provides two consequtive data events that are equal.</p>
 <p>Equality is determined by the provided <code>equals</code> method. If that is
@@ -164,9 +157,8 @@ omitted, the '==' operator on the last provided data element is used.</p>
 <p>The returned stream is a broadcast stream if this stream is.
 If a broadcast stream is listened to more than once, each subscription
 will individually perform the <code>equals</code> test.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">Stream&lt;T&gt; distinct([bool equals(T previous, T next)]) {
@@ -184,7 +176,7 @@ will individually perform the <code>equals</code> test.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -208,7 +200,6 @@ will individually perform the <code>equals</code> test.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

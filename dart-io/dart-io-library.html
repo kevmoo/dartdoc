@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>dart:io library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -38,13 +39,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -59,7 +53,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">library</div> dart:io
+            <span class="kind">library</span> dart:io
           </h1>
         </div>
         <ul class="subnav">
@@ -107,8 +101,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="desc markdown">
-    
-        <p>File, socket, HTTP, and other I/O support for server applications.</p>
+      <p>File, socket, HTTP, and other I/O support for server applications.</p>
 <p>The I/O library is used for Dart server applications,
 which run on a stand-alone Dart VM from the command line.
 <em>This library does not work in browser-based applications.</em></p>
@@ -259,9 +252,8 @@ properties and methods from the Stream class.</p>
 <a href="https://www.dartlang.org/docs/dart-up-and-running/contents/ch03.html#ch03-dartio---file-and-socket-io-for-command-line-apps">dart:io section of the library tour</a>.</p>
 <p>To learn more about I/O in Dart, refer to the
 <a href="https://www.dartlang.org/docs/tutorials/io/">tutorial about writing command-line apps</a>.</p>
-    
     </section>
-
+    
     <section class="summary offset-anchor" id="constants">
       <h2>Constants</h2>
 
@@ -821,11 +813,11 @@ exposing the raw events signaled by the system. It's a <a class="" href="dart-as
           <p>RawSecureSocket provides a secure (SSL or TLS) network connection.
 Client connections to a server are provided by calling
 RawSecureSocket.connect.  A secure server, created with
-RawSecureServerSocket, also returns RawSecureSocket objects representing
+<a class="" href="dart-io/RawSecureServerSocket-class.html">RawSecureServerSocket</a>, also returns RawSecureSocket objects representing
 the server end of a secure connection.
 The certificate provided by the server is checked
 using the trusted certificates set in the SecurityContext object.
-The default SecurityContext object contains a built-in set of trusted
+The default <a class="" href="dart-io/SecurityContext-class.html">SecurityContext</a> object contains a built-in set of trusted
 root certificates for well-known certificate authorities.</p>
         </dd>
         <dt id="RawServerSocket">
@@ -1212,7 +1204,7 @@ a secure network connection.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -1236,7 +1228,6 @@ a secure network connection.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

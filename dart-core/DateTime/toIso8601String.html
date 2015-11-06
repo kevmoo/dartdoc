@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>toIso8601String method - DateTime class - dart:core library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> toIso8601String
+            <span class="kind">method</span> toIso8601String
           </h1>
         </div>
         <ul class="subnav">
@@ -163,8 +157,7 @@
     </section>
 
     <section class="desc markdown">
-    
-        <p>Returns an ISO-8601 full-precision extended format representation.</p>
+      <p>Returns an ISO-8601 full-precision extended format representation.</p>
 <p>The format is <code>yyyy-MM-ddTHH:mm:ss.sssZ</code> for UTC time, and
 <code>yyyy-MM-ddTHH:mm:ss.sss</code> (no trailing "Z") for local/non-UTC time,
 where:</p><ul><li>
@@ -172,9 +165,8 @@ where:</p><ul><li>
   if the year is in the range -9999 to 9999,
   otherwise it is a signed six digit representation of the year.</p></li><li><code>MM</code> is the month in the range 01 to 12,</li><li><code>dd</code> is the day of the month in the range 01 to 31,</li><li><code>HH</code> are hours in the range 00 to 23,</li><li><code>mm</code> are minutes in the range 00 to 59,</li><li><code>ss</code> are seconds in the range 00 to 59 (no leap seconds), and</li><li><code>sss</code> are milliseconds in the range 000 to 999.</li></ul>
 <p>The resulting string can be parsed back using <a class="" href="dart-core/DateTime/parse.html">parse</a>.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">String toIso8601String() {
@@ -204,7 +196,7 @@ where:</p><ul><li>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -228,7 +220,6 @@ where:</p><ul><li>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

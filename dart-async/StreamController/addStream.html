@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>addStream method - StreamController class - dart:async library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> addStream
+            <span class="kind">method</span> addStream
           </h1>
         </div>
         <ul class="subnav">
@@ -124,13 +118,12 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="multi-line-signature">
-        <span class="returntype"></span>
+        <span class="returntype"><a class="" href="dart-async/Future-class.html">Future</a></span>
         <span class="name ">addStream</span>(<wbr><span class="parameter" id="addStream-param-source"><span class="type-annotation"><a class="" href="dart-async/Stream-class.html">Stream</a>&lt;T&gt;</span> <span class="parameter-name">source</span></span>, {<span class="parameter" id="addStream-param-cancelOnError"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">cancelOnError</span>: <span class="default-value">true</span></span>})
     </section>
 
     <section class="desc markdown">
-    
-        <p>Receives events from <code>source</code> and puts them into this controller's stream.</p>
+      <p>Receives events from <code>source</code> and puts them into this controller's stream.</p>
 <p>Returns a future which completes when the source stream is done.</p>
 <p>Events must not be added directly to this controller using <a class="" href="dart-async/EventSink/add.html">add</a>,
 <a class="" href="dart-async/StreamController/addError.html">addError</a>, <a class="" href="dart-async/StreamSink/close.html">close</a> or <a class="" href="dart-async/StreamController/addStream.html">addStream</a>, until the returned future
@@ -142,9 +135,8 @@ returned future.</p>
 forwarded to the controller's stream, and the <code>addStream</code> ends
 after this. If <code>cancelOnError</code> is false, all errors are forwarded
 and only a done event will end the <code>addStream</code>.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">Future addStream(Stream&lt;T&gt; source, {bool cancelOnError: true});</code></pre>
@@ -160,7 +152,7 @@ and only a done event will end the <code>addStream</code>.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -184,7 +176,6 @@ and only a done event will end the <code>addStream</code>.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>bind method - ServerSocket class - dart:io library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> bind
+            <span class="kind">method</span> bind
           </h1>
         </div>
         <ul class="subnav">
@@ -155,8 +149,7 @@
     </section>
 
     <section class="desc markdown">
-    
-        <p>Returns a future for a <code>ServerSocket</code>. When the future
+      <p>Returns a future for a <code>ServerSocket</code>. When the future
 completes the server socket is bound to the given <code>address</code> and
 <code>port</code> and has started listening on it.</p>
 <p>The <code>address</code> can either be a <a class="" href="dart-core/String-class.html">String</a> or an
@@ -180,16 +173,14 @@ the system. The actual port used can be retrieved using the
 backlog for the underlying OS listen setup. If <code>backlog</code> has the
 value of <code>0</code> (the default) a reasonable value will be chosen by
 the system.</p>
-<p>The optional argument <code>shared</code> specify whether additional binds
-to the same <code>address</code>, <code>port</code> and <code>v6Only</code> combination is
-possible from the same Dart process. If <code>shared</code> is <code>true</code> and
-additional binds are performed, then the incoming connections
-will be distributed between that set of <code>ServerSocket</code>s. One way
-of using this is to have number of isolates between which
-incoming connections are distributed.</p>
-    
+<p>The optional argument <code>shared</code> specifies whether additional ServerSocket
+objects can bind to the same combination of <code>address</code>, <code>port</code> and <code>v6Only</code>.
+If <code>shared</code> is <code>true</code> and more <code>ServerSocket</code>s from this isolate or other
+isolates are bound to the port, then the incoming connections will be
+distributed among all the bound <code>ServerSocket</code>s. Connections can be
+distributed over multiple isolates this way.</p>
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">external static Future&lt;ServerSocket&gt; bind(address,
@@ -209,7 +200,7 @@ incoming connections are distributed.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -233,7 +224,6 @@ incoming connections are distributed.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

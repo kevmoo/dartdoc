@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>dart:async library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -38,13 +39,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -59,7 +53,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">library</div> dart:async
+            <span class="kind">library</span> dart:async
           </h1>
         </div>
         <ul class="subnav">
@@ -105,8 +99,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="desc markdown">
-    
-        <p>Support for asynchronous programming,
+      <p>Support for asynchronous programming,
 with classes such as Future and Stream.</p>
 <p>Understanding <a class="" href="dart-async/Future-class.html">Future</a>s and <a class="" href="dart-async/Stream-class.html">Stream</a>s is a prerequisite for
 writing just about any Dart program.</p>
@@ -170,9 +163,8 @@ Learn how Dart handles the event queue and microtask queue, so you can write
 better asynchronous code with fewer surprises.</p></li><li>
 <p><a href="https://www.dartlang.org/articles/dart-unit-tests/#asynchronous-tests">Asynchronous Unit Testing with Dart</a>: How
 to test asynchronous code.</p></li></ul>
-    
     </section>
-
+    
 
     <section class="summary offset-anchor" id="typedefs">
       <h2>Typedefs</h2>
@@ -220,7 +212,7 @@ to test asynchronous code.</p></li></ul>
           <p></p>
         </dd>
         <dt id="ForkHandler" class="callable">
-          <span class="name "><a class="" href="dart-async/ForkHandler.html">ForkHandler</a></span><span class="signature">(<wbr><span class="parameter" id="ForkHandler-param-self"><span class="type-annotation"><a class="" href="dart-async/Zone-class.html">Zone</a></span> <span class="parameter-name">self</span></span>, <span class="parameter" id="ForkHandler-param-parent"><span class="type-annotation"><a class="" href="dart-async/ZoneDelegate-class.html">ZoneDelegate</a></span> <span class="parameter-name">parent</span></span>, <span class="parameter" id="ForkHandler-param-zone"><span class="type-annotation"><a class="" href="dart-async/Zone-class.html">Zone</a></span> <span class="parameter-name">zone</span></span>, <span class="parameter" id="ForkHandler-param-specification"><span class="type-annotation"><a class="" href="dart-async/ZoneSpecification-class.html">ZoneSpecification</a></span> <span class="parameter-name">specification</span></span>, <span class="parameter" id="ForkHandler-param-zoneValues"><span class="parameter-name">zoneValues</span></span>)
+          <span class="name "><a class="" href="dart-async/ForkHandler.html">ForkHandler</a></span><span class="signature">(<wbr><span class="parameter" id="ForkHandler-param-self"><span class="type-annotation"><a class="" href="dart-async/Zone-class.html">Zone</a></span> <span class="parameter-name">self</span></span>, <span class="parameter" id="ForkHandler-param-parent"><span class="type-annotation"><a class="" href="dart-async/ZoneDelegate-class.html">ZoneDelegate</a></span> <span class="parameter-name">parent</span></span>, <span class="parameter" id="ForkHandler-param-zone"><span class="type-annotation"><a class="" href="dart-async/Zone-class.html">Zone</a></span> <span class="parameter-name">zone</span></span>, <span class="parameter" id="ForkHandler-param-specification"><span class="type-annotation"><a class="" href="dart-async/ZoneSpecification-class.html">ZoneSpecification</a></span> <span class="parameter-name">specification</span></span>, <span class="parameter" id="ForkHandler-param-zoneValues"><span class="type-annotation"><a class="" href="dart-core/Map-class.html">Map</a></span> <span class="parameter-name">zoneValues</span></span>)
             <span class="returntype parameter">&#8594; <a class="" href="dart-async/Zone-class.html">Zone</a></span>
           </span>
         </dt>
@@ -332,7 +324,7 @@ to test asynchronous code.</p></li></ul>
 
       <dl class="callables">
         <dt id="runZoned" class="callable">
-          <span class="name "><a class="" href="dart-async/runZoned.html">runZoned</a></span><span class="signature">(<wbr><span class="parameter" id="runZoned-param-body"><span class="type-annotation">dynamic</span> <span class="parameter-name">body</span>()</span>, {<span class="parameter" id="runZoned-param-zoneValues"><span class="parameter-name">zoneValues</span></span>, <span class="parameter" id="runZoned-param-zoneSpecification"><span class="type-annotation"><a class="" href="dart-async/ZoneSpecification-class.html">ZoneSpecification</a></span> <span class="parameter-name">zoneSpecification</span></span>, <span class="parameter" id="runZoned-param-onError"><span class="type-annotation"><a class="" href="dart-core/Function-class.html">Function</a></span> <span class="parameter-name">onError</span></span>})
+          <span class="name "><a class="" href="dart-async/runZoned.html">runZoned</a></span><span class="signature">(<wbr><span class="parameter" id="runZoned-param-body"><span class="type-annotation">dynamic</span> <span class="parameter-name">body</span>()</span>, {<span class="parameter" id="runZoned-param-zoneValues"><span class="type-annotation"><a class="" href="dart-core/Map-class.html">Map</a></span> <span class="parameter-name">zoneValues</span></span>, <span class="parameter" id="runZoned-param-zoneSpecification"><span class="type-annotation"><a class="" href="dart-async/ZoneSpecification-class.html">ZoneSpecification</a></span> <span class="parameter-name">zoneSpecification</span></span>, <span class="parameter" id="runZoned-param-onError"><span class="type-annotation"><a class="" href="dart-core/Function-class.html">Function</a></span> <span class="parameter-name">onError</span></span>})
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
         </dt>
@@ -571,7 +563,7 @@ the <code>then</code> was invoked.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -595,7 +587,6 @@ the <code>then</code> was invoked.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.7.5-dev">
   <title>wait method - Future class - dart:async library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -40,13 +41,6 @@
           <form class="search navbar-right" role="search">
             <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
           </form>
-          <div class="navbar-right inherited-view-wrapper">
-            <select id='inherited-view'>
-              <option value='inherited-show' title='Show all class members in the same way.' selected>Show inherited members</option>
-              <option value='inherited-dim' title='Distinguish inherited class members by fading their appearance.'>Dim inherited members</option>
-              <option value='inherited-hide' title='Hide inherited class members entirely.'>Hide inherited members</option>
-            </select>
-          </div>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -63,7 +57,7 @@
         </ol>
         <div class="title-description">
           <h1 class="title">
-            <div class="kind">method</div> wait
+            <span class="kind">method</span> wait
           </h1>
         </div>
         <ul class="subnav">
@@ -123,13 +117,12 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="multi-line-signature">
-        <span class="returntype"><a class="" href="dart-async/Future-class.html">Future</a>&lt;&gt;</span>
-        <span class="name ">wait</span>(<wbr><span class="parameter" id="wait-param-futures"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;&gt;</span> <span class="parameter-name">futures</span></span>, {<span class="parameter" id="wait-param-eagerError"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">eagerError</span>: <span class="default-value">false</span></span>, <span class="parameter" id="wait-param-cleanUp"><span class="type-annotation">void</span> <span class="parameter-name">cleanUp</span>(<span class="parameter" id="cleanUp-param-successValue"><span class="parameter-name">successValue</span></span>)</span>})
+        <span class="returntype"><a class="" href="dart-async/Future-class.html">Future</a>&lt;<a class="" href="dart-core/List-class.html">List</a>&gt;</span>
+        <span class="name ">wait</span>(<wbr><span class="parameter" id="wait-param-futures"><span class="type-annotation"><a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-async/Future-class.html">Future</a>&gt;</span> <span class="parameter-name">futures</span></span>, {<span class="parameter" id="wait-param-eagerError"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">eagerError</span>: <span class="default-value">false</span></span>, <span class="parameter" id="wait-param-cleanUp"><span class="type-annotation">void</span> <span class="parameter-name">cleanUp</span>(<span class="parameter" id="cleanUp-param-successValue"><span class="parameter-name">successValue</span></span>)</span>})
     </section>
 
     <section class="desc markdown">
-    
-        <p>Wait for all the given futures to complete and collect their values.</p>
+      <p>Wait for all the given futures to complete and collect their values.</p>
 <p>Returns a future which will complete once all the futures in a list are
 complete. If any of the futures in the list completes with an error,
 the resulting future also completes with an error. Otherwise the value
@@ -144,9 +137,8 @@ a successful future is passed to <code>cleanUp</code>, which can then release an
 resources that the successful operation allocated.</p>
 <p>The call to <code>cleanUp</code> should not throw. If it does, the error will be an
 uncaught asynchronous error.</p>
-    
     </section>
-
+    
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">static Future&lt;List&gt; wait(Iterable&lt;Future&gt; futures,
@@ -222,7 +214,7 @@ uncaught asynchronous error.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.6
+          Dart SDK 1.13.0-dev.7.10
         </span>
         &bull;
         <span class="no-break">
@@ -246,7 +238,6 @@ uncaught asynchronous error.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.5-dev -->
 </body>
 
 </html>
