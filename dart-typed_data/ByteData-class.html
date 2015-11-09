@@ -92,18 +92,18 @@
       <li><a class="" href="dart-typed_data/Float64List-class.html">Float64List</a></li>
       <li><a class="" href="dart-typed_data/Float64x2-class.html">Float64x2</a></li>
       <li><a class="" href="dart-typed_data/Float64x2List-class.html">Float64x2List</a></li>
+      <li><a class="" href="dart-typed_data/Int8List-class.html">Int8List</a></li>
       <li><a class="" href="dart-typed_data/Int16List-class.html">Int16List</a></li>
       <li><a class="" href="dart-typed_data/Int32List-class.html">Int32List</a></li>
       <li><a class="" href="dart-typed_data/Int32x4-class.html">Int32x4</a></li>
       <li><a class="" href="dart-typed_data/Int32x4List-class.html">Int32x4List</a></li>
       <li><a class="" href="dart-typed_data/Int64List-class.html">Int64List</a></li>
-      <li><a class="" href="dart-typed_data/Int8List-class.html">Int8List</a></li>
       <li><a class="" href="dart-typed_data/TypedData-class.html">TypedData</a></li>
+      <li><a class="" href="dart-typed_data/Uint8ClampedList-class.html">Uint8ClampedList</a></li>
+      <li><a class="" href="dart-typed_data/Uint8List-class.html">Uint8List</a></li>
       <li><a class="" href="dart-typed_data/Uint16List-class.html">Uint16List</a></li>
       <li><a class="" href="dart-typed_data/Uint32List-class.html">Uint32List</a></li>
       <li><a class="" href="dart-typed_data/Uint64List-class.html">Uint64List</a></li>
-      <li><a class="" href="dart-typed_data/Uint8ClampedList-class.html">Uint8ClampedList</a></li>
-      <li><a class="" href="dart-typed_data/Uint8List-class.html">Uint8List</a></li>
     
     </ol>
   </div>
@@ -282,6 +282,17 @@ the specified <code>byteOffset</code> in this object, in IEEE 754
 double-precision binary floating-point format (binary64).<a href="dart-typed_data/ByteData/getFloat64.html">&hellip;</a>
 </p>
         </dd>
+        <dt id="getInt8" class="callable">
+          <span class="name "><a class="" href="dart-typed_data/ByteData/getInt8.html">getInt8</a></span><span class="signature">(<wbr><span class="parameter" id="getInt8-param-byteOffset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">byteOffset</span></span>)
+            <span class="returntype parameter">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p>Returns the (possibly negative) integer represented by the byte at the
+specified <code>byteOffset</code> in this object, in two's complement binary
+representation.<a href="dart-typed_data/ByteData/getInt8.html">&hellip;</a>
+</p>
+        </dd>
         <dt id="getInt16" class="callable">
           <span class="name "><a class="" href="dart-typed_data/ByteData/getInt16.html">getInt16</a></span><span class="signature">(<wbr><span class="parameter" id="getInt16-param-byteOffset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">byteOffset</span></span>, [<span class="parameter" id="getInt16-param-endian"><span class="type-annotation"><a class="" href="dart-typed_data/Endianness-class.html">Endianness</a></span> <span class="parameter-name">endian</span> = <span class="default-value">Endianness.BIG_ENDIAN</span></span>])
             <span class="returntype parameter">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
@@ -315,15 +326,14 @@ the specified <code>byteOffset</code> in this object, in two's complement binary
 form.<a href="dart-typed_data/ByteData/getInt64.html">&hellip;</a>
 </p>
         </dd>
-        <dt id="getInt8" class="callable">
-          <span class="name "><a class="" href="dart-typed_data/ByteData/getInt8.html">getInt8</a></span><span class="signature">(<wbr><span class="parameter" id="getInt8-param-byteOffset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">byteOffset</span></span>)
+        <dt id="getUint8" class="callable">
+          <span class="name "><a class="" href="dart-typed_data/ByteData/getUint8.html">getUint8</a></span><span class="signature">(<wbr><span class="parameter" id="getUint8-param-byteOffset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">byteOffset</span></span>)
             <span class="returntype parameter">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
           </span>
         </dt>
         <dd>
-          <p>Returns the (possibly negative) integer represented by the byte at the
-specified <code>byteOffset</code> in this object, in two's complement binary
-representation.<a href="dart-typed_data/ByteData/getInt8.html">&hellip;</a>
+          <p>Returns the positive integer represented by the byte at the specified
+<code>byteOffset</code> in this object, in unsigned binary form.<a href="dart-typed_data/ByteData/getUint8.html">&hellip;</a>
 </p>
         </dd>
         <dt id="getUint16" class="callable">
@@ -357,16 +367,6 @@ form.<a href="dart-typed_data/ByteData/getUint32.html">&hellip;</a>
           <p>Returns the positive integer represented by the eight bytes starting
 at the specified <code>byteOffset</code> in this object, in unsigned binary
 form.<a href="dart-typed_data/ByteData/getUint64.html">&hellip;</a>
-</p>
-        </dd>
-        <dt id="getUint8" class="callable">
-          <span class="name "><a class="" href="dart-typed_data/ByteData/getUint8.html">getUint8</a></span><span class="signature">(<wbr><span class="parameter" id="getUint8-param-byteOffset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">byteOffset</span></span>)
-            <span class="returntype parameter">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
-          </span>
-        </dt>
-        <dd>
-          <p>Returns the positive integer represented by the byte at the specified
-<code>byteOffset</code> in this object, in unsigned binary form.<a href="dart-typed_data/ByteData/getUint8.html">&hellip;</a>
 </p>
         </dd>
         <dt id="noSuchMethod" class="callable inherited">
@@ -405,6 +405,17 @@ object to the IEEE 754 double-precision binary floating-point
 (binary64) representation of the specified <code>value</code>.<a href="dart-typed_data/ByteData/setFloat64.html">&hellip;</a>
 </p>
         </dd>
+        <dt id="setInt8" class="callable">
+          <span class="name "><a class="" href="dart-typed_data/ByteData/setInt8.html">setInt8</a></span><span class="signature">(<wbr><span class="parameter" id="setInt8-param-byteOffset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">byteOffset</span></span>, <span class="parameter" id="setInt8-param-value"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p>Sets the byte at the specified <code>byteOffset</code> in this object to the
+two's complement binary representation of the specified <code>value</code>, which
+must fit in a single byte.<a href="dart-typed_data/ByteData/setInt8.html">&hellip;</a>
+</p>
+        </dd>
         <dt id="setInt16" class="callable">
           <span class="name "><a class="" href="dart-typed_data/ByteData/setInt16.html">setInt16</a></span><span class="signature">(<wbr><span class="parameter" id="setInt16-param-byteOffset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">byteOffset</span></span>, <span class="parameter" id="setInt16-param-value"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span>, [<span class="parameter" id="setInt16-param-endian"><span class="type-annotation"><a class="" href="dart-typed_data/Endianness-class.html">Endianness</a></span> <span class="parameter-name">endian</span> = <span class="default-value">Endianness.BIG_ENDIAN</span></span>])
             <span class="returntype parameter">&#8594; void</span>
@@ -438,15 +449,15 @@ object to the two's complement binary representation of the specified
 <code>value</code>, which must fit in eight bytes.<a href="dart-typed_data/ByteData/setInt64.html">&hellip;</a>
 </p>
         </dd>
-        <dt id="setInt8" class="callable">
-          <span class="name "><a class="" href="dart-typed_data/ByteData/setInt8.html">setInt8</a></span><span class="signature">(<wbr><span class="parameter" id="setInt8-param-byteOffset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">byteOffset</span></span>, <span class="parameter" id="setInt8-param-value"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span>)
+        <dt id="setUint8" class="callable">
+          <span class="name "><a class="" href="dart-typed_data/ByteData/setUint8.html">setUint8</a></span><span class="signature">(<wbr><span class="parameter" id="setUint8-param-byteOffset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">byteOffset</span></span>, <span class="parameter" id="setUint8-param-value"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
         </dt>
         <dd>
           <p>Sets the byte at the specified <code>byteOffset</code> in this object to the
-two's complement binary representation of the specified <code>value</code>, which
-must fit in a single byte.<a href="dart-typed_data/ByteData/setInt8.html">&hellip;</a>
+unsigned binary representation of the specified <code>value</code>, which must fit
+in a single byte.<a href="dart-typed_data/ByteData/setUint8.html">&hellip;</a>
 </p>
         </dd>
         <dt id="setUint16" class="callable">
@@ -480,17 +491,6 @@ which must fit in four bytes.<a href="dart-typed_data/ByteData/setUint32.html">&
           <p>Sets the eight bytes starting at the specified <code>byteOffset</code> in this object
 to the unsigned binary representation of the specified <code>value</code>,
 which must fit in eight bytes.<a href="dart-typed_data/ByteData/setUint64.html">&hellip;</a>
-</p>
-        </dd>
-        <dt id="setUint8" class="callable">
-          <span class="name "><a class="" href="dart-typed_data/ByteData/setUint8.html">setUint8</a></span><span class="signature">(<wbr><span class="parameter" id="setUint8-param-byteOffset"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">byteOffset</span></span>, <span class="parameter" id="setUint8-param-value"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; void</span>
-          </span>
-        </dt>
-        <dd>
-          <p>Sets the byte at the specified <code>byteOffset</code> in this object to the
-unsigned binary representation of the specified <code>value</code>, which must fit
-in a single byte.<a href="dart-typed_data/ByteData/setUint8.html">&hellip;</a>
 </p>
         </dd>
         <dt id="toString" class="callable inherited">
@@ -533,25 +533,25 @@ in a single byte.<a href="dart-typed_data/ByteData/setUint8.html">&hellip;</a>
       <li class="section-title"><a href="dart-typed_data/ByteData-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="dart-typed_data/ByteData/getFloat32.html">getFloat32</a></li>
       <li><a class="" href="dart-typed_data/ByteData/getFloat64.html">getFloat64</a></li>
+      <li><a class="" href="dart-typed_data/ByteData/getInt8.html">getInt8</a></li>
       <li><a class="" href="dart-typed_data/ByteData/getInt16.html">getInt16</a></li>
       <li><a class="" href="dart-typed_data/ByteData/getInt32.html">getInt32</a></li>
       <li><a class="" href="dart-typed_data/ByteData/getInt64.html">getInt64</a></li>
-      <li><a class="" href="dart-typed_data/ByteData/getInt8.html">getInt8</a></li>
+      <li><a class="" href="dart-typed_data/ByteData/getUint8.html">getUint8</a></li>
       <li><a class="" href="dart-typed_data/ByteData/getUint16.html">getUint16</a></li>
       <li><a class="" href="dart-typed_data/ByteData/getUint32.html">getUint32</a></li>
       <li><a class="" href="dart-typed_data/ByteData/getUint64.html">getUint64</a></li>
-      <li><a class="" href="dart-typed_data/ByteData/getUint8.html">getUint8</a></li>
       <li class="inherited"><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="dart-typed_data/ByteData/setFloat32.html">setFloat32</a></li>
       <li><a class="" href="dart-typed_data/ByteData/setFloat64.html">setFloat64</a></li>
+      <li><a class="" href="dart-typed_data/ByteData/setInt8.html">setInt8</a></li>
       <li><a class="" href="dart-typed_data/ByteData/setInt16.html">setInt16</a></li>
       <li><a class="" href="dart-typed_data/ByteData/setInt32.html">setInt32</a></li>
       <li><a class="" href="dart-typed_data/ByteData/setInt64.html">setInt64</a></li>
-      <li><a class="" href="dart-typed_data/ByteData/setInt8.html">setInt8</a></li>
+      <li><a class="" href="dart-typed_data/ByteData/setUint8.html">setUint8</a></li>
       <li><a class="" href="dart-typed_data/ByteData/setUint16.html">setUint16</a></li>
       <li><a class="" href="dart-typed_data/ByteData/setUint32.html">setUint32</a></li>
       <li><a class="" href="dart-typed_data/ByteData/setUint64.html">setUint64</a></li>
-      <li><a class="" href="dart-typed_data/ByteData/setUint8.html">setUint8</a></li>
       <li class="inherited"><a class="" href="dart-core/Object/toString.html">toString</a></li>
     </ol>
   </div><!--/.sidebar-offcanvas-->

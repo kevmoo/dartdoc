@@ -261,8 +261,8 @@
       <li><a class="" href="dart-web_gl/REPEAT.html">REPEAT</a></li>
       <li><a class="" href="dart-web_gl/REPLACE.html">REPLACE</a></li>
       <li><a class="" href="dart-web_gl/RGB.html">RGB</a></li>
-      <li><a class="" href="dart-web_gl/RGB565.html">RGB565</a></li>
       <li><a class="" href="dart-web_gl/RGB5_A1.html">RGB5_A1</a></li>
+      <li><a class="" href="dart-web_gl/RGB565.html">RGB565</a></li>
       <li><a class="" href="dart-web_gl/RGBA.html">RGBA</a></li>
       <li><a class="" href="dart-web_gl/RGBA4.html">RGBA4</a></li>
       <li><a class="" href="dart-web_gl/SAMPLER_2D.html">SAMPLER_2D</a></li>
@@ -308,6 +308,14 @@
       <li><a class="" href="dart-web_gl/TEXTURE.html">TEXTURE</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE0.html">TEXTURE0</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE1.html">TEXTURE1</a></li>
+      <li><a class="" href="dart-web_gl/TEXTURE2.html">TEXTURE2</a></li>
+      <li><a class="" href="dart-web_gl/TEXTURE3.html">TEXTURE3</a></li>
+      <li><a class="" href="dart-web_gl/TEXTURE4.html">TEXTURE4</a></li>
+      <li><a class="" href="dart-web_gl/TEXTURE5.html">TEXTURE5</a></li>
+      <li><a class="" href="dart-web_gl/TEXTURE6.html">TEXTURE6</a></li>
+      <li><a class="" href="dart-web_gl/TEXTURE7.html">TEXTURE7</a></li>
+      <li><a class="" href="dart-web_gl/TEXTURE8.html">TEXTURE8</a></li>
+      <li><a class="" href="dart-web_gl/TEXTURE9.html">TEXTURE9</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE10.html">TEXTURE10</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE11.html">TEXTURE11</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE12.html">TEXTURE12</a></li>
@@ -318,7 +326,6 @@
       <li><a class="" href="dart-web_gl/TEXTURE17.html">TEXTURE17</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE18.html">TEXTURE18</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE19.html">TEXTURE19</a></li>
-      <li><a class="" href="dart-web_gl/TEXTURE2.html">TEXTURE2</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE20.html">TEXTURE20</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE21.html">TEXTURE21</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE22.html">TEXTURE22</a></li>
@@ -329,15 +336,8 @@
       <li><a class="" href="dart-web_gl/TEXTURE27.html">TEXTURE27</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE28.html">TEXTURE28</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE29.html">TEXTURE29</a></li>
-      <li><a class="" href="dart-web_gl/TEXTURE3.html">TEXTURE3</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE30.html">TEXTURE30</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE31.html">TEXTURE31</a></li>
-      <li><a class="" href="dart-web_gl/TEXTURE4.html">TEXTURE4</a></li>
-      <li><a class="" href="dart-web_gl/TEXTURE5.html">TEXTURE5</a></li>
-      <li><a class="" href="dart-web_gl/TEXTURE6.html">TEXTURE6</a></li>
-      <li><a class="" href="dart-web_gl/TEXTURE7.html">TEXTURE7</a></li>
-      <li><a class="" href="dart-web_gl/TEXTURE8.html">TEXTURE8</a></li>
-      <li><a class="" href="dart-web_gl/TEXTURE9.html">TEXTURE9</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE_2D.html">TEXTURE_2D</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE_BINDING_2D.html">TEXTURE_BINDING_2D</a></li>
       <li><a class="" href="dart-web_gl/TEXTURE_BINDING_CUBE_MAP.html">TEXTURE_BINDING_CUBE_MAP</a></li>
@@ -2441,17 +2441,6 @@
             <span class="signature"><code>0x1907</code></span>
           </div>
         </dd>
-        <dt id="RGB565" class="constant">
-          <span class="name "><a class="" href="dart-web_gl/RenderingContext/RGB565.html">RGB565</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x8D62</code></span>
-          </div>
-        </dd>
         <dt id="RGB5_A1" class="constant">
           <span class="name "><a class="" href="dart-web_gl/RenderingContext/RGB5_A1.html">RGB5_A1</a></span>
           <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
@@ -2461,6 +2450,17 @@
           <div>
             <span class="features">const</span>
             <span class="signature"><code>0x8057</code></span>
+          </div>
+        </dd>
+        <dt id="RGB565" class="constant">
+          <span class="name "><a class="" href="dart-web_gl/RenderingContext/RGB565.html">RGB565</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x8D62</code></span>
           </div>
         </dd>
         <dt id="RGBA" class="constant">
@@ -2958,6 +2958,94 @@
             <span class="signature"><code>0x84C1</code></span>
           </div>
         </dd>
+        <dt id="TEXTURE2" class="constant">
+          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE2.html">TEXTURE2</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x84C2</code></span>
+          </div>
+        </dd>
+        <dt id="TEXTURE3" class="constant">
+          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE3.html">TEXTURE3</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x84C3</code></span>
+          </div>
+        </dd>
+        <dt id="TEXTURE4" class="constant">
+          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE4.html">TEXTURE4</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x84C4</code></span>
+          </div>
+        </dd>
+        <dt id="TEXTURE5" class="constant">
+          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE5.html">TEXTURE5</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x84C5</code></span>
+          </div>
+        </dd>
+        <dt id="TEXTURE6" class="constant">
+          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE6.html">TEXTURE6</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x84C6</code></span>
+          </div>
+        </dd>
+        <dt id="TEXTURE7" class="constant">
+          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE7.html">TEXTURE7</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x84C7</code></span>
+          </div>
+        </dd>
+        <dt id="TEXTURE8" class="constant">
+          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE8.html">TEXTURE8</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x84C8</code></span>
+          </div>
+        </dd>
+        <dt id="TEXTURE9" class="constant">
+          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE9.html">TEXTURE9</a></span>
+          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x84C9</code></span>
+          </div>
+        </dd>
         <dt id="TEXTURE10" class="constant">
           <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE10.html">TEXTURE10</a></span>
           <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
@@ -3066,17 +3154,6 @@
           <div>
             <span class="features">const</span>
             <span class="signature"><code>0x84D3</code></span>
-          </div>
-        </dd>
-        <dt id="TEXTURE2" class="constant">
-          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE2.html">TEXTURE2</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x84C2</code></span>
           </div>
         </dd>
         <dt id="TEXTURE20" class="constant">
@@ -3189,17 +3266,6 @@
             <span class="signature"><code>0x84DD</code></span>
           </div>
         </dd>
-        <dt id="TEXTURE3" class="constant">
-          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE3.html">TEXTURE3</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x84C3</code></span>
-          </div>
-        </dd>
         <dt id="TEXTURE30" class="constant">
           <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE30.html">TEXTURE30</a></span>
           <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
@@ -3220,72 +3286,6 @@
           <div>
             <span class="features">const</span>
             <span class="signature"><code>0x84DF</code></span>
-          </div>
-        </dd>
-        <dt id="TEXTURE4" class="constant">
-          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE4.html">TEXTURE4</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x84C4</code></span>
-          </div>
-        </dd>
-        <dt id="TEXTURE5" class="constant">
-          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE5.html">TEXTURE5</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x84C5</code></span>
-          </div>
-        </dd>
-        <dt id="TEXTURE6" class="constant">
-          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE6.html">TEXTURE6</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x84C6</code></span>
-          </div>
-        </dd>
-        <dt id="TEXTURE7" class="constant">
-          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE7.html">TEXTURE7</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x84C7</code></span>
-          </div>
-        </dd>
-        <dt id="TEXTURE8" class="constant">
-          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE8.html">TEXTURE8</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x84C8</code></span>
-          </div>
-        </dd>
-        <dt id="TEXTURE9" class="constant">
-          <span class="name "><a class="" href="dart-web_gl/RenderingContext/TEXTURE9.html">TEXTURE9</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x84C9</code></span>
           </div>
         </dd>
         <dt id="TEXTURE_2D" class="constant">
@@ -5290,8 +5290,8 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
       <li><a class="" href="dart-web_gl/RenderingContext/REPEAT.html">REPEAT</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/REPLACE.html">REPLACE</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/RGB.html">RGB</a></li>
-      <li><a class="" href="dart-web_gl/RenderingContext/RGB565.html">RGB565</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/RGB5_A1.html">RGB5_A1</a></li>
+      <li><a class="" href="dart-web_gl/RenderingContext/RGB565.html">RGB565</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/RGBA.html">RGBA</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/RGBA4.html">RGBA4</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/SAMPLER_2D.html">SAMPLER_2D</a></li>
@@ -5337,6 +5337,14 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE.html">TEXTURE</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE0.html">TEXTURE0</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE1.html">TEXTURE1</a></li>
+      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE2.html">TEXTURE2</a></li>
+      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE3.html">TEXTURE3</a></li>
+      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE4.html">TEXTURE4</a></li>
+      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE5.html">TEXTURE5</a></li>
+      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE6.html">TEXTURE6</a></li>
+      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE7.html">TEXTURE7</a></li>
+      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE8.html">TEXTURE8</a></li>
+      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE9.html">TEXTURE9</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE10.html">TEXTURE10</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE11.html">TEXTURE11</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE12.html">TEXTURE12</a></li>
@@ -5347,7 +5355,6 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE17.html">TEXTURE17</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE18.html">TEXTURE18</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE19.html">TEXTURE19</a></li>
-      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE2.html">TEXTURE2</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE20.html">TEXTURE20</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE21.html">TEXTURE21</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE22.html">TEXTURE22</a></li>
@@ -5358,15 +5365,8 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE27.html">TEXTURE27</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE28.html">TEXTURE28</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE29.html">TEXTURE29</a></li>
-      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE3.html">TEXTURE3</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE30.html">TEXTURE30</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE31.html">TEXTURE31</a></li>
-      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE4.html">TEXTURE4</a></li>
-      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE5.html">TEXTURE5</a></li>
-      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE6.html">TEXTURE6</a></li>
-      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE7.html">TEXTURE7</a></li>
-      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE8.html">TEXTURE8</a></li>
-      <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE9.html">TEXTURE9</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE_2D.html">TEXTURE_2D</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE_BINDING_2D.html">TEXTURE_BINDING_2D</a></li>
       <li><a class="" href="dart-web_gl/RenderingContext/TEXTURE_BINDING_CUBE_MAP.html">TEXTURE_BINDING_CUBE_MAP</a></li>

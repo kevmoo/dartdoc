@@ -93,18 +93,18 @@
       <li><a class="" href="dart-typed_data/Float64List-class.html">Float64List</a></li>
       <li><a class="" href="dart-typed_data/Float64x2-class.html">Float64x2</a></li>
       <li><a class="" href="dart-typed_data/Float64x2List-class.html">Float64x2List</a></li>
+      <li><a class="" href="dart-typed_data/Int8List-class.html">Int8List</a></li>
       <li><a class="" href="dart-typed_data/Int16List-class.html">Int16List</a></li>
       <li><a class="" href="dart-typed_data/Int32List-class.html">Int32List</a></li>
       <li><a class="" href="dart-typed_data/Int32x4-class.html">Int32x4</a></li>
       <li><a class="" href="dart-typed_data/Int32x4List-class.html">Int32x4List</a></li>
       <li><a class="" href="dart-typed_data/Int64List-class.html">Int64List</a></li>
-      <li><a class="" href="dart-typed_data/Int8List-class.html">Int8List</a></li>
       <li><a class="" href="dart-typed_data/TypedData-class.html">TypedData</a></li>
+      <li><a class="" href="dart-typed_data/Uint8ClampedList-class.html">Uint8ClampedList</a></li>
+      <li><a class="" href="dart-typed_data/Uint8List-class.html">Uint8List</a></li>
       <li><a class="" href="dart-typed_data/Uint16List-class.html">Uint16List</a></li>
       <li><a class="" href="dart-typed_data/Uint32List-class.html">Uint32List</a></li>
       <li><a class="" href="dart-typed_data/Uint64List-class.html">Uint64List</a></li>
-      <li><a class="" href="dart-typed_data/Uint8ClampedList-class.html">Uint8ClampedList</a></li>
-      <li><a class="" href="dart-typed_data/Uint8List-class.html">Uint8List</a></li>
     
     </ol>
   </div>
@@ -236,6 +236,15 @@ more efficiently using a typed view.</p>
           <p>Creates a <a class="" href="dart-typed_data/Float64x2List-class.html">Float64x2List</a> <em>view</em> of a region of this byte buffer.<a href="dart-typed_data/ByteBuffer/asFloat64x2List.html">&hellip;</a>
 </p>
         </dd>
+        <dt id="asInt8List" class="callable">
+          <span class="name "><a class="" href="dart-typed_data/ByteBuffer/asInt8List.html">asInt8List</a></span><span class="signature">(<wbr>[<span class="parameter" id="asInt8List-param-offsetInBytes"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offsetInBytes</span> = <span class="default-value">0</span></span>, <span class="parameter" id="asInt8List-param-length"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>])
+            <span class="returntype parameter">&#8594; <a class="" href="dart-typed_data/Int8List-class.html">Int8List</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p>Creates a <a class="" href="dart-typed_data/Int8List-class.html">Int8List</a> <em>view</em> of a region of this byte buffer.<a href="dart-typed_data/ByteBuffer/asInt8List.html">&hellip;</a>
+</p>
+        </dd>
         <dt id="asInt16List" class="callable">
           <span class="name "><a class="" href="dart-typed_data/ByteBuffer/asInt16List.html">asInt16List</a></span><span class="signature">(<wbr>[<span class="parameter" id="asInt16List-param-offsetInBytes"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offsetInBytes</span> = <span class="default-value">0</span></span>, <span class="parameter" id="asInt16List-param-length"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>])
             <span class="returntype parameter">&#8594; <a class="" href="dart-typed_data/Int16List-class.html">Int16List</a></span>
@@ -272,13 +281,22 @@ more efficiently using a typed view.</p>
           <p>Creates a <a class="" href="dart-typed_data/Int64List-class.html">Int64List</a> <em>view</em> of a region of this byte buffer.<a href="dart-typed_data/ByteBuffer/asInt64List.html">&hellip;</a>
 </p>
         </dd>
-        <dt id="asInt8List" class="callable">
-          <span class="name "><a class="" href="dart-typed_data/ByteBuffer/asInt8List.html">asInt8List</a></span><span class="signature">(<wbr>[<span class="parameter" id="asInt8List-param-offsetInBytes"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offsetInBytes</span> = <span class="default-value">0</span></span>, <span class="parameter" id="asInt8List-param-length"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>])
-            <span class="returntype parameter">&#8594; <a class="" href="dart-typed_data/Int8List-class.html">Int8List</a></span>
+        <dt id="asUint8ClampedList" class="callable">
+          <span class="name "><a class="" href="dart-typed_data/ByteBuffer/asUint8ClampedList.html">asUint8ClampedList</a></span><span class="signature">(<wbr>[<span class="parameter" id="asUint8ClampedList-param-offsetInBytes"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offsetInBytes</span> = <span class="default-value">0</span></span>, <span class="parameter" id="asUint8ClampedList-param-length"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>])
+            <span class="returntype parameter">&#8594; <a class="" href="dart-typed_data/Uint8ClampedList-class.html">Uint8ClampedList</a></span>
           </span>
         </dt>
         <dd>
-          <p>Creates a <a class="" href="dart-typed_data/Int8List-class.html">Int8List</a> <em>view</em> of a region of this byte buffer.<a href="dart-typed_data/ByteBuffer/asInt8List.html">&hellip;</a>
+          <p>Creates a <a class="" href="dart-typed_data/Uint8ClampedList-class.html">Uint8ClampedList</a> <em>view</em> of a region of this byte buffer.<a href="dart-typed_data/ByteBuffer/asUint8ClampedList.html">&hellip;</a>
+</p>
+        </dd>
+        <dt id="asUint8List" class="callable">
+          <span class="name "><a class="" href="dart-typed_data/ByteBuffer/asUint8List.html">asUint8List</a></span><span class="signature">(<wbr>[<span class="parameter" id="asUint8List-param-offsetInBytes"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offsetInBytes</span> = <span class="default-value">0</span></span>, <span class="parameter" id="asUint8List-param-length"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>])
+            <span class="returntype parameter">&#8594; <a class="" href="dart-typed_data/Uint8List-class.html">Uint8List</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p>Creates a <a class="" href="dart-typed_data/Uint8List-class.html">Uint8List</a> <em>view</em> of a region of this byte buffer.<a href="dart-typed_data/ByteBuffer/asUint8List.html">&hellip;</a>
 </p>
         </dd>
         <dt id="asUint16List" class="callable">
@@ -306,24 +324,6 @@ more efficiently using a typed view.</p>
         </dt>
         <dd>
           <p>Creates a <a class="" href="dart-typed_data/Uint64List-class.html">Uint64List</a> <em>view</em> of a region of this byte buffer.<a href="dart-typed_data/ByteBuffer/asUint64List.html">&hellip;</a>
-</p>
-        </dd>
-        <dt id="asUint8ClampedList" class="callable">
-          <span class="name "><a class="" href="dart-typed_data/ByteBuffer/asUint8ClampedList.html">asUint8ClampedList</a></span><span class="signature">(<wbr>[<span class="parameter" id="asUint8ClampedList-param-offsetInBytes"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offsetInBytes</span> = <span class="default-value">0</span></span>, <span class="parameter" id="asUint8ClampedList-param-length"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>])
-            <span class="returntype parameter">&#8594; <a class="" href="dart-typed_data/Uint8ClampedList-class.html">Uint8ClampedList</a></span>
-          </span>
-        </dt>
-        <dd>
-          <p>Creates a <a class="" href="dart-typed_data/Uint8ClampedList-class.html">Uint8ClampedList</a> <em>view</em> of a region of this byte buffer.<a href="dart-typed_data/ByteBuffer/asUint8ClampedList.html">&hellip;</a>
-</p>
-        </dd>
-        <dt id="asUint8List" class="callable">
-          <span class="name "><a class="" href="dart-typed_data/ByteBuffer/asUint8List.html">asUint8List</a></span><span class="signature">(<wbr>[<span class="parameter" id="asUint8List-param-offsetInBytes"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offsetInBytes</span> = <span class="default-value">0</span></span>, <span class="parameter" id="asUint8List-param-length"><span class="type-annotation"><a class="" href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>])
-            <span class="returntype parameter">&#8594; <a class="" href="dart-typed_data/Uint8List-class.html">Uint8List</a></span>
-          </span>
-        </dt>
-        <dd>
-          <p>Creates a <a class="" href="dart-typed_data/Uint8List-class.html">Uint8List</a> <em>view</em> of a region of this byte buffer.<a href="dart-typed_data/ByteBuffer/asUint8List.html">&hellip;</a>
 </p>
         </dd>
         <dt id="noSuchMethod" class="callable inherited">
@@ -379,16 +379,16 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
       <li><a class="" href="dart-typed_data/ByteBuffer/asFloat32x4List.html">asFloat32x4List</a></li>
       <li><a class="" href="dart-typed_data/ByteBuffer/asFloat64List.html">asFloat64List</a></li>
       <li><a class="" href="dart-typed_data/ByteBuffer/asFloat64x2List.html">asFloat64x2List</a></li>
+      <li><a class="" href="dart-typed_data/ByteBuffer/asInt8List.html">asInt8List</a></li>
       <li><a class="" href="dart-typed_data/ByteBuffer/asInt16List.html">asInt16List</a></li>
       <li><a class="" href="dart-typed_data/ByteBuffer/asInt32List.html">asInt32List</a></li>
       <li><a class="" href="dart-typed_data/ByteBuffer/asInt32x4List.html">asInt32x4List</a></li>
       <li><a class="" href="dart-typed_data/ByteBuffer/asInt64List.html">asInt64List</a></li>
-      <li><a class="" href="dart-typed_data/ByteBuffer/asInt8List.html">asInt8List</a></li>
+      <li><a class="" href="dart-typed_data/ByteBuffer/asUint8ClampedList.html">asUint8ClampedList</a></li>
+      <li><a class="" href="dart-typed_data/ByteBuffer/asUint8List.html">asUint8List</a></li>
       <li><a class="" href="dart-typed_data/ByteBuffer/asUint16List.html">asUint16List</a></li>
       <li><a class="" href="dart-typed_data/ByteBuffer/asUint32List.html">asUint32List</a></li>
       <li><a class="" href="dart-typed_data/ByteBuffer/asUint64List.html">asUint64List</a></li>
-      <li><a class="" href="dart-typed_data/ByteBuffer/asUint8ClampedList.html">asUint8ClampedList</a></li>
-      <li><a class="" href="dart-typed_data/ByteBuffer/asUint8List.html">asUint8List</a></li>
       <li class="inherited"><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
       <li class="inherited"><a class="" href="dart-core/Object/toString.html">toString</a></li>
     </ol>
