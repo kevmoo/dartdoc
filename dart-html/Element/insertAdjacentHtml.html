@@ -399,11 +399,11 @@
 specified location.</p>
 <p>The <code>where</code> parameter indicates where to insert the HTML fragment:</p><ul><li>'beforeBegin': Immediately before this element.</li><li>'afterBegin': As the first child of this element.</li><li>'beforeEnd': As the last child of this element.</li><li>
 <p>'afterEnd': Immediately after this element.</p>
-<p>var html = '&lt;div class="something"&gt;content&lt;/div&gt;';
+<p>var html = '</p><div class="something">content</div>';
 // Inserts as the first child
 document.body.insertAdjacentHtml('afterBegin', html);
 var createdElement = document.body.children<code>0</code>;
-print(createdElement.classes<code>0</code>); // Prints 'something'</p></li></ul>
+print(createdElement.classes<code>0</code>); // Prints 'something'<p></p></li></ul>
 <p>See also:</p><ul><li><a class="" href="dart-html/Element/insertAdjacentText.html">insertAdjacentText</a></li><li><a class="" href="dart-html/Element/insertAdjacentElement.html">insertAdjacentElement</a></li></ul>
     </section>
     
