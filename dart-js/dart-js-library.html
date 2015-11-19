@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="made with love by dartdoc 0.8.0-dev">
+  <meta name="generator" content="made with love by dartdoc 0.8.1-dev">
   <title>dart:js library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -107,11 +107,11 @@ conversion isn't possible.</p>
 <p>This library does not yet make Dart objects usable from JavaScript, their
 methods and proeprties are not accessible, though it does allow Dart
 functions to be passed into and called from JavaScript.</p>
-<p><a class="" href="dart-js/JsObject-class.html">JsObject</a> is the core type and represents a proxy of a JavaScript object.
+<p><a href="dart-js/JsObject-class.html">JsObject</a> is the core type and represents a proxy of a JavaScript object.
 JsObject gives access to the underlying JavaScript objects properties and
 methods. <code>JsObject</code>s can be acquired by calls to JavaScript, or they can be
 created from proxies to JavaScript constructors.</p>
-<p>The top-level getter <a class="" href="dart-js/context.html">context</a> provides a <a class="" href="dart-js/JsObject-class.html">JsObject</a> that represents the
+<p>The top-level getter <a href="dart-js/context.html">context</a> provides a <a href="dart-js/JsObject-class.html">JsObject</a> that represents the
 global object in JavaScript, usually <code>window</code>.</p>
 <p>The following example shows an alert dialog via a JavaScript call to the
 global function <code>alert()</code>:</p>
@@ -119,7 +119,7 @@ global function <code>alert()</code>:</p>
 
 main() =&gt; context.callMethod('alert', ['Hello from Dart!']);
 </code></pre>
-<p>This example shows how to create a <a class="" href="dart-js/JsObject-class.html">JsObject</a> from a JavaScript constructor
+<p>This example shows how to create a <a href="dart-js/JsObject-class.html">JsObject</a> from a JavaScript constructor
 and access its properties:</p>
 <pre class="prettyprint lang-dart"><code>import 'dart:js';
 
@@ -140,13 +140,13 @@ converted to Dart.</p>
 <p>Functions and closures are proxied in such a way that they are callable. A
 Dart closure assigned to a JavaScript property is proxied by a function in
 JavaScript. A JavaScript function accessed from Dart is proxied by a
-<a class="" href="dart-js/JsFunction-class.html">JsFunction</a>, which has a <code>apply</code> method to invoke it.</p>
+<a href="dart-js/JsFunction-class.html">JsFunction</a>, which has a <code>apply</code> method to invoke it.</p>
 <p>The following types are transferred directly and not proxied:</p><ul><li>"Basic" types: <code>null</code>, <code>bool</code>, <code>num</code>, <code>String</code>, <code>DateTime</code></li><li><code>Blob</code></li><li><code>Event</code></li><li><code>HtmlCollection</code></li><li><code>ImageData</code></li><li><code>KeyRange</code></li><li><code>Node</code></li><li><code>NodeList</code></li><li>
 <p><code>TypedData</code>, including its subclasses like <code>Int32List</code>, but <em>not</em>
   <code>ByteBuffer</code></p></li><li><code>Window</code></li></ul>
 <h2>Converting collections with JsObject.jsify()</h2>
 <p>To create a JavaScript collection from a Dart collection use the
-<code>JsObject.jsify</code> constructor, which converts Dart <a class="" href="dart-core/Map-class.html">Map</a>s and <a class="" href="dart-core/Iterable-class.html">Iterable</a>s
+<code>JsObject.jsify</code> constructor, which converts Dart <a href="dart-core/Map-class.html">Map</a>s and <a href="dart-core/Iterable-class.html">Iterable</a>s
 into JavaScript Objects and Arrays.</p>
 <p>The following expression creats a new JavaScript object with the properties
 <code>a</code> and <code>b</code> defined:</p>
@@ -165,7 +165,7 @@ into JavaScript Objects and Arrays.</p>
       <dl class="properties">
         <dt id="CHECK_JS_INVOCATIONS" class="property">
           <span class="name"><a class="deprecated" href="dart-js/CHECK_JS_INVOCATIONS.html">CHECK_JS_INVOCATIONS</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
         </dt>
         <dd>
           <p></p>
@@ -174,8 +174,8 @@ into JavaScript Objects and Arrays.</p>
   </div>
 </dd>
         <dt id="context" class="property">
-          <span class="name"><a class="" href="dart-js/context.html">context</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-js/JsObject-class.html">JsObject</a></span>
+          <span class="name"><a href="dart-js/context.html">context</a></span>
+          <span class="signature">&#8594; <a href="dart-js/JsObject-class.html">JsObject</a></span>
         </dt>
         <dd>
           <p></p>
@@ -184,8 +184,8 @@ into JavaScript Objects and Arrays.</p>
   </div>
 </dd>
         <dt id="jsInterfaceTypes" class="property">
-          <span class="name"><a class="" href="dart-js/jsInterfaceTypes.html">jsInterfaceTypes</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/Iterable-class.html">Iterable</a>&lt;<a class="" href="dart-mirrors/ClassMirror-class.html">ClassMirror</a>&gt;</span>
+          <span class="name"><a href="dart-js/jsInterfaceTypes.html">jsInterfaceTypes</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Iterable-class.html">Iterable</a>&lt;<a href="dart-mirrors/ClassMirror-class.html">ClassMirror</a>&gt;</span>
         </dt>
         <dd>
           <p></p>
@@ -201,7 +201,7 @@ into JavaScript Objects and Arrays.</p>
 
       <dl class="callables">
         <dt id="addMemberHelper" class="callable">
-          <span class="name deprecated"><a class="deprecated" href="dart-js/addMemberHelper.html">addMemberHelper</a></span><span class="signature">(<wbr><span class="parameter" id="addMemberHelper-param-declaration"><span class="type-annotation"><a class="" href="dart-mirrors/MethodMirror-class.html">MethodMirror</a></span> <span class="parameter-name">declaration</span></span>, <span class="parameter" id="addMemberHelper-param-path"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span></span>, <span class="parameter" id="addMemberHelper-param-sb"><span class="type-annotation"><a class="" href="dart-core/StringBuffer-class.html">StringBuffer</a></span> <span class="parameter-name">sb</span></span>, {<span class="parameter" id="addMemberHelper-param-isStatic"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isStatic</span>: <span class="default-value">false</span></span>, <span class="parameter" id="addMemberHelper-param-memberName"><span class="type-annotation"><a class="" href="dart-core/String-class.html">String</a></span> <span class="parameter-name">memberName</span></span>})
+          <span class="name deprecated"><a class="deprecated" href="dart-js/addMemberHelper.html">addMemberHelper</a></span><span class="signature">(<wbr><span class="parameter" id="addMemberHelper-param-declaration"><span class="type-annotation"><a href="dart-mirrors/MethodMirror-class.html">MethodMirror</a></span> <span class="parameter-name">declaration</span></span>, <span class="parameter" id="addMemberHelper-param-path"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span></span>, <span class="parameter" id="addMemberHelper-param-sb"><span class="type-annotation"><a href="dart-core/StringBuffer-class.html">StringBuffer</a></span> <span class="parameter-name">sb</span></span>, {<span class="parameter" id="addMemberHelper-param-isStatic"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isStatic</span>: <span class="default-value">false</span></span>, <span class="parameter" id="addMemberHelper-param-memberName"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">memberName</span></span>})
             <span class="returntype parameter">&#8594; void</span>
           </span>
         </dt>
@@ -209,8 +209,8 @@ into JavaScript Objects and Arrays.</p>
           <p></p>
         </dd>
         <dt id="allowInterop" class="callable">
-          <span class="name "><a class="" href="dart-js/allowInterop.html">allowInterop</a></span><span class="signature">(<wbr><span class="parameter" id="allowInterop-param-f"><span class="type-annotation"><a class="" href="dart-core/Function-class.html">Function</a></span> <span class="parameter-name">f</span></span>)
-            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Function-class.html">Function</a></span>
+          <span class="name "><a href="dart-js/allowInterop.html">allowInterop</a></span><span class="signature">(<wbr><span class="parameter" id="allowInterop-param-f"><span class="type-annotation"><a href="dart-core/Function-class.html">Function</a></span> <span class="parameter-name">f</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/Function-class.html">Function</a></span>
           </span>
         </dt>
         <dd>
@@ -219,12 +219,12 @@ using the package:js Dart-JavaScript interop.<a href="dart-js/allowInterop.html"
 </p>
         </dd>
         <dt id="allowInteropCaptureThis" class="callable">
-          <span class="name "><a class="" href="dart-js/allowInteropCaptureThis.html">allowInteropCaptureThis</a></span><span class="signature">(<wbr><span class="parameter" id="allowInteropCaptureThis-param-f"><span class="type-annotation"><a class="" href="dart-core/Function-class.html">Function</a></span> <span class="parameter-name">f</span></span>)
-            <span class="returntype parameter">&#8594; <a class="" href="dart-core/Function-class.html">Function</a></span>
+          <span class="name "><a href="dart-js/allowInteropCaptureThis.html">allowInteropCaptureThis</a></span><span class="signature">(<wbr><span class="parameter" id="allowInteropCaptureThis-param-f"><span class="type-annotation"><a href="dart-core/Function-class.html">Function</a></span> <span class="parameter-name">f</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/Function-class.html">Function</a></span>
           </span>
         </dt>
         <dd>
-          <p>Returns a <a class="" href="dart-core/Function-class.html">Function</a> that when called from JavaScript captures its 'this'
+          <p>Returns a <a href="dart-core/Function-class.html">Function</a> that when called from JavaScript captures its 'this'
 binding and calls <code>f</code> with the value of this passed as the first argument.
 When called from Dart, <code>null</code> will be passed as the first argument.<a href="dart-js/allowInteropCaptureThis.html">&hellip;</a>
 </p>
@@ -240,7 +240,7 @@ be added. Creating an instance of JsObject will also automatically trigger
 all JsObjects to be finalized.</p>
         </dd>
         <dt id="getDartHtmlWrapperFor" class="callable">
-          <span class="name deprecated"><a class="deprecated" href="dart-js/getDartHtmlWrapperFor.html">getDartHtmlWrapperFor</a></span><span class="signature">(<wbr><span class="parameter" id="getDartHtmlWrapperFor-param-object"><span class="type-annotation"><a class="" href="dart-js/JsObject-class.html">JsObject</a></span> <span class="parameter-name">object</span></span>)
+          <span class="name deprecated"><a class="deprecated" href="dart-js/getDartHtmlWrapperFor.html">getDartHtmlWrapperFor</a></span><span class="signature">(<wbr><span class="parameter" id="getDartHtmlWrapperFor-param-object"><span class="type-annotation"><a href="dart-js/JsObject-class.html">JsObject</a></span> <span class="parameter-name">object</span></span>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
         </dt>
@@ -250,7 +250,7 @@ we can access it from other libraries without it being
 a public instance field on JsObject.</p>
         </dd>
         <dt id="registerJsInterfaces" class="callable">
-          <span class="name deprecated"><a class="deprecated" href="dart-js/registerJsInterfaces.html">registerJsInterfaces</a></span><span class="signature">(<wbr>[<span class="parameter" id="registerJsInterfaces-param-classes"><span class="type-annotation"><a class="" href="dart-core/List-class.html">List</a>&lt;<a class="" href="dart-core/Type-class.html">Type</a>&gt;</span> <span class="parameter-name">classes</span></span>])
+          <span class="name deprecated"><a class="deprecated" href="dart-js/registerJsInterfaces.html">registerJsInterfaces</a></span><span class="signature">(<wbr>[<span class="parameter" id="registerJsInterfaces-param-classes"><span class="type-annotation"><a href="dart-core/List-class.html">List</a>&lt;<a href="dart-core/Type-class.html">Type</a>&gt;</span> <span class="parameter-name">classes</span></span>])
             <span class="returntype parameter">&#8594; void</span>
           </span>
         </dt>
@@ -259,7 +259,7 @@ a public instance field on JsObject.</p>
 generally only be called by machine generated code.</p>
         </dd>
         <dt id="setDartHtmlWrapperFor" class="callable">
-          <span class="name deprecated"><a class="deprecated" href="dart-js/setDartHtmlWrapperFor.html">setDartHtmlWrapperFor</a></span><span class="signature">(<wbr><span class="parameter" id="setDartHtmlWrapperFor-param-object"><span class="type-annotation"><a class="" href="dart-js/JsObject-class.html">JsObject</a></span> <span class="parameter-name">object</span></span>, <span class="parameter" id="setDartHtmlWrapperFor-param-wrapper"><span class="parameter-name">wrapper</span></span>)
+          <span class="name deprecated"><a class="deprecated" href="dart-js/setDartHtmlWrapperFor.html">setDartHtmlWrapperFor</a></span><span class="signature">(<wbr><span class="parameter" id="setDartHtmlWrapperFor-param-object"><span class="type-annotation"><a href="dart-js/JsObject-class.html">JsObject</a></span> <span class="parameter-name">object</span></span>, <span class="parameter" id="setDartHtmlWrapperFor-param-wrapper"><span class="parameter-name">wrapper</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
         </dt>
@@ -287,13 +287,13 @@ wrap_jso defined in dart:html.</p>
 
       <dl>
         <dt id="JsArray">
-          <span class="name "><a class="" href="dart-js/JsArray-class.html">JsArray</a></span>
+          <span class="name "><a href="dart-js/JsArray-class.html">JsArray</a></span>
         </dt>
         <dd>
-          <p>A <a class="" href="dart-core/List-class.html">List</a> proxying a JavaScript Array.</p>
+          <p>A <a href="dart-core/List-class.html">List</a> proxying a JavaScript Array.</p>
         </dd>
         <dt id="JsFunction">
-          <span class="name "><a class="" href="dart-js/JsFunction-class.html">JsFunction</a></span>
+          <span class="name "><a href="dart-js/JsFunction-class.html">JsFunction</a></span>
         </dt>
         <dd>
           <p>Proxies a JavaScript Function object.</p>
@@ -305,7 +305,7 @@ wrap_jso defined in dart:html.</p>
           <p></p>
         </dd>
         <dt id="JsObject">
-          <span class="name "><a class="" href="dart-js/JsObject-class.html">JsObject</a></span>
+          <span class="name "><a href="dart-js/JsObject-class.html">JsObject</a></span>
         </dt>
         <dd>
           <p>Proxies a JavaScript object to Dart.<a href="dart-js/JsObject-class.html">&hellip;</a>
@@ -324,13 +324,13 @@ wrap_jso defined in dart:html.</p>
     
       <li class="section-title"><a href="dart-js/dart-js-library.html#properties">Properties</a></li>
       <li><a class="deprecated" href="dart-js/CHECK_JS_INVOCATIONS.html">CHECK_JS_INVOCATIONS</a></li>
-      <li><a class="" href="dart-js/context.html">context</a></li>
-      <li><a class="" href="dart-js/jsInterfaceTypes.html">jsInterfaceTypes</a></li>
+      <li><a href="dart-js/context.html">context</a></li>
+      <li><a href="dart-js/jsInterfaceTypes.html">jsInterfaceTypes</a></li>
     
       <li class="section-title"><a href="dart-js/dart-js-library.html#functions">Functions</a></li>
       <li><a class="deprecated" href="dart-js/addMemberHelper.html">addMemberHelper</a></li>
-      <li><a class="" href="dart-js/allowInterop.html">allowInterop</a></li>
-      <li><a class="" href="dart-js/allowInteropCaptureThis.html">allowInteropCaptureThis</a></li>
+      <li><a href="dart-js/allowInterop.html">allowInterop</a></li>
+      <li><a href="dart-js/allowInteropCaptureThis.html">allowInteropCaptureThis</a></li>
       <li><a class="deprecated" href="dart-js/finalizeJsInterfaces.html">finalizeJsInterfaces</a></li>
       <li><a class="deprecated" href="dart-js/getDartHtmlWrapperFor.html">getDartHtmlWrapperFor</a></li>
       <li><a class="deprecated" href="dart-js/registerJsInterfaces.html">registerJsInterfaces</a></li>
@@ -339,10 +339,10 @@ wrap_jso defined in dart:html.</p>
     
     
       <li class="section-title"><a href="dart-js/dart-js-library.html#classes">Classes</a></li>
-      <li><a class="" href="dart-js/JsArray-class.html">JsArray</a></li>
-      <li><a class="" href="dart-js/JsFunction-class.html">JsFunction</a></li>
+      <li><a href="dart-js/JsArray-class.html">JsArray</a></li>
+      <li><a href="dart-js/JsFunction-class.html">JsFunction</a></li>
       <li><a class="deprecated" href="dart-js/JsNative-class.html">JsNative</a></li>
-      <li><a class="" href="dart-js/JsObject-class.html">JsObject</a></li>
+      <li><a href="dart-js/JsObject-class.html">JsObject</a></li>
     
     </ol>
   </div><!--/sidebar-offcanvas-right-->
@@ -355,7 +355,7 @@ wrap_jso defined in dart:html.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.10
+          Dart SDK 1.13.0
         </span>
         &bull;
         <span class="no-break">

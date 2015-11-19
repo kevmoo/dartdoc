@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="made with love by dartdoc 0.8.0-dev">
+  <meta name="generator" content="made with love by dartdoc 0.8.1-dev">
   <title>StreamTransformer constructor - StreamTransformer class - dart:async library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -89,16 +89,16 @@
       <li class="section-title inherited">
         <a href="dart-async/StreamTransformer-class.html#instance-properties">Properties</a>
       </li>
-      <li class="inherited"><a class="" href="dart-core/Object/hashCode.html">hashCode</a></li>
-      <li class="inherited"><a class="" href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title inherited"><a href="dart-async/StreamTransformer-class.html#operators">Operators</a></li>
-      <li class="inherited"><a class="" href="dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="dart-async/StreamTransformer-class.html#instance-methods">Methods</a></li>
-      <li><a class="" href="dart-async/StreamTransformer/bind.html">bind</a></li>
-      <li class="inherited"><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
-      <li class="inherited"><a class="" href="dart-core/Object/toString.html">toString</a></li>
+      <li><a href="dart-async/StreamTransformer/bind.html">bind</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-left-->
@@ -107,19 +107,19 @@
 
       <section class="multi-line-signature">
         const
-                <span class="name ">StreamTransformer</span>(<wbr><span class="parameter" id="-param-transformer"><span class="type-annotation">StreamSubscription</span> <span class="parameter-name">transformer</span>(<span class="parameter" id="transformer-param-stream"><span class="type-annotation"><a class="" href="dart-async/Stream-class.html">Stream</a>&lt;S&gt;</span> <span class="parameter-name">stream</span></span>, <span class="parameter" id="transformer-param-cancelOnError"><span class="type-annotation"><a class="" href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">cancelOnError</span></span>)</span>)
+                <span class="name ">StreamTransformer</span>(<wbr><span class="parameter" id="-param-transformer"><span class="type-annotation">StreamSubscription</span> <span class="parameter-name">transformer</span>(<span class="parameter" id="transformer-param-stream"><span class="type-annotation"><a href="dart-async/Stream-class.html">Stream</a>&lt;S&gt;</span> <span class="parameter-name">stream</span></span>, <span class="parameter" id="transformer-param-cancelOnError"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">cancelOnError</span></span>)</span>)
       </section>
 
     <section class="desc markdown">
-      <p>Creates a <a class="" href="dart-async/StreamTransformer-class.html">StreamTransformer</a>.</p>
-<p>The returned instance takes responsibility of implementing (<a class="" href="dart-async/StreamTransformer/bind.html">bind</a>).
+      <p>Creates a <a href="dart-async/StreamTransformer-class.html">StreamTransformer</a>.</p>
+<p>The returned instance takes responsibility of implementing (<a href="dart-async/StreamTransformer/bind.html">bind</a>).
 When the user invokes <code>bind</code> it returns a new "bound" stream. Only when
 the user starts listening to the bound stream, the <code>listen</code> method
 invokes the given closure <code>transformer</code>.</p>
 <p>The <code>transformer</code> closure receives the stream, that was bound, as argument
-and returns a <a class="" href="dart-async/StreamSubscription-class.html">StreamSubscription</a>. In almost all cases the closure
+and returns a <a href="dart-async/StreamSubscription-class.html">StreamSubscription</a>. In almost all cases the closure
 listens itself to the stream that is given as argument.</p>
-<p>The result of invoking the <code>transformer</code> closure is a <a class="" href="dart-async/StreamSubscription-class.html">StreamSubscription</a>.
+<p>The result of invoking the <code>transformer</code> closure is a <a href="dart-async/StreamSubscription-class.html">StreamSubscription</a>.
 The bound stream-transformer (created by the <code>bind</code> method above) then sets
 the handlers it received as part of the <code>listen</code> call.</p>
 <p>Conceptually this can be summarized as follows:</p><ol><li>
@@ -131,15 +131,15 @@ the handlers it received as part of the <code>listen</code> call.</p>
   starts the listening and transformation. This is accomplished
   in 2 steps: first the <code>boundStream</code> invokes the <code>transformerClosure</code> with
   the <code>stream</code> it captured: <code>transformerClosure(stream, b)</code>.
-  The result <code>subscription</code>, a <a class="" href="dart-async/StreamSubscription-class.html">StreamSubscription</a>, is then
+  The result <code>subscription</code>, a <a href="dart-async/StreamSubscription-class.html">StreamSubscription</a>, is then
   updated to receive its handlers: <code>subscription.onData(f1)</code>,
   <code>subscription.onError(f2)</code>, <code>subscription(f3)</code>. Finally the subscription
   is returned as result of the <code>listen</code> call.</p></li></ol>
 <p>There are two common ways to create a StreamSubscription:</p><ol><li>
-<p>by creating a new class that implements <a class="" href="dart-async/StreamSubscription-class.html">StreamSubscription</a>.
-   Note that the subscription should run callbacks in the <a class="" href="dart-async/Zone-class.html">Zone</a> the
+<p>by creating a new class that implements <a href="dart-async/StreamSubscription-class.html">StreamSubscription</a>.
+   Note that the subscription should run callbacks in the <a href="dart-async/Zone-class.html">Zone</a> the
    stream was listened to.</p></li><li>
-<p>by allocating a <a class="" href="dart-async/StreamController-class.html">StreamController</a> and to return the result of
+<p>by allocating a <a href="dart-async/StreamController-class.html">StreamController</a> and to return the result of
    listening to its stream.</p></li></ol>
 <p>Example use of a duplicating transformer:</p>
 <pre class="prettyprint lang-dart"><code>stringStream.transform(new StreamTransformer&lt;String, String&gt;(
@@ -183,7 +183,7 @@ the handlers it received as part of the <code>listen</code> call.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.10
+          Dart SDK 1.13.0
         </span>
         &bull;
         <span class="no-break">

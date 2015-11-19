@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="made with love by dartdoc 0.8.0-dev">
+  <meta name="generator" content="made with love by dartdoc 0.8.1-dev">
   <title>dart:core library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -104,26 +104,26 @@
 and other core functionality for every Dart program.</p>
 <p>This library is automatically imported.</p>
 <p>Some classes in this library,
-such as <a class="" href="dart-core/String-class.html">String</a> and <a class="" href="dart-core/num-class.html">num</a>,
+such as <a href="dart-core/String-class.html">String</a> and <a href="dart-core/num-class.html">num</a>,
 support Dart's built-in data types.
-Other classes, such as <a class="" href="dart-core/List-class.html">List</a> and <a class="" href="dart-core/Map-class.html">Map</a>, provide data structures
+Other classes, such as <a href="dart-core/List-class.html">List</a> and <a href="dart-core/Map-class.html">Map</a>, provide data structures
 for managing collections of objects.
 And still other classes represent commonly used types of data
 such as URIs, dates and times, and errors.</p>
 <h2>Numbers and booleans</h2>
-<p><a class="" href="dart-core/int-class.html">int</a> and <a class="" href="dart-core/double-class.html">double</a> provide support for Dart's built-in numerical data types:
+<p><a href="dart-core/int-class.html">int</a> and <a href="dart-core/double-class.html">double</a> provide support for Dart's built-in numerical data types:
 integers and double-precision floating point numbers, respectively.
-An object of type <a class="" href="dart-core/bool-class.html">bool</a> is either true or false.
+An object of type <a href="dart-core/bool-class.html">bool</a> is either true or false.
 Variables of these types can be constructed from literals:</p>
 <pre class="prettyprint lang-dart"><code>int meaningOfLife = 42;
 double valueOfPi  = 3.141592;
 bool visible      = true;
 </code></pre>
 <h2>Strings and regular expressions</h2>
-<p>A <a class="" href="dart-core/String-class.html">String</a> is immutable and represents a sequence of characters.</p>
+<p>A <a href="dart-core/String-class.html">String</a> is immutable and represents a sequence of characters.</p>
 <pre class="prettyprint lang-dart"><code>String shakespeareQuote = "All the world's a stage, ...";
 </code></pre>
-<p><a class="" href="dart-core/StringBuffer-class.html">StringBuffer</a> provides a way to construct strings efficiently.</p>
+<p><a href="dart-core/StringBuffer-class.html">StringBuffer</a> provides a way to construct strings efficiently.</p>
 <pre class="prettyprint lang-dart"><code>StringBuffer moreShakespeare = new StringBuffer();
 moreShakespeare.write('And all the men and women ');
 moreShakespeare.write('merely players; ...');
@@ -133,7 +133,7 @@ interpolation, and other string manipulation features.</p>
 <pre class="prettyprint lang-dart"><code>String philosophy = 'Live on ';
 String get palindrome =&gt; philosophy + philosophy.split('').reversed.join();
 </code></pre>
-<p><a class="" href="dart-core/RegExp-class.html">RegExp</a> implements Dart regular expressions,
+<p><a href="dart-core/RegExp-class.html">RegExp</a> implements Dart regular expressions,
 which provide a grammar for matching patterns within text.
 For example, here's a regular expression that matches
 a string of one or more digits:</p>
@@ -145,7 +145,7 @@ JavaScript regular expressions. See
 for the specification of JavaScript regular expressions.</p>
 <h2>Collections</h2>
 <p>The dart:core library provides basic collections,
-such as <a class="" href="dart-core/List-class.html">List</a>, <a class="" href="dart-core/Map-class.html">Map</a>, and <a class="" href="dart-core/Set-class.html">Set</a>.</p>
+such as <a href="dart-core/List-class.html">List</a>, <a href="dart-core/Map-class.html">Map</a>, and <a href="dart-core/Set-class.html">Set</a>.</p>
 <p>A List is an ordered collection of objects, with a length.
 Lists are sometimes called arrays.
 Use a List when you need to access objects by index.</p>
@@ -169,7 +169,7 @@ by a unique identifier.</p>
                   'Harry Potter': 'Ron and Hermione' };
 </code></pre>
 <p>In addition to these classes,
-dart:core contains <a class="" href="dart-core/Iterable-class.html">Iterable</a>,
+dart:core contains <a href="dart-core/Iterable-class.html">Iterable</a>,
 an interface that defines functionality
 common in collections of objects.
 Examples include the ability
@@ -181,8 +181,8 @@ and used by Map for its keys and values.</p>
 <p>For other kinds of collections, check out the
 <a href="#dart-collection">dart:collection</a> library.</p>
 <h2>Date and time</h2>
-<p>Use <a class="" href="dart-core/DateTime-class.html">DateTime</a> to represent a point in time
-and <a class="" href="dart-core/Duration-class.html">Duration</a> to represent a span of time.</p>
+<p>Use <a href="dart-core/DateTime-class.html">DateTime</a> to represent a point in time
+and <a href="dart-core/Duration-class.html">Duration</a> to represent a span of time.</p>
 <p>You can create DateTime objects with constructors
 or by parsing a correctly formatted string.</p>
 <pre class="prettyprint lang-dart"><code>DateTime now = new DateTime.now();
@@ -193,14 +193,14 @@ DateTime moonLanding = DateTime.parse("1969-07-20");
 <pre class="prettyprint lang-dart"><code>Duration timeRemaining = new Duration(hours:56, minutes:14);
 </code></pre>
 <p>In addition to DateTime and Duration,
-dart:core contains the <a class="" href="dart-core/Stopwatch-class.html">Stopwatch</a> class for measuring elapsed time.</p>
+dart:core contains the <a href="dart-core/Stopwatch-class.html">Stopwatch</a> class for measuring elapsed time.</p>
 <h2>Uri</h2>
-<p>A <a class="" href="dart-core/Uri-class.html">Uri</a> object represents a uniform resource identifier,
+<p>A <a href="dart-core/Uri-class.html">Uri</a> object represents a uniform resource identifier,
 which identifies a resource on the web.</p>
 <pre class="prettyprint lang-dart"><code>Uri dartlang = Uri.parse('http://dartlang.org/');
 </code></pre>
 <h2>Errors</h2>
-<p>The <a class="" href="dart-core/Error-class.html">Error</a> class represents the occurrence of an error
+<p>The <a href="dart-core/Error-class.html">Error</a> class represents the occurrence of an error
 during runtime.
 Subclasses of this class represent specific kinds of errors.</p>
 <h2>Other documentation</h2>
@@ -221,19 +221,19 @@ provides technical details.</p>
 
       <dl class="properties">
         <dt id="deprecated" class="constant">
-          <span class="name "><a class="" href="dart-core/deprecated.html">deprecated</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/Deprecated-class.html">Deprecated</a></span>
+          <span class="name "><a href="dart-core/deprecated.html">deprecated</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Deprecated-class.html">Deprecated</a></span>
         </dt>
         <dd>
-          <p>Marks a feature as <a class="" href="dart-core/Deprecated-class.html">Deprecated</a> until the next release.</p>
+          <p>Marks a feature as <a href="dart-core/Deprecated-class.html">Deprecated</a> until the next release.</p>
           <div>
             <span class="features">const</span>
-            <span class="signature"><code>const <a class="" href="dart-core/Deprecated-class.html">Deprecated</a>("next release")</code></span>
+            <span class="signature"><code>const <a href="dart-core/Deprecated-class.html">Deprecated</a>("next release")</code></span>
           </div>
         </dd>
         <dt id="override" class="constant">
-          <span class="name "><a class="" href="dart-core/override.html">override</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/Object-class.html">Object</a></span>
+          <span class="name "><a href="dart-core/override.html">override</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Object-class.html">Object</a></span>
         </dt>
         <dd>
           <p>The annotation <code>@override</code> marks an instance member as overriding a
@@ -245,8 +245,8 @@ superclass member with the same name.<a href="dart-core/override.html">&hellip;<
           </div>
         </dd>
         <dt id="proxy" class="constant">
-          <span class="name "><a class="" href="dart-core/proxy.html">proxy</a></span>
-          <span class="signature">&#8594; <a class="" href="dart-core/Object-class.html">Object</a></span>
+          <span class="name "><a href="dart-core/proxy.html">proxy</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Object-class.html">Object</a></span>
         </dt>
         <dd>
           <p>The annotation <code>@proxy</code> marks a class as implementing interfaces and members
@@ -265,8 +265,8 @@ dynamically through <code>noSuchMethod</code>.<a href="dart-core/proxy.html">&he
 
       <dl class="callables">
         <dt id="Comparator" class="callable">
-          <span class="name "><a class="" href="dart-core/Comparator.html">Comparator</a></span><span class="signature">(<wbr><span class="parameter" id="Comparator-param-a"><span class="type-annotation">T</span> <span class="parameter-name">a</span></span>, <span class="parameter" id="Comparator-param-b"><span class="type-annotation">T</span> <span class="parameter-name">b</span></span>)
-            <span class="returntype parameter">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+          <span class="name "><a href="dart-core/Comparator.html">Comparator</a></span><span class="signature">(<wbr><span class="parameter" id="Comparator-param-a"><span class="type-annotation">T</span> <span class="parameter-name">a</span></span>, <span class="parameter" id="Comparator-param-b"><span class="type-annotation">T</span> <span class="parameter-name">b</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/int-class.html">int</a></span>
           </span>
         </dt>
         <dd>
@@ -282,16 +282,16 @@ dynamically through <code>noSuchMethod</code>.<a href="dart-core/proxy.html">&he
 
       <dl class="callables">
         <dt id="identical" class="callable">
-          <span class="name "><a class="" href="dart-core/identical.html">identical</a></span><span class="signature">(<wbr><span class="parameter" id="identical-param-a"><span class="type-annotation"><a class="" href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">a</span></span>, <span class="parameter" id="identical-param-b"><span class="type-annotation"><a class="" href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">b</span></span>)
-            <span class="returntype parameter">&#8594; <a class="" href="dart-core/bool-class.html">bool</a></span>
+          <span class="name "><a href="dart-core/identical.html">identical</a></span><span class="signature">(<wbr><span class="parameter" id="identical-param-a"><span class="type-annotation"><a href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">a</span></span>, <span class="parameter" id="identical-param-b"><span class="type-annotation"><a href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">b</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
           </span>
         </dt>
         <dd>
           <p>Check whether two references are to the same object.</p>
         </dd>
         <dt id="identityHashCode" class="callable">
-          <span class="name "><a class="" href="dart-core/identityHashCode.html">identityHashCode</a></span><span class="signature">(<wbr><span class="parameter" id="identityHashCode-param-object"><span class="type-annotation"><a class="" href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">object</span></span>)
-            <span class="returntype parameter">&#8594; <a class="" href="dart-core/int-class.html">int</a></span>
+          <span class="name "><a href="dart-core/identityHashCode.html">identityHashCode</a></span><span class="signature">(<wbr><span class="parameter" id="identityHashCode-param-object"><span class="type-annotation"><a href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">object</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/int-class.html">int</a></span>
           </span>
         </dt>
         <dd>
@@ -299,7 +299,7 @@ dynamically through <code>noSuchMethod</code>.<a href="dart-core/proxy.html">&he
 </p>
         </dd>
         <dt id="print" class="callable">
-          <span class="name "><a class="" href="dart-core/print.html">print</a></span><span class="signature">(<wbr><span class="parameter" id="print-param-object"><span class="type-annotation"><a class="" href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">object</span></span>)
+          <span class="name "><a href="dart-core/print.html">print</a></span><span class="signature">(<wbr><span class="parameter" id="print-param-object"><span class="type-annotation"><a href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">object</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
         </dt>
@@ -315,13 +315,13 @@ dynamically through <code>noSuchMethod</code>.<a href="dart-core/proxy.html">&he
 
       <dl>
         <dt id="BidirectionalIterator">
-          <span class="name "><a class="" href="dart-core/BidirectionalIterator-class.html">BidirectionalIterator</a></span>
+          <span class="name "><a href="dart-core/BidirectionalIterator-class.html">BidirectionalIterator</a></span>
         </dt>
         <dd>
           <p>An Iterator that allows moving backwards as well as forwards.</p>
         </dd>
         <dt id="bool">
-          <span class="name "><a class="" href="dart-core/bool-class.html">bool</a></span>
+          <span class="name "><a href="dart-core/bool-class.html">bool</a></span>
         </dt>
         <dd>
           <p>The reserved words <code>true</code> and <code>false</code> denote objects that are the only
@@ -329,91 +329,91 @@ instances of this class.<a href="dart-core/bool-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Comparable">
-          <span class="name "><a class="" href="dart-core/Comparable-class.html">Comparable</a></span>
+          <span class="name "><a href="dart-core/Comparable-class.html">Comparable</a></span>
         </dt>
         <dd>
           <p>Interface used by types that have an intrinsic ordering.<a href="dart-core/Comparable-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="DateTime">
-          <span class="name "><a class="" href="dart-core/DateTime-class.html">DateTime</a></span>
+          <span class="name "><a href="dart-core/DateTime-class.html">DateTime</a></span>
         </dt>
         <dd>
           <p>An instant in time, such as July 20, 1969, 8:18pm GMT.<a href="dart-core/DateTime-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Deprecated">
-          <span class="name "><a class="" href="dart-core/Deprecated-class.html">Deprecated</a></span>
+          <span class="name "><a href="dart-core/Deprecated-class.html">Deprecated</a></span>
         </dt>
         <dd>
           <p>The annotation <code>@Deprecated('expires when')</code> marks a feature as deprecated.<a href="dart-core/Deprecated-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="double">
-          <span class="name "><a class="" href="dart-core/double-class.html">double</a></span>
+          <span class="name "><a href="dart-core/double-class.html">double</a></span>
         </dt>
         <dd>
           <p>A double-precision floating point number.<a href="dart-core/double-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Duration">
-          <span class="name "><a class="" href="dart-core/Duration-class.html">Duration</a></span>
+          <span class="name "><a href="dart-core/Duration-class.html">Duration</a></span>
         </dt>
         <dd>
           <p>A span of time, such as 27 days, 4 hours, 12 minutes, and 3 seconds.<a href="dart-core/Duration-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Expando">
-          <span class="name "><a class="" href="dart-core/Expando-class.html">Expando</a></span>
+          <span class="name "><a href="dart-core/Expando-class.html">Expando</a></span>
         </dt>
         <dd>
-          <p>An <a class="" href="dart-core/Expando-class.html">Expando</a> allows adding new properties to objects.<a href="dart-core/Expando-class.html">&hellip;</a>
+          <p>An <a href="dart-core/Expando-class.html">Expando</a> allows adding new properties to objects.<a href="dart-core/Expando-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Function">
-          <span class="name "><a class="" href="dart-core/Function-class.html">Function</a></span>
+          <span class="name "><a href="dart-core/Function-class.html">Function</a></span>
         </dt>
         <dd>
           <p>The base class for all function types.<a href="dart-core/Function-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="int">
-          <span class="name "><a class="" href="dart-core/int-class.html">int</a></span>
+          <span class="name "><a href="dart-core/int-class.html">int</a></span>
         </dt>
         <dd>
           <p>An arbitrarily large integer.<a href="dart-core/int-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Invocation">
-          <span class="name "><a class="" href="dart-core/Invocation-class.html">Invocation</a></span>
+          <span class="name "><a href="dart-core/Invocation-class.html">Invocation</a></span>
         </dt>
         <dd>
           <p>Representation of the invocation of a member on an object.<a href="dart-core/Invocation-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Iterable">
-          <span class="name "><a class="" href="dart-core/Iterable-class.html">Iterable</a></span>
+          <span class="name "><a href="dart-core/Iterable-class.html">Iterable</a></span>
         </dt>
         <dd>
           <p>A collection of values, or "elements", that can be accessed sequentially.<a href="dart-core/Iterable-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Iterator">
-          <span class="name "><a class="" href="dart-core/Iterator-class.html">Iterator</a></span>
+          <span class="name "><a href="dart-core/Iterator-class.html">Iterator</a></span>
         </dt>
         <dd>
           <p>An interface for getting items, one at a time, from an object.<a href="dart-core/Iterator-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="List">
-          <span class="name "><a class="" href="dart-core/List-class.html">List</a></span>
+          <span class="name "><a href="dart-core/List-class.html">List</a></span>
         </dt>
         <dd>
           <p>An indexable collection of objects with a length.<a href="dart-core/List-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Map">
-          <span class="name "><a class="" href="dart-core/Map-class.html">Map</a></span>
+          <span class="name "><a href="dart-core/Map-class.html">Map</a></span>
         </dt>
         <dd>
           <p>An collection of key-value pairs, from which you retrieve a value
@@ -421,14 +421,14 @@ using its associated key.<a href="dart-core/Map-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Match">
-          <span class="name "><a class="" href="dart-core/Match-class.html">Match</a></span>
+          <span class="name "><a href="dart-core/Match-class.html">Match</a></span>
         </dt>
         <dd>
           <p>A result from searching within a string.<a href="dart-core/Match-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Null">
-          <span class="name "><a class="" href="dart-core/Null-class.html">Null</a></span>
+          <span class="name "><a href="dart-core/Null-class.html">Null</a></span>
         </dt>
         <dd>
           <p>The reserved word <code>null</code> denotes an object that is the sole instance of 
@@ -436,27 +436,27 @@ this class.<a href="dart-core/Null-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="num">
-          <span class="name "><a class="" href="dart-core/num-class.html">num</a></span>
+          <span class="name "><a href="dart-core/num-class.html">num</a></span>
         </dt>
         <dd>
           <p>An integer or floating-point number.<a href="dart-core/num-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Object">
-          <span class="name "><a class="" href="dart-core/Object-class.html">Object</a></span>
+          <span class="name "><a href="dart-core/Object-class.html">Object</a></span>
         </dt>
         <dd>
           <p>The base class for all Dart objects.<a href="dart-core/Object-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Pattern">
-          <span class="name "><a class="" href="dart-core/Pattern-class.html">Pattern</a></span>
+          <span class="name "><a href="dart-core/Pattern-class.html">Pattern</a></span>
         </dt>
         <dd>
           <p>An interface for basic searches within strings.</p>
         </dd>
         <dt id="RegExp">
-          <span class="name "><a class="" href="dart-core/RegExp-class.html">RegExp</a></span>
+          <span class="name "><a href="dart-core/RegExp-class.html">RegExp</a></span>
         </dt>
         <dd>
           <p>A regular expression pattern.<a href="dart-core/RegExp-class.html">&hellip;</a>
@@ -470,79 +470,79 @@ this class.<a href="dart-core/Null-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="RuneIterator">
-          <span class="name "><a class="" href="dart-core/RuneIterator-class.html">RuneIterator</a></span>
+          <span class="name "><a href="dart-core/RuneIterator-class.html">RuneIterator</a></span>
         </dt>
         <dd>
-          <p><a class="" href="dart-core/Iterator-class.html">Iterator</a> for reading runes (integer Unicode code points) out of a Dart
+          <p><a href="dart-core/Iterator-class.html">Iterator</a> for reading runes (integer Unicode code points) out of a Dart
 string.</p>
         </dd>
         <dt id="Runes">
-          <span class="name "><a class="" href="dart-core/Runes-class.html">Runes</a></span>
+          <span class="name "><a href="dart-core/Runes-class.html">Runes</a></span>
         </dt>
         <dd>
-          <p>The runes (integer Unicode code points) of a <a class="" href="dart-core/String-class.html">String</a>.</p>
+          <p>The runes (integer Unicode code points) of a <a href="dart-core/String-class.html">String</a>.</p>
         </dd>
         <dt id="Set">
-          <span class="name "><a class="" href="dart-core/Set-class.html">Set</a></span>
+          <span class="name "><a href="dart-core/Set-class.html">Set</a></span>
         </dt>
         <dd>
           <p>A collection of objects in which each object can occur only once.<a href="dart-core/Set-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Sink">
-          <span class="name "><a class="" href="dart-core/Sink-class.html">Sink</a></span>
+          <span class="name "><a href="dart-core/Sink-class.html">Sink</a></span>
         </dt>
         <dd>
           <p>A generic destination for data.<a href="dart-core/Sink-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="StackTrace">
-          <span class="name "><a class="" href="dart-core/StackTrace-class.html">StackTrace</a></span>
+          <span class="name "><a href="dart-core/StackTrace-class.html">StackTrace</a></span>
         </dt>
         <dd>
           <p>An interface implemented by all stack trace objects.<a href="dart-core/StackTrace-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Stopwatch">
-          <span class="name "><a class="" href="dart-core/Stopwatch-class.html">Stopwatch</a></span>
+          <span class="name "><a href="dart-core/Stopwatch-class.html">Stopwatch</a></span>
         </dt>
         <dd>
           <p>A simple stopwatch interface to measure elapsed time.</p>
         </dd>
         <dt id="String">
-          <span class="name "><a class="" href="dart-core/String-class.html">String</a></span>
+          <span class="name "><a href="dart-core/String-class.html">String</a></span>
         </dt>
         <dd>
           <p>A sequence of characters.<a href="dart-core/String-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="StringBuffer">
-          <span class="name "><a class="" href="dart-core/StringBuffer-class.html">StringBuffer</a></span>
+          <span class="name "><a href="dart-core/StringBuffer-class.html">StringBuffer</a></span>
         </dt>
         <dd>
           <p>A class for concatenating strings efficiently.<a href="dart-core/StringBuffer-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="StringSink">
-          <span class="name "><a class="" href="dart-core/StringSink-class.html">StringSink</a></span>
+          <span class="name "><a href="dart-core/StringSink-class.html">StringSink</a></span>
         </dt>
         <dd>
           <p></p>
         </dd>
         <dt id="Symbol">
-          <span class="name "><a class="" href="dart-core/Symbol-class.html">Symbol</a></span>
+          <span class="name "><a href="dart-core/Symbol-class.html">Symbol</a></span>
         </dt>
         <dd>
-          <p>Opaque name used by mirrors, invocations and <a class="" href="dart-core/Function/apply.html">Function.apply</a>.</p>
+          <p>Opaque name used by mirrors, invocations and <a href="dart-core/Function/apply.html">Function.apply</a>.</p>
         </dd>
         <dt id="Type">
-          <span class="name "><a class="" href="dart-core/Type-class.html">Type</a></span>
+          <span class="name "><a href="dart-core/Type-class.html">Type</a></span>
         </dt>
         <dd>
           <p>Runtime representation of a type.</p>
         </dd>
         <dt id="Uri">
-          <span class="name "><a class="" href="dart-core/Uri-class.html">Uri</a></span>
+          <span class="name "><a href="dart-core/Uri-class.html">Uri</a></span>
         </dt>
         <dd>
           <p>A parsed URI, such as a URL.<a href="dart-core/Uri-class.html">&hellip;</a>
@@ -556,137 +556,137 @@ string.</p>
 
       <dl>
         <dt id="AbstractClassInstantiationError">
-          <span class="name "><a class="" href="dart-core/AbstractClassInstantiationError-class.html">AbstractClassInstantiationError</a></span>
+          <span class="name "><a href="dart-core/AbstractClassInstantiationError-class.html">AbstractClassInstantiationError</a></span>
         </dt>
         <dd>
           <p>Error thrown when trying to instantiate an abstract class.</p>
         </dd>
         <dt id="ArgumentError">
-          <span class="name "><a class="" href="dart-core/ArgumentError-class.html">ArgumentError</a></span>
+          <span class="name "><a href="dart-core/ArgumentError-class.html">ArgumentError</a></span>
         </dt>
         <dd>
           <p>Error thrown when a function is passed an unacceptable argument.</p>
         </dd>
         <dt id="AssertionError">
-          <span class="name "><a class="" href="dart-core/AssertionError-class.html">AssertionError</a></span>
+          <span class="name "><a href="dart-core/AssertionError-class.html">AssertionError</a></span>
         </dt>
         <dd>
           <p>Error thrown by the runtime system when an assert statement fails.</p>
         </dd>
         <dt id="CastError">
-          <span class="name "><a class="" href="dart-core/CastError-class.html">CastError</a></span>
+          <span class="name "><a href="dart-core/CastError-class.html">CastError</a></span>
         </dt>
         <dd>
           <p>Error thrown by the runtime system when a cast operation fails.</p>
         </dd>
         <dt id="ConcurrentModificationError">
-          <span class="name "><a class="" href="dart-core/ConcurrentModificationError-class.html">ConcurrentModificationError</a></span>
+          <span class="name "><a href="dart-core/ConcurrentModificationError-class.html">ConcurrentModificationError</a></span>
         </dt>
         <dd>
           <p>Error occurring when a collection is modified during iteration.<a href="dart-core/ConcurrentModificationError-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="CyclicInitializationError">
-          <span class="name "><a class="" href="dart-core/CyclicInitializationError-class.html">CyclicInitializationError</a></span>
+          <span class="name "><a href="dart-core/CyclicInitializationError-class.html">CyclicInitializationError</a></span>
         </dt>
         <dd>
           <p>Error thrown when a lazily initialized variable cannot be initialized.<a href="dart-core/CyclicInitializationError-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Error">
-          <span class="name "><a class="" href="dart-core/Error-class.html">Error</a></span>
+          <span class="name "><a href="dart-core/Error-class.html">Error</a></span>
         </dt>
         <dd>
           <p>Error objects thrown in the case of a program failure.<a href="dart-core/Error-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="Exception">
-          <span class="name "><a class="" href="dart-core/Exception-class.html">Exception</a></span>
+          <span class="name "><a href="dart-core/Exception-class.html">Exception</a></span>
         </dt>
         <dd>
           <p>A marker interface implemented by all core library exceptions.<a href="dart-core/Exception-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="FallThroughError">
-          <span class="name "><a class="" href="dart-core/FallThroughError-class.html">FallThroughError</a></span>
+          <span class="name "><a href="dart-core/FallThroughError-class.html">FallThroughError</a></span>
         </dt>
         <dd>
           <p>Error thrown when control reaches the end of a switch case.<a href="dart-core/FallThroughError-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="FormatException">
-          <span class="name "><a class="" href="dart-core/FormatException-class.html">FormatException</a></span>
+          <span class="name "><a href="dart-core/FormatException-class.html">FormatException</a></span>
         </dt>
         <dd>
           <p>Exception thrown when a string or some other data does not have an expected
 format and cannot be parsed or processed.</p>
         </dd>
         <dt id="IndexError">
-          <span class="name "><a class="" href="dart-core/IndexError-class.html">IndexError</a></span>
+          <span class="name "><a href="dart-core/IndexError-class.html">IndexError</a></span>
         </dt>
         <dd>
-          <p>A specialized <a class="" href="dart-core/RangeError-class.html">RangeError</a> used when an index is not in the range
+          <p>A specialized <a href="dart-core/RangeError-class.html">RangeError</a> used when an index is not in the range
 <code>0..indexable.length-1</code>.<a href="dart-core/IndexError-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="IntegerDivisionByZeroException">
-          <span class="name "><a class="" href="dart-core/IntegerDivisionByZeroException-class.html">IntegerDivisionByZeroException</a></span>
+          <span class="name "><a href="dart-core/IntegerDivisionByZeroException-class.html">IntegerDivisionByZeroException</a></span>
         </dt>
         <dd>
           <p></p>
         </dd>
         <dt id="NoSuchMethodError">
-          <span class="name "><a class="" href="dart-core/NoSuchMethodError-class.html">NoSuchMethodError</a></span>
+          <span class="name "><a href="dart-core/NoSuchMethodError-class.html">NoSuchMethodError</a></span>
         </dt>
         <dd>
-          <p>Error thrown by the default implementation of <code>noSuchMethod</code> on <a class="" href="dart-core/Object-class.html">Object</a>.</p>
+          <p>Error thrown by the default implementation of <code>noSuchMethod</code> on <a href="dart-core/Object-class.html">Object</a>.</p>
         </dd>
         <dt id="NullThrownError">
-          <span class="name "><a class="" href="dart-core/NullThrownError-class.html">NullThrownError</a></span>
+          <span class="name "><a href="dart-core/NullThrownError-class.html">NullThrownError</a></span>
         </dt>
         <dd>
           <p>Error thrown when attempting to throw <code>null</code>.</p>
         </dd>
         <dt id="OutOfMemoryError">
-          <span class="name "><a class="" href="dart-core/OutOfMemoryError-class.html">OutOfMemoryError</a></span>
+          <span class="name "><a href="dart-core/OutOfMemoryError-class.html">OutOfMemoryError</a></span>
         </dt>
         <dd>
           <p></p>
         </dd>
         <dt id="RangeError">
-          <span class="name "><a class="" href="dart-core/RangeError-class.html">RangeError</a></span>
+          <span class="name "><a href="dart-core/RangeError-class.html">RangeError</a></span>
         </dt>
         <dd>
           <p>Error thrown due to an index being outside a valid range.</p>
         </dd>
         <dt id="StackOverflowError">
-          <span class="name "><a class="" href="dart-core/StackOverflowError-class.html">StackOverflowError</a></span>
+          <span class="name "><a href="dart-core/StackOverflowError-class.html">StackOverflowError</a></span>
         </dt>
         <dd>
           <p></p>
         </dd>
         <dt id="StateError">
-          <span class="name "><a class="" href="dart-core/StateError-class.html">StateError</a></span>
+          <span class="name "><a href="dart-core/StateError-class.html">StateError</a></span>
         </dt>
         <dd>
           <p>The operation was not allowed by the current state of the object.<a href="dart-core/StateError-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="TypeError">
-          <span class="name "><a class="" href="dart-core/TypeError-class.html">TypeError</a></span>
+          <span class="name "><a href="dart-core/TypeError-class.html">TypeError</a></span>
         </dt>
         <dd>
           <p>Error thrown by the runtime system when a type assertion fails.</p>
         </dd>
         <dt id="UnimplementedError">
-          <span class="name "><a class="" href="dart-core/UnimplementedError-class.html">UnimplementedError</a></span>
+          <span class="name "><a href="dart-core/UnimplementedError-class.html">UnimplementedError</a></span>
         </dt>
         <dd>
           <p>Thrown by operations that have not been implemented yet.<a href="dart-core/UnimplementedError-class.html">&hellip;</a>
 </p>
         </dd>
         <dt id="UnsupportedError">
-          <span class="name "><a class="" href="dart-core/UnsupportedError-class.html">UnsupportedError</a></span>
+          <span class="name "><a href="dart-core/UnsupportedError-class.html">UnsupportedError</a></span>
         </dt>
         <dd>
           <p>The operation was not allowed by the object.<a href="dart-core/UnsupportedError-class.html">&hellip;</a>
@@ -701,78 +701,78 @@ format and cannot be parsed or processed.</p>
     <h5>dart:core</h5>
     <ol>
       <li class="section-title"><a href="dart-core/dart-core-library.html#constants">Constants</a></li>
-      <li><a class="" href="dart-core/deprecated.html">deprecated</a></li>
-      <li><a class="" href="dart-core/override.html">override</a></li>
-      <li><a class="" href="dart-core/proxy.html">proxy</a></li>
+      <li><a href="dart-core/deprecated.html">deprecated</a></li>
+      <li><a href="dart-core/override.html">override</a></li>
+      <li><a href="dart-core/proxy.html">proxy</a></li>
     
       <li class="section-title"><a href="dart-core/dart-core-library.html#typedefs">Typedefs</a></li>
-      <li><a class="" href="dart-core/Comparator.html">Comparator</a></li>
+      <li><a href="dart-core/Comparator.html">Comparator</a></li>
     
     
       <li class="section-title"><a href="dart-core/dart-core-library.html#functions">Functions</a></li>
-      <li><a class="" href="dart-core/identical.html">identical</a></li>
-      <li><a class="" href="dart-core/identityHashCode.html">identityHashCode</a></li>
-      <li><a class="" href="dart-core/print.html">print</a></li>
+      <li><a href="dart-core/identical.html">identical</a></li>
+      <li><a href="dart-core/identityHashCode.html">identityHashCode</a></li>
+      <li><a href="dart-core/print.html">print</a></li>
     
     
       <li class="section-title"><a href="dart-core/dart-core-library.html#classes">Classes</a></li>
-      <li><a class="" href="dart-core/BidirectionalIterator-class.html">BidirectionalIterator</a></li>
-      <li><a class="" href="dart-core/bool-class.html">bool</a></li>
-      <li><a class="" href="dart-core/Comparable-class.html">Comparable</a></li>
-      <li><a class="" href="dart-core/DateTime-class.html">DateTime</a></li>
-      <li><a class="" href="dart-core/Deprecated-class.html">Deprecated</a></li>
-      <li><a class="" href="dart-core/double-class.html">double</a></li>
-      <li><a class="" href="dart-core/Duration-class.html">Duration</a></li>
-      <li><a class="" href="dart-core/Expando-class.html">Expando</a></li>
-      <li><a class="" href="dart-core/Function-class.html">Function</a></li>
-      <li><a class="" href="dart-core/int-class.html">int</a></li>
-      <li><a class="" href="dart-core/Invocation-class.html">Invocation</a></li>
-      <li><a class="" href="dart-core/Iterable-class.html">Iterable</a></li>
-      <li><a class="" href="dart-core/Iterator-class.html">Iterator</a></li>
-      <li><a class="" href="dart-core/List-class.html">List</a></li>
-      <li><a class="" href="dart-core/Map-class.html">Map</a></li>
-      <li><a class="" href="dart-core/Match-class.html">Match</a></li>
-      <li><a class="" href="dart-core/Null-class.html">Null</a></li>
-      <li><a class="" href="dart-core/num-class.html">num</a></li>
-      <li><a class="" href="dart-core/Object-class.html">Object</a></li>
-      <li><a class="" href="dart-core/Pattern-class.html">Pattern</a></li>
-      <li><a class="" href="dart-core/RegExp-class.html">RegExp</a></li>
+      <li><a href="dart-core/BidirectionalIterator-class.html">BidirectionalIterator</a></li>
+      <li><a href="dart-core/bool-class.html">bool</a></li>
+      <li><a href="dart-core/Comparable-class.html">Comparable</a></li>
+      <li><a href="dart-core/DateTime-class.html">DateTime</a></li>
+      <li><a href="dart-core/Deprecated-class.html">Deprecated</a></li>
+      <li><a href="dart-core/double-class.html">double</a></li>
+      <li><a href="dart-core/Duration-class.html">Duration</a></li>
+      <li><a href="dart-core/Expando-class.html">Expando</a></li>
+      <li><a href="dart-core/Function-class.html">Function</a></li>
+      <li><a href="dart-core/int-class.html">int</a></li>
+      <li><a href="dart-core/Invocation-class.html">Invocation</a></li>
+      <li><a href="dart-core/Iterable-class.html">Iterable</a></li>
+      <li><a href="dart-core/Iterator-class.html">Iterator</a></li>
+      <li><a href="dart-core/List-class.html">List</a></li>
+      <li><a href="dart-core/Map-class.html">Map</a></li>
+      <li><a href="dart-core/Match-class.html">Match</a></li>
+      <li><a href="dart-core/Null-class.html">Null</a></li>
+      <li><a href="dart-core/num-class.html">num</a></li>
+      <li><a href="dart-core/Object-class.html">Object</a></li>
+      <li><a href="dart-core/Pattern-class.html">Pattern</a></li>
+      <li><a href="dart-core/RegExp-class.html">RegExp</a></li>
       <li><a class="deprecated" href="dart-core/Resource-class.html">Resource</a></li>
-      <li><a class="" href="dart-core/RuneIterator-class.html">RuneIterator</a></li>
-      <li><a class="" href="dart-core/Runes-class.html">Runes</a></li>
-      <li><a class="" href="dart-core/Set-class.html">Set</a></li>
-      <li><a class="" href="dart-core/Sink-class.html">Sink</a></li>
-      <li><a class="" href="dart-core/StackTrace-class.html">StackTrace</a></li>
-      <li><a class="" href="dart-core/Stopwatch-class.html">Stopwatch</a></li>
-      <li><a class="" href="dart-core/String-class.html">String</a></li>
-      <li><a class="" href="dart-core/StringBuffer-class.html">StringBuffer</a></li>
-      <li><a class="" href="dart-core/StringSink-class.html">StringSink</a></li>
-      <li><a class="" href="dart-core/Symbol-class.html">Symbol</a></li>
-      <li><a class="" href="dart-core/Type-class.html">Type</a></li>
-      <li><a class="" href="dart-core/Uri-class.html">Uri</a></li>
+      <li><a href="dart-core/RuneIterator-class.html">RuneIterator</a></li>
+      <li><a href="dart-core/Runes-class.html">Runes</a></li>
+      <li><a href="dart-core/Set-class.html">Set</a></li>
+      <li><a href="dart-core/Sink-class.html">Sink</a></li>
+      <li><a href="dart-core/StackTrace-class.html">StackTrace</a></li>
+      <li><a href="dart-core/Stopwatch-class.html">Stopwatch</a></li>
+      <li><a href="dart-core/String-class.html">String</a></li>
+      <li><a href="dart-core/StringBuffer-class.html">StringBuffer</a></li>
+      <li><a href="dart-core/StringSink-class.html">StringSink</a></li>
+      <li><a href="dart-core/Symbol-class.html">Symbol</a></li>
+      <li><a href="dart-core/Type-class.html">Type</a></li>
+      <li><a href="dart-core/Uri-class.html">Uri</a></li>
     
       <li class="section-title"><a href="dart-core/dart-core-library.html#exceptions">Exceptions</a></li>
-      <li><a class="" href="dart-core/AbstractClassInstantiationError-class.html">AbstractClassInstantiationError</a></li>
-      <li><a class="" href="dart-core/ArgumentError-class.html">ArgumentError</a></li>
-      <li><a class="" href="dart-core/AssertionError-class.html">AssertionError</a></li>
-      <li><a class="" href="dart-core/CastError-class.html">CastError</a></li>
-      <li><a class="" href="dart-core/ConcurrentModificationError-class.html">ConcurrentModificationError</a></li>
-      <li><a class="" href="dart-core/CyclicInitializationError-class.html">CyclicInitializationError</a></li>
-      <li><a class="" href="dart-core/Error-class.html">Error</a></li>
-      <li><a class="" href="dart-core/Exception-class.html">Exception</a></li>
-      <li><a class="" href="dart-core/FallThroughError-class.html">FallThroughError</a></li>
-      <li><a class="" href="dart-core/FormatException-class.html">FormatException</a></li>
-      <li><a class="" href="dart-core/IndexError-class.html">IndexError</a></li>
-      <li><a class="" href="dart-core/IntegerDivisionByZeroException-class.html">IntegerDivisionByZeroException</a></li>
-      <li><a class="" href="dart-core/NoSuchMethodError-class.html">NoSuchMethodError</a></li>
-      <li><a class="" href="dart-core/NullThrownError-class.html">NullThrownError</a></li>
-      <li><a class="" href="dart-core/OutOfMemoryError-class.html">OutOfMemoryError</a></li>
-      <li><a class="" href="dart-core/RangeError-class.html">RangeError</a></li>
-      <li><a class="" href="dart-core/StackOverflowError-class.html">StackOverflowError</a></li>
-      <li><a class="" href="dart-core/StateError-class.html">StateError</a></li>
-      <li><a class="" href="dart-core/TypeError-class.html">TypeError</a></li>
-      <li><a class="" href="dart-core/UnimplementedError-class.html">UnimplementedError</a></li>
-      <li><a class="" href="dart-core/UnsupportedError-class.html">UnsupportedError</a></li>
+      <li><a href="dart-core/AbstractClassInstantiationError-class.html">AbstractClassInstantiationError</a></li>
+      <li><a href="dart-core/ArgumentError-class.html">ArgumentError</a></li>
+      <li><a href="dart-core/AssertionError-class.html">AssertionError</a></li>
+      <li><a href="dart-core/CastError-class.html">CastError</a></li>
+      <li><a href="dart-core/ConcurrentModificationError-class.html">ConcurrentModificationError</a></li>
+      <li><a href="dart-core/CyclicInitializationError-class.html">CyclicInitializationError</a></li>
+      <li><a href="dart-core/Error-class.html">Error</a></li>
+      <li><a href="dart-core/Exception-class.html">Exception</a></li>
+      <li><a href="dart-core/FallThroughError-class.html">FallThroughError</a></li>
+      <li><a href="dart-core/FormatException-class.html">FormatException</a></li>
+      <li><a href="dart-core/IndexError-class.html">IndexError</a></li>
+      <li><a href="dart-core/IntegerDivisionByZeroException-class.html">IntegerDivisionByZeroException</a></li>
+      <li><a href="dart-core/NoSuchMethodError-class.html">NoSuchMethodError</a></li>
+      <li><a href="dart-core/NullThrownError-class.html">NullThrownError</a></li>
+      <li><a href="dart-core/OutOfMemoryError-class.html">OutOfMemoryError</a></li>
+      <li><a href="dart-core/RangeError-class.html">RangeError</a></li>
+      <li><a href="dart-core/StackOverflowError-class.html">StackOverflowError</a></li>
+      <li><a href="dart-core/StateError-class.html">StateError</a></li>
+      <li><a href="dart-core/TypeError-class.html">TypeError</a></li>
+      <li><a href="dart-core/UnimplementedError-class.html">UnimplementedError</a></li>
+      <li><a href="dart-core/UnsupportedError-class.html">UnsupportedError</a></li>
     </ol>
   </div><!--/sidebar-offcanvas-right-->
 
@@ -784,7 +784,7 @@ format and cannot be parsed or processed.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.10
+          Dart SDK 1.13.0
         </span>
         &bull;
         <span class="no-break">

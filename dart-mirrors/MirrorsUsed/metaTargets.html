@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="made with love by dartdoc 0.8.0-dev">
+  <meta name="generator" content="made with love by dartdoc 0.8.1-dev">
   <title>metaTargets property - MirrorsUsed class - dart:mirrors library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
@@ -86,19 +86,19 @@
       <li class="section-title">
         <a href="dart-mirrors/MirrorsUsed-class.html#instance-properties">Properties</a>
       </li>
-      <li class="inherited"><a class="" href="dart-core/Object/hashCode.html">hashCode</a></li>
-      <li><a class="" href="dart-mirrors/MirrorsUsed/metaTargets.html">metaTargets</a></li>
-      <li><a class="" href="dart-mirrors/MirrorsUsed/override.html">override</a></li>
-      <li class="inherited"><a class="" href="dart-core/Object/runtimeType.html">runtimeType</a></li>
-      <li><a class="" href="dart-mirrors/MirrorsUsed/symbols.html">symbols</a></li>
-      <li><a class="" href="dart-mirrors/MirrorsUsed/targets.html">targets</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li><a href="dart-mirrors/MirrorsUsed/metaTargets.html">metaTargets</a></li>
+      <li><a href="dart-mirrors/MirrorsUsed/override.html">override</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li><a href="dart-mirrors/MirrorsUsed/symbols.html">symbols</a></li>
+      <li><a href="dart-mirrors/MirrorsUsed/targets.html">targets</a></li>
     
       <li class="section-title inherited"><a href="dart-mirrors/MirrorsUsed-class.html#operators">Operators</a></li>
-      <li class="inherited"><a class="" href="dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
     
       <li class="section-title inherited"><a href="dart-mirrors/MirrorsUsed-class.html#instance-methods">Methods</a></li>
-      <li class="inherited"><a class="" href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
-      <li class="inherited"><a class="" href="dart-core/Object/toString.html">toString</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
@@ -114,14 +114,14 @@
 
     <section class="desc markdown">
       <p>A list of classes that when used as metadata indicates a reflective
-target. See also <a class="" href="dart-mirrors/MirrorsUsed/targets.html">targets</a>.</p>
+target. See also <a href="dart-mirrors/MirrorsUsed/targets.html">targets</a>.</p>
 <p>The following text is non-normative:</p>
 <p>The format for specifying the list of classes is the same as used for
-specifying <a class="" href="dart-mirrors/MirrorsUsed/targets.html">targets</a>. However, as a library cannot be used as a metadata
-annotation in Dart, adding a library to the list of <a class="" href="dart-mirrors/MirrorsUsed/metaTargets.html">metaTargets</a> has no
-effect. In particular, adding a library to <a class="" href="dart-mirrors/MirrorsUsed/metaTargets.html">metaTargets</a> does not make
+specifying <a href="dart-mirrors/MirrorsUsed/targets.html">targets</a>. However, as a library cannot be used as a metadata
+annotation in Dart, adding a library to the list of <a href="dart-mirrors/MirrorsUsed/metaTargets.html">metaTargets</a> has no
+effect. In particular, adding a library to <a href="dart-mirrors/MirrorsUsed/metaTargets.html">metaTargets</a> does not make
 the library's classes valid metadata annotations to enable reflection.</p>
-<p>If an instance of a class specified in <a class="" href="dart-mirrors/MirrorsUsed/metaTargets.html">metaTargets</a> is used as 
+<p>If an instance of a class specified in <a href="dart-mirrors/MirrorsUsed/metaTargets.html">metaTargets</a> is used as 
 metadata annotation on a library, class, field or method, that library,
 class, field or  method is added to the set of targets for reflection. </p>
 <p>Example usage:</p>
@@ -142,7 +142,7 @@ class Foo {
 </code></pre>
 <p>In the above example. <code>reflectableMethod</code> is marked as reflectable by
 using the <code>Reflectable</code> class, which in turn is specified in the 
-<a class="" href="dart-mirrors/MirrorsUsed/metaTargets.html">metaTargets</a> annotation.</p>
+<a href="dart-mirrors/MirrorsUsed/metaTargets.html">metaTargets</a> annotation.</p>
 <p>The method <code>nonReflectableMethod</code> lacks a metadata annotation and thus 
 will not be reflectable at runtime.</p>
     </section>
@@ -159,7 +159,7 @@ will not be reflectable at runtime.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0-dev.7.10
+          Dart SDK 1.13.0
         </span>
         &bull;
         <span class="no-break">
