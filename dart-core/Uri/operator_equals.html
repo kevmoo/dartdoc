@@ -96,6 +96,8 @@
     
       <li class="section-title"><a href="dart-core/Uri-class.html#constructors">Constructors</a></li>
       <li><a href="dart-core/Uri/Uri.html">Uri</a></li>
+      <li><a href="dart-core/Uri/Uri.dataFromBytes.html">dataFromBytes</a></li>
+      <li><a href="dart-core/Uri/Uri.dataFromString.html">dataFromString</a></li>
       <li><a href="dart-core/Uri/Uri.directory.html">directory</a></li>
       <li><a href="dart-core/Uri/Uri.file.html">file</a></li>
       <li><a href="dart-core/Uri/Uri.http.html">http</a></li>
@@ -105,6 +107,7 @@
         <a href="dart-core/Uri-class.html#instance-properties">Properties</a>
       </li>
       <li><a href="dart-core/Uri/authority.html">authority</a></li>
+      <li><a href="dart-core/Uri/data.html">data</a></li>
       <li><a href="dart-core/Uri/fragment.html">fragment</a></li>
       <li><a href="dart-core/Uri/hasAbsolutePath.html">hasAbsolutePath</a></li>
       <li><a href="dart-core/Uri/hasAuthority.html">hasAuthority</a></li>
@@ -175,16 +178,16 @@ the <code>hashCode</code> method as well to maintain consistency.</p>
       <pre><code class="prettyprint lang-dart">bool operator==(other) {
   if (other is! Uri) return false;
   Uri uri = other;
-  return scheme == uri.scheme &amp;&amp;
-      hasAuthority == uri.hasAuthority &amp;&amp;
-      userInfo == uri.userInfo &amp;&amp;
-      host == uri.host &amp;&amp;
-      port == uri.port &amp;&amp;
-      path == uri.path &amp;&amp;
-      hasQuery == uri.hasQuery &amp;&amp;
-      query == uri.query &amp;&amp;
-      hasFragment == uri.hasFragment &amp;&amp;
-      fragment == uri.fragment;
+  return scheme       == uri.scheme       &amp;&amp;
+         hasAuthority == uri.hasAuthority &amp;&amp;
+         userInfo     == uri.userInfo     &amp;&amp;
+         host         == uri.host         &amp;&amp;
+         port         == uri.port         &amp;&amp;
+         path         == uri.path         &amp;&amp;
+         hasQuery     == uri.hasQuery     &amp;&amp;
+         query        == uri.query        &amp;&amp;
+         hasFragment  == uri.hasFragment  &amp;&amp;
+         fragment     == uri.fragment;
 }</code></pre>
     </section>
 
@@ -198,7 +201,7 @@ the <code>hashCode</code> method as well to maintain consistency.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

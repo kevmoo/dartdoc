@@ -138,7 +138,7 @@
 @SupportedBrowser(SupportedBrowser.FIREFOX)
 @SupportedBrowser(SupportedBrowser.IE, &apos;10&apos;)
 @SupportedBrowser(SupportedBrowser.SAFARI)
-void pushState(Object data, String title, [String url]) =&gt; _blink.BlinkHistory.instance.pushState_Callback_3_(unwrap_jso(this), data, title, url);</code></pre>
+void pushState(Object data, String title, [String url]) =&gt; _blink.BlinkHistory.instance.pushState_Callback_3_(unwrap_jso(this), convertDartToNative_SerializedScriptValue(data), title, url);</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -151,7 +151,7 @@ void pushState(Object data, String title, [String url]) =&gt; _blink.BlinkHistor
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

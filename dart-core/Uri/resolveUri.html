@@ -96,6 +96,8 @@
     
       <li class="section-title"><a href="dart-core/Uri-class.html#constructors">Constructors</a></li>
       <li><a href="dart-core/Uri/Uri.html">Uri</a></li>
+      <li><a href="dart-core/Uri/Uri.dataFromBytes.html">dataFromBytes</a></li>
+      <li><a href="dart-core/Uri/Uri.dataFromString.html">dataFromString</a></li>
       <li><a href="dart-core/Uri/Uri.directory.html">directory</a></li>
       <li><a href="dart-core/Uri/Uri.file.html">file</a></li>
       <li><a href="dart-core/Uri/Uri.http.html">http</a></li>
@@ -105,6 +107,7 @@
         <a href="dart-core/Uri-class.html#instance-properties">Properties</a>
       </li>
       <li><a href="dart-core/Uri/authority.html">authority</a></li>
+      <li><a href="dart-core/Uri/data.html">data</a></li>
       <li><a href="dart-core/Uri/fragment.html">fragment</a></li>
       <li><a href="dart-core/Uri/hasAbsolutePath.html">hasAbsolutePath</a></li>
       <li><a href="dart-core/Uri/hasAuthority.html">hasAuthority</a></li>
@@ -152,8 +155,8 @@
     <section class="desc markdown">
       <p>Resolve <code>reference</code> as an URI relative to <code>this</code>.</p>
 <p>Returns the resolved URI.</p>
-<p>The algorithm "Transform Reference" for resolving a reference is
-described in <a href="http://tools.ietf.org/html/rfc3986#section-5" title="RFC-1123">RFC-3986 Section 5</a>.</p>
+<p>The algorithm "Transform Reference" for resolving a reference is described
+in <a href="http://tools.ietf.org/html/rfc3986#section-5" title="RFC-1123">RFC-3986 Section 5</a>.</p>
 <p>Updated to handle the case where the base URI is just a relative path -
 that is: when it has no scheme or authority and the path does not start
 with a slash.
@@ -252,7 +255,7 @@ an empty path is not converted to "/".</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

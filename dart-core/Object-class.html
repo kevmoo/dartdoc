@@ -128,6 +128,7 @@
       <li><a href="dart-core/Symbol-class.html">Symbol</a></li>
       <li><a href="dart-core/Type-class.html">Type</a></li>
       <li><a href="dart-core/Uri-class.html">Uri</a></li>
+      <li><a href="dart-core/UriData-class.html">UriData</a></li>
     
       <li class="section-title"><a href="dart-core/dart-core-library.html#exceptions">Exceptions</a></li>
       <li><a href="dart-core/AbstractClassInstantiationError-class.html">AbstractClassInstantiationError</a></li>
@@ -163,8 +164,10 @@ every other Dart class is a subclass of Object.</p>
 <p>When you define a class, you should override <a href="dart-core/Object/toString.html">toString</a>
 to return a string describing an instance of that class.
 You might also need to define <a href="dart-core/Object/hashCode.html">hashCode</a> and <code>==</code>, as described in the
-<a href="http://www.dartlang.org/docs/dart-up-and-running/contents/ch03.html#ch03-implementing-map-keys">Implementing map keys</a>
-section of the <a href="http://www.dartlang.org/docs/dart-up-and-running/contents/ch03.html">library tour</a>.</p>
+<a href="https://www.dartlang.org/docs/dart-up-and-running/ch03.html#implementing-map-keys">Implementing map
+keys</a>
+section of the <a href="http://www.dartlang.org/docs/dart-up-and-running/contents/ch03.html">library
+tour</a>.</p>
     </section>
     
 
@@ -238,11 +241,7 @@ section of the <a href="http://www.dartlang.org/docs/dart-up-and-running/content
           </span>
         </dt>
         <dd>
-          <p><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> is invoked when users invoke a non-existent method
-on an object. The name of the method and the arguments of the
-invocation are passed to <a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> in an <a href="dart-core/Invocation-class.html">Invocation</a>.
-If <a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> returns a value, that value becomes the result of
-the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a>
+          <p>Invoked when a non-existent method or property is accessed.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a>
 </p>
         </dd>
         <dt id="toString" class="callable">
@@ -290,7 +289,7 @@ the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

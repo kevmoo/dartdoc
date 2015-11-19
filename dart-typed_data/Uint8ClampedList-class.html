@@ -113,8 +113,10 @@
     <section class="desc markdown">
       <p>A fixed-length list of 8-bit unsigned integers.</p>
 <p>For long lists, this implementation can be considerably
-more space- and time-efficient than the default <a href="dart-core/List-class.html">List</a> implementation.
-Indexed store clamps the value to range 0..0xFF.</p>
+more space- and time-efficient than the default <a href="dart-core/List-class.html">List</a> implementation.</p>
+<p>Integers stored in the list are clamped to an unsigned eight bit value.
+That is, all values below zero are stored as zero
+and all values above 255 are stored as 255.</p>
     </section>
     
     <section>
@@ -170,7 +172,8 @@ whose elements are initially zero.</p>
         </dt>
         <dd>
           <p>Creates a <a href="dart-typed_data/Uint8ClampedList-class.html">Uint8ClampedList</a> of the same size as the <code>elements</code>
-list and copies over the values clamping when needed.</p>
+list and copies over the values clamping when needed.<a href="dart-typed_data/Uint8ClampedList/Uint8ClampedList.fromList.html">&hellip;</a>
+</p>
           <div class="constructor-modifier features">factory</div>
         </dd>
         <dt id="Uint8ClampedList.view" class="callable">
@@ -469,7 +472,7 @@ the length of the list becomes zero.<a href="dart-core/List/clear.html">&hellip;
           </span>
         </dt>
         <dd class="inherited">
-          <p>Expands each element of this <a href="dart-core/Iterable-class.html">Iterable</a>into zero or more elements.<a href="dart-core/Iterable/expand.html">&hellip;</a>
+          <p>Expands each element of this <a href="dart-core/Iterable-class.html">Iterable</a> into zero or more elements.<a href="dart-core/Iterable/expand.html">&hellip;</a>
 </p>
           <div class="features">inherited</div>
         </dd>
@@ -603,11 +606,7 @@ calling <code>f</code> on each element of this <code>Iterable</code> in iteratio
           </span>
         </dt>
         <dd class="inherited">
-          <p><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> is invoked when users invoke a non-existent method
-on an object. The name of the method and the arguments of the
-invocation are passed to <a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> in an <a href="dart-core/Invocation-class.html">Invocation</a>.
-If <a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> returns a value, that value becomes the result of
-the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a>
+          <p>Invoked when a non-existent method or property is accessed.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a>
 </p>
           <div class="features">inherited</div>
         </dd>
@@ -932,7 +931,7 @@ predicate <code>test</code>.<a href="dart-core/Iterable/where.html">&hellip;</a>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

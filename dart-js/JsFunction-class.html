@@ -90,6 +90,7 @@
       <li><a href="dart-js/allowInteropCaptureThis.html">allowInteropCaptureThis</a></li>
       <li><a class="deprecated" href="dart-js/finalizeJsInterfaces.html">finalizeJsInterfaces</a></li>
       <li><a class="deprecated" href="dart-js/getDartHtmlWrapperFor.html">getDartHtmlWrapperFor</a></li>
+      <li><a class="deprecated" href="dart-js/maybeWrapTypedInterop.html">maybeWrapTypedInterop</a></li>
       <li><a class="deprecated" href="dart-js/registerJsInterfaces.html">registerJsInterfaces</a></li>
       <li><a class="deprecated" href="dart-js/setDartHtmlWrapperFor.html">setDartHtmlWrapperFor</a></li>
       <li><a class="deprecated" href="dart-js/unwrap_jso.html">unwrap_jso</a></li>
@@ -288,11 +289,7 @@ either directly or though its prototype chain.<a href="dart-js/JsObject/hasPrope
           </span>
         </dt>
         <dd>
-          <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
-on an object. The name of the method and the arguments of the
-invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
-If <code>noSuchMethod</code> returns a value, that value becomes the result of
-the original invocation.<a href="dart-js/JsFunction/noSuchMethod.html">&hellip;</a>
+          <p>Invoked when a non-existent method or property is accessed.<a href="dart-js/JsFunction/noSuchMethod.html">&hellip;</a>
 </p>
         </dd>
         <dt id="toString" class="callable inherited">
@@ -350,7 +347,7 @@ the original invocation.<a href="dart-js/JsFunction/noSuchMethod.html">&hellip;<
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

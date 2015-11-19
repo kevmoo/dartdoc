@@ -128,6 +128,7 @@
       <li><a href="dart-core/Symbol-class.html">Symbol</a></li>
       <li><a href="dart-core/Type-class.html">Type</a></li>
       <li><a href="dart-core/Uri-class.html">Uri</a></li>
+      <li><a href="dart-core/UriData-class.html">UriData</a></li>
     
       <li class="section-title"><a href="dart-core/dart-core-library.html#exceptions">Exceptions</a></li>
       <li><a href="dart-core/AbstractClassInstantiationError-class.html">AbstractClassInstantiationError</a></li>
@@ -265,7 +266,7 @@ break the iteration.</p>
           <div class="constructor-modifier features">factory</div>
         </dd>
         <dt id="List.filled" class="callable">
-          <span class="name"><a href="dart-core/List/List.filled.html">List.filled</a></span><span class="signature">(<span class="parameter" id="filled-param-length"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>, <span class="parameter" id="filled-param-fill"><span class="type-annotation">E</span> <span class="parameter-name">fill</span></span>)</span>
+          <span class="name"><a href="dart-core/List/List.filled.html">List.filled</a></span><span class="signature">(<span class="parameter" id="filled-param-length"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>, <span class="parameter" id="filled-param-fill"><span class="type-annotation">E</span> <span class="parameter-name">fill</span></span>, {<span class="parameter" id="filled-param-growable"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">growable</span>: <span class="default-value">false</span></span>})</span>
         </dt>
         <dd>
           <p>Creates a fixed-length list of the given length, and initializes the
@@ -537,7 +538,7 @@ the length of the list becomes zero.<a href="dart-core/List/clear.html">&hellip;
           </span>
         </dt>
         <dd class="inherited">
-          <p>Expands each element of this <a href="dart-core/Iterable-class.html">Iterable</a>into zero or more elements.<a href="dart-core/Iterable/expand.html">&hellip;</a>
+          <p>Expands each element of this <a href="dart-core/Iterable-class.html">Iterable</a> into zero or more elements.<a href="dart-core/Iterable/expand.html">&hellip;</a>
 </p>
           <div class="features">inherited</div>
         </dd>
@@ -665,11 +666,7 @@ calling <code>f</code> on each element of this <code>Iterable</code> in iteratio
           </span>
         </dt>
         <dd class="inherited">
-          <p><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> is invoked when users invoke a non-existent method
-on an object. The name of the method and the arguments of the
-invocation are passed to <a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> in an <a href="dart-core/Invocation-class.html">Invocation</a>.
-If <a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> returns a value, that value becomes the result of
-the original invocation.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a>
+          <p>Invoked when a non-existent method or property is accessed.<a href="dart-core/Object/noSuchMethod.html">&hellip;</a>
 </p>
           <div class="features">inherited</div>
         </dd>
@@ -978,7 +975,7 @@ predicate <code>test</code>.<a href="dart-core/Iterable/where.html">&hellip;</a>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

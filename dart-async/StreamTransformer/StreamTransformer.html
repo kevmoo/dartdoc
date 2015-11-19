@@ -157,9 +157,9 @@ the handlers it received as part of the <code>listen</code> call.</p>
             onDone: controller.close,
             cancelOnError: cancelOnError);
         },
-        onPause: () =&gt; subscription.pause(),
-        onResume: () =&gt; subscription.resume(),
-        onCancel: () =&gt; subscription.cancel(),
+        onPause: () { subscription.pause(); },
+        onResume: () { subscription.resume(); },
+        onCancel: () { subscription.cancel(); },
         sync: true);
       return controller.stream.listen(null);
     });
@@ -183,7 +183,7 @@ the handlers it received as part of the <code>listen</code> call.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

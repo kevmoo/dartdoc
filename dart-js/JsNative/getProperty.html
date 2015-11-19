@@ -84,6 +84,7 @@
       <li><a href="dart-js/JsNative/callMethod.html">callMethod</a></li>
       <li><a href="dart-js/JsNative/getArrayIndex.html">getArrayIndex</a></li>
       <li><a href="dart-js/JsNative/getProperty.html">getProperty</a></li>
+      <li><a href="dart-js/JsNative/setProperty.html">setProperty</a></li>
       <li><a href="dart-js/JsNative/withThis.html">withThis</a></li>
     
       <li class="section-title"><a href="dart-js/JsNative-class.html#constructors">Constructors</a></li>
@@ -109,14 +110,15 @@
 
     <section class="multi-line-signature">
         <span class="returntype">dynamic</span>
-        <span class="name ">getProperty</span>(<wbr><span class="parameter" id="getProperty-param-o"><span class="type-annotation"><a href="dart-js/JsObject-class.html">JsObject</a></span> <span class="parameter-name">o</span></span>, <span class="parameter" id="getProperty-param-name"><span class="parameter-name">name</span></span>)
+        <span class="name ">getProperty</span>(<wbr><span class="parameter" id="getProperty-param-o"><span class="parameter-name">o</span></span>, <span class="parameter" id="getProperty-param-name"><span class="parameter-name">name</span></span>)
     </section>
 
     
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">static getProperty(JsObject o, name) {
-  return o._operator_getter(name);
+      <pre><code class="prettyprint lang-dart">static getProperty(o, name) {
+  o = unwrap_jso(o);
+  return o != null ? o._operator_getter(name) : null;
 }</code></pre>
     </section>
 
@@ -130,7 +132,7 @@
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

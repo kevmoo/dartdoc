@@ -117,13 +117,10 @@
     </section>
 
     <section class="desc markdown">
-      <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
-on an object. The name of the method and the arguments of the
-invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
-If <code>noSuchMethod</code> returns a value, that value becomes the result of
-the original invocation.</p>
-<p>The default behavior of <code>noSuchMethod</code> is to throw a
-<code>NoSuchMethodError</code>.</p>
+      <p>Invoked when a non-existent method or property is accessed.</p>
+<p>Classes can override <code>noSuchMethod</code> to provide custom behavior.</p>
+<p>If a value is returned, it becomes the result of the original invocation.</p>
+<p>The default behavior is to throw a <code>NoSuchMethodError</code>.</p>
     </section>
     
     <section class="summary source-code" id="source">
@@ -151,7 +148,7 @@ the original invocation.</p>
       throwError();
     } else {
       // TODO(jacobr): should we throw if the JavaScript object doesn&apos;t have the property?
-      return this[name];
+      return maybeWrapTypedInterop(this._operator_getter(name));
     }
   } else if (invocation.isSetter) {
     if (CHECK_JS_INVOCATIONS) {
@@ -161,7 +158,8 @@ the original invocation.</p>
     }
     assert(name.endsWith(&quot;=&quot;));
     name = name.substring(0, name.length - 1);
-    return this[name] = invocation.positionalArguments.first;
+    return maybeWrapTypedInterop(_operator_setter(
+        name, invocation.positionalArguments.first));
   } else {
     // TODO(jacobr): also allow calling getters that look like functions.
     var matches;
@@ -170,7 +168,7 @@ the original invocation.</p>
       if (matches == null ||
           !matches.checkInvocation(invocation)) throwError();
     }
-    var ret = this.callMethod(name, _buildArgs(invocation));
+    var ret = maybeWrapTypedInterop(this._callMethod(name, _buildArgs(invocation)));
     if (CHECK_JS_INVOCATIONS) {
       if (!matches._checkReturnType(ret)) throwError();
     }
@@ -189,7 +187,7 @@ the original invocation.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

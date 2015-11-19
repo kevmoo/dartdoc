@@ -108,7 +108,7 @@
 
     <section class="multi-line-signature">
         <span class="returntype"><a href="dart-async/Future-class.html">Future</a>&lt;<a href="dart-io/WebSocket-class.html">WebSocket</a>&gt;</span>
-        <span class="name ">upgrade</span>(<wbr><span class="parameter" id="upgrade-param-request"><span class="type-annotation"><a href="dart-io/HttpRequest-class.html">HttpRequest</a></span> <span class="parameter-name">request</span></span>, {<span class="parameter" id="upgrade-param-protocolSelector"><span class="type-annotation">dynamic</span> <span class="parameter-name">protocolSelector</span>(<span class="parameter" id="protocolSelector-param-protocols"><span class="type-annotation"><a href="dart-core/List-class.html">List</a>&lt;<a href="dart-core/String-class.html">String</a>&gt;</span> <span class="parameter-name">protocols</span></span>)</span>})
+        <span class="name ">upgrade</span>(<wbr><span class="parameter" id="upgrade-param-request"><span class="type-annotation"><a href="dart-io/HttpRequest-class.html">HttpRequest</a></span> <span class="parameter-name">request</span></span>, {<span class="parameter" id="upgrade-param-protocolSelector"><span class="type-annotation">dynamic</span> <span class="parameter-name">protocolSelector</span>(<span class="parameter" id="protocolSelector-param-protocols"><span class="type-annotation"><a href="dart-core/List-class.html">List</a>&lt;<a href="dart-core/String-class.html">String</a>&gt;</span> <span class="parameter-name">protocols</span></span>)</span>, <span class="parameter" id="upgrade-param-compression"><span class="type-annotation"><a href="dart-io/CompressionOptions-class.html">CompressionOptions</a></span> <span class="parameter-name">compression</span>: <span class="default-value">CompressionOptions.DEFAULT</span></span>})
     </section>
 
     <section class="desc markdown">
@@ -122,13 +122,18 @@ select what protocol to use, if any were provided by the client.
 <code>protocolSelector</code> is should return either a <a href="dart-core/String-class.html">String</a> or a <a href="dart-async/Future-class.html">Future</a>
 completing with a <a href="dart-core/String-class.html">String</a>. The <a href="dart-core/String-class.html">String</a> must exist in the list of
 protocols.</p>
+<p>If <code>compression</code> is provided, the <a href="dart-io/WebSocket-class.html">WebSocket</a> created will be configured
+to negotiate with the specified <a href="dart-io/CompressionOptions-class.html">CompressionOptions</a>. If none is specified
+then the <a href="dart-io/WebSocket-class.html">WebSocket</a> will be created with the default <a href="dart-io/CompressionOptions-class.html">CompressionOptions</a>.</p>
     </section>
     
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">static Future&lt;WebSocket&gt; upgrade(HttpRequest request,
-                                 {protocolSelector(List&lt;String&gt; protocols)}) {
-  return _WebSocketTransformerImpl._upgrade(request, protocolSelector);
+    {protocolSelector(List&lt;String&gt; protocols),
+    CompressionOptions compression: CompressionOptions.DEFAULT}) {
+  return _WebSocketTransformerImpl._upgrade(
+      request, protocolSelector, compression);
 }</code></pre>
     </section>
 
@@ -142,7 +147,7 @@ protocols.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

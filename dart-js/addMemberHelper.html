@@ -87,6 +87,7 @@
       <li><a href="dart-js/allowInteropCaptureThis.html">allowInteropCaptureThis</a></li>
       <li><a class="deprecated" href="dart-js/finalizeJsInterfaces.html">finalizeJsInterfaces</a></li>
       <li><a class="deprecated" href="dart-js/getDartHtmlWrapperFor.html">getDartHtmlWrapperFor</a></li>
+      <li><a class="deprecated" href="dart-js/maybeWrapTypedInterop.html">maybeWrapTypedInterop</a></li>
       <li><a class="deprecated" href="dart-js/registerJsInterfaces.html">registerJsInterfaces</a></li>
       <li><a class="deprecated" href="dart-js/setDartHtmlWrapperFor.html">setDartHtmlWrapperFor</a></li>
       <li><a class="deprecated" href="dart-js/unwrap_jso.html">unwrap_jso</a></li>
@@ -134,9 +135,9 @@ void addMemberHelper(
   }
   sb.write(&quot; &quot;);
   if (declaration.isGetter) {
-    sb.write(&quot;get $name =&gt; ${_accessJsPath(path)};&quot;);
+    sb.write(&quot;get $name =&gt; ${_JS_LIBRARY_PREFIX}.maybeWrapTypedInterop(${_accessJsPath(path)});&quot;);
   } else if (declaration.isSetter) {
-    sb.write(&quot;set $name(v) =&gt; ${_accessJsPath(path)} = v;&quot;);
+    sb.write(&quot;set $name(v) =&gt; ${_JS_LIBRARY_PREFIX}.maybeWrapTypedInterop(${_accessJsPathSetter(path)});&quot;);
   } else {
     sb.write(&quot;$name(&quot;);
     bool hasOptional = false;
@@ -165,6 +166,7 @@ void addMemberHelper(
     }
     // TODO(jacobr):
     sb.write(&quot;) =&gt; &quot;);
+    sb.write(&apos;${_JS_LIBRARY_PREFIX}.maybeWrapTypedInterop(&apos;);
     if (declaration.isConstructor) {
       sb.write(&quot;new ${_JS_LIBRARY_PREFIX}.JsObject(&quot;);
     }
@@ -176,7 +178,7 @@ void addMemberHelper(
     if (hasOptional) {
       sb.write(&quot;.takeWhile((i) =&gt; i != ${_UNDEFINED_VAR}).toList()&quot;);
     }
-    sb.write(&quot;);&quot;);
+    sb.write(&quot;));&quot;);
   }
   sb.write(&quot;\n&quot;);
 }</code></pre>
@@ -192,7 +194,7 @@ void addMemberHelper(
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

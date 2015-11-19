@@ -161,8 +161,6 @@ every event.</p>
         <h2><span>Source</span> </h2>
         <pre><code class="prettyprint lang-dart">factory Stream.periodic(Duration period,
                         [T computation(int computationCount)]) {
-  if (computation == null) computation = ((i) =&gt; null);
-
   Timer timer;
   int computationCount = 0;
   StreamController&lt;T&gt; controller;
@@ -171,7 +169,15 @@ every event.</p>
 
   void sendEvent() {
     watch.reset();
-    T data = computation(computationCount++);
+    T data;
+    if (computation != null) {
+      try {
+        data = computation(computationCount++);
+      } catch (e, s) {
+        controller.addError(e, s);
+        return;
+      }
+    }
     controller.add(data);
   }
 
@@ -220,7 +226,7 @@ every event.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

@@ -119,6 +119,14 @@ under development and may not support all operations yet.</p>
           <p>A service protocol extension handler. Registered with <a href="dart-developer/registerExtension.html">registerExtension</a>.<a href="dart-developer/ServiceExtensionHandler.html">&hellip;</a>
 </p>
         </dd>
+        <dt id="TimelineAsyncFunction" class="callable">
+          <span class="name "><a href="dart-developer/TimelineAsyncFunction.html">TimelineAsyncFunction</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-async/Future-class.html">Future</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
         <dt id="TimelineSyncFunction" class="callable">
           <span class="name "><a href="dart-developer/TimelineSyncFunction.html">TimelineSyncFunction</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; dynamic</span>
@@ -235,6 +243,16 @@ the slash ('/') character.</p>
         <dd>
           <p>Add to the timeline.</p>
         </dd>
+        <dt id="TimelineTask">
+          <span class="name "><a href="dart-developer/TimelineTask-class.html">TimelineTask</a></span>
+        </dt>
+        <dd>
+          <p>An asynchronous task on the timeline. An asynchronous task can have many
+(nested) synchronous operations. Synchronous operations can live longer than
+the current isolate event. To pass a <a href="dart-developer/TimelineTask-class.html">TimelineTask</a> to another isolate,
+you must first call <a href="dart-developer/TimelineTask/pass.html">pass</a> to get the task id and then construct a new
+<a href="dart-developer/TimelineTask-class.html">TimelineTask</a> in the other isolate.</p>
+        </dd>
         <dt id="UserTag">
           <span class="name "><a href="dart-developer/UserTag-class.html">UserTag</a></span>
         </dt>
@@ -253,6 +271,7 @@ the slash ('/') character.</p>
     
       <li class="section-title"><a href="dart-developer/dart-developer-library.html#typedefs">Typedefs</a></li>
       <li><a href="dart-developer/ServiceExtensionHandler.html">ServiceExtensionHandler</a></li>
+      <li><a href="dart-developer/TimelineAsyncFunction.html">TimelineAsyncFunction</a></li>
       <li><a href="dart-developer/TimelineSyncFunction.html">TimelineSyncFunction</a></li>
     
     
@@ -271,6 +290,7 @@ the slash ('/') character.</p>
       <li><a href="dart-developer/Metrics-class.html">Metrics</a></li>
       <li><a href="dart-developer/ServiceExtensionResponse-class.html">ServiceExtensionResponse</a></li>
       <li><a href="dart-developer/Timeline-class.html">Timeline</a></li>
+      <li><a href="dart-developer/TimelineTask-class.html">TimelineTask</a></li>
       <li><a href="dart-developer/UserTag-class.html">UserTag</a></li>
     
     </ol>
@@ -284,7 +304,7 @@ the slash ('/') character.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

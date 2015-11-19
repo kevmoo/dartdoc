@@ -108,7 +108,7 @@
 
     <section class="multi-line-signature">
         <span class="returntype"><a href="dart-io/HeaderValue-class.html">HeaderValue</a></span>
-        <span class="name ">parse</span>(<wbr><span class="parameter" id="parse-param-value"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">value</span></span>, {<span class="parameter" id="parse-param-parameterSeparator"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">parameterSeparator</span>: <span class="default-value">";"</span></span>, <span class="parameter" id="parse-param-preserveBackslash"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">preserveBackslash</span>: <span class="default-value">false</span></span>})
+        <span class="name ">parse</span>(<wbr><span class="parameter" id="parse-param-value"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">value</span></span>, {<span class="parameter" id="parse-param-parameterSeparator"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">parameterSeparator</span>: <span class="default-value">";"</span></span>, <span class="parameter" id="parse-param-valueSeparator"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">valueSeparator</span>: <span class="default-value">null</span></span>, <span class="parameter" id="parse-param-preserveBackslash"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">preserveBackslash</span>: <span class="default-value">false</span></span>})
     </section>
 
     <section class="desc markdown">
@@ -120,9 +120,11 @@ string with both value and optional parameters.</p>
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">static HeaderValue parse(String value,
                          {String parameterSeparator: &quot;;&quot;,
+                          String valueSeparator: null,
                           bool preserveBackslash: false}) {
   return _HeaderValue.parse(value,
                             parameterSeparator: parameterSeparator,
+                            valueSeparator: valueSeparator,
                             preserveBackslash: preserveBackslash);
 }</code></pre>
     </section>
@@ -137,7 +139,7 @@ string with both value and optional parameters.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

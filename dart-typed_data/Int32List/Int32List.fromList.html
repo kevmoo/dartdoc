@@ -171,6 +171,8 @@
     <section class="desc markdown">
       <p>Creates a <a href="dart-typed_data/Int32List-class.html">Int32List</a> with the same length as the <code>elements</code> list
 and copies over the elements.</p>
+<p>Values are truncated to fit in the list when they are copied,
+the same way storing values truncates them.</p>
     </section>
     
       <section class="summary source-code" id="source">
@@ -188,7 +190,7 @@ and copies over the elements.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">

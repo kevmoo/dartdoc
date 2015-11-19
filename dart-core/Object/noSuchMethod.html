@@ -108,13 +108,10 @@
     </section>
 
     <section class="desc markdown">
-      <p><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> is invoked when users invoke a non-existent method
-on an object. The name of the method and the arguments of the
-invocation are passed to <a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> in an <a href="dart-core/Invocation-class.html">Invocation</a>.
-If <a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> returns a value, that value becomes the result of
-the original invocation.</p>
-<p>The default behavior of <a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> is to throw a
-<a href="dart-core/NoSuchMethodError-class.html">NoSuchMethodError</a>.</p>
+      <p>Invoked when a non-existent method or property is accessed.</p>
+<p>Classes can override <a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a> to provide custom behavior.</p>
+<p>If a value is returned, it becomes the result of the original invocation.</p>
+<p>The default behavior is to throw a <a href="dart-core/NoSuchMethodError-class.html">NoSuchMethodError</a>.</p>
     </section>
     
     <section class="summary source-code" id="source">
@@ -132,7 +129,7 @@ the original invocation.</p>
     <div class="container">
       <p class="text-center">
         <span class="no-break">
-          Dart SDK 1.13.0
+          Dart SDK 1.14.0-dev.1.0
         </span>
         &bull;
         <span class="no-break">
