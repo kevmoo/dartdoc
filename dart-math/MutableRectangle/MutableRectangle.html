@@ -118,11 +118,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">MutableRectangle</span>(<wbr><span class="parameter" id="-param-left"><span class="type-annotation">T</span> <span class="parameter-name">left</span></span>, <span class="parameter" id="-param-top"><span class="type-annotation">T</span> <span class="parameter-name">top</span></span>, <span class="parameter" id="-param-width"><span class="type-annotation">T</span> <span class="parameter-name">width</span></span>, <span class="parameter" id="-param-height"><span class="type-annotation">T</span> <span class="parameter-name">height</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">MutableRectangle</span>(<wbr><span class="parameter" id="-param-left"><span class="type-annotation">T</span> <span class="parameter-name">left</span></span>, <span class="parameter" id="-param-top"><span class="type-annotation">T</span> <span class="parameter-name">top</span></span>, <span class="parameter" id="-param-width"><span class="type-annotation">T</span> <span class="parameter-name">width</span></span>, <span class="parameter" id="-param-height"><span class="type-annotation">T</span> <span class="parameter-name">height</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Create a mutable rectangle spanned by <code>(left, top)</code> and
@@ -136,12 +135,12 @@ If <code>width</code> or <code>height</code> are negative, they are clamped to z
 point <code>(left, top)</code>.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">MutableRectangle(this.left, this.top, T width, T height)
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">MutableRectangle(this.left, this.top, T width, T height)
     : this._width = (width &lt; 0) ? _clampToZero(width) : width,
       this._height = (height &lt; 0) ? _clampToZero(height) : height;</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

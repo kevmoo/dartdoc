@@ -116,11 +116,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">Future.delayed</span>(<wbr><span class="parameter" id="delayed-param-duration"><span class="type-annotation"><a href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">duration</span></span>, [<span class="parameter" id="delayed-param-computation"><span class="type-annotation"></span> <span class="parameter-name">computation</span>()</span>])
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">Future.delayed</span>(<wbr><span class="parameter" id="delayed-param-duration"><span class="type-annotation"><a href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">duration</span></span>, [<span class="parameter" id="delayed-param-computation"><span class="type-annotation"></span> <span class="parameter-name">computation</span>()</span>])
+    </section>
 
     <section class="desc markdown">
       <p>Creates a future that runs its computation after a delay.</p>
@@ -137,9 +136,9 @@ error.</p>
 later time that isn't necessarily after a known fixed duration.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory Future.delayed(Duration duration, [computation()]) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory Future.delayed(Duration duration, [computation()]) {
   _Future result = new _Future&lt;T&gt;();
   new Timer(duration, () {
     try {
@@ -150,7 +149,7 @@ later time that isn't necessarily after a known fixed duration.</p>
   });
   return result;
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

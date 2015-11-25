@@ -150,12 +150,10 @@
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
     <section class="multi-line-signature">
-        <span class="returntype"><a href="dart-core/Duration-class.html">Duration</a></span>
-        <span class="name ">difference</span>(<wbr><span class="parameter" id="difference-param-other"><span class="type-annotation"><a href="dart-core/DateTime-class.html">DateTime</a></span> <span class="parameter-name">other</span></span>)
+      <span class="returntype"><a href="dart-core/Duration-class.html">Duration</a></span>
+      <span class="name ">difference</span>(<wbr><span class="parameter" id="difference-param-other"><span class="type-annotation"><a href="dart-core/DateTime-class.html">DateTime</a></span> <span class="parameter-name">other</span></span>)
     </section>
-
     <section class="desc markdown">
       <p>Returns a <a href="dart-core/Duration-class.html">Duration</a> with the difference between <code>this</code> and <code>other</code>.</p>
 <pre class="prettyprint lang-dart"><code>DateTime berlinWallFell = new DateTime(1989, DateTime.NOVEMBER, 9);
@@ -168,8 +166,7 @@ assert(difference.inDays == 16592);
     
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">
-Duration difference(DateTime other) {
+      <pre><code class="prettyprint lang-dart">Duration difference(DateTime other) {
   int ms = millisecondsSinceEpoch;
   int otherMs = other.millisecondsSinceEpoch;
   return new Duration(milliseconds: ms - otherMs);

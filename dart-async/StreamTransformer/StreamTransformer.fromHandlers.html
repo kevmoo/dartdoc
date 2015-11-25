@@ -104,11 +104,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">StreamTransformer.fromHandlers</span>(<wbr>{<span class="parameter" id="fromHandlers-param-handleData"><span class="type-annotation"></span> <span class="parameter-name">handleData</span>(<span class="parameter" id="handleData-param-data"><span class="type-annotation">S</span> <span class="parameter-name">data</span></span>, <span class="parameter" id="handleData-param-sink"><span class="type-annotation"><a href="dart-async/EventSink-class.html">EventSink</a>&lt;T&gt;</span> <span class="parameter-name">sink</span></span>)</span>, <span class="parameter" id="fromHandlers-param-handleError"><span class="type-annotation"></span> <span class="parameter-name">handleError</span>(<span class="parameter" id="handleError-param-error"><span class="type-annotation"><a href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">error</span></span>, <span class="parameter" id="handleError-param-stackTrace"><span class="type-annotation"><a href="dart-core/StackTrace-class.html">StackTrace</a></span> <span class="parameter-name">stackTrace</span></span>, <span class="parameter" id="handleError-param-sink"><span class="type-annotation"><a href="dart-async/EventSink-class.html">EventSink</a>&lt;T&gt;</span> <span class="parameter-name">sink</span></span>)</span>, <span class="parameter" id="fromHandlers-param-handleDone"><span class="type-annotation"></span> <span class="parameter-name">handleDone</span>(<span class="parameter" id="handleDone-param-sink"><span class="type-annotation"><a href="dart-async/EventSink-class.html">EventSink</a>&lt;T&gt;</span> <span class="parameter-name">sink</span></span>)</span>})
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">StreamTransformer.fromHandlers</span>(<wbr>{<span class="parameter" id="fromHandlers-param-handleData"><span class="type-annotation"></span> <span class="parameter-name">handleData</span>(<span class="parameter" id="handleData-param-data"><span class="type-annotation">S</span> <span class="parameter-name">data</span></span>, <span class="parameter" id="handleData-param-sink"><span class="type-annotation"><a href="dart-async/EventSink-class.html">EventSink</a>&lt;T&gt;</span> <span class="parameter-name">sink</span></span>)</span>, <span class="parameter" id="fromHandlers-param-handleError"><span class="type-annotation"></span> <span class="parameter-name">handleError</span>(<span class="parameter" id="handleError-param-error"><span class="type-annotation"><a href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">error</span></span>, <span class="parameter" id="handleError-param-stackTrace"><span class="type-annotation"><a href="dart-core/StackTrace-class.html">StackTrace</a></span> <span class="parameter-name">stackTrace</span></span>, <span class="parameter" id="handleError-param-sink"><span class="type-annotation"><a href="dart-async/EventSink-class.html">EventSink</a>&lt;T&gt;</span> <span class="parameter-name">sink</span></span>)</span>, <span class="parameter" id="fromHandlers-param-handleDone"><span class="type-annotation"></span> <span class="parameter-name">handleDone</span>(<span class="parameter" id="handleDone-param-sink"><span class="type-annotation"><a href="dart-async/EventSink-class.html">EventSink</a>&lt;T&gt;</span> <span class="parameter-name">sink</span></span>)</span>})
+    </section>
 
     <section class="desc markdown">
       <p>Creates a <a href="dart-async/StreamTransformer-class.html">StreamTransformer</a> that delegates events to the given functions.</p>
@@ -121,14 +120,14 @@
 </code></pre>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory StreamTransformer.fromHandlers({
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory StreamTransformer.fromHandlers({
     void handleData(S data, EventSink&lt;T&gt; sink),
     void handleError(Object error, StackTrace stackTrace, EventSink&lt;T&gt; sink),
     void handleDone(EventSink&lt;T&gt; sink)})
         = _StreamHandlerTransformer;</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

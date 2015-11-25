@@ -389,11 +389,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">Element.html</span>(<wbr><span class="parameter" id="html-param-html"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">html</span></span>, {<span class="parameter" id="html-param-validator"><span class="type-annotation"><a href="dart-html/NodeValidator-class.html">NodeValidator</a></span> <span class="parameter-name">validator</span></span>, <span class="parameter" id="html-param-treeSanitizer"><span class="type-annotation"><a href="dart-html/NodeTreeSanitizer-class.html">NodeTreeSanitizer</a></span> <span class="parameter-name">treeSanitizer</span></span>})
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">Element.html</span>(<wbr><span class="parameter" id="html-param-html"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">html</span></span>, {<span class="parameter" id="html-param-validator"><span class="type-annotation"><a href="dart-html/NodeValidator-class.html">NodeValidator</a></span> <span class="parameter-name">validator</span></span>, <span class="parameter" id="html-param-treeSanitizer"><span class="type-annotation"><a href="dart-html/NodeTreeSanitizer-class.html">NodeTreeSanitizer</a></span> <span class="parameter-name">treeSanitizer</span></span>})
+    </section>
 
     <section class="desc markdown">
       <p>Creates an HTML element from a valid fragment of HTML.</p>
@@ -410,16 +409,16 @@ and remove all scriptable elements and attributes.</p>
 <p>See also:</p><ul><li><a href="dart-html/NodeValidator-class.html">NodeValidator</a></li></ul>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory Element.html(String html,
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory Element.html(String html,
     {NodeValidator validator, NodeTreeSanitizer treeSanitizer}) {
   var fragment = document.body.createFragment(html, validator: validator,
       treeSanitizer: treeSanitizer);
 
   return fragment.nodes.where((e) =&gt; e is Element).single;
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

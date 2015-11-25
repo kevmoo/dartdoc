@@ -107,11 +107,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">Timer.periodic</span>(<wbr><span class="parameter" id="periodic-param-duration"><span class="type-annotation"><a href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="periodic-param-callback"><span class="type-annotation"></span> <span class="parameter-name">callback</span>(<span class="parameter" id="callback-param-timer"><span class="type-annotation"><a href="dart-async/Timer-class.html">Timer</a></span> <span class="parameter-name">timer</span></span>)</span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">Timer.periodic</span>(<wbr><span class="parameter" id="periodic-param-duration"><span class="type-annotation"><a href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="periodic-param-callback"><span class="type-annotation"></span> <span class="parameter-name">callback</span>(<span class="parameter" id="callback-param-timer"><span class="type-annotation"><a href="dart-async/Timer-class.html">Timer</a></span> <span class="parameter-name">timer</span></span>)</span>)
+    </section>
 
     <section class="desc markdown">
       <p>Creates a new repeating timer.</p>
@@ -127,9 +126,9 @@ when the previous callback started, or when the previous callback was
 scheduled for - even if the actual callback was delayed.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory Timer.periodic(Duration duration,
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory Timer.periodic(Duration duration,
                        void callback(Timer timer)) {
   if (Zone.current == Zone.ROOT) {
     // No need to bind the callback. We know that the root&apos;s timer will
@@ -139,7 +138,7 @@ scheduled for - even if the actual callback was delayed.</p>
   return Zone.current.createPeriodicTimer(
       duration, Zone.current.bindUnaryCallback(callback, runGuarded: true));
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

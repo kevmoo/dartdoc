@@ -107,20 +107,19 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">TimelineTask.withTaskId</span>(<wbr><span class="parameter" id="withTaskId-param-taskId"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">taskId</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">TimelineTask.withTaskId</span>(<wbr><span class="parameter" id="withTaskId-param-taskId"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">taskId</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Create a task with an explicit <code>taskId</code>. This is useful if you are
 passing a task from one isolate to another.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">TimelineTask.withTaskId(int taskId)
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">TimelineTask.withTaskId(int taskId)
     : _taskId = taskId {
   if (taskId is! int) {
     throw new ArgumentError.value(taskId,
@@ -128,7 +127,7 @@ passing a task from one isolate to another.</p>
                                   &apos;Must be an int&apos;);
   }
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

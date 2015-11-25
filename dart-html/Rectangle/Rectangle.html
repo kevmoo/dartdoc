@@ -118,11 +118,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        const
-                <span class="name ">Rectangle</span>(<wbr><span class="parameter" id="-param-left"><span class="type-annotation">T</span> <span class="parameter-name">left</span></span>, <span class="parameter" id="-param-top"><span class="type-annotation">T</span> <span class="parameter-name">top</span></span>, <span class="parameter" id="-param-width"><span class="type-annotation">T</span> <span class="parameter-name">width</span></span>, <span class="parameter" id="-param-height"><span class="type-annotation">T</span> <span class="parameter-name">height</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      const
+            <span class="name ">Rectangle</span>(<wbr><span class="parameter" id="-param-left"><span class="type-annotation">T</span> <span class="parameter-name">left</span></span>, <span class="parameter" id="-param-top"><span class="type-annotation">T</span> <span class="parameter-name">top</span></span>, <span class="parameter" id="-param-width"><span class="type-annotation">T</span> <span class="parameter-name">width</span></span>, <span class="parameter" id="-param-height"><span class="type-annotation">T</span> <span class="parameter-name">height</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Create a rectangle spanned by <code>(left, top)</code> and <code>(left+width, top+height)</code>.</p>
@@ -135,12 +134,12 @@ If <code>width</code> or <code>height</code> are negative, they are clamped to z
 point <code>(left, top)</code>.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">const Rectangle(this.left, this.top, T width, T height)
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">const Rectangle(this.left, this.top, T width, T height)
     : this.width = (width &lt; 0) ? -width * 0 : width,  // Inline _clampToZero.
       this.height = (height &lt; 0) ?  -height * 0 : height;</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

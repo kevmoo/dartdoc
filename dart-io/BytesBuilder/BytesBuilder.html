@@ -110,11 +110,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">BytesBuilder</span>(<wbr>{<span class="parameter" id="-param-copy"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">copy</span>: <span class="default-value">true</span></span>})
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">BytesBuilder</span>(<wbr>{<span class="parameter" id="-param-copy"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">copy</span>: <span class="default-value">true</span></span>})
+    </section>
 
     <section class="desc markdown">
       <p>Construct a new empty <a href="dart-io/BytesBuilder-class.html">BytesBuilder</a>.</p>
@@ -124,16 +123,16 @@ the lists are changed after added to the <a href="dart-io/BytesBuilder-class.htm
 output. Default is <code>true</code>.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory BytesBuilder({bool copy: true}) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory BytesBuilder({bool copy: true}) {
   if (copy) {
     return new _CopyingBytesBuilder();
   } else {
     return new _BytesBuilder();
   }
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

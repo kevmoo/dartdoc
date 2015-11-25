@@ -123,26 +123,25 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">SplayTreeMap.from</span>(<wbr><span class="parameter" id="from-param-other"><span class="type-annotation"><a href="dart-core/Map-class.html">Map</a></span> <span class="parameter-name">other</span></span>, [<span class="parameter" id="from-param-compare"><span class="type-annotation"></span> <span class="parameter-name">compare</span>(<span class="parameter" id="compare-param-key1"><span class="type-annotation">K</span> <span class="parameter-name">key1</span></span>, <span class="parameter" id="compare-param-key2"><span class="type-annotation">K</span> <span class="parameter-name">key2</span></span>)</span>, <span class="parameter" id="from-param-isValidKey"><span class="type-annotation"></span> <span class="parameter-name">isValidKey</span>(<span class="parameter" id="isValidKey-param-potentialKey"><span class="parameter-name">potentialKey</span></span>)</span>])
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">SplayTreeMap.from</span>(<wbr><span class="parameter" id="from-param-other"><span class="type-annotation"><a href="dart-core/Map-class.html">Map</a></span> <span class="parameter-name">other</span></span>, [<span class="parameter" id="from-param-compare"><span class="type-annotation"></span> <span class="parameter-name">compare</span>(<span class="parameter" id="compare-param-key1"><span class="type-annotation">K</span> <span class="parameter-name">key1</span></span>, <span class="parameter" id="compare-param-key2"><span class="type-annotation">K</span> <span class="parameter-name">key2</span></span>)</span>, <span class="parameter" id="from-param-isValidKey"><span class="type-annotation"></span> <span class="parameter-name">isValidKey</span>(<span class="parameter" id="isValidKey-param-potentialKey"><span class="parameter-name">potentialKey</span></span>)</span>])
+    </section>
 
     <section class="desc markdown">
       <p>Creates a <a href="dart-collection/SplayTreeMap-class.html">SplayTreeMap</a> that contains all key/value pairs of <code>other</code>.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory SplayTreeMap.from(Map other,
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory SplayTreeMap.from(Map other,
                           [int compare(K key1, K key2),
                            bool isValidKey(potentialKey)]) {
   SplayTreeMap&lt;K, V&gt; result = new SplayTreeMap&lt;K, V&gt;(compare, isValidKey);
   other.forEach((k, v) { result[k] = v; });
   return result;
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

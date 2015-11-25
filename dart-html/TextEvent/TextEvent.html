@@ -126,16 +126,15 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">TextEvent</span>(<wbr><span class="parameter" id="-param-type"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">type</span></span>, {<span class="parameter" id="-param-canBubble"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">canBubble</span>: <span class="default-value">false</span></span>, <span class="parameter" id="-param-cancelable"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">cancelable</span>: <span class="default-value">false</span></span>, <span class="parameter" id="-param-view"><span class="type-annotation"><a href="dart-html/Window-class.html">Window</a></span> <span class="parameter-name">view</span></span>, <span class="parameter" id="-param-data"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">data</span></span>})
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">TextEvent</span>(<wbr><span class="parameter" id="-param-type"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">type</span></span>, {<span class="parameter" id="-param-canBubble"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">canBubble</span>: <span class="default-value">false</span></span>, <span class="parameter" id="-param-cancelable"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">cancelable</span>: <span class="default-value">false</span></span>, <span class="parameter" id="-param-view"><span class="type-annotation"><a href="dart-html/Window-class.html">Window</a></span> <span class="parameter-name">view</span></span>, <span class="parameter" id="-param-data"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">data</span></span>})
+    </section>
 
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory TextEvent(String type,
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory TextEvent(String type,
   {bool canBubble: false, bool cancelable: false, Window view, String data}) {
   if (view == null) {
     view = window;
@@ -144,7 +143,7 @@
   e._initTextEvent(type, canBubble, cancelable, view, data);
   return e;
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

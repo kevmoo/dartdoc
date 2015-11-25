@@ -130,12 +130,10 @@
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
     <section class="multi-line-signature">
-        <span class="returntype"><a href="dart-core/Iterable-class.html">Iterable</a>&lt;E&gt;</span>
-        <span class="name ">take</span>(<wbr><span class="parameter" id="take-param-count"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">count</span></span>)
+      <span class="returntype"><a href="dart-core/Iterable-class.html">Iterable</a>&lt;E&gt;</span>
+      <span class="name ">take</span>(<wbr><span class="parameter" id="take-param-count"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">count</span></span>)
     </section>
-
     <section class="desc markdown">
       <p>Returns a lazy iterable of the <code>count</code> first elements of this iterable.</p>
 <p>The returned <code>Iterable</code> may contain fewer than <code>count</code> elements, if <code>this</code>
@@ -147,7 +145,7 @@ elements have been seen.</p>
     
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">  Iterable&lt;E&gt; take(int count) {
+      <pre><code class="prettyprint lang-dart">Iterable&lt;E&gt; take(int count) {
  return new TakeIterable&lt;E&gt;(this, count);
   }</code></pre>
     </section>

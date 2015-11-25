@@ -140,11 +140,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">ListQueue.from</span>(<wbr><span class="parameter" id="from-param-elements"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a></span> <span class="parameter-name">elements</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">ListQueue.from</span>(<wbr><span class="parameter" id="from-param-elements"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a></span> <span class="parameter-name">elements</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Create a <code>ListQueue</code> containing all <code>elements</code>.</p>
@@ -153,9 +152,9 @@
 <p>All <code>elements</code> should be assignable to <code>E</code>.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory ListQueue.from(Iterable elements) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory ListQueue.from(Iterable elements) {
   if (elements is List) {
     int length = elements.length;
     ListQueue&lt;E&gt; queue = new ListQueue(length + 1);
@@ -176,7 +175,7 @@
     return result;
   }
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

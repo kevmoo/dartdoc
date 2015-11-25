@@ -147,11 +147,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">Uri.directory</span>(<wbr><span class="parameter" id="directory-param-path"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span></span>, {<span class="parameter" id="directory-param-windows"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">windows</span></span>})
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">Uri.directory</span>(<wbr><span class="parameter" id="directory-param-path"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span></span>, {<span class="parameter" id="directory-param-windows"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">windows</span></span>})
+    </section>
 
     <section class="desc markdown">
       <p>Like <code>Uri.file</code> except that a non-empty URI path ends in a slash.</p>
@@ -160,14 +159,14 @@ then a slash is added to the returned URI's path.
 In all other cases, the result is the same as returned by <code>Uri.file</code>.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory Uri.directory(String path, {bool windows}) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory Uri.directory(String path, {bool windows}) {
   windows = (windows == null) ? Uri._isWindows : windows;
   return windows ? _makeWindowsFileUrl(path, true)
                  : _makeFileUri(path, true);
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

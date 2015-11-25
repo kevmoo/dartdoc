@@ -143,11 +143,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">Stream.fromIterable</span>(<wbr><span class="parameter" id="fromIterable-param-data"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a>&lt;T&gt;</span> <span class="parameter-name">data</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">Stream.fromIterable</span>(<wbr><span class="parameter" id="fromIterable-param-data"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a>&lt;T&gt;</span> <span class="parameter-name">data</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Creates a single-subscription stream that gets its data from <code>data</code>.</p>
@@ -159,13 +158,13 @@ further data events will be generated either, since iteration cannot
 continue.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory Stream.fromIterable(Iterable&lt;T&gt; data) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory Stream.fromIterable(Iterable&lt;T&gt; data) {
   return new _GeneratedStreamImpl&lt;T&gt;(
       () =&gt; new _IterablePendingEvents&lt;T&gt;(data));
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

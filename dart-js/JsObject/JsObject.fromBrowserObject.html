@@ -111,11 +111,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">JsObject.fromBrowserObject</span>(<wbr><span class="parameter" id="fromBrowserObject-param-object"><span class="parameter-name">object</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">JsObject.fromBrowserObject</span>(<wbr><span class="parameter" id="fromBrowserObject-param-object"><span class="parameter-name">object</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Constructs a <a href="dart-js/JsObject-class.html">JsObject</a> that proxies a native Dart object; <em>for expert use
@@ -127,15 +126,15 @@ is normally automatically converted into a native Dart object.</p>
 <code>bool</code>, <code>num</code>, or <code>String</code>.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory JsObject.fromBrowserObject(object) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory JsObject.fromBrowserObject(object) {
   if (object is num || object is String || object is bool || object == null) {
     throw new ArgumentError(&quot;object cannot be a num, string, bool, or null&quot;);
   }
   return _fromBrowserObject(object);
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

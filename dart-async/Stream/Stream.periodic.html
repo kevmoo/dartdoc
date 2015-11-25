@@ -143,11 +143,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">Stream.periodic</span>(<wbr><span class="parameter" id="periodic-param-period"><span class="type-annotation"><a href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">period</span></span>, [<span class="parameter" id="periodic-param-computation"><span class="type-annotation"></span> <span class="parameter-name">computation</span>(<span class="parameter" id="computation-param-computationCount"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">computationCount</span></span>)</span>])
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">Stream.periodic</span>(<wbr><span class="parameter" id="periodic-param-period"><span class="type-annotation"><a href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">period</span></span>, [<span class="parameter" id="periodic-param-computation"><span class="type-annotation"></span> <span class="parameter-name">computation</span>(<span class="parameter" id="computation-param-computationCount"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">computationCount</span></span>)</span>])
+    </section>
 
     <section class="desc markdown">
       <p>Creates a stream that repeatedly emits events at <code>period</code> intervals.</p>
@@ -157,9 +156,9 @@ every event.</p>
 <p>If <code>computation</code> is omitted the event values will all be <code>null</code>.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory Stream.periodic(Duration period,
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory Stream.periodic(Duration period,
                         [T computation(int computationCount)]) {
   Timer timer;
   int computationCount = 0;
@@ -214,7 +213,7 @@ every event.</p>
       });
   return controller.stream;
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

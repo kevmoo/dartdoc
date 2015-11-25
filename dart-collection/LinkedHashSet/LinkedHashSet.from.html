@@ -144,11 +144,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">LinkedHashSet.from</span>(<wbr><span class="parameter" id="from-param-elements"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a>&lt;E&gt;</span> <span class="parameter-name">elements</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">LinkedHashSet.from</span>(<wbr><span class="parameter" id="from-param-elements"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a>&lt;E&gt;</span> <span class="parameter-name">elements</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Create a linked hash set containing all <code>elements</code>.</p>
@@ -163,16 +162,16 @@ Set&lt;SubType&gt; subSet = new LinkedHashSet&lt;SubType&gt;.from(tmp);
 </code></pre>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory LinkedHashSet.from(Iterable&lt;E&gt; elements) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory LinkedHashSet.from(Iterable&lt;E&gt; elements) {
   LinkedHashSet&lt;E&gt; result = new LinkedHashSet&lt;E&gt;();
   for (final E element in elements) {
     result.add(element);
   }
   return result;
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

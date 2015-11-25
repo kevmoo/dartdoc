@@ -111,11 +111,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">JsObject.jsify</span>(<wbr><span class="parameter" id="jsify-param-object"><span class="parameter-name">object</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">JsObject.jsify</span>(<wbr><span class="parameter" id="jsify-param-object"><span class="parameter-name">object</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Recursively converts a JSON-like collection of Dart objects to a
@@ -126,15 +125,15 @@ Primitives and other transferrable values are directly converted to their
 JavaScript type, and all other objects are proxied.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory JsObject.jsify(object) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory JsObject.jsify(object) {
   if ((object is! Map) &amp;&amp; (object is! Iterable)) {
     throw new ArgumentError(&quot;object must be a Map or Iterable&quot;);
   }
   return _jsify(object);
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

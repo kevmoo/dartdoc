@@ -111,11 +111,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">RuneIterator.at</span>(<wbr><span class="parameter" id="at-param-string"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">string</span></span>, <span class="parameter" id="at-param-index"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">RuneIterator.at</span>(<wbr><span class="parameter" id="at-param-string"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">string</span></span>, <span class="parameter" id="at-param-index"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Create an iterator positioned before the <code>index</code>th code unit of the string.</p>
@@ -126,14 +125,14 @@ the current value.</p>
 <p>The <code>index</code> position must not be in the middle of a surrogate pair.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">RuneIterator.at(String string, int index)
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">RuneIterator.at(String string, int index)
     : string = string, _position = index, _nextPosition = index {
   RangeError.checkValueInInterval(index, 0, string.length);
   _checkSplitSurrogate(index);
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

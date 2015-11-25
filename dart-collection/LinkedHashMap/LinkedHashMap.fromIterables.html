@@ -120,11 +120,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">LinkedHashMap.fromIterables</span>(<wbr><span class="parameter" id="fromIterables-param-keys"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a>&lt;K&gt;</span> <span class="parameter-name">keys</span></span>, <span class="parameter" id="fromIterables-param-values"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a>&lt;V&gt;</span> <span class="parameter-name">values</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">LinkedHashMap.fromIterables</span>(<wbr><span class="parameter" id="fromIterables-param-keys"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a>&lt;K&gt;</span> <span class="parameter-name">keys</span></span>, <span class="parameter" id="fromIterables-param-values"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a>&lt;V&gt;</span> <span class="parameter-name">values</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Creates a <a href="dart-collection/LinkedHashMap-class.html">LinkedHashMap</a> associating the given <code>keys</code> to <code>values</code>.</p>
@@ -135,14 +134,14 @@ overwrites the previous value.</p>
 <p>It is an error if the two <a href="dart-core/Iterable-class.html">Iterable</a>s don't have the same length.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory LinkedHashMap.fromIterables(Iterable&lt;K&gt; keys, Iterable&lt;V&gt; values) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory LinkedHashMap.fromIterables(Iterable&lt;K&gt; keys, Iterable&lt;V&gt; values) {
   LinkedHashMap&lt;K, V&gt; map = new LinkedHashMap&lt;K, V&gt;();
   Maps._fillMapWithIterables(map, keys, values);
   return map;
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

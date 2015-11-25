@@ -114,11 +114,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">UriData.fromUri</span>(<wbr><span class="parameter" id="fromUri-param-uri"><span class="type-annotation"><a href="dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">uri</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">UriData.fromUri</span>(<wbr><span class="parameter" id="fromUri-param-uri"><span class="type-annotation"><a href="dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">uri</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Creates a <code>DataUri</code> from a <a href="dart-core/Uri-class.html">Uri</a> which must have <code>data</code> as <a href="dart-core/Uri/scheme.html">Uri.scheme</a>.</p>
@@ -127,9 +126,9 @@ and the path (concatenated with the query, if there is one) must be valid
 as data URI content with the same rules as <a href="dart-core/UriData/parse.html">parse</a>.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory UriData.fromUri(Uri uri) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory UriData.fromUri(Uri uri) {
   if (uri.scheme != &quot;data&quot;) {
     throw new ArgumentError.value(uri, &quot;uri&quot;,
                                   &quot;Scheme must be &apos;data&apos;&quot;);
@@ -148,7 +147,7 @@ as data URI content with the same rules as <a href="dart-core/UriData/parse.html
   // Includes path and query (and leading &quot;data:&quot;).
   return _parse(&quot;$uri&quot;, 5, uri);
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

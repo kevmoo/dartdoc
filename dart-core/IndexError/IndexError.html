@@ -110,11 +110,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">IndexError</span>(<wbr><span class="parameter" id="-param-invalidValue"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">invalidValue</span></span>, <span class="parameter" id="-param-indexable"><span class="parameter-name">indexable</span></span>, [<span class="parameter" id="-param-name"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span></span>, <span class="parameter" id="-param-message"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">message</span></span>, <span class="parameter" id="-param-length"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>])
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">IndexError</span>(<wbr><span class="parameter" id="-param-invalidValue"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">invalidValue</span></span>, <span class="parameter" id="-param-indexable"><span class="parameter-name">indexable</span></span>, [<span class="parameter" id="-param-name"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span></span>, <span class="parameter" id="-param-message"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">message</span></span>, <span class="parameter" id="-param-length"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span></span>])
+    </section>
 
     <section class="desc markdown">
       <p>Creates a new <a href="dart-core/IndexError-class.html">IndexError</a> stating that <code>invalidValue</code> is not a valid index
@@ -124,15 +123,15 @@ If <code>length</code> is omitted, it defaults to <code>indexable.length</code>.
 <p>The message is used as part of the string representation of the error.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">IndexError(int invalidValue, indexable,
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">IndexError(int invalidValue, indexable,
            [String name, String message, int length])
     : this.indexable = indexable,
       this.length = (length != null) ? length : indexable.length,
       super.value(invalidValue, name,
                   (message != null) ? message : &quot;Index out of range&quot;);</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

@@ -149,12 +149,10 @@
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
     <section class="multi-line-signature">
-        <span class="returntype"><a href="dart-async/Future-class.html">Future</a>&lt;<a href="dart-io/HttpServer-class.html">HttpServer</a>&gt;</span>
-        <span class="name ">bindSecure</span>(<wbr><span class="parameter" id="bindSecure-param-address"><span class="parameter-name">address</span></span>, <span class="parameter" id="bindSecure-param-port"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">port</span></span>, <span class="parameter" id="bindSecure-param-context"><span class="type-annotation"><a href="dart-io/SecurityContext-class.html">SecurityContext</a></span> <span class="parameter-name">context</span></span>, {<span class="parameter" id="bindSecure-param-backlog"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">backlog</span>: <span class="default-value">0</span></span>, <span class="parameter" id="bindSecure-param-v6Only"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">v6Only</span>: <span class="default-value">false</span></span>, <span class="parameter" id="bindSecure-param-requestClientCertificate"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">requestClientCertificate</span>: <span class="default-value">false</span></span>, <span class="parameter" id="bindSecure-param-shared"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">shared</span>: <span class="default-value">false</span></span>})
+      <span class="returntype"><a href="dart-async/Future-class.html">Future</a>&lt;<a href="dart-io/HttpServer-class.html">HttpServer</a>&gt;</span>
+      <span class="name ">bindSecure</span>(<wbr><span class="parameter" id="bindSecure-param-address"><span class="parameter-name">address</span></span>, <span class="parameter" id="bindSecure-param-port"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">port</span></span>, <span class="parameter" id="bindSecure-param-context"><span class="type-annotation"><a href="dart-io/SecurityContext-class.html">SecurityContext</a></span> <span class="parameter-name">context</span></span>, {<span class="parameter" id="bindSecure-param-backlog"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">backlog</span>: <span class="default-value">0</span></span>, <span class="parameter" id="bindSecure-param-v6Only"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">v6Only</span>: <span class="default-value">false</span></span>, <span class="parameter" id="bindSecure-param-requestClientCertificate"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">requestClientCertificate</span>: <span class="default-value">false</span></span>, <span class="parameter" id="bindSecure-param-shared"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">shared</span>: <span class="default-value">false</span></span>})
     </section>
-
     <section class="desc markdown">
       <p>The <code>address</code> can either be a <a href="dart-core/String-class.html">String</a> or an
 <a href="dart-io/InternetAddress-class.html">InternetAddress</a>. If <code>address</code> is a <a href="dart-core/String-class.html">String</a>, <a href="dart-io/HttpServer/bind.html">bind</a> will
@@ -192,8 +190,7 @@ distributed over multiple isolates this way.</p>
     
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">
-static Future&lt;HttpServer&gt; bindSecure(address,
+      <pre><code class="prettyprint lang-dart">static Future&lt;HttpServer&gt; bindSecure(address,
                                      int port,
                                      SecurityContext context,
                                      {int backlog: 0,

@@ -138,19 +138,18 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">KeyEvent.wrap</span>(<wbr><span class="parameter" id="wrap-param-parent"><span class="type-annotation"><a href="dart-html/KeyboardEvent-class.html">KeyboardEvent</a></span> <span class="parameter-name">parent</span></span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">KeyEvent.wrap</span>(<wbr><span class="parameter" id="wrap-param-parent"><span class="type-annotation"><a href="dart-html/KeyboardEvent-class.html">KeyboardEvent</a></span> <span class="parameter-name">parent</span></span>)
+    </section>
 
     <section class="desc markdown">
       <p>Construct a KeyEvent with <code>parent</code> as the event we're emulating.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">KeyEvent.wrap(KeyboardEvent parent): super(parent) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">KeyEvent.wrap(KeyboardEvent parent): super(parent) {
   _parent = parent;
   _shadowAltKey = _realAltKey;
   _shadowCharCode = _realCharCode;
@@ -158,7 +157,7 @@
   _currentTarget = _parent.currentTarget == null? window :
       _parent.currentTarget;
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

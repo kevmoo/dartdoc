@@ -116,11 +116,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">Future</span>(<wbr><span class="parameter" id="-param-computation"><span class="type-annotation"></span> <span class="parameter-name">computation</span>()</span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">Future</span>(<wbr><span class="parameter" id="-param-computation"><span class="type-annotation"></span> <span class="parameter-name">computation</span>()</span>)
+    </section>
 
     <section class="desc markdown">
       <p>Creates a future containing the result of calling <code>computation</code>
@@ -134,9 +133,9 @@ and will then complete with the same result.</p>
 with that value.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory Future(computation()) {
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory Future(computation()) {
   _Future result = new _Future&lt;T&gt;();
   Timer.run(() {
     try {
@@ -147,7 +146,7 @@ with that value.</p>
   });
   return result;
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 

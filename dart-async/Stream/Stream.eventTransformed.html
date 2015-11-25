@@ -143,11 +143,10 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section class="multi-line-signature">
-        
-                <span class="name ">Stream.eventTransformed</span>(<wbr><span class="parameter" id="eventTransformed-param-source"><span class="type-annotation"><a href="dart-async/Stream-class.html">Stream</a></span> <span class="parameter-name">source</span></span>, <span class="parameter" id="eventTransformed-param-mapSink"><span class="type-annotation"></span> <span class="parameter-name">mapSink</span>(<span class="parameter" id="mapSink-param-sink"><span class="type-annotation"><a href="dart-async/EventSink-class.html">EventSink</a>&lt;T&gt;</span> <span class="parameter-name">sink</span></span>)</span>)
-      </section>
+    <section class="multi-line-signature">
+      
+            <span class="name ">Stream.eventTransformed</span>(<wbr><span class="parameter" id="eventTransformed-param-source"><span class="type-annotation"><a href="dart-async/Stream-class.html">Stream</a></span> <span class="parameter-name">source</span></span>, <span class="parameter" id="eventTransformed-param-mapSink"><span class="type-annotation"></span> <span class="parameter-name">mapSink</span>(<span class="parameter" id="mapSink-param-sink"><span class="type-annotation"><a href="dart-async/EventSink-class.html">EventSink</a>&lt;T&gt;</span> <span class="parameter-name">sink</span></span>)</span>)
+    </section>
 
     <section class="desc markdown">
       <p>Creates a stream where all events of an existing stream are piped through
@@ -186,13 +185,13 @@ stringStream.transform(new DuplicationTransformer());
 <p>The resulting stream is a broadcast stream if <code>source</code> is.</p>
     </section>
     
-      <section class="summary source-code" id="source">
-        <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">factory Stream.eventTransformed(Stream source,
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">factory Stream.eventTransformed(Stream source,
                                 EventSink mapSink(EventSink&lt;T&gt; sink)) {
   return new _BoundSinkStream(source, mapSink);
 }</code></pre>
-      </section>
+    </section>
 
   </div> <!-- /.main-content -->
 
