@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="made with love by dartdoc 0.8.1-dev">
+  <meta name="generator" content="made with love by dartdoc 0.8.3-dev">
   <title>RenderingContext class - dart:web_gl library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="..">
@@ -198,13 +198,13 @@
       <li><a href="dart-web_gl/KEEP.html">KEEP</a></li>
       <li><a href="dart-web_gl/LEQUAL.html">LEQUAL</a></li>
       <li><a href="dart-web_gl/LESS.html">LESS</a></li>
+      <li><a href="dart-web_gl/LINE_LOOP.html">LINE_LOOP</a></li>
+      <li><a href="dart-web_gl/LINE_STRIP.html">LINE_STRIP</a></li>
+      <li><a href="dart-web_gl/LINE_WIDTH.html">LINE_WIDTH</a></li>
       <li><a href="dart-web_gl/LINEAR.html">LINEAR</a></li>
       <li><a href="dart-web_gl/LINEAR_MIPMAP_LINEAR.html">LINEAR_MIPMAP_LINEAR</a></li>
       <li><a href="dart-web_gl/LINEAR_MIPMAP_NEAREST.html">LINEAR_MIPMAP_NEAREST</a></li>
       <li><a href="dart-web_gl/LINES.html">LINES</a></li>
-      <li><a href="dart-web_gl/LINE_LOOP.html">LINE_LOOP</a></li>
-      <li><a href="dart-web_gl/LINE_STRIP.html">LINE_STRIP</a></li>
-      <li><a href="dart-web_gl/LINE_WIDTH.html">LINE_WIDTH</a></li>
       <li><a href="dart-web_gl/LINK_STATUS.html">LINK_STATUS</a></li>
       <li><a href="dart-web_gl/LOW_FLOAT.html">LOW_FLOAT</a></li>
       <li><a href="dart-web_gl/LOW_INT.html">LOW_INT</a></li>
@@ -229,9 +229,9 @@
       <li><a href="dart-web_gl/NEAREST_MIPMAP_NEAREST.html">NEAREST_MIPMAP_NEAREST</a></li>
       <li><a href="dart-web_gl/NEVER.html">NEVER</a></li>
       <li><a href="dart-web_gl/NICEST.html">NICEST</a></li>
+      <li><a href="dart-web_gl/NO_ERROR.html">NO_ERROR</a></li>
       <li><a href="dart-web_gl/NONE.html">NONE</a></li>
       <li><a href="dart-web_gl/NOTEQUAL.html">NOTEQUAL</a></li>
-      <li><a href="dart-web_gl/NO_ERROR.html">NO_ERROR</a></li>
       <li><a href="dart-web_gl/ONE.html">ONE</a></li>
       <li><a href="dart-web_gl/ONE_MINUS_CONSTANT_ALPHA.html">ONE_MINUS_CONSTANT_ALPHA</a></li>
       <li><a href="dart-web_gl/ONE_MINUS_CONSTANT_COLOR.html">ONE_MINUS_CONSTANT_COLOR</a></li>
@@ -265,14 +265,14 @@
       <li><a href="dart-web_gl/RGB565.html">RGB565</a></li>
       <li><a href="dart-web_gl/RGBA.html">RGBA</a></li>
       <li><a href="dart-web_gl/RGBA4.html">RGBA4</a></li>
-      <li><a href="dart-web_gl/SAMPLER_2D.html">SAMPLER_2D</a></li>
-      <li><a href="dart-web_gl/SAMPLER_CUBE.html">SAMPLER_CUBE</a></li>
-      <li><a href="dart-web_gl/SAMPLES.html">SAMPLES</a></li>
       <li><a href="dart-web_gl/SAMPLE_ALPHA_TO_COVERAGE.html">SAMPLE_ALPHA_TO_COVERAGE</a></li>
       <li><a href="dart-web_gl/SAMPLE_BUFFERS.html">SAMPLE_BUFFERS</a></li>
       <li><a href="dart-web_gl/SAMPLE_COVERAGE.html">SAMPLE_COVERAGE</a></li>
       <li><a href="dart-web_gl/SAMPLE_COVERAGE_INVERT.html">SAMPLE_COVERAGE_INVERT</a></li>
       <li><a href="dart-web_gl/SAMPLE_COVERAGE_VALUE.html">SAMPLE_COVERAGE_VALUE</a></li>
+      <li><a href="dart-web_gl/SAMPLER_2D.html">SAMPLER_2D</a></li>
+      <li><a href="dart-web_gl/SAMPLER_CUBE.html">SAMPLER_CUBE</a></li>
+      <li><a href="dart-web_gl/SAMPLES.html">SAMPLES</a></li>
       <li><a href="dart-web_gl/SCISSOR_BOX.html">SCISSOR_BOX</a></li>
       <li><a href="dart-web_gl/SCISSOR_TEST.html">SCISSOR_TEST</a></li>
       <li><a href="dart-web_gl/SHADER_TYPE.html">SHADER_TYPE</a></li>
@@ -352,9 +352,9 @@
       <li><a href="dart-web_gl/TEXTURE_MIN_FILTER.html">TEXTURE_MIN_FILTER</a></li>
       <li><a href="dart-web_gl/TEXTURE_WRAP_S.html">TEXTURE_WRAP_S</a></li>
       <li><a href="dart-web_gl/TEXTURE_WRAP_T.html">TEXTURE_WRAP_T</a></li>
-      <li><a href="dart-web_gl/TRIANGLES.html">TRIANGLES</a></li>
       <li><a href="dart-web_gl/TRIANGLE_FAN.html">TRIANGLE_FAN</a></li>
       <li><a href="dart-web_gl/TRIANGLE_STRIP.html">TRIANGLE_STRIP</a></li>
+      <li><a href="dart-web_gl/TRIANGLES.html">TRIANGLES</a></li>
       <li><a href="dart-web_gl/UNPACK_ALIGNMENT.html">UNPACK_ALIGNMENT</a></li>
       <li><a href="dart-web_gl/UNPACK_COLORSPACE_CONVERSION_WEBGL.html">UNPACK_COLORSPACE_CONVERSION_WEBGL</a></li>
       <li><a href="dart-web_gl/UNPACK_FLIP_Y_WEBGL.html">UNPACK_FLIP_Y_WEBGL</a></li>
@@ -1748,6 +1748,39 @@
             <span class="signature"><code>0x0201</code></span>
           </div>
         </dd>
+        <dt id="LINE_LOOP" class="constant">
+          <span class="name "><a href="dart-web_gl/RenderingContext/LINE_LOOP.html">LINE_LOOP</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x0002</code></span>
+          </div>
+        </dd>
+        <dt id="LINE_STRIP" class="constant">
+          <span class="name "><a href="dart-web_gl/RenderingContext/LINE_STRIP.html">LINE_STRIP</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x0003</code></span>
+          </div>
+        </dd>
+        <dt id="LINE_WIDTH" class="constant">
+          <span class="name "><a href="dart-web_gl/RenderingContext/LINE_WIDTH.html">LINE_WIDTH</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x0B21</code></span>
+          </div>
+        </dd>
         <dt id="LINEAR" class="constant">
           <span class="name "><a href="dart-web_gl/RenderingContext/LINEAR.html">LINEAR</a></span>
           <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
@@ -1790,39 +1823,6 @@
           <div>
             <span class="features">const</span>
             <span class="signature"><code>0x0001</code></span>
-          </div>
-        </dd>
-        <dt id="LINE_LOOP" class="constant">
-          <span class="name "><a href="dart-web_gl/RenderingContext/LINE_LOOP.html">LINE_LOOP</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x0002</code></span>
-          </div>
-        </dd>
-        <dt id="LINE_STRIP" class="constant">
-          <span class="name "><a href="dart-web_gl/RenderingContext/LINE_STRIP.html">LINE_STRIP</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x0003</code></span>
-          </div>
-        </dd>
-        <dt id="LINE_WIDTH" class="constant">
-          <span class="name "><a href="dart-web_gl/RenderingContext/LINE_WIDTH.html">LINE_WIDTH</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x0B21</code></span>
           </div>
         </dd>
         <dt id="LINK_STATUS" class="constant">
@@ -2089,6 +2089,17 @@
             <span class="signature"><code>0x1102</code></span>
           </div>
         </dd>
+        <dt id="NO_ERROR" class="constant">
+          <span class="name "><a href="dart-web_gl/RenderingContext/NO_ERROR.html">NO_ERROR</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0</code></span>
+          </div>
+        </dd>
         <dt id="NONE" class="constant">
           <span class="name "><a href="dart-web_gl/RenderingContext/NONE.html">NONE</a></span>
           <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
@@ -2109,17 +2120,6 @@
           <div>
             <span class="features">const</span>
             <span class="signature"><code>0x0205</code></span>
-          </div>
-        </dd>
-        <dt id="NO_ERROR" class="constant">
-          <span class="name "><a href="dart-web_gl/RenderingContext/NO_ERROR.html">NO_ERROR</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0</code></span>
           </div>
         </dd>
         <dt id="ONE" class="constant">
@@ -2485,39 +2485,6 @@
             <span class="signature"><code>0x8056</code></span>
           </div>
         </dd>
-        <dt id="SAMPLER_2D" class="constant">
-          <span class="name "><a href="dart-web_gl/RenderingContext/SAMPLER_2D.html">SAMPLER_2D</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x8B5E</code></span>
-          </div>
-        </dd>
-        <dt id="SAMPLER_CUBE" class="constant">
-          <span class="name "><a href="dart-web_gl/RenderingContext/SAMPLER_CUBE.html">SAMPLER_CUBE</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x8B60</code></span>
-          </div>
-        </dd>
-        <dt id="SAMPLES" class="constant">
-          <span class="name "><a href="dart-web_gl/RenderingContext/SAMPLES.html">SAMPLES</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x80A9</code></span>
-          </div>
-        </dd>
         <dt id="SAMPLE_ALPHA_TO_COVERAGE" class="constant">
           <span class="name "><a href="dart-web_gl/RenderingContext/SAMPLE_ALPHA_TO_COVERAGE.html">SAMPLE_ALPHA_TO_COVERAGE</a></span>
           <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
@@ -2571,6 +2538,39 @@
           <div>
             <span class="features">const</span>
             <span class="signature"><code>0x80AA</code></span>
+          </div>
+        </dd>
+        <dt id="SAMPLER_2D" class="constant">
+          <span class="name "><a href="dart-web_gl/RenderingContext/SAMPLER_2D.html">SAMPLER_2D</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x8B5E</code></span>
+          </div>
+        </dd>
+        <dt id="SAMPLER_CUBE" class="constant">
+          <span class="name "><a href="dart-web_gl/RenderingContext/SAMPLER_CUBE.html">SAMPLER_CUBE</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x8B60</code></span>
+          </div>
+        </dd>
+        <dt id="SAMPLES" class="constant">
+          <span class="name "><a href="dart-web_gl/RenderingContext/SAMPLES.html">SAMPLES</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x80A9</code></span>
           </div>
         </dd>
         <dt id="SCISSOR_BOX" class="constant">
@@ -3442,17 +3442,6 @@
             <span class="signature"><code>0x2803</code></span>
           </div>
         </dd>
-        <dt id="TRIANGLES" class="constant">
-          <span class="name "><a href="dart-web_gl/RenderingContext/TRIANGLES.html">TRIANGLES</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
-        </dt>
-        <dd>
-          <p></p>
-          <div>
-            <span class="features">const</span>
-            <span class="signature"><code>0x0004</code></span>
-          </div>
-        </dd>
         <dt id="TRIANGLE_FAN" class="constant">
           <span class="name "><a href="dart-web_gl/RenderingContext/TRIANGLE_FAN.html">TRIANGLE_FAN</a></span>
           <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
@@ -3473,6 +3462,17 @@
           <div>
             <span class="features">const</span>
             <span class="signature"><code>0x0005</code></span>
+          </div>
+        </dd>
+        <dt id="TRIANGLES" class="constant">
+          <span class="name "><a href="dart-web_gl/RenderingContext/TRIANGLES.html">TRIANGLES</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div>
+            <span class="features">const</span>
+            <span class="signature"><code>0x0004</code></span>
           </div>
         </dd>
         <dt id="UNPACK_ALIGNMENT" class="constant">
@@ -5223,13 +5223,13 @@
       <li><a href="dart-web_gl/RenderingContext/KEEP.html">KEEP</a></li>
       <li><a href="dart-web_gl/RenderingContext/LEQUAL.html">LEQUAL</a></li>
       <li><a href="dart-web_gl/RenderingContext/LESS.html">LESS</a></li>
+      <li><a href="dart-web_gl/RenderingContext/LINE_LOOP.html">LINE_LOOP</a></li>
+      <li><a href="dart-web_gl/RenderingContext/LINE_STRIP.html">LINE_STRIP</a></li>
+      <li><a href="dart-web_gl/RenderingContext/LINE_WIDTH.html">LINE_WIDTH</a></li>
       <li><a href="dart-web_gl/RenderingContext/LINEAR.html">LINEAR</a></li>
       <li><a href="dart-web_gl/RenderingContext/LINEAR_MIPMAP_LINEAR.html">LINEAR_MIPMAP_LINEAR</a></li>
       <li><a href="dart-web_gl/RenderingContext/LINEAR_MIPMAP_NEAREST.html">LINEAR_MIPMAP_NEAREST</a></li>
       <li><a href="dart-web_gl/RenderingContext/LINES.html">LINES</a></li>
-      <li><a href="dart-web_gl/RenderingContext/LINE_LOOP.html">LINE_LOOP</a></li>
-      <li><a href="dart-web_gl/RenderingContext/LINE_STRIP.html">LINE_STRIP</a></li>
-      <li><a href="dart-web_gl/RenderingContext/LINE_WIDTH.html">LINE_WIDTH</a></li>
       <li><a href="dart-web_gl/RenderingContext/LINK_STATUS.html">LINK_STATUS</a></li>
       <li><a href="dart-web_gl/RenderingContext/LOW_FLOAT.html">LOW_FLOAT</a></li>
       <li><a href="dart-web_gl/RenderingContext/LOW_INT.html">LOW_INT</a></li>
@@ -5254,9 +5254,9 @@
       <li><a href="dart-web_gl/RenderingContext/NEAREST_MIPMAP_NEAREST.html">NEAREST_MIPMAP_NEAREST</a></li>
       <li><a href="dart-web_gl/RenderingContext/NEVER.html">NEVER</a></li>
       <li><a href="dart-web_gl/RenderingContext/NICEST.html">NICEST</a></li>
+      <li><a href="dart-web_gl/RenderingContext/NO_ERROR.html">NO_ERROR</a></li>
       <li><a href="dart-web_gl/RenderingContext/NONE.html">NONE</a></li>
       <li><a href="dart-web_gl/RenderingContext/NOTEQUAL.html">NOTEQUAL</a></li>
-      <li><a href="dart-web_gl/RenderingContext/NO_ERROR.html">NO_ERROR</a></li>
       <li><a href="dart-web_gl/RenderingContext/ONE.html">ONE</a></li>
       <li><a href="dart-web_gl/RenderingContext/ONE_MINUS_CONSTANT_ALPHA.html">ONE_MINUS_CONSTANT_ALPHA</a></li>
       <li><a href="dart-web_gl/RenderingContext/ONE_MINUS_CONSTANT_COLOR.html">ONE_MINUS_CONSTANT_COLOR</a></li>
@@ -5290,14 +5290,14 @@
       <li><a href="dart-web_gl/RenderingContext/RGB565.html">RGB565</a></li>
       <li><a href="dart-web_gl/RenderingContext/RGBA.html">RGBA</a></li>
       <li><a href="dart-web_gl/RenderingContext/RGBA4.html">RGBA4</a></li>
-      <li><a href="dart-web_gl/RenderingContext/SAMPLER_2D.html">SAMPLER_2D</a></li>
-      <li><a href="dart-web_gl/RenderingContext/SAMPLER_CUBE.html">SAMPLER_CUBE</a></li>
-      <li><a href="dart-web_gl/RenderingContext/SAMPLES.html">SAMPLES</a></li>
       <li><a href="dart-web_gl/RenderingContext/SAMPLE_ALPHA_TO_COVERAGE.html">SAMPLE_ALPHA_TO_COVERAGE</a></li>
       <li><a href="dart-web_gl/RenderingContext/SAMPLE_BUFFERS.html">SAMPLE_BUFFERS</a></li>
       <li><a href="dart-web_gl/RenderingContext/SAMPLE_COVERAGE.html">SAMPLE_COVERAGE</a></li>
       <li><a href="dart-web_gl/RenderingContext/SAMPLE_COVERAGE_INVERT.html">SAMPLE_COVERAGE_INVERT</a></li>
       <li><a href="dart-web_gl/RenderingContext/SAMPLE_COVERAGE_VALUE.html">SAMPLE_COVERAGE_VALUE</a></li>
+      <li><a href="dart-web_gl/RenderingContext/SAMPLER_2D.html">SAMPLER_2D</a></li>
+      <li><a href="dart-web_gl/RenderingContext/SAMPLER_CUBE.html">SAMPLER_CUBE</a></li>
+      <li><a href="dart-web_gl/RenderingContext/SAMPLES.html">SAMPLES</a></li>
       <li><a href="dart-web_gl/RenderingContext/SCISSOR_BOX.html">SCISSOR_BOX</a></li>
       <li><a href="dart-web_gl/RenderingContext/SCISSOR_TEST.html">SCISSOR_TEST</a></li>
       <li><a href="dart-web_gl/RenderingContext/SHADER_TYPE.html">SHADER_TYPE</a></li>
@@ -5377,9 +5377,9 @@
       <li><a href="dart-web_gl/RenderingContext/TEXTURE_MIN_FILTER.html">TEXTURE_MIN_FILTER</a></li>
       <li><a href="dart-web_gl/RenderingContext/TEXTURE_WRAP_S.html">TEXTURE_WRAP_S</a></li>
       <li><a href="dart-web_gl/RenderingContext/TEXTURE_WRAP_T.html">TEXTURE_WRAP_T</a></li>
-      <li><a href="dart-web_gl/RenderingContext/TRIANGLES.html">TRIANGLES</a></li>
       <li><a href="dart-web_gl/RenderingContext/TRIANGLE_FAN.html">TRIANGLE_FAN</a></li>
       <li><a href="dart-web_gl/RenderingContext/TRIANGLE_STRIP.html">TRIANGLE_STRIP</a></li>
+      <li><a href="dart-web_gl/RenderingContext/TRIANGLES.html">TRIANGLES</a></li>
       <li><a href="dart-web_gl/RenderingContext/UNPACK_ALIGNMENT.html">UNPACK_ALIGNMENT</a></li>
       <li><a href="dart-web_gl/RenderingContext/UNPACK_COLORSPACE_CONVERSION_WEBGL.html">UNPACK_COLORSPACE_CONVERSION_WEBGL</a></li>
       <li><a href="dart-web_gl/RenderingContext/UNPACK_FLIP_Y_WEBGL.html">UNPACK_FLIP_Y_WEBGL</a></li>
